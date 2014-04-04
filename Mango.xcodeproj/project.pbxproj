@@ -1,0 +1,2237 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9258D5518EE424600564355 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9258D5418EE424600564355 /* Cocoa.framework */; };
+		E9258D5F18EE424600564355 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9258D5D18EE424600564355 /* InfoPlist.strings */; };
+		E9258D6118EE424600564355 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9258D6018EE424600564355 /* main.m */; };
+		E9258D6518EE424600564355 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E9258D6318EE424600564355 /* Credits.rtf */; };
+		E9258D6B18EE424600564355 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9258D6918EE424600564355 /* MainMenu.xib */; };
+		E9258D6D18EE424600564355 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9258D6C18EE424600564355 /* Images.xcassets */; };
+		E9258D7418EE424600564355 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9258D7318EE424600564355 /* XCTest.framework */; };
+		E9258D7518EE424600564355 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9258D5418EE424600564355 /* Cocoa.framework */; };
+		E9258D7D18EE424600564355 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9258D7B18EE424600564355 /* InfoPlist.strings */; };
+		E9258D7F18EE424600564355 /* MangoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9258D7E18EE424600564355 /* MangoTests.m */; };
+		E9258D8918EE445100564355 /* ConnectionWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9258D8818EE445100564355 /* ConnectionWindow.xib */; };
+		E9258D8B18EE4C6F00564355 /* mango.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9258D8A18EE4C6F00564355 /* mango.jpg */; };
+		E92593CF18EE7F9C00564355 /* MangoAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9258D6718EE424600564355 /* MangoAppDelegate.mm */; };
+		E92593D018EE7F9E00564355 /* MangoConnectionManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = E92590C818EE7AAA00564355 /* MangoConnectionManager.mm */; };
+		E92593D118EE7FA000564355 /* ConnectionWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9258D8D18EE5D9D00564355 /* ConnectionWindow.mm */; };
+		E92593E318EE92A900564355 /* libboost_filesystem-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E92593E118EE92A900564355 /* libboost_filesystem-mt.a */; };
+		E92593E418EE92A900564355 /* libboost_filesystem-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E92593E118EE92A900564355 /* libboost_filesystem-mt.a */; };
+		E92593E518EE92A900564355 /* libboost_program_options-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E92593E218EE92A900564355 /* libboost_program_options-mt.a */; };
+		E92593E618EE92A900564355 /* libboost_program_options-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E92593E218EE92A900564355 /* libboost_program_options-mt.a */; };
+		E925956518EE930100564355 /* error_codes.err in Resources */ = {isa = PBXBuildFile; fileRef = E92593EB18EE930000564355 /* error_codes.err */; };
+		E925956618EE930100564355 /* error_codes.err in Resources */ = {isa = PBXBuildFile; fileRef = E92593EB18EE930000564355 /* error_codes.err */; };
+		E925956718EE930100564355 /* generate_error_codes.py in Resources */ = {isa = PBXBuildFile; fileRef = E92593EC18EE930000564355 /* generate_error_codes.py */; };
+		E925956818EE930100564355 /* generate_error_codes.py in Resources */ = {isa = PBXBuildFile; fileRef = E92593EC18EE930000564355 /* generate_error_codes.py */; };
+		E925956918EE930100564355 /* SConscript in Resources */ = {isa = PBXBuildFile; fileRef = E925945B18EE930000564355 /* SConscript */; };
+		E925956A18EE930100564355 /* SConscript in Resources */ = {isa = PBXBuildFile; fileRef = E925945B18EE930000564355 /* SConscript */; };
+		E925956B18EE930100564355 /* SConscript in Resources */ = {isa = PBXBuildFile; fileRef = E925948D18EE930000564355 /* SConscript */; };
+		E925956C18EE930100564355 /* SConscript in Resources */ = {isa = PBXBuildFile; fileRef = E925948D18EE930000564355 /* SConscript */; };
+		E925956D18EE930100564355 /* SConscript.client in Resources */ = {isa = PBXBuildFile; fileRef = E925948E18EE930000564355 /* SConscript.client */; };
+		E925956E18EE930100564355 /* SConscript.client in Resources */ = {isa = PBXBuildFile; fileRef = E925948E18EE930000564355 /* SConscript.client */; };
+		E925956F18EE930100564355 /* aclocal.m4 in Resources */ = {isa = PBXBuildFile; fileRef = E925949118EE930000564355 /* aclocal.m4 */; };
+		E925957018EE930100564355 /* aclocal.m4 in Resources */ = {isa = PBXBuildFile; fileRef = E925949118EE930000564355 /* aclocal.m4 */; };
+		E925957118EE930100564355 /* config.guess in Resources */ = {isa = PBXBuildFile; fileRef = E925949318EE930000564355 /* config.guess */; };
+		E925957218EE930100564355 /* config.guess in Resources */ = {isa = PBXBuildFile; fileRef = E925949318EE930000564355 /* config.guess */; };
+		E925957318EE930100564355 /* config.h.in in Resources */ = {isa = PBXBuildFile; fileRef = E925949418EE930000564355 /* config.h.in */; };
+		E925957418EE930100564355 /* config.h.in in Resources */ = {isa = PBXBuildFile; fileRef = E925949418EE930000564355 /* config.h.in */; };
+		E925957518EE930100564355 /* config.sub in Resources */ = {isa = PBXBuildFile; fileRef = E925949518EE930000564355 /* config.sub */; };
+		E925957618EE930100564355 /* config.sub in Resources */ = {isa = PBXBuildFile; fileRef = E925949518EE930000564355 /* config.sub */; };
+		E925957718EE930100564355 /* depcomp in Resources */ = {isa = PBXBuildFile; fileRef = E925949618EE930000564355 /* depcomp */; };
+		E925957818EE930100564355 /* depcomp in Resources */ = {isa = PBXBuildFile; fileRef = E925949618EE930000564355 /* depcomp */; };
+		E925957918EE930100564355 /* install-sh in Resources */ = {isa = PBXBuildFile; fileRef = E925949718EE930000564355 /* install-sh */; };
+		E925957A18EE930100564355 /* install-sh in Resources */ = {isa = PBXBuildFile; fileRef = E925949718EE930000564355 /* install-sh */; };
+		E925957B18EE930100564355 /* ltmain.sh in Resources */ = {isa = PBXBuildFile; fileRef = E925949818EE930000564355 /* ltmain.sh */; };
+		E925957C18EE930100564355 /* ltmain.sh in Resources */ = {isa = PBXBuildFile; fileRef = E925949818EE930000564355 /* ltmain.sh */; };
+		E925957D18EE930100564355 /* missing in Resources */ = {isa = PBXBuildFile; fileRef = E925949918EE930000564355 /* missing */; };
+		E925957E18EE930100564355 /* missing in Resources */ = {isa = PBXBuildFile; fileRef = E925949918EE930000564355 /* missing */; };
+		E925957F18EE930100564355 /* CHANGES in Resources */ = {isa = PBXBuildFile; fileRef = E925949A18EE930000564355 /* CHANGES */; };
+		E925958018EE930100564355 /* CHANGES in Resources */ = {isa = PBXBuildFile; fileRef = E925949A18EE930000564355 /* CHANGES */; };
+		E925958118EE930100564355 /* internal_utils.cmake in Resources */ = {isa = PBXBuildFile; fileRef = E925949C18EE930000564355 /* internal_utils.cmake */; };
+		E925958218EE930100564355 /* internal_utils.cmake in Resources */ = {isa = PBXBuildFile; fileRef = E925949C18EE930000564355 /* internal_utils.cmake */; };
+		E925958318EE930100564355 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = E925949D18EE930000564355 /* CMakeLists.txt */; };
+		E925958418EE930100564355 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = E925949D18EE930000564355 /* CMakeLists.txt */; };
+		E925958518EE930100564355 /* gtest.cbproj in Resources */ = {isa = PBXBuildFile; fileRef = E925949F18EE930000564355 /* gtest.cbproj */; };
+		E925958618EE930100564355 /* gtest.cbproj in Resources */ = {isa = PBXBuildFile; fileRef = E925949F18EE930000564355 /* gtest.cbproj */; };
+		E925958718EE930100564355 /* gtest.groupproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594A018EE930000564355 /* gtest.groupproj */; };
+		E925958818EE930100564355 /* gtest.groupproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594A018EE930000564355 /* gtest.groupproj */; };
+		E925958A18EE930100564355 /* gtest_all.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594A118EE930000564355 /* gtest_all.cc */; };
+		E925958C18EE930100564355 /* gtest_link.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594A218EE930000564355 /* gtest_link.cc */; };
+		E925958D18EE930100564355 /* gtest_main.cbproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594A318EE930000564355 /* gtest_main.cbproj */; };
+		E925958E18EE930100564355 /* gtest_main.cbproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594A318EE930000564355 /* gtest_main.cbproj */; };
+		E925958F18EE930100564355 /* gtest_unittest.cbproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594A418EE930000564355 /* gtest_unittest.cbproj */; };
+		E925959018EE930100564355 /* gtest_unittest.cbproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594A418EE930000564355 /* gtest_unittest.cbproj */; };
+		E925959118EE930100564355 /* configure in Resources */ = {isa = PBXBuildFile; fileRef = E92594A518EE930000564355 /* configure */; };
+		E925959218EE930100564355 /* configure in Resources */ = {isa = PBXBuildFile; fileRef = E92594A518EE930000564355 /* configure */; };
+		E925959318EE930100564355 /* configure.ac in Resources */ = {isa = PBXBuildFile; fileRef = E92594A618EE930000564355 /* configure.ac */; };
+		E925959418EE930100564355 /* configure.ac in Resources */ = {isa = PBXBuildFile; fileRef = E92594A618EE930000564355 /* configure.ac */; };
+		E925959518EE930100564355 /* CONTRIBUTORS in Resources */ = {isa = PBXBuildFile; fileRef = E92594A718EE930000564355 /* CONTRIBUTORS */; };
+		E925959618EE930100564355 /* CONTRIBUTORS in Resources */ = {isa = PBXBuildFile; fileRef = E92594A718EE930000564355 /* CONTRIBUTORS */; };
+		E925959818EE930100564355 /* gtest-all.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594AA18EE930000564355 /* gtest-all.cc */; };
+		E925959A18EE930100564355 /* gtest_main.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594AC18EE930000564355 /* gtest_main.cc */; };
+		E925959B18EE930100564355 /* gtest-param-test.h.pump in Resources */ = {isa = PBXBuildFile; fileRef = E92594B218EE930000564355 /* gtest-param-test.h.pump */; };
+		E925959C18EE930100564355 /* gtest-param-test.h.pump in Resources */ = {isa = PBXBuildFile; fileRef = E92594B218EE930000564355 /* gtest-param-test.h.pump */; };
+		E925959D18EE930100564355 /* gtest-param-util-generated.h.pump in Resources */ = {isa = PBXBuildFile; fileRef = E92594C018EE930000564355 /* gtest-param-util-generated.h.pump */; };
+		E925959E18EE930100564355 /* gtest-param-util-generated.h.pump in Resources */ = {isa = PBXBuildFile; fileRef = E92594C018EE930000564355 /* gtest-param-util-generated.h.pump */; };
+		E925959F18EE930100564355 /* gtest-tuple.h.pump in Resources */ = {isa = PBXBuildFile; fileRef = E92594C518EE930000564355 /* gtest-tuple.h.pump */; };
+		E92595A018EE930100564355 /* gtest-tuple.h.pump in Resources */ = {isa = PBXBuildFile; fileRef = E92594C518EE930000564355 /* gtest-tuple.h.pump */; };
+		E92595A118EE930100564355 /* gtest-type-util.h.pump in Resources */ = {isa = PBXBuildFile; fileRef = E92594C718EE930000564355 /* gtest-type-util.h.pump */; };
+		E92595A218EE930100564355 /* gtest-type-util.h.pump in Resources */ = {isa = PBXBuildFile; fileRef = E92594C718EE930000564355 /* gtest-type-util.h.pump */; };
+		E92595A318EE930100564355 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E92594C818EE930000564355 /* LICENSE */; };
+		E92595A418EE930100564355 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E92594C818EE930000564355 /* LICENSE */; };
+		E92595A518EE930100564355 /* acx_pthread.m4 in Resources */ = {isa = PBXBuildFile; fileRef = E92594CA18EE930000564355 /* acx_pthread.m4 */; };
+		E92595A618EE930100564355 /* acx_pthread.m4 in Resources */ = {isa = PBXBuildFile; fileRef = E92594CA18EE930000564355 /* acx_pthread.m4 */; };
+		E92595A718EE930100564355 /* gtest.m4 in Resources */ = {isa = PBXBuildFile; fileRef = E92594CB18EE930000564355 /* gtest.m4 */; };
+		E92595A818EE930100564355 /* gtest.m4 in Resources */ = {isa = PBXBuildFile; fileRef = E92594CB18EE930000564355 /* gtest.m4 */; };
+		E92595A918EE930100564355 /* libtool.m4 in Resources */ = {isa = PBXBuildFile; fileRef = E92594CC18EE930000564355 /* libtool.m4 */; };
+		E92595AA18EE930100564355 /* libtool.m4 in Resources */ = {isa = PBXBuildFile; fileRef = E92594CC18EE930000564355 /* libtool.m4 */; };
+		E92595AB18EE930100564355 /* ltoptions.m4 in Resources */ = {isa = PBXBuildFile; fileRef = E92594CD18EE930000564355 /* ltoptions.m4 */; };
+		E92595AC18EE930100564355 /* ltoptions.m4 in Resources */ = {isa = PBXBuildFile; fileRef = E92594CD18EE930000564355 /* ltoptions.m4 */; };
+		E92595AD18EE930100564355 /* ltsugar.m4 in Resources */ = {isa = PBXBuildFile; fileRef = E92594CE18EE930000564355 /* ltsugar.m4 */; };
+		E92595AE18EE930100564355 /* ltsugar.m4 in Resources */ = {isa = PBXBuildFile; fileRef = E92594CE18EE930000564355 /* ltsugar.m4 */; };
+		E92595AF18EE930100564355 /* ltversion.m4 in Resources */ = {isa = PBXBuildFile; fileRef = E92594CF18EE930000564355 /* ltversion.m4 */; };
+		E92595B018EE930100564355 /* ltversion.m4 in Resources */ = {isa = PBXBuildFile; fileRef = E92594CF18EE930000564355 /* ltversion.m4 */; };
+		E92595B118EE930100564355 /* lt~obsolete.m4 in Resources */ = {isa = PBXBuildFile; fileRef = E92594D018EE930000564355 /* lt~obsolete.m4 */; };
+		E92595B218EE930100564355 /* lt~obsolete.m4 in Resources */ = {isa = PBXBuildFile; fileRef = E92594D018EE930000564355 /* lt~obsolete.m4 */; };
+		E92595B418EE930100564355 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = E92594D218EE930000564355 /* Makefile */; };
+		E92595B518EE930100564355 /* Makefile.am in Resources */ = {isa = PBXBuildFile; fileRef = E92594D318EE930000564355 /* Makefile.am */; };
+		E92595B618EE930100564355 /* Makefile.am in Resources */ = {isa = PBXBuildFile; fileRef = E92594D318EE930000564355 /* Makefile.am */; };
+		E92595B718EE930100564355 /* Makefile.in in Resources */ = {isa = PBXBuildFile; fileRef = E92594D418EE930000564355 /* Makefile.in */; };
+		E92595B818EE930100564355 /* Makefile.in in Resources */ = {isa = PBXBuildFile; fileRef = E92594D418EE930000564355 /* Makefile.in */; };
+		E92595B918EE930100564355 /* gtest-md.sln in Resources */ = {isa = PBXBuildFile; fileRef = E92594D618EE930000564355 /* gtest-md.sln */; };
+		E92595BA18EE930100564355 /* gtest-md.sln in Resources */ = {isa = PBXBuildFile; fileRef = E92594D618EE930000564355 /* gtest-md.sln */; };
+		E92595BB18EE930100564355 /* gtest-md.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594D718EE930000564355 /* gtest-md.vcproj */; };
+		E92595BC18EE930100564355 /* gtest-md.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594D718EE930000564355 /* gtest-md.vcproj */; };
+		E92595BD18EE930100564355 /* gtest.sln in Resources */ = {isa = PBXBuildFile; fileRef = E92594D818EE930000564355 /* gtest.sln */; };
+		E92595BE18EE930100564355 /* gtest.sln in Resources */ = {isa = PBXBuildFile; fileRef = E92594D818EE930000564355 /* gtest.sln */; };
+		E92595BF18EE930100564355 /* gtest.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594D918EE930000564355 /* gtest.vcproj */; };
+		E92595C018EE930100564355 /* gtest.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594D918EE930000564355 /* gtest.vcproj */; };
+		E92595C118EE930100564355 /* gtest_main-md.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594DA18EE930000564355 /* gtest_main-md.vcproj */; };
+		E92595C218EE930100564355 /* gtest_main-md.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594DA18EE930000564355 /* gtest_main-md.vcproj */; };
+		E92595C318EE930100564355 /* gtest_main.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594DB18EE930000564355 /* gtest_main.vcproj */; };
+		E92595C418EE930100564355 /* gtest_main.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594DB18EE930000564355 /* gtest_main.vcproj */; };
+		E92595C518EE930100564355 /* gtest_prod_test-md.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594DC18EE930000564355 /* gtest_prod_test-md.vcproj */; };
+		E92595C618EE930100564355 /* gtest_prod_test-md.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594DC18EE930000564355 /* gtest_prod_test-md.vcproj */; };
+		E92595C718EE930100564355 /* gtest_prod_test.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594DD18EE930000564355 /* gtest_prod_test.vcproj */; };
+		E92595C818EE930100564355 /* gtest_prod_test.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594DD18EE930000564355 /* gtest_prod_test.vcproj */; };
+		E92595C918EE930100564355 /* gtest_unittest-md.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594DE18EE930000564355 /* gtest_unittest-md.vcproj */; };
+		E92595CA18EE930100564355 /* gtest_unittest-md.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594DE18EE930000564355 /* gtest_unittest-md.vcproj */; };
+		E92595CB18EE930100564355 /* gtest_unittest.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594DF18EE930000564355 /* gtest_unittest.vcproj */; };
+		E92595CC18EE930100564355 /* gtest_unittest.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = E92594DF18EE930000564355 /* gtest_unittest.vcproj */; };
+		E92595CD18EE930100564355 /* README in Resources */ = {isa = PBXBuildFile; fileRef = E92594E018EE930000564355 /* README */; };
+		E92595CE18EE930100564355 /* README in Resources */ = {isa = PBXBuildFile; fileRef = E92594E018EE930000564355 /* README */; };
+		E92595D018EE930100564355 /* sample1.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594E318EE930000564355 /* sample1.cc */; };
+		E92595D218EE930100564355 /* sample10_unittest.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594E518EE930000564355 /* sample10_unittest.cc */; };
+		E92595D418EE930100564355 /* sample1_unittest.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594E618EE930000564355 /* sample1_unittest.cc */; };
+		E92595D618EE930100564355 /* sample2.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594E718EE930000564355 /* sample2.cc */; };
+		E92595D818EE930100564355 /* sample2_unittest.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594E918EE930000564355 /* sample2_unittest.cc */; };
+		E92595DA18EE930100564355 /* sample3_unittest.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594EB18EE930000564355 /* sample3_unittest.cc */; };
+		E92595DC18EE930100564355 /* sample4.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594EC18EE930000564355 /* sample4.cc */; };
+		E92595DE18EE930100564355 /* sample4_unittest.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594EE18EE930000564355 /* sample4_unittest.cc */; };
+		E92595E018EE930100564355 /* sample5_unittest.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594EF18EE930000564355 /* sample5_unittest.cc */; };
+		E92595E218EE930100564355 /* sample6_unittest.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594F018EE930000564355 /* sample6_unittest.cc */; };
+		E92595E418EE930100564355 /* sample7_unittest.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594F118EE930000564355 /* sample7_unittest.cc */; };
+		E92595E618EE930100564355 /* sample8_unittest.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594F218EE930000564355 /* sample8_unittest.cc */; };
+		E92595E818EE930100564355 /* sample9_unittest.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594F318EE930000564355 /* sample9_unittest.cc */; };
+		E92595E918EE930100564355 /* SConscript in Resources */ = {isa = PBXBuildFile; fileRef = E92594F418EE930000564355 /* SConscript */; };
+		E92595EA18EE930100564355 /* SConscript in Resources */ = {isa = PBXBuildFile; fileRef = E92594F418EE930000564355 /* SConscript */; };
+		E92595EB18EE930100564355 /* fuse_gtest_files.py in Resources */ = {isa = PBXBuildFile; fileRef = E92594F618EE930000564355 /* fuse_gtest_files.py */; };
+		E92595EC18EE930100564355 /* fuse_gtest_files.py in Resources */ = {isa = PBXBuildFile; fileRef = E92594F618EE930000564355 /* fuse_gtest_files.py */; };
+		E92595ED18EE930100564355 /* gen_gtest_pred_impl.py in Resources */ = {isa = PBXBuildFile; fileRef = E92594F718EE930000564355 /* gen_gtest_pred_impl.py */; };
+		E92595EE18EE930100564355 /* gen_gtest_pred_impl.py in Resources */ = {isa = PBXBuildFile; fileRef = E92594F718EE930000564355 /* gen_gtest_pred_impl.py */; };
+		E92595EF18EE930100564355 /* gtest-config.in in Resources */ = {isa = PBXBuildFile; fileRef = E92594F818EE930000564355 /* gtest-config.in */; };
+		E92595F018EE930100564355 /* gtest-config.in in Resources */ = {isa = PBXBuildFile; fileRef = E92594F818EE930000564355 /* gtest-config.in */; };
+		E92595F118EE930100564355 /* pump.py in Resources */ = {isa = PBXBuildFile; fileRef = E92594F918EE930000564355 /* pump.py */; };
+		E92595F218EE930100564355 /* pump.py in Resources */ = {isa = PBXBuildFile; fileRef = E92594F918EE930000564355 /* pump.py */; };
+		E92595F418EE930100564355 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = E92594FB18EE930000564355 /* Makefile */; };
+		E92595F618EE930100564355 /* gtest-all.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594FD18EE930000564355 /* gtest-all.cc */; };
+		E92595F818EE930100564355 /* gtest-death-test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594FE18EE930000564355 /* gtest-death-test.cc */; };
+		E92595FA18EE930100564355 /* gtest-filepath.cc in Sources */ = {isa = PBXBuildFile; fileRef = E92594FF18EE930000564355 /* gtest-filepath.cc */; };
+		E92595FC18EE930100564355 /* gtest-port.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925950118EE930000564355 /* gtest-port.cc */; };
+		E92595FE18EE930100564355 /* gtest-printers.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925950218EE930000564355 /* gtest-printers.cc */; };
+		E925960018EE930100564355 /* gtest-test-part.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925950318EE930000564355 /* gtest-test-part.cc */; };
+		E925960218EE930100564355 /* gtest-typed-test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925950418EE930000564355 /* gtest-typed-test.cc */; };
+		E925960418EE930100564355 /* gtest.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925950518EE930000564355 /* gtest.cc */; };
+		E925960618EE930100564355 /* gtest_main.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925950618EE930000564355 /* gtest_main.cc */; };
+		E925960818EE930100564355 /* gtest-death-test_ex_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925950818EE930000564355 /* gtest-death-test_ex_test.cc */; };
+		E925960A18EE930100564355 /* gtest-death-test_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925950918EE930000564355 /* gtest-death-test_test.cc */; };
+		E925960C18EE930100564355 /* gtest-filepath_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925950A18EE930000564355 /* gtest-filepath_test.cc */; };
+		E925960E18EE930100564355 /* gtest-linked_ptr_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925950B18EE930000564355 /* gtest-linked_ptr_test.cc */; };
+		E925961018EE930100564355 /* gtest-listener_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925950C18EE930000564355 /* gtest-listener_test.cc */; };
+		E925961218EE930100564355 /* gtest-message_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925950D18EE930000564355 /* gtest-message_test.cc */; };
+		E925961418EE930100564355 /* gtest-options_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925950E18EE930000564355 /* gtest-options_test.cc */; };
+		E925961618EE930100564355 /* gtest-param-test2_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925950F18EE930000564355 /* gtest-param-test2_test.cc */; };
+		E925961818EE930100564355 /* gtest-param-test_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925951018EE930000564355 /* gtest-param-test_test.cc */; };
+		E925961A18EE930100564355 /* gtest-port_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925951218EE930000564355 /* gtest-port_test.cc */; };
+		E925961C18EE930100564355 /* gtest-printers_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925951318EE930000564355 /* gtest-printers_test.cc */; };
+		E925961E18EE930100564355 /* gtest-test-part_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925951418EE930000564355 /* gtest-test-part_test.cc */; };
+		E925962018EE930100564355 /* gtest-tuple_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925951518EE930000564355 /* gtest-tuple_test.cc */; };
+		E925962218EE930100564355 /* gtest-typed-test2_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925951618EE930000564355 /* gtest-typed-test2_test.cc */; };
+		E925962418EE930100564355 /* gtest-typed-test_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925951718EE930000564355 /* gtest-typed-test_test.cc */; };
+		E925962618EE930100564355 /* gtest-unittest-api_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925951918EE930000564355 /* gtest-unittest-api_test.cc */; };
+		E925962818EE930100564355 /* gtest_all_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925951A18EE930000564355 /* gtest_all_test.cc */; };
+		E925962918EE930100564355 /* gtest_break_on_failure_unittest.py in Resources */ = {isa = PBXBuildFile; fileRef = E925951B18EE930000564355 /* gtest_break_on_failure_unittest.py */; };
+		E925962A18EE930100564355 /* gtest_break_on_failure_unittest.py in Resources */ = {isa = PBXBuildFile; fileRef = E925951B18EE930000564355 /* gtest_break_on_failure_unittest.py */; };
+		E925962C18EE930100564355 /* gtest_break_on_failure_unittest_.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925951C18EE930000564355 /* gtest_break_on_failure_unittest_.cc */; };
+		E925962D18EE930100564355 /* gtest_catch_exceptions_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925951D18EE930000564355 /* gtest_catch_exceptions_test.py */; };
+		E925962E18EE930100564355 /* gtest_catch_exceptions_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925951D18EE930000564355 /* gtest_catch_exceptions_test.py */; };
+		E925963018EE930100564355 /* gtest_catch_exceptions_test_.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925951E18EE930000564355 /* gtest_catch_exceptions_test_.cc */; };
+		E925963118EE930100564355 /* gtest_color_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925951F18EE930000564355 /* gtest_color_test.py */; };
+		E925963218EE930100564355 /* gtest_color_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925951F18EE930000564355 /* gtest_color_test.py */; };
+		E925963418EE930100564355 /* gtest_color_test_.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925952018EE930000564355 /* gtest_color_test_.cc */; };
+		E925963518EE930100564355 /* gtest_env_var_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925952118EE930000564355 /* gtest_env_var_test.py */; };
+		E925963618EE930100564355 /* gtest_env_var_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925952118EE930000564355 /* gtest_env_var_test.py */; };
+		E925963818EE930100564355 /* gtest_env_var_test_.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925952218EE930000564355 /* gtest_env_var_test_.cc */; };
+		E925963A18EE930100564355 /* gtest_environment_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925952318EE930000564355 /* gtest_environment_test.cc */; };
+		E925963B18EE930100564355 /* gtest_filter_unittest.py in Resources */ = {isa = PBXBuildFile; fileRef = E925952418EE930000564355 /* gtest_filter_unittest.py */; };
+		E925963C18EE930100564355 /* gtest_filter_unittest.py in Resources */ = {isa = PBXBuildFile; fileRef = E925952418EE930000564355 /* gtest_filter_unittest.py */; };
+		E925963E18EE930100564355 /* gtest_filter_unittest_.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925952518EE930000564355 /* gtest_filter_unittest_.cc */; };
+		E925963F18EE930100564355 /* gtest_help_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925952618EE930000564355 /* gtest_help_test.py */; };
+		E925964018EE930100564355 /* gtest_help_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925952618EE930000564355 /* gtest_help_test.py */; };
+		E925964218EE930100564355 /* gtest_help_test_.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925952718EE930000564355 /* gtest_help_test_.cc */; };
+		E925964318EE930100564355 /* gtest_list_tests_unittest.py in Resources */ = {isa = PBXBuildFile; fileRef = E925952818EE930000564355 /* gtest_list_tests_unittest.py */; };
+		E925964418EE930100564355 /* gtest_list_tests_unittest.py in Resources */ = {isa = PBXBuildFile; fileRef = E925952818EE930000564355 /* gtest_list_tests_unittest.py */; };
+		E925964618EE930100564355 /* gtest_list_tests_unittest_.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925952918EE930000564355 /* gtest_list_tests_unittest_.cc */; };
+		E925964818EE930100564355 /* gtest_main_unittest.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925952A18EE930000564355 /* gtest_main_unittest.cc */; };
+		E925964A18EE930100564355 /* gtest_no_test_unittest.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925952B18EE930000564355 /* gtest_no_test_unittest.cc */; };
+		E925964B18EE930100564355 /* gtest_output_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925952C18EE930000564355 /* gtest_output_test.py */; };
+		E925964C18EE930100564355 /* gtest_output_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925952C18EE930000564355 /* gtest_output_test.py */; };
+		E925964E18EE930100564355 /* gtest_output_test_.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925952D18EE930000564355 /* gtest_output_test_.cc */; };
+		E925964F18EE930100564355 /* gtest_output_test_golden_lin.txt in Resources */ = {isa = PBXBuildFile; fileRef = E925952E18EE930000564355 /* gtest_output_test_golden_lin.txt */; };
+		E925965018EE930100564355 /* gtest_output_test_golden_lin.txt in Resources */ = {isa = PBXBuildFile; fileRef = E925952E18EE930000564355 /* gtest_output_test_golden_lin.txt */; };
+		E925965218EE930100564355 /* gtest_pred_impl_unittest.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925952F18EE930000564355 /* gtest_pred_impl_unittest.cc */; };
+		E925965418EE930100564355 /* gtest_premature_exit_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925953018EE930000564355 /* gtest_premature_exit_test.cc */; };
+		E925965618EE930100564355 /* gtest_prod_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925953118EE930000564355 /* gtest_prod_test.cc */; };
+		E925965818EE930100564355 /* gtest_repeat_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925953218EE930000564355 /* gtest_repeat_test.cc */; };
+		E925965918EE930100564355 /* gtest_shuffle_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925953318EE930000564355 /* gtest_shuffle_test.py */; };
+		E925965A18EE930100564355 /* gtest_shuffle_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925953318EE930000564355 /* gtest_shuffle_test.py */; };
+		E925965C18EE930100564355 /* gtest_shuffle_test_.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925953418EE930000564355 /* gtest_shuffle_test_.cc */; };
+		E925965E18EE930100564355 /* gtest_sole_header_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925953518EE930000564355 /* gtest_sole_header_test.cc */; };
+		E925966018EE930100564355 /* gtest_stress_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925953618EE930000564355 /* gtest_stress_test.cc */; };
+		E925966118EE930100564355 /* gtest_test_utils.py in Resources */ = {isa = PBXBuildFile; fileRef = E925953718EE930000564355 /* gtest_test_utils.py */; };
+		E925966218EE930100564355 /* gtest_test_utils.py in Resources */ = {isa = PBXBuildFile; fileRef = E925953718EE930000564355 /* gtest_test_utils.py */; };
+		E925966418EE930100564355 /* gtest_throw_on_failure_ex_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925953818EE930000564355 /* gtest_throw_on_failure_ex_test.cc */; };
+		E925966518EE930100564355 /* gtest_throw_on_failure_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925953918EE930000564355 /* gtest_throw_on_failure_test.py */; };
+		E925966618EE930100564355 /* gtest_throw_on_failure_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925953918EE930000564355 /* gtest_throw_on_failure_test.py */; };
+		E925966818EE930100564355 /* gtest_throw_on_failure_test_.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925953A18EE930000564355 /* gtest_throw_on_failure_test_.cc */; };
+		E925966918EE930100564355 /* gtest_uninitialized_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925953B18EE930000564355 /* gtest_uninitialized_test.py */; };
+		E925966A18EE930100564355 /* gtest_uninitialized_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925953B18EE930000564355 /* gtest_uninitialized_test.py */; };
+		E925966C18EE930100564355 /* gtest_uninitialized_test_.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925953C18EE930000564355 /* gtest_uninitialized_test_.cc */; };
+		E925966E18EE930100564355 /* gtest_unittest.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925953D18EE930000564355 /* gtest_unittest.cc */; };
+		E925967018EE930100564355 /* gtest_xml_outfile1_test_.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925953E18EE930000564355 /* gtest_xml_outfile1_test_.cc */; };
+		E925967218EE930100564355 /* gtest_xml_outfile2_test_.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925953F18EE930000564355 /* gtest_xml_outfile2_test_.cc */; };
+		E925967318EE930100564355 /* gtest_xml_outfiles_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925954018EE930000564355 /* gtest_xml_outfiles_test.py */; };
+		E925967418EE930100564355 /* gtest_xml_outfiles_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E925954018EE930000564355 /* gtest_xml_outfiles_test.py */; };
+		E925967518EE930100564355 /* gtest_xml_output_unittest.py in Resources */ = {isa = PBXBuildFile; fileRef = E925954118EE930000564355 /* gtest_xml_output_unittest.py */; };
+		E925967618EE930100564355 /* gtest_xml_output_unittest.py in Resources */ = {isa = PBXBuildFile; fileRef = E925954118EE930000564355 /* gtest_xml_output_unittest.py */; };
+		E925967818EE930100564355 /* gtest_xml_output_unittest_.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925954218EE930000564355 /* gtest_xml_output_unittest_.cc */; };
+		E925967918EE930100564355 /* gtest_xml_test_utils.py in Resources */ = {isa = PBXBuildFile; fileRef = E925954318EE930000564355 /* gtest_xml_test_utils.py */; };
+		E925967A18EE930100564355 /* gtest_xml_test_utils.py in Resources */ = {isa = PBXBuildFile; fileRef = E925954318EE930000564355 /* gtest_xml_test_utils.py */; };
+		E925967C18EE930100564355 /* production.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925954418EE930000564355 /* production.cc */; };
+		E925967D18EE930100564355 /* DebugProject.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E925954818EE930000564355 /* DebugProject.xcconfig */; };
+		E925967E18EE930100564355 /* DebugProject.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E925954818EE930000564355 /* DebugProject.xcconfig */; };
+		E925967F18EE930100564355 /* FrameworkTarget.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E925954918EE930000564355 /* FrameworkTarget.xcconfig */; };
+		E925968018EE930100564355 /* FrameworkTarget.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E925954918EE930000564355 /* FrameworkTarget.xcconfig */; };
+		E925968118EE930100564355 /* General.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E925954A18EE930000564355 /* General.xcconfig */; };
+		E925968218EE930100564355 /* General.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E925954A18EE930000564355 /* General.xcconfig */; };
+		E925968318EE930100564355 /* ReleaseProject.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E925954B18EE930000564355 /* ReleaseProject.xcconfig */; };
+		E925968418EE930100564355 /* ReleaseProject.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E925954B18EE930000564355 /* ReleaseProject.xcconfig */; };
+		E925968518EE930100564355 /* StaticLibraryTarget.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E925954C18EE930000564355 /* StaticLibraryTarget.xcconfig */; };
+		E925968618EE930100564355 /* StaticLibraryTarget.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E925954C18EE930000564355 /* StaticLibraryTarget.xcconfig */; };
+		E925968718EE930100564355 /* TestTarget.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E925954D18EE930000564355 /* TestTarget.xcconfig */; };
+		E925968818EE930100564355 /* TestTarget.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E925954D18EE930000564355 /* TestTarget.xcconfig */; };
+		E925968918EE930100564355 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E925955218EE930100564355 /* Info.plist */; };
+		E925968A18EE930100564355 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E925955218EE930100564355 /* Info.plist */; };
+		E925968B18EE930100564355 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E925955518EE930100564355 /* Info.plist */; };
+		E925968C18EE930100564355 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E925955518EE930100564355 /* Info.plist */; };
+		E925968D18EE930100564355 /* runtests.sh in Resources */ = {isa = PBXBuildFile; fileRef = E925955618EE930100564355 /* runtests.sh */; };
+		E925968E18EE930100564355 /* runtests.sh in Resources */ = {isa = PBXBuildFile; fileRef = E925955618EE930100564355 /* runtests.sh */; };
+		E925969018EE930100564355 /* widget.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925955718EE930100564355 /* widget.cc */; };
+		E925969218EE930100564355 /* widget_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = E925955918EE930100564355 /* widget_test.cc */; };
+		E925969318EE930100564355 /* runtests.sh in Resources */ = {isa = PBXBuildFile; fileRef = E925955E18EE930100564355 /* runtests.sh */; };
+		E925969418EE930100564355 /* runtests.sh in Resources */ = {isa = PBXBuildFile; fileRef = E925955E18EE930100564355 /* runtests.sh */; };
+		E925969518EE930100564355 /* versiongenerate.py in Resources */ = {isa = PBXBuildFile; fileRef = E925955F18EE930100564355 /* versiongenerate.py */; };
+		E925969618EE930100564355 /* versiongenerate.py in Resources */ = {isa = PBXBuildFile; fileRef = E925955F18EE930100564355 /* versiongenerate.py */; };
+		E925969818EE930100564355 /* MurmurHash3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E925956118EE930100564355 /* MurmurHash3.cpp */; };
+		E925969918EE930100564355 /* SConscript in Resources */ = {isa = PBXBuildFile; fileRef = E925956318EE930100564355 /* SConscript */; };
+		E925969A18EE930100564355 /* SConscript in Resources */ = {isa = PBXBuildFile; fileRef = E925956318EE930100564355 /* SConscript */; };
+		E925969C18EE930100564355 /* shim_boost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E925956418EE930100564355 /* shim_boost.cpp */; };
+		E92596BD18EE93AD00564355 /* libmongoclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E92596BC18EE93AD00564355 /* libmongoclient.a */; };
+		E92596BE18EE93AD00564355 /* libmongoclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E92596BC18EE93AD00564355 /* libmongoclient.a */; };
+		E92596C018EE953500564355 /* libboost_system-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E92596BF18EE953500564355 /* libboost_system-mt.a */; };
+		E92596C118EE953500564355 /* libboost_system-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E92596BF18EE953500564355 /* libboost_system-mt.a */; };
+		E92596C318EE955900564355 /* libboost_thread-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E92596C218EE955900564355 /* libboost_thread-mt.a */; };
+		E92596C418EE955900564355 /* libboost_thread-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E92596C218EE955900564355 /* libboost_thread-mt.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9258D7618EE424600564355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9258D4918EE424500564355 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9258D5018EE424500564355;
+			remoteInfo = Mango;
+		};
+		E92596A618EE930100564355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E925954E18EE930000564355 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4539C8FF0EC27F6400A70F4C;
+			remoteInfo = "gtest-framework";
+		};
+		E92596A818EE930100564355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E925954E18EE930000564355 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C848FA101A209C0083642A;
+			remoteInfo = "gtest-static";
+		};
+		E92596AA18EE930100564355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E925954E18EE930000564355 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C8490B101A217E0083642A;
+			remoteInfo = "gtest_main-static";
+		};
+		E92596AC18EE930100564355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E925954E18EE930000564355 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40899F430FFA7184000B29AE;
+			remoteInfo = "gtest_unittest-framework";
+		};
+		E92596AE18EE930100564355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E925954E18EE930000564355 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C84987101A36850083642A;
+			remoteInfo = "gtest_unittest-static";
+		};
+		E92596B018EE930100564355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E925954E18EE930000564355 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4089A0130FFACEFC000B29AE;
+			remoteInfo = "sample1_unittest-framework";
+		};
+		E92596B218EE930100564355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E925954E18EE930000564355 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C84997101A36A60083642A;
+			remoteInfo = "sample1_unittest-static";
+		};
+		E92596B818EE930100564355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E925955A18EE930100564355 /* WidgetFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0;
+			remoteInfo = WidgetFramework;
+		};
+		E92596BA18EE930100564355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E925955A18EE930100564355 /* WidgetFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3B07BDEA0E3F3F9E00647869;
+			remoteInfo = WidgetFrameworkTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E9258D5118EE424600564355 /* Mango.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mango.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9258D5418EE424600564355 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E9258D5718EE424600564355 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E9258D5818EE424600564355 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E9258D5918EE424600564355 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E9258D5C18EE424600564355 /* Mango-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mango-Info.plist"; sourceTree = "<group>"; };
+		E9258D5E18EE424600564355 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E9258D6018EE424600564355 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9258D6218EE424600564355 /* Mango-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mango-Prefix.pch"; sourceTree = "<group>"; };
+		E9258D6418EE424600564355 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E9258D6618EE424600564355 /* MangoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MangoAppDelegate.h; sourceTree = "<group>"; };
+		E9258D6718EE424600564355 /* MangoAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MangoAppDelegate.mm; sourceTree = "<group>"; };
+		E9258D6A18EE424600564355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E9258D6C18EE424600564355 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E9258D7218EE424600564355 /* MangoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9258D7318EE424600564355 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E9258D7A18EE424600564355 /* MangoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MangoTests-Info.plist"; sourceTree = "<group>"; };
+		E9258D7C18EE424600564355 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E9258D7E18EE424600564355 /* MangoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MangoTests.m; sourceTree = "<group>"; };
+		E9258D8818EE445100564355 /* ConnectionWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectionWindow.xib; sourceTree = "<group>"; };
+		E9258D8A18EE4C6F00564355 /* mango.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mango.jpg; sourceTree = "<group>"; };
+		E9258D8C18EE5D9D00564355 /* ConnectionWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionWindow.h; sourceTree = "<group>"; };
+		E9258D8D18EE5D9D00564355 /* ConnectionWindow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ConnectionWindow.mm; sourceTree = "<group>"; };
+		E92590C718EE7AAA00564355 /* MangoConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangoConnectionManager.h; sourceTree = "<group>"; };
+		E92590C818EE7AAA00564355 /* MangoConnectionManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MangoConnectionManager.mm; sourceTree = "<group>"; };
+		E92593E118EE92A900564355 /* libboost_filesystem-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_filesystem-mt.a"; path = "External/libboost_filesystem-mt.a"; sourceTree = SOURCE_ROOT; };
+		E92593E218EE92A900564355 /* libboost_program_options-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_program_options-mt.a"; path = "External/libboost_program_options-mt.a"; sourceTree = SOURCE_ROOT; };
+		E92593EA18EE930000564355 /* disallow_copying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = disallow_copying.h; sourceTree = "<group>"; };
+		E92593EB18EE930000564355 /* error_codes.err */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = error_codes.err; sourceTree = "<group>"; };
+		E92593EC18EE930000564355 /* generate_error_codes.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = generate_error_codes.py; sourceTree = "<group>"; };
+		E92593ED18EE930000564355 /* global_initializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global_initializer.h; sourceTree = "<group>"; };
+		E92593EE18EE930000564355 /* global_initializer_registerer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global_initializer_registerer.h; sourceTree = "<group>"; };
+		E92593EF18EE930000564355 /* init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = init.h; sourceTree = "<group>"; };
+		E92593F018EE930000564355 /* initializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = initializer.h; sourceTree = "<group>"; };
+		E92593F118EE930000564355 /* initializer_context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = initializer_context.h; sourceTree = "<group>"; };
+		E92593F218EE930000564355 /* initializer_dependency_graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = initializer_dependency_graph.h; sourceTree = "<group>"; };
+		E92593F318EE930000564355 /* initializer_function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = initializer_function.h; sourceTree = "<group>"; };
+		E92593F418EE930000564355 /* initializer_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = initializer_functions.h; sourceTree = "<group>"; };
+		E92593F518EE930000564355 /* make_string_vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = make_string_vector.h; sourceTree = "<group>"; };
+		E92593F618EE930000564355 /* owned_pointer_vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = owned_pointer_vector.h; sourceTree = "<group>"; };
+		E92593F718EE930000564355 /* parse_number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parse_number.h; sourceTree = "<group>"; };
+		E92593F818EE930000564355 /* status-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "status-inl.h"; sourceTree = "<group>"; };
+		E92593F918EE930000564355 /* status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = status.h; sourceTree = "<group>"; };
+		E92593FA18EE930000564355 /* status_with.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = status_with.h; sourceTree = "<group>"; };
+		E92593FB18EE930000564355 /* string_data-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "string_data-inl.h"; sourceTree = "<group>"; };
+		E92593FC18EE930000564355 /* string_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string_data.h; sourceTree = "<group>"; };
+		E92593FE18EE930000564355 /* bson-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "bson-inl.h"; sourceTree = "<group>"; };
+		E92593FF18EE930000564355 /* bson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bson.h; sourceTree = "<group>"; };
+		E925940018EE930000564355 /* bson_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bson_db.h; sourceTree = "<group>"; };
+		E925940118EE930000564355 /* bson_field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bson_field.h; sourceTree = "<group>"; };
+		E925940218EE930000564355 /* bson_validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bson_validate.h; sourceTree = "<group>"; };
+		E925940418EE930000564355 /* bsonelement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bsonelement.h; sourceTree = "<group>"; };
+		E925940518EE930000564355 /* bsonmisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bsonmisc.h; sourceTree = "<group>"; };
+		E925940618EE930000564355 /* bsonobj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bsonobj.h; sourceTree = "<group>"; };
+		E925940718EE930000564355 /* bsonobjbuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bsonobjbuilder.h; sourceTree = "<group>"; };
+		E925940818EE930000564355 /* bsonobjiterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bsonobjiterator.h; sourceTree = "<group>"; };
+		E925940918EE930000564355 /* bsontypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bsontypes.h; sourceTree = "<group>"; };
+		E925940A18EE930000564355 /* inline_decls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inline_decls.h; sourceTree = "<group>"; };
+		E925940B18EE930000564355 /* oid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oid.h; sourceTree = "<group>"; };
+		E925940C18EE930000564355 /* optime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = optime.h; sourceTree = "<group>"; };
+		E925940D18EE930000564355 /* ordering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ordering.h; sourceTree = "<group>"; };
+		E925940F18EE930000564355 /* atomic_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atomic_int.h; sourceTree = "<group>"; };
+		E925941018EE930000564355 /* bson_extract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bson_extract.h; sourceTree = "<group>"; };
+		E925941118EE930000564355 /* builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = builder.h; sourceTree = "<group>"; };
+		E925941218EE930000564355 /* misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = "<group>"; };
+		E925941418EE930000564355 /* connpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = connpool.h; sourceTree = "<group>"; };
+		E925941518EE930000564355 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		E925941618EE930000564355 /* dbclient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbclient.h; sourceTree = "<group>"; };
+		E925941718EE930000564355 /* dbclient_rs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbclient_rs.h; sourceTree = "<group>"; };
+		E925941818EE930000564355 /* dbclientcursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbclientcursor.h; sourceTree = "<group>"; };
+		E925941918EE930000564355 /* dbclientinterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbclientinterface.h; sourceTree = "<group>"; };
+		E925941A18EE930000564355 /* dbclientmockcursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbclientmockcursor.h; sourceTree = "<group>"; };
+		E925941C18EE930000564355 /* export_macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = export_macros.h; sourceTree = "<group>"; };
+		E925941D18EE930000564355 /* gridfs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gridfs.h; sourceTree = "<group>"; };
+		E925941E18EE930000564355 /* init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = init.h; sourceTree = "<group>"; };
+		E925941F18EE930000564355 /* redef_macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = redef_macros.h; sourceTree = "<group>"; };
+		E925942018EE930000564355 /* replica_set_monitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = replica_set_monitor.h; sourceTree = "<group>"; };
+		E925942118EE930000564355 /* replica_set_monitor_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = replica_set_monitor_internal.h; sourceTree = "<group>"; };
+		E925942218EE930000564355 /* sasl_client_authenticate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sasl_client_authenticate.h; sourceTree = "<group>"; };
+		E925942318EE930000564355 /* sasl_client_session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sasl_client_session.h; sourceTree = "<group>"; };
+		E925942418EE930000564355 /* undef_macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = undef_macros.h; sourceTree = "<group>"; };
+		E925942618EE930000564355 /* dbmessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbmessage.h; sourceTree = "<group>"; };
+		E925942718EE930000564355 /* jsobj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jsobj.h; sourceTree = "<group>"; };
+		E925942818EE930000564355 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		E925942918EE930000564355 /* namespace_string-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "namespace_string-inl.h"; sourceTree = "<group>"; };
+		E925942A18EE930000564355 /* namespace_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = namespace_string.h; sourceTree = "<group>"; };
+		E925942B18EE930000564355 /* server_options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = server_options.h; sourceTree = "<group>"; };
+		E925942E18EE930000564355 /* mock_conn_registry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mock_conn_registry.h; sourceTree = "<group>"; };
+		E925942F18EE930000564355 /* mock_dbclient_connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mock_dbclient_connection.h; sourceTree = "<group>"; };
+		E925943018EE930000564355 /* mock_dbclient_cursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mock_dbclient_cursor.h; sourceTree = "<group>"; };
+		E925943118EE930000564355 /* mock_remote_db_server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mock_remote_db_server.h; sourceTree = "<group>"; };
+		E925943218EE930000564355 /* mock_replica_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mock_replica_set.h; sourceTree = "<group>"; };
+		E925943418EE930000564355 /* appender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = appender.h; sourceTree = "<group>"; };
+		E925943518EE930000564355 /* console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = console.h; sourceTree = "<group>"; };
+		E925943618EE930000564355 /* console_appender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = console_appender.h; sourceTree = "<group>"; };
+		E925943718EE930000564355 /* encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encoder.h; sourceTree = "<group>"; };
+		E925943818EE930000564355 /* labeled_level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = labeled_level.h; sourceTree = "<group>"; };
+		E925943918EE930000564355 /* log_domain-impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "log_domain-impl.h"; sourceTree = "<group>"; };
+		E925943A18EE930000564355 /* log_domain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log_domain.h; sourceTree = "<group>"; };
+		E925943B18EE930000564355 /* log_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log_manager.h; sourceTree = "<group>"; };
+		E925943C18EE930000564355 /* log_severity-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "log_severity-inl.h"; sourceTree = "<group>"; };
+		E925943D18EE930000564355 /* log_severity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log_severity.h; sourceTree = "<group>"; };
+		E925943E18EE930000564355 /* logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logger.h; sourceTree = "<group>"; };
+		E925943F18EE930000564355 /* logstream_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logstream_builder.h; sourceTree = "<group>"; };
+		E925944018EE930000564355 /* message_event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message_event.h; sourceTree = "<group>"; };
+		E925944118EE930000564355 /* message_event_utf8_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message_event_utf8_encoder.h; sourceTree = "<group>"; };
+		E925944218EE930000564355 /* message_log_domain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message_log_domain.h; sourceTree = "<group>"; };
+		E925944318EE930000564355 /* ramlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ramlog.h; sourceTree = "<group>"; };
+		E925944418EE930000564355 /* rotatable_file_appender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotatable_file_appender.h; sourceTree = "<group>"; };
+		E925944518EE930000564355 /* rotatable_file_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotatable_file_manager.h; sourceTree = "<group>"; };
+		E925944618EE930000564355 /* rotatable_file_writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotatable_file_writer.h; sourceTree = "<group>"; };
+		E925944718EE930000564355 /* tee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tee.h; sourceTree = "<group>"; };
+		E925944918EE930000564355 /* atomic_intrinsics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atomic_intrinsics.h; sourceTree = "<group>"; };
+		E925944A18EE930000564355 /* atomic_intrinsics_gcc_generic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atomic_intrinsics_gcc_generic.h; sourceTree = "<group>"; };
+		E925944B18EE930000564355 /* atomic_intrinsics_gcc_intel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atomic_intrinsics_gcc_intel.h; sourceTree = "<group>"; };
+		E925944C18EE930000564355 /* atomic_intrinsics_win32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atomic_intrinsics_win32.h; sourceTree = "<group>"; };
+		E925944D18EE930000564355 /* atomic_word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atomic_word.h; sourceTree = "<group>"; };
+		E925944E18EE930000564355 /* basic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basic.h; sourceTree = "<group>"; };
+		E925944F18EE930000564355 /* compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compiler.h; sourceTree = "<group>"; };
+		E925945018EE930000564355 /* compiler_gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compiler_gcc.h; sourceTree = "<group>"; };
+		E925945118EE930000564355 /* compiler_msvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compiler_msvc.h; sourceTree = "<group>"; };
+		E925945218EE930000564355 /* cstdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cstdint.h; sourceTree = "<group>"; };
+		E925945318EE930000564355 /* float_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = float_utils.h; sourceTree = "<group>"; };
+		E925945418EE930000564355 /* hash_namespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash_namespace.h; sourceTree = "<group>"; };
+		E925945518EE930000564355 /* process_id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = process_id.h; sourceTree = "<group>"; };
+		E925945618EE930000564355 /* random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = random.h; sourceTree = "<group>"; };
+		E925945718EE930000564355 /* strtoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strtoll.h; sourceTree = "<group>"; };
+		E925945818EE930000564355 /* unordered_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unordered_map.h; sourceTree = "<group>"; };
+		E925945918EE930000564355 /* unordered_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unordered_set.h; sourceTree = "<group>"; };
+		E925945A18EE930000564355 /* windows_basic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = windows_basic.h; sourceTree = "<group>"; };
+		E925945B18EE930000564355 /* SConscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SConscript; sourceTree = "<group>"; };
+		E925945D18EE930000564355 /* unittest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unittest.h; sourceTree = "<group>"; };
+		E925945F18EE930000564355 /* assert_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = assert_util.h; sourceTree = "<group>"; };
+		E925946018EE930000564355 /* background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = background.h; sourceTree = "<group>"; };
+		E925946118EE930000564355 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		E925946218EE930000564355 /* bufreader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bufreader.h; sourceTree = "<group>"; };
+		E925946418EE930000564355 /* mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mutex.h; sourceTree = "<group>"; };
+		E925946518EE930000564355 /* synchronization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = synchronization.h; sourceTree = "<group>"; };
+		E925946618EE930000564355 /* thread_name.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread_name.h; sourceTree = "<group>"; };
+		E925946718EE930000564355 /* threadlocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threadlocal.h; sourceTree = "<group>"; };
+		E925946818EE930000564355 /* debug_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug_util.h; sourceTree = "<group>"; };
+		E925946918EE930000564355 /* embedded_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = embedded_builder.h; sourceTree = "<group>"; };
+		E925946A18EE930000564355 /* fail_point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fail_point.h; sourceTree = "<group>"; };
+		E925946B18EE930000564355 /* fail_point_registry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fail_point_registry.h; sourceTree = "<group>"; };
+		E925946C18EE930000564355 /* fail_point_service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fail_point_service.h; sourceTree = "<group>"; };
+		E925946D18EE930000564355 /* goodies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = goodies.h; sourceTree = "<group>"; };
+		E925946E18EE930000564355 /* hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hex.h; sourceTree = "<group>"; };
+		E925946F18EE930000564355 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		E925947018EE930000564355 /* map_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = map_util.h; sourceTree = "<group>"; };
+		E925947118EE930000564355 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		E925947218EE930000564355 /* md5.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = md5.hpp; sourceTree = "<group>"; };
+		E925947418EE930000564355 /* html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = html.h; sourceTree = "<group>"; };
+		E925947518EE930000564355 /* str.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = str.h; sourceTree = "<group>"; };
+		E925947718EE930000564355 /* hostandport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hostandport.h; sourceTree = "<group>"; };
+		E925947818EE930000564355 /* httpclient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = httpclient.h; sourceTree = "<group>"; };
+		E925947918EE930000564355 /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
+		E925947A18EE930000564355 /* message_port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message_port.h; sourceTree = "<group>"; };
+		E925947B18EE930000564355 /* sock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sock.h; sourceTree = "<group>"; };
+		E925947C18EE930000564355 /* socket_poll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket_poll.h; sourceTree = "<group>"; };
+		E925947D18EE930000564355 /* ssl_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl_manager.h; sourceTree = "<group>"; };
+		E925947E18EE930000564355 /* ssl_options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl_options.h; sourceTree = "<group>"; };
+		E925947F18EE930000564355 /* password_digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = password_digest.h; sourceTree = "<group>"; };
+		E925948018EE930000564355 /* scopeguard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scopeguard.h; sourceTree = "<group>"; };
+		E925948118EE930000564355 /* string_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string_map.h; sourceTree = "<group>"; };
+		E925948218EE930000564355 /* stringutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringutils.h; sourceTree = "<group>"; };
+		E925948318EE930000564355 /* text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = text.h; sourceTree = "<group>"; };
+		E925948418EE930000564355 /* time_support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = time_support.h; sourceTree = "<group>"; };
+		E925948518EE930000564355 /* timer-generic-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "timer-generic-inl.h"; sourceTree = "<group>"; };
+		E925948618EE930000564355 /* timer-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "timer-inl.h"; sourceTree = "<group>"; };
+		E925948718EE930000564355 /* timer-posixclock-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "timer-posixclock-inl.h"; sourceTree = "<group>"; };
+		E925948818EE930000564355 /* timer-win32-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "timer-win32-inl.h"; sourceTree = "<group>"; };
+		E925948918EE930000564355 /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
+		E925948A18EE930000564355 /* unordered_fast_key_table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unordered_fast_key_table.h; sourceTree = "<group>"; };
+		E925948B18EE930000564355 /* unordered_fast_key_table_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unordered_fast_key_table_internal.h; sourceTree = "<group>"; };
+		E925948C18EE930000564355 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		E925948D18EE930000564355 /* SConscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SConscript; sourceTree = "<group>"; };
+		E925948E18EE930000564355 /* SConscript.client */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SConscript.client; sourceTree = "<group>"; };
+		E925949118EE930000564355 /* aclocal.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aclocal.m4; sourceTree = "<group>"; };
+		E925949318EE930000564355 /* config.guess */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = config.guess; sourceTree = "<group>"; };
+		E925949418EE930000564355 /* config.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.h.in; sourceTree = "<group>"; };
+		E925949518EE930000564355 /* config.sub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = config.sub; sourceTree = "<group>"; };
+		E925949618EE930000564355 /* depcomp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = depcomp; sourceTree = "<group>"; };
+		E925949718EE930000564355 /* install-sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "install-sh"; sourceTree = "<group>"; };
+		E925949818EE930000564355 /* ltmain.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ltmain.sh; sourceTree = "<group>"; };
+		E925949918EE930000564355 /* missing */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = missing; sourceTree = "<group>"; };
+		E925949A18EE930000564355 /* CHANGES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES; sourceTree = "<group>"; };
+		E925949C18EE930000564355 /* internal_utils.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = internal_utils.cmake; sourceTree = "<group>"; };
+		E925949D18EE930000564355 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		E925949F18EE930000564355 /* gtest.cbproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gtest.cbproj; sourceTree = "<group>"; };
+		E92594A018EE930000564355 /* gtest.groupproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gtest.groupproj; sourceTree = "<group>"; };
+		E92594A118EE930000564355 /* gtest_all.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_all.cc; sourceTree = "<group>"; };
+		E92594A218EE930000564355 /* gtest_link.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_link.cc; sourceTree = "<group>"; };
+		E92594A318EE930000564355 /* gtest_main.cbproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gtest_main.cbproj; sourceTree = "<group>"; };
+		E92594A418EE930000564355 /* gtest_unittest.cbproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gtest_unittest.cbproj; sourceTree = "<group>"; };
+		E92594A518EE930000564355 /* configure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
+		E92594A618EE930000564355 /* configure.ac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
+		E92594A718EE930000564355 /* CONTRIBUTORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CONTRIBUTORS; sourceTree = "<group>"; };
+		E92594AA18EE930000564355 /* gtest-all.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-all.cc"; sourceTree = "<group>"; };
+		E92594AB18EE930000564355 /* gtest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtest.h; sourceTree = "<group>"; };
+		E92594AC18EE930000564355 /* gtest_main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_main.cc; sourceTree = "<group>"; };
+		E92594AF18EE930000564355 /* gtest-death-test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-death-test.h"; sourceTree = "<group>"; };
+		E92594B018EE930000564355 /* gtest-message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-message.h"; sourceTree = "<group>"; };
+		E92594B118EE930000564355 /* gtest-param-test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-param-test.h"; sourceTree = "<group>"; };
+		E92594B218EE930000564355 /* gtest-param-test.h.pump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gtest-param-test.h.pump"; sourceTree = "<group>"; };
+		E92594B318EE930000564355 /* gtest-printers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-printers.h"; sourceTree = "<group>"; };
+		E92594B418EE930000564355 /* gtest-spi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-spi.h"; sourceTree = "<group>"; };
+		E92594B518EE930000564355 /* gtest-test-part.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-test-part.h"; sourceTree = "<group>"; };
+		E92594B618EE930000564355 /* gtest-typed-test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-typed-test.h"; sourceTree = "<group>"; };
+		E92594B718EE930000564355 /* gtest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtest.h; sourceTree = "<group>"; };
+		E92594B818EE930000564355 /* gtest_pred_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtest_pred_impl.h; sourceTree = "<group>"; };
+		E92594B918EE930000564355 /* gtest_prod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtest_prod.h; sourceTree = "<group>"; };
+		E92594BB18EE930000564355 /* gtest-death-test-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-death-test-internal.h"; sourceTree = "<group>"; };
+		E92594BC18EE930000564355 /* gtest-filepath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-filepath.h"; sourceTree = "<group>"; };
+		E92594BD18EE930000564355 /* gtest-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-internal.h"; sourceTree = "<group>"; };
+		E92594BE18EE930000564355 /* gtest-linked_ptr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-linked_ptr.h"; sourceTree = "<group>"; };
+		E92594BF18EE930000564355 /* gtest-param-util-generated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-param-util-generated.h"; sourceTree = "<group>"; };
+		E92594C018EE930000564355 /* gtest-param-util-generated.h.pump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gtest-param-util-generated.h.pump"; sourceTree = "<group>"; };
+		E92594C118EE930000564355 /* gtest-param-util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-param-util.h"; sourceTree = "<group>"; };
+		E92594C218EE930000564355 /* gtest-port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-port.h"; sourceTree = "<group>"; };
+		E92594C318EE930000564355 /* gtest-string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-string.h"; sourceTree = "<group>"; };
+		E92594C418EE930000564355 /* gtest-tuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-tuple.h"; sourceTree = "<group>"; };
+		E92594C518EE930000564355 /* gtest-tuple.h.pump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gtest-tuple.h.pump"; sourceTree = "<group>"; };
+		E92594C618EE930000564355 /* gtest-type-util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-type-util.h"; sourceTree = "<group>"; };
+		E92594C718EE930000564355 /* gtest-type-util.h.pump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gtest-type-util.h.pump"; sourceTree = "<group>"; };
+		E92594C818EE930000564355 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E92594CA18EE930000564355 /* acx_pthread.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acx_pthread.m4; sourceTree = "<group>"; };
+		E92594CB18EE930000564355 /* gtest.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gtest.m4; sourceTree = "<group>"; };
+		E92594CC18EE930000564355 /* libtool.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libtool.m4; sourceTree = "<group>"; };
+		E92594CD18EE930000564355 /* ltoptions.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ltoptions.m4; sourceTree = "<group>"; };
+		E92594CE18EE930000564355 /* ltsugar.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ltsugar.m4; sourceTree = "<group>"; };
+		E92594CF18EE930000564355 /* ltversion.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ltversion.m4; sourceTree = "<group>"; };
+		E92594D018EE930000564355 /* lt~obsolete.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lt~obsolete.m4"; sourceTree = "<group>"; };
+		E92594D218EE930000564355 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		E92594D318EE930000564355 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		E92594D418EE930000564355 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		E92594D618EE930000564355 /* gtest-md.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gtest-md.sln"; sourceTree = "<group>"; };
+		E92594D718EE930000564355 /* gtest-md.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "gtest-md.vcproj"; sourceTree = "<group>"; };
+		E92594D818EE930000564355 /* gtest.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gtest.sln; sourceTree = "<group>"; };
+		E92594D918EE930000564355 /* gtest.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gtest.vcproj; sourceTree = "<group>"; };
+		E92594DA18EE930000564355 /* gtest_main-md.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "gtest_main-md.vcproj"; sourceTree = "<group>"; };
+		E92594DB18EE930000564355 /* gtest_main.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gtest_main.vcproj; sourceTree = "<group>"; };
+		E92594DC18EE930000564355 /* gtest_prod_test-md.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "gtest_prod_test-md.vcproj"; sourceTree = "<group>"; };
+		E92594DD18EE930000564355 /* gtest_prod_test.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gtest_prod_test.vcproj; sourceTree = "<group>"; };
+		E92594DE18EE930000564355 /* gtest_unittest-md.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "gtest_unittest-md.vcproj"; sourceTree = "<group>"; };
+		E92594DF18EE930000564355 /* gtest_unittest.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gtest_unittest.vcproj; sourceTree = "<group>"; };
+		E92594E018EE930000564355 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		E92594E218EE930000564355 /* prime_tables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prime_tables.h; sourceTree = "<group>"; };
+		E92594E318EE930000564355 /* sample1.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sample1.cc; sourceTree = "<group>"; };
+		E92594E418EE930000564355 /* sample1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sample1.h; sourceTree = "<group>"; };
+		E92594E518EE930000564355 /* sample10_unittest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sample10_unittest.cc; sourceTree = "<group>"; };
+		E92594E618EE930000564355 /* sample1_unittest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sample1_unittest.cc; sourceTree = "<group>"; };
+		E92594E718EE930000564355 /* sample2.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sample2.cc; sourceTree = "<group>"; };
+		E92594E818EE930000564355 /* sample2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sample2.h; sourceTree = "<group>"; };
+		E92594E918EE930000564355 /* sample2_unittest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sample2_unittest.cc; sourceTree = "<group>"; };
+		E92594EA18EE930000564355 /* sample3-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sample3-inl.h"; sourceTree = "<group>"; };
+		E92594EB18EE930000564355 /* sample3_unittest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sample3_unittest.cc; sourceTree = "<group>"; };
+		E92594EC18EE930000564355 /* sample4.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sample4.cc; sourceTree = "<group>"; };
+		E92594ED18EE930000564355 /* sample4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sample4.h; sourceTree = "<group>"; };
+		E92594EE18EE930000564355 /* sample4_unittest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sample4_unittest.cc; sourceTree = "<group>"; };
+		E92594EF18EE930000564355 /* sample5_unittest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sample5_unittest.cc; sourceTree = "<group>"; };
+		E92594F018EE930000564355 /* sample6_unittest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sample6_unittest.cc; sourceTree = "<group>"; };
+		E92594F118EE930000564355 /* sample7_unittest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sample7_unittest.cc; sourceTree = "<group>"; };
+		E92594F218EE930000564355 /* sample8_unittest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sample8_unittest.cc; sourceTree = "<group>"; };
+		E92594F318EE930000564355 /* sample9_unittest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sample9_unittest.cc; sourceTree = "<group>"; };
+		E92594F418EE930000564355 /* SConscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SConscript; sourceTree = "<group>"; };
+		E92594F618EE930000564355 /* fuse_gtest_files.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = fuse_gtest_files.py; sourceTree = "<group>"; };
+		E92594F718EE930000564355 /* gen_gtest_pred_impl.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gen_gtest_pred_impl.py; sourceTree = "<group>"; };
+		E92594F818EE930000564355 /* gtest-config.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "gtest-config.in"; sourceTree = "<group>"; };
+		E92594F918EE930000564355 /* pump.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pump.py; sourceTree = "<group>"; };
+		E92594FB18EE930000564355 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		E92594FD18EE930000564355 /* gtest-all.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-all.cc"; sourceTree = "<group>"; };
+		E92594FE18EE930000564355 /* gtest-death-test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-death-test.cc"; sourceTree = "<group>"; };
+		E92594FF18EE930000564355 /* gtest-filepath.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-filepath.cc"; sourceTree = "<group>"; };
+		E925950018EE930000564355 /* gtest-internal-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-internal-inl.h"; sourceTree = "<group>"; };
+		E925950118EE930000564355 /* gtest-port.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-port.cc"; sourceTree = "<group>"; };
+		E925950218EE930000564355 /* gtest-printers.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-printers.cc"; sourceTree = "<group>"; };
+		E925950318EE930000564355 /* gtest-test-part.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-test-part.cc"; sourceTree = "<group>"; };
+		E925950418EE930000564355 /* gtest-typed-test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-typed-test.cc"; sourceTree = "<group>"; };
+		E925950518EE930000564355 /* gtest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest.cc; sourceTree = "<group>"; };
+		E925950618EE930000564355 /* gtest_main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_main.cc; sourceTree = "<group>"; };
+		E925950818EE930000564355 /* gtest-death-test_ex_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-death-test_ex_test.cc"; sourceTree = "<group>"; };
+		E925950918EE930000564355 /* gtest-death-test_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-death-test_test.cc"; sourceTree = "<group>"; };
+		E925950A18EE930000564355 /* gtest-filepath_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-filepath_test.cc"; sourceTree = "<group>"; };
+		E925950B18EE930000564355 /* gtest-linked_ptr_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-linked_ptr_test.cc"; sourceTree = "<group>"; };
+		E925950C18EE930000564355 /* gtest-listener_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-listener_test.cc"; sourceTree = "<group>"; };
+		E925950D18EE930000564355 /* gtest-message_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-message_test.cc"; sourceTree = "<group>"; };
+		E925950E18EE930000564355 /* gtest-options_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-options_test.cc"; sourceTree = "<group>"; };
+		E925950F18EE930000564355 /* gtest-param-test2_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-param-test2_test.cc"; sourceTree = "<group>"; };
+		E925951018EE930000564355 /* gtest-param-test_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-param-test_test.cc"; sourceTree = "<group>"; };
+		E925951118EE930000564355 /* gtest-param-test_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-param-test_test.h"; sourceTree = "<group>"; };
+		E925951218EE930000564355 /* gtest-port_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-port_test.cc"; sourceTree = "<group>"; };
+		E925951318EE930000564355 /* gtest-printers_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-printers_test.cc"; sourceTree = "<group>"; };
+		E925951418EE930000564355 /* gtest-test-part_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-test-part_test.cc"; sourceTree = "<group>"; };
+		E925951518EE930000564355 /* gtest-tuple_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-tuple_test.cc"; sourceTree = "<group>"; };
+		E925951618EE930000564355 /* gtest-typed-test2_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-typed-test2_test.cc"; sourceTree = "<group>"; };
+		E925951718EE930000564355 /* gtest-typed-test_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-typed-test_test.cc"; sourceTree = "<group>"; };
+		E925951818EE930000564355 /* gtest-typed-test_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gtest-typed-test_test.h"; sourceTree = "<group>"; };
+		E925951918EE930000564355 /* gtest-unittest-api_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-unittest-api_test.cc"; sourceTree = "<group>"; };
+		E925951A18EE930000564355 /* gtest_all_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_all_test.cc; sourceTree = "<group>"; };
+		E925951B18EE930000564355 /* gtest_break_on_failure_unittest.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gtest_break_on_failure_unittest.py; sourceTree = "<group>"; };
+		E925951C18EE930000564355 /* gtest_break_on_failure_unittest_.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_break_on_failure_unittest_.cc; sourceTree = "<group>"; };
+		E925951D18EE930000564355 /* gtest_catch_exceptions_test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gtest_catch_exceptions_test.py; sourceTree = "<group>"; };
+		E925951E18EE930000564355 /* gtest_catch_exceptions_test_.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_catch_exceptions_test_.cc; sourceTree = "<group>"; };
+		E925951F18EE930000564355 /* gtest_color_test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gtest_color_test.py; sourceTree = "<group>"; };
+		E925952018EE930000564355 /* gtest_color_test_.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_color_test_.cc; sourceTree = "<group>"; };
+		E925952118EE930000564355 /* gtest_env_var_test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gtest_env_var_test.py; sourceTree = "<group>"; };
+		E925952218EE930000564355 /* gtest_env_var_test_.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_env_var_test_.cc; sourceTree = "<group>"; };
+		E925952318EE930000564355 /* gtest_environment_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_environment_test.cc; sourceTree = "<group>"; };
+		E925952418EE930000564355 /* gtest_filter_unittest.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gtest_filter_unittest.py; sourceTree = "<group>"; };
+		E925952518EE930000564355 /* gtest_filter_unittest_.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_filter_unittest_.cc; sourceTree = "<group>"; };
+		E925952618EE930000564355 /* gtest_help_test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gtest_help_test.py; sourceTree = "<group>"; };
+		E925952718EE930000564355 /* gtest_help_test_.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_help_test_.cc; sourceTree = "<group>"; };
+		E925952818EE930000564355 /* gtest_list_tests_unittest.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gtest_list_tests_unittest.py; sourceTree = "<group>"; };
+		E925952918EE930000564355 /* gtest_list_tests_unittest_.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_list_tests_unittest_.cc; sourceTree = "<group>"; };
+		E925952A18EE930000564355 /* gtest_main_unittest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_main_unittest.cc; sourceTree = "<group>"; };
+		E925952B18EE930000564355 /* gtest_no_test_unittest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_no_test_unittest.cc; sourceTree = "<group>"; };
+		E925952C18EE930000564355 /* gtest_output_test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gtest_output_test.py; sourceTree = "<group>"; };
+		E925952D18EE930000564355 /* gtest_output_test_.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_output_test_.cc; sourceTree = "<group>"; };
+		E925952E18EE930000564355 /* gtest_output_test_golden_lin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gtest_output_test_golden_lin.txt; sourceTree = "<group>"; };
+		E925952F18EE930000564355 /* gtest_pred_impl_unittest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_pred_impl_unittest.cc; sourceTree = "<group>"; };
+		E925953018EE930000564355 /* gtest_premature_exit_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_premature_exit_test.cc; sourceTree = "<group>"; };
+		E925953118EE930000564355 /* gtest_prod_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_prod_test.cc; sourceTree = "<group>"; };
+		E925953218EE930000564355 /* gtest_repeat_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_repeat_test.cc; sourceTree = "<group>"; };
+		E925953318EE930000564355 /* gtest_shuffle_test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gtest_shuffle_test.py; sourceTree = "<group>"; };
+		E925953418EE930000564355 /* gtest_shuffle_test_.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_shuffle_test_.cc; sourceTree = "<group>"; };
+		E925953518EE930000564355 /* gtest_sole_header_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_sole_header_test.cc; sourceTree = "<group>"; };
+		E925953618EE930000564355 /* gtest_stress_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_stress_test.cc; sourceTree = "<group>"; };
+		E925953718EE930000564355 /* gtest_test_utils.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gtest_test_utils.py; sourceTree = "<group>"; };
+		E925953818EE930000564355 /* gtest_throw_on_failure_ex_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_throw_on_failure_ex_test.cc; sourceTree = "<group>"; };
+		E925953918EE930000564355 /* gtest_throw_on_failure_test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gtest_throw_on_failure_test.py; sourceTree = "<group>"; };
+		E925953A18EE930000564355 /* gtest_throw_on_failure_test_.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_throw_on_failure_test_.cc; sourceTree = "<group>"; };
+		E925953B18EE930000564355 /* gtest_uninitialized_test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gtest_uninitialized_test.py; sourceTree = "<group>"; };
+		E925953C18EE930000564355 /* gtest_uninitialized_test_.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_uninitialized_test_.cc; sourceTree = "<group>"; };
+		E925953D18EE930000564355 /* gtest_unittest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_unittest.cc; sourceTree = "<group>"; };
+		E925953E18EE930000564355 /* gtest_xml_outfile1_test_.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_xml_outfile1_test_.cc; sourceTree = "<group>"; };
+		E925953F18EE930000564355 /* gtest_xml_outfile2_test_.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_xml_outfile2_test_.cc; sourceTree = "<group>"; };
+		E925954018EE930000564355 /* gtest_xml_outfiles_test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gtest_xml_outfiles_test.py; sourceTree = "<group>"; };
+		E925954118EE930000564355 /* gtest_xml_output_unittest.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gtest_xml_output_unittest.py; sourceTree = "<group>"; };
+		E925954218EE930000564355 /* gtest_xml_output_unittest_.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_xml_output_unittest_.cc; sourceTree = "<group>"; };
+		E925954318EE930000564355 /* gtest_xml_test_utils.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gtest_xml_test_utils.py; sourceTree = "<group>"; };
+		E925954418EE930000564355 /* production.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = production.cc; sourceTree = "<group>"; };
+		E925954518EE930000564355 /* production.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = production.h; sourceTree = "<group>"; };
+		E925954818EE930000564355 /* DebugProject.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugProject.xcconfig; sourceTree = "<group>"; };
+		E925954918EE930000564355 /* FrameworkTarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = FrameworkTarget.xcconfig; sourceTree = "<group>"; };
+		E925954A18EE930000564355 /* General.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = General.xcconfig; sourceTree = "<group>"; };
+		E925954B18EE930000564355 /* ReleaseProject.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ReleaseProject.xcconfig; sourceTree = "<group>"; };
+		E925954C18EE930000564355 /* StaticLibraryTarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = StaticLibraryTarget.xcconfig; sourceTree = "<group>"; };
+		E925954D18EE930000564355 /* TestTarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = TestTarget.xcconfig; sourceTree = "<group>"; };
+		E925954E18EE930000564355 /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = gtest.xcodeproj; sourceTree = "<group>"; };
+		E925955218EE930100564355 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E925955518EE930100564355 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E925955618EE930100564355 /* runtests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = runtests.sh; sourceTree = "<group>"; };
+		E925955718EE930100564355 /* widget.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = widget.cc; sourceTree = "<group>"; };
+		E925955818EE930100564355 /* widget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = widget.h; sourceTree = "<group>"; };
+		E925955918EE930100564355 /* widget_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = widget_test.cc; sourceTree = "<group>"; };
+		E925955A18EE930100564355 /* WidgetFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = WidgetFramework.xcodeproj; sourceTree = "<group>"; };
+		E925955E18EE930100564355 /* runtests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = runtests.sh; sourceTree = "<group>"; };
+		E925955F18EE930100564355 /* versiongenerate.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = versiongenerate.py; sourceTree = "<group>"; };
+		E925956118EE930100564355 /* MurmurHash3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MurmurHash3.cpp; sourceTree = "<group>"; };
+		E925956218EE930100564355 /* MurmurHash3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MurmurHash3.h; sourceTree = "<group>"; };
+		E925956318EE930100564355 /* SConscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SConscript; sourceTree = "<group>"; };
+		E925956418EE930100564355 /* shim_boost.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shim_boost.cpp; sourceTree = "<group>"; };
+		E92596BC18EE93AD00564355 /* libmongoclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmongoclient.a; path = External/libmongoclient.a; sourceTree = SOURCE_ROOT; };
+		E92596BF18EE953500564355 /* libboost_system-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_system-mt.a"; path = "External/libboost_system-mt.a"; sourceTree = SOURCE_ROOT; };
+		E92596C218EE955900564355 /* libboost_thread-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_thread-mt.a"; path = "External/libboost_thread-mt.a"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9258D4E18EE424500564355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9258D5518EE424600564355 /* Cocoa.framework in Frameworks */,
+				E92596BD18EE93AD00564355 /* libmongoclient.a in Frameworks */,
+				E92593E518EE92A900564355 /* libboost_program_options-mt.a in Frameworks */,
+				E92593E318EE92A900564355 /* libboost_filesystem-mt.a in Frameworks */,
+				E92596C318EE955900564355 /* libboost_thread-mt.a in Frameworks */,
+				E92596C018EE953500564355 /* libboost_system-mt.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9258D6F18EE424600564355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92596BE18EE93AD00564355 /* libmongoclient.a in Frameworks */,
+				E92593E418EE92A900564355 /* libboost_filesystem-mt.a in Frameworks */,
+				E9258D7518EE424600564355 /* Cocoa.framework in Frameworks */,
+				E92596C418EE955900564355 /* libboost_thread-mt.a in Frameworks */,
+				E92593E618EE92A900564355 /* libboost_program_options-mt.a in Frameworks */,
+				E9258D7418EE424600564355 /* XCTest.framework in Frameworks */,
+				E92596C118EE953500564355 /* libboost_system-mt.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9258D4818EE424500564355 = {
+			isa = PBXGroup;
+			children = (
+				E9258D5A18EE424600564355 /* Mango */,
+				E9258D7818EE424600564355 /* MangoTests */,
+				E9258D5318EE424600564355 /* Frameworks */,
+				E9258D5218EE424600564355 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9258D5218EE424600564355 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9258D5118EE424600564355 /* Mango.app */,
+				E9258D7218EE424600564355 /* MangoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9258D5318EE424600564355 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9258D5418EE424600564355 /* Cocoa.framework */,
+				E9258D7318EE424600564355 /* XCTest.framework */,
+				E9258D5618EE424600564355 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9258D5618EE424600564355 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9258D5718EE424600564355 /* AppKit.framework */,
+				E9258D5818EE424600564355 /* CoreData.framework */,
+				E9258D5918EE424600564355 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E9258D5A18EE424600564355 /* Mango */ = {
+			isa = PBXGroup;
+			children = (
+				E9258D8F18EE623F00564355 /* External */,
+				E9258D6618EE424600564355 /* MangoAppDelegate.h */,
+				E9258D6718EE424600564355 /* MangoAppDelegate.mm */,
+				E9258D6918EE424600564355 /* MainMenu.xib */,
+				E92590C418EE62FF00564355 /* ConnectionWindow */,
+				E9258D6C18EE424600564355 /* Images.xcassets */,
+				E9258D8A18EE4C6F00564355 /* mango.jpg */,
+				E9258D5B18EE424600564355 /* Supporting Files */,
+			);
+			path = Mango;
+			sourceTree = "<group>";
+		};
+		E9258D5B18EE424600564355 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9258D5C18EE424600564355 /* Mango-Info.plist */,
+				E9258D5D18EE424600564355 /* InfoPlist.strings */,
+				E9258D6018EE424600564355 /* main.m */,
+				E9258D6218EE424600564355 /* Mango-Prefix.pch */,
+				E9258D6318EE424600564355 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9258D7818EE424600564355 /* MangoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9258D7E18EE424600564355 /* MangoTests.m */,
+				E9258D7918EE424600564355 /* Supporting Files */,
+			);
+			path = MangoTests;
+			sourceTree = "<group>";
+		};
+		E9258D7918EE424600564355 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9258D7A18EE424600564355 /* MangoTests-Info.plist */,
+				E9258D7B18EE424600564355 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9258D8F18EE623F00564355 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				E92593E718EE930000564355 /* mongo */,
+				E92593E118EE92A900564355 /* libboost_filesystem-mt.a */,
+				E92593E218EE92A900564355 /* libboost_program_options-mt.a */,
+				E92596BF18EE953500564355 /* libboost_system-mt.a */,
+				E92596C218EE955900564355 /* libboost_thread-mt.a */,
+				E92596BC18EE93AD00564355 /* libmongoclient.a */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		E92590C418EE62FF00564355 /* ConnectionWindow */ = {
+			isa = PBXGroup;
+			children = (
+				E9258D8818EE445100564355 /* ConnectionWindow.xib */,
+				E9258D8C18EE5D9D00564355 /* ConnectionWindow.h */,
+				E9258D8D18EE5D9D00564355 /* ConnectionWindow.mm */,
+				E92590C718EE7AAA00564355 /* MangoConnectionManager.h */,
+				E92590C818EE7AAA00564355 /* MangoConnectionManager.mm */,
+			);
+			name = ConnectionWindow;
+			sourceTree = "<group>";
+		};
+		E92593E718EE930000564355 /* mongo */ = {
+			isa = PBXGroup;
+			children = (
+				E92593E818EE930000564355 /* mongo */,
+				E925948D18EE930000564355 /* SConscript */,
+				E925948E18EE930000564355 /* SConscript.client */,
+				E925948F18EE930000564355 /* third_party */,
+			);
+			name = mongo;
+			path = External/mongo;
+			sourceTree = SOURCE_ROOT;
+		};
+		E92593E818EE930000564355 /* mongo */ = {
+			isa = PBXGroup;
+			children = (
+				E92593E918EE930000564355 /* base */,
+				E92593FD18EE930000564355 /* bson */,
+				E925941318EE930000564355 /* client */,
+				E925942518EE930000564355 /* db */,
+				E925942C18EE930000564355 /* dbtests */,
+				E925943318EE930000564355 /* logger */,
+				E925944818EE930000564355 /* platform */,
+				E925945B18EE930000564355 /* SConscript */,
+				E925945C18EE930000564355 /* unittest */,
+				E925945E18EE930000564355 /* util */,
+			);
+			path = mongo;
+			sourceTree = "<group>";
+		};
+		E92593E918EE930000564355 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				E92593EA18EE930000564355 /* disallow_copying.h */,
+				E92593EB18EE930000564355 /* error_codes.err */,
+				E92593EC18EE930000564355 /* generate_error_codes.py */,
+				E92593ED18EE930000564355 /* global_initializer.h */,
+				E92593EE18EE930000564355 /* global_initializer_registerer.h */,
+				E92593EF18EE930000564355 /* init.h */,
+				E92593F018EE930000564355 /* initializer.h */,
+				E92593F118EE930000564355 /* initializer_context.h */,
+				E92593F218EE930000564355 /* initializer_dependency_graph.h */,
+				E92593F318EE930000564355 /* initializer_function.h */,
+				E92593F418EE930000564355 /* initializer_functions.h */,
+				E92593F518EE930000564355 /* make_string_vector.h */,
+				E92593F618EE930000564355 /* owned_pointer_vector.h */,
+				E92593F718EE930000564355 /* parse_number.h */,
+				E92593F818EE930000564355 /* status-inl.h */,
+				E92593F918EE930000564355 /* status.h */,
+				E92593FA18EE930000564355 /* status_with.h */,
+				E92593FB18EE930000564355 /* string_data-inl.h */,
+				E92593FC18EE930000564355 /* string_data.h */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		E92593FD18EE930000564355 /* bson */ = {
+			isa = PBXGroup;
+			children = (
+				E92593FE18EE930000564355 /* bson-inl.h */,
+				E92593FF18EE930000564355 /* bson.h */,
+				E925940018EE930000564355 /* bson_db.h */,
+				E925940118EE930000564355 /* bson_field.h */,
+				E925940218EE930000564355 /* bson_validate.h */,
+				E925940318EE930000564355 /* bsondemo */,
+				E925940418EE930000564355 /* bsonelement.h */,
+				E925940518EE930000564355 /* bsonmisc.h */,
+				E925940618EE930000564355 /* bsonobj.h */,
+				E925940718EE930000564355 /* bsonobjbuilder.h */,
+				E925940818EE930000564355 /* bsonobjiterator.h */,
+				E925940918EE930000564355 /* bsontypes.h */,
+				E925940A18EE930000564355 /* inline_decls.h */,
+				E925940B18EE930000564355 /* oid.h */,
+				E925940C18EE930000564355 /* optime.h */,
+				E925940D18EE930000564355 /* ordering.h */,
+				E925940E18EE930000564355 /* util */,
+			);
+			path = bson;
+			sourceTree = "<group>";
+		};
+		E925940318EE930000564355 /* bsondemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = bsondemo;
+			sourceTree = "<group>";
+		};
+		E925940E18EE930000564355 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				E925940F18EE930000564355 /* atomic_int.h */,
+				E925941018EE930000564355 /* bson_extract.h */,
+				E925941118EE930000564355 /* builder.h */,
+				E925941218EE930000564355 /* misc.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		E925941318EE930000564355 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				E925941418EE930000564355 /* connpool.h */,
+				E925941518EE930000564355 /* constants.h */,
+				E925941618EE930000564355 /* dbclient.h */,
+				E925941718EE930000564355 /* dbclient_rs.h */,
+				E925941818EE930000564355 /* dbclientcursor.h */,
+				E925941918EE930000564355 /* dbclientinterface.h */,
+				E925941A18EE930000564355 /* dbclientmockcursor.h */,
+				E925941B18EE930000564355 /* examples */,
+				E925941C18EE930000564355 /* export_macros.h */,
+				E925941D18EE930000564355 /* gridfs.h */,
+				E925941E18EE930000564355 /* init.h */,
+				E925941F18EE930000564355 /* redef_macros.h */,
+				E925942018EE930000564355 /* replica_set_monitor.h */,
+				E925942118EE930000564355 /* replica_set_monitor_internal.h */,
+				E925942218EE930000564355 /* sasl_client_authenticate.h */,
+				E925942318EE930000564355 /* sasl_client_session.h */,
+				E925942418EE930000564355 /* undef_macros.h */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+		E925941B18EE930000564355 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		E925942518EE930000564355 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				E925942618EE930000564355 /* dbmessage.h */,
+				E925942718EE930000564355 /* jsobj.h */,
+				E925942818EE930000564355 /* json.h */,
+				E925942918EE930000564355 /* namespace_string-inl.h */,
+				E925942A18EE930000564355 /* namespace_string.h */,
+				E925942B18EE930000564355 /* server_options.h */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		E925942C18EE930000564355 /* dbtests */ = {
+			isa = PBXGroup;
+			children = (
+				E925942D18EE930000564355 /* mock */,
+			);
+			path = dbtests;
+			sourceTree = "<group>";
+		};
+		E925942D18EE930000564355 /* mock */ = {
+			isa = PBXGroup;
+			children = (
+				E925942E18EE930000564355 /* mock_conn_registry.h */,
+				E925942F18EE930000564355 /* mock_dbclient_connection.h */,
+				E925943018EE930000564355 /* mock_dbclient_cursor.h */,
+				E925943118EE930000564355 /* mock_remote_db_server.h */,
+				E925943218EE930000564355 /* mock_replica_set.h */,
+			);
+			path = mock;
+			sourceTree = "<group>";
+		};
+		E925943318EE930000564355 /* logger */ = {
+			isa = PBXGroup;
+			children = (
+				E925943418EE930000564355 /* appender.h */,
+				E925943518EE930000564355 /* console.h */,
+				E925943618EE930000564355 /* console_appender.h */,
+				E925943718EE930000564355 /* encoder.h */,
+				E925943818EE930000564355 /* labeled_level.h */,
+				E925943918EE930000564355 /* log_domain-impl.h */,
+				E925943A18EE930000564355 /* log_domain.h */,
+				E925943B18EE930000564355 /* log_manager.h */,
+				E925943C18EE930000564355 /* log_severity-inl.h */,
+				E925943D18EE930000564355 /* log_severity.h */,
+				E925943E18EE930000564355 /* logger.h */,
+				E925943F18EE930000564355 /* logstream_builder.h */,
+				E925944018EE930000564355 /* message_event.h */,
+				E925944118EE930000564355 /* message_event_utf8_encoder.h */,
+				E925944218EE930000564355 /* message_log_domain.h */,
+				E925944318EE930000564355 /* ramlog.h */,
+				E925944418EE930000564355 /* rotatable_file_appender.h */,
+				E925944518EE930000564355 /* rotatable_file_manager.h */,
+				E925944618EE930000564355 /* rotatable_file_writer.h */,
+				E925944718EE930000564355 /* tee.h */,
+			);
+			path = logger;
+			sourceTree = "<group>";
+		};
+		E925944818EE930000564355 /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				E925944918EE930000564355 /* atomic_intrinsics.h */,
+				E925944A18EE930000564355 /* atomic_intrinsics_gcc_generic.h */,
+				E925944B18EE930000564355 /* atomic_intrinsics_gcc_intel.h */,
+				E925944C18EE930000564355 /* atomic_intrinsics_win32.h */,
+				E925944D18EE930000564355 /* atomic_word.h */,
+				E925944E18EE930000564355 /* basic.h */,
+				E925944F18EE930000564355 /* compiler.h */,
+				E925945018EE930000564355 /* compiler_gcc.h */,
+				E925945118EE930000564355 /* compiler_msvc.h */,
+				E925945218EE930000564355 /* cstdint.h */,
+				E925945318EE930000564355 /* float_utils.h */,
+				E925945418EE930000564355 /* hash_namespace.h */,
+				E925945518EE930000564355 /* process_id.h */,
+				E925945618EE930000564355 /* random.h */,
+				E925945718EE930000564355 /* strtoll.h */,
+				E925945818EE930000564355 /* unordered_map.h */,
+				E925945918EE930000564355 /* unordered_set.h */,
+				E925945A18EE930000564355 /* windows_basic.h */,
+			);
+			path = platform;
+			sourceTree = "<group>";
+		};
+		E925945C18EE930000564355 /* unittest */ = {
+			isa = PBXGroup;
+			children = (
+				E925945D18EE930000564355 /* unittest.h */,
+			);
+			path = unittest;
+			sourceTree = "<group>";
+		};
+		E925945E18EE930000564355 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				E925945F18EE930000564355 /* assert_util.h */,
+				E925946018EE930000564355 /* background.h */,
+				E925946118EE930000564355 /* base64.h */,
+				E925946218EE930000564355 /* bufreader.h */,
+				E925946318EE930000564355 /* concurrency */,
+				E925946818EE930000564355 /* debug_util.h */,
+				E925946918EE930000564355 /* embedded_builder.h */,
+				E925946A18EE930000564355 /* fail_point.h */,
+				E925946B18EE930000564355 /* fail_point_registry.h */,
+				E925946C18EE930000564355 /* fail_point_service.h */,
+				E925946D18EE930000564355 /* goodies.h */,
+				E925946E18EE930000564355 /* hex.h */,
+				E925946F18EE930000564355 /* log.h */,
+				E925947018EE930000564355 /* map_util.h */,
+				E925947118EE930000564355 /* md5.h */,
+				E925947218EE930000564355 /* md5.hpp */,
+				E925947318EE930000564355 /* mongoutils */,
+				E925947618EE930000564355 /* net */,
+				E925947F18EE930000564355 /* password_digest.h */,
+				E925948018EE930000564355 /* scopeguard.h */,
+				E925948118EE930000564355 /* string_map.h */,
+				E925948218EE930000564355 /* stringutils.h */,
+				E925948318EE930000564355 /* text.h */,
+				E925948418EE930000564355 /* time_support.h */,
+				E925948518EE930000564355 /* timer-generic-inl.h */,
+				E925948618EE930000564355 /* timer-inl.h */,
+				E925948718EE930000564355 /* timer-posixclock-inl.h */,
+				E925948818EE930000564355 /* timer-win32-inl.h */,
+				E925948918EE930000564355 /* timer.h */,
+				E925948A18EE930000564355 /* unordered_fast_key_table.h */,
+				E925948B18EE930000564355 /* unordered_fast_key_table_internal.h */,
+				E925948C18EE930000564355 /* version.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		E925946318EE930000564355 /* concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				E925946418EE930000564355 /* mutex.h */,
+				E925946518EE930000564355 /* synchronization.h */,
+				E925946618EE930000564355 /* thread_name.h */,
+				E925946718EE930000564355 /* threadlocal.h */,
+			);
+			path = concurrency;
+			sourceTree = "<group>";
+		};
+		E925947318EE930000564355 /* mongoutils */ = {
+			isa = PBXGroup;
+			children = (
+				E925947418EE930000564355 /* html.h */,
+				E925947518EE930000564355 /* str.h */,
+			);
+			path = mongoutils;
+			sourceTree = "<group>";
+		};
+		E925947618EE930000564355 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				E925947718EE930000564355 /* hostandport.h */,
+				E925947818EE930000564355 /* httpclient.h */,
+				E925947918EE930000564355 /* message.h */,
+				E925947A18EE930000564355 /* message_port.h */,
+				E925947B18EE930000564355 /* sock.h */,
+				E925947C18EE930000564355 /* socket_poll.h */,
+				E925947D18EE930000564355 /* ssl_manager.h */,
+				E925947E18EE930000564355 /* ssl_options.h */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		E925948F18EE930000564355 /* third_party */ = {
+			isa = PBXGroup;
+			children = (
+				E925949018EE930000564355 /* gtest-1.7.0 */,
+				E925956018EE930100564355 /* murmurhash3 */,
+				E925956318EE930100564355 /* SConscript */,
+				E925956418EE930100564355 /* shim_boost.cpp */,
+			);
+			path = third_party;
+			sourceTree = "<group>";
+		};
+		E925949018EE930000564355 /* gtest-1.7.0 */ = {
+			isa = PBXGroup;
+			children = (
+				E925949118EE930000564355 /* aclocal.m4 */,
+				E925949218EE930000564355 /* build-aux */,
+				E925949A18EE930000564355 /* CHANGES */,
+				E925949B18EE930000564355 /* cmake */,
+				E925949D18EE930000564355 /* CMakeLists.txt */,
+				E925949E18EE930000564355 /* codegear */,
+				E92594A518EE930000564355 /* configure */,
+				E92594A618EE930000564355 /* configure.ac */,
+				E92594A718EE930000564355 /* CONTRIBUTORS */,
+				E92594A818EE930000564355 /* fused-src */,
+				E92594AD18EE930000564355 /* include */,
+				E92594C818EE930000564355 /* LICENSE */,
+				E92594C918EE930000564355 /* m4 */,
+				E92594D118EE930000564355 /* make */,
+				E92594D318EE930000564355 /* Makefile.am */,
+				E92594D418EE930000564355 /* Makefile.in */,
+				E92594D518EE930000564355 /* msvc */,
+				E92594E018EE930000564355 /* README */,
+				E92594E118EE930000564355 /* samples */,
+				E92594F418EE930000564355 /* SConscript */,
+				E92594F518EE930000564355 /* scripts */,
+				E92594FC18EE930000564355 /* src */,
+				E925950718EE930000564355 /* test */,
+				E925954618EE930000564355 /* xcode */,
+			);
+			path = "gtest-1.7.0";
+			sourceTree = "<group>";
+		};
+		E925949218EE930000564355 /* build-aux */ = {
+			isa = PBXGroup;
+			children = (
+				E925949318EE930000564355 /* config.guess */,
+				E925949418EE930000564355 /* config.h.in */,
+				E925949518EE930000564355 /* config.sub */,
+				E925949618EE930000564355 /* depcomp */,
+				E925949718EE930000564355 /* install-sh */,
+				E925949818EE930000564355 /* ltmain.sh */,
+				E925949918EE930000564355 /* missing */,
+			);
+			path = "build-aux";
+			sourceTree = "<group>";
+		};
+		E925949B18EE930000564355 /* cmake */ = {
+			isa = PBXGroup;
+			children = (
+				E925949C18EE930000564355 /* internal_utils.cmake */,
+			);
+			path = cmake;
+			sourceTree = "<group>";
+		};
+		E925949E18EE930000564355 /* codegear */ = {
+			isa = PBXGroup;
+			children = (
+				E925949F18EE930000564355 /* gtest.cbproj */,
+				E92594A018EE930000564355 /* gtest.groupproj */,
+				E92594A118EE930000564355 /* gtest_all.cc */,
+				E92594A218EE930000564355 /* gtest_link.cc */,
+				E92594A318EE930000564355 /* gtest_main.cbproj */,
+				E92594A418EE930000564355 /* gtest_unittest.cbproj */,
+			);
+			path = codegear;
+			sourceTree = "<group>";
+		};
+		E92594A818EE930000564355 /* fused-src */ = {
+			isa = PBXGroup;
+			children = (
+				E92594A918EE930000564355 /* gtest */,
+			);
+			path = "fused-src";
+			sourceTree = "<group>";
+		};
+		E92594A918EE930000564355 /* gtest */ = {
+			isa = PBXGroup;
+			children = (
+				E92594AA18EE930000564355 /* gtest-all.cc */,
+				E92594AB18EE930000564355 /* gtest.h */,
+				E92594AC18EE930000564355 /* gtest_main.cc */,
+			);
+			path = gtest;
+			sourceTree = "<group>";
+		};
+		E92594AD18EE930000564355 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E92594AE18EE930000564355 /* gtest */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E92594AE18EE930000564355 /* gtest */ = {
+			isa = PBXGroup;
+			children = (
+				E92594AF18EE930000564355 /* gtest-death-test.h */,
+				E92594B018EE930000564355 /* gtest-message.h */,
+				E92594B118EE930000564355 /* gtest-param-test.h */,
+				E92594B218EE930000564355 /* gtest-param-test.h.pump */,
+				E92594B318EE930000564355 /* gtest-printers.h */,
+				E92594B418EE930000564355 /* gtest-spi.h */,
+				E92594B518EE930000564355 /* gtest-test-part.h */,
+				E92594B618EE930000564355 /* gtest-typed-test.h */,
+				E92594B718EE930000564355 /* gtest.h */,
+				E92594B818EE930000564355 /* gtest_pred_impl.h */,
+				E92594B918EE930000564355 /* gtest_prod.h */,
+				E92594BA18EE930000564355 /* internal */,
+			);
+			path = gtest;
+			sourceTree = "<group>";
+		};
+		E92594BA18EE930000564355 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				E92594BB18EE930000564355 /* gtest-death-test-internal.h */,
+				E92594BC18EE930000564355 /* gtest-filepath.h */,
+				E92594BD18EE930000564355 /* gtest-internal.h */,
+				E92594BE18EE930000564355 /* gtest-linked_ptr.h */,
+				E92594BF18EE930000564355 /* gtest-param-util-generated.h */,
+				E92594C018EE930000564355 /* gtest-param-util-generated.h.pump */,
+				E92594C118EE930000564355 /* gtest-param-util.h */,
+				E92594C218EE930000564355 /* gtest-port.h */,
+				E92594C318EE930000564355 /* gtest-string.h */,
+				E92594C418EE930000564355 /* gtest-tuple.h */,
+				E92594C518EE930000564355 /* gtest-tuple.h.pump */,
+				E92594C618EE930000564355 /* gtest-type-util.h */,
+				E92594C718EE930000564355 /* gtest-type-util.h.pump */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		E92594C918EE930000564355 /* m4 */ = {
+			isa = PBXGroup;
+			children = (
+				E92594CA18EE930000564355 /* acx_pthread.m4 */,
+				E92594CB18EE930000564355 /* gtest.m4 */,
+				E92594CC18EE930000564355 /* libtool.m4 */,
+				E92594CD18EE930000564355 /* ltoptions.m4 */,
+				E92594CE18EE930000564355 /* ltsugar.m4 */,
+				E92594CF18EE930000564355 /* ltversion.m4 */,
+				E92594D018EE930000564355 /* lt~obsolete.m4 */,
+			);
+			path = m4;
+			sourceTree = "<group>";
+		};
+		E92594D118EE930000564355 /* make */ = {
+			isa = PBXGroup;
+			children = (
+				E92594D218EE930000564355 /* Makefile */,
+			);
+			path = make;
+			sourceTree = "<group>";
+		};
+		E92594D518EE930000564355 /* msvc */ = {
+			isa = PBXGroup;
+			children = (
+				E92594D618EE930000564355 /* gtest-md.sln */,
+				E92594D718EE930000564355 /* gtest-md.vcproj */,
+				E92594D818EE930000564355 /* gtest.sln */,
+				E92594D918EE930000564355 /* gtest.vcproj */,
+				E92594DA18EE930000564355 /* gtest_main-md.vcproj */,
+				E92594DB18EE930000564355 /* gtest_main.vcproj */,
+				E92594DC18EE930000564355 /* gtest_prod_test-md.vcproj */,
+				E92594DD18EE930000564355 /* gtest_prod_test.vcproj */,
+				E92594DE18EE930000564355 /* gtest_unittest-md.vcproj */,
+				E92594DF18EE930000564355 /* gtest_unittest.vcproj */,
+			);
+			path = msvc;
+			sourceTree = "<group>";
+		};
+		E92594E118EE930000564355 /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				E92594E218EE930000564355 /* prime_tables.h */,
+				E92594E318EE930000564355 /* sample1.cc */,
+				E92594E418EE930000564355 /* sample1.h */,
+				E92594E518EE930000564355 /* sample10_unittest.cc */,
+				E92594E618EE930000564355 /* sample1_unittest.cc */,
+				E92594E718EE930000564355 /* sample2.cc */,
+				E92594E818EE930000564355 /* sample2.h */,
+				E92594E918EE930000564355 /* sample2_unittest.cc */,
+				E92594EA18EE930000564355 /* sample3-inl.h */,
+				E92594EB18EE930000564355 /* sample3_unittest.cc */,
+				E92594EC18EE930000564355 /* sample4.cc */,
+				E92594ED18EE930000564355 /* sample4.h */,
+				E92594EE18EE930000564355 /* sample4_unittest.cc */,
+				E92594EF18EE930000564355 /* sample5_unittest.cc */,
+				E92594F018EE930000564355 /* sample6_unittest.cc */,
+				E92594F118EE930000564355 /* sample7_unittest.cc */,
+				E92594F218EE930000564355 /* sample8_unittest.cc */,
+				E92594F318EE930000564355 /* sample9_unittest.cc */,
+			);
+			path = samples;
+			sourceTree = "<group>";
+		};
+		E92594F518EE930000564355 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				E92594F618EE930000564355 /* fuse_gtest_files.py */,
+				E92594F718EE930000564355 /* gen_gtest_pred_impl.py */,
+				E92594F818EE930000564355 /* gtest-config.in */,
+				E92594F918EE930000564355 /* pump.py */,
+				E92594FA18EE930000564355 /* test */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		E92594FA18EE930000564355 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				E92594FB18EE930000564355 /* Makefile */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		E92594FC18EE930000564355 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E92594FD18EE930000564355 /* gtest-all.cc */,
+				E92594FE18EE930000564355 /* gtest-death-test.cc */,
+				E92594FF18EE930000564355 /* gtest-filepath.cc */,
+				E925950018EE930000564355 /* gtest-internal-inl.h */,
+				E925950118EE930000564355 /* gtest-port.cc */,
+				E925950218EE930000564355 /* gtest-printers.cc */,
+				E925950318EE930000564355 /* gtest-test-part.cc */,
+				E925950418EE930000564355 /* gtest-typed-test.cc */,
+				E925950518EE930000564355 /* gtest.cc */,
+				E925950618EE930000564355 /* gtest_main.cc */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		E925950718EE930000564355 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				E925950818EE930000564355 /* gtest-death-test_ex_test.cc */,
+				E925950918EE930000564355 /* gtest-death-test_test.cc */,
+				E925950A18EE930000564355 /* gtest-filepath_test.cc */,
+				E925950B18EE930000564355 /* gtest-linked_ptr_test.cc */,
+				E925950C18EE930000564355 /* gtest-listener_test.cc */,
+				E925950D18EE930000564355 /* gtest-message_test.cc */,
+				E925950E18EE930000564355 /* gtest-options_test.cc */,
+				E925950F18EE930000564355 /* gtest-param-test2_test.cc */,
+				E925951018EE930000564355 /* gtest-param-test_test.cc */,
+				E925951118EE930000564355 /* gtest-param-test_test.h */,
+				E925951218EE930000564355 /* gtest-port_test.cc */,
+				E925951318EE930000564355 /* gtest-printers_test.cc */,
+				E925951418EE930000564355 /* gtest-test-part_test.cc */,
+				E925951518EE930000564355 /* gtest-tuple_test.cc */,
+				E925951618EE930000564355 /* gtest-typed-test2_test.cc */,
+				E925951718EE930000564355 /* gtest-typed-test_test.cc */,
+				E925951818EE930000564355 /* gtest-typed-test_test.h */,
+				E925951918EE930000564355 /* gtest-unittest-api_test.cc */,
+				E925951A18EE930000564355 /* gtest_all_test.cc */,
+				E925951B18EE930000564355 /* gtest_break_on_failure_unittest.py */,
+				E925951C18EE930000564355 /* gtest_break_on_failure_unittest_.cc */,
+				E925951D18EE930000564355 /* gtest_catch_exceptions_test.py */,
+				E925951E18EE930000564355 /* gtest_catch_exceptions_test_.cc */,
+				E925951F18EE930000564355 /* gtest_color_test.py */,
+				E925952018EE930000564355 /* gtest_color_test_.cc */,
+				E925952118EE930000564355 /* gtest_env_var_test.py */,
+				E925952218EE930000564355 /* gtest_env_var_test_.cc */,
+				E925952318EE930000564355 /* gtest_environment_test.cc */,
+				E925952418EE930000564355 /* gtest_filter_unittest.py */,
+				E925952518EE930000564355 /* gtest_filter_unittest_.cc */,
+				E925952618EE930000564355 /* gtest_help_test.py */,
+				E925952718EE930000564355 /* gtest_help_test_.cc */,
+				E925952818EE930000564355 /* gtest_list_tests_unittest.py */,
+				E925952918EE930000564355 /* gtest_list_tests_unittest_.cc */,
+				E925952A18EE930000564355 /* gtest_main_unittest.cc */,
+				E925952B18EE930000564355 /* gtest_no_test_unittest.cc */,
+				E925952C18EE930000564355 /* gtest_output_test.py */,
+				E925952D18EE930000564355 /* gtest_output_test_.cc */,
+				E925952E18EE930000564355 /* gtest_output_test_golden_lin.txt */,
+				E925952F18EE930000564355 /* gtest_pred_impl_unittest.cc */,
+				E925953018EE930000564355 /* gtest_premature_exit_test.cc */,
+				E925953118EE930000564355 /* gtest_prod_test.cc */,
+				E925953218EE930000564355 /* gtest_repeat_test.cc */,
+				E925953318EE930000564355 /* gtest_shuffle_test.py */,
+				E925953418EE930000564355 /* gtest_shuffle_test_.cc */,
+				E925953518EE930000564355 /* gtest_sole_header_test.cc */,
+				E925953618EE930000564355 /* gtest_stress_test.cc */,
+				E925953718EE930000564355 /* gtest_test_utils.py */,
+				E925953818EE930000564355 /* gtest_throw_on_failure_ex_test.cc */,
+				E925953918EE930000564355 /* gtest_throw_on_failure_test.py */,
+				E925953A18EE930000564355 /* gtest_throw_on_failure_test_.cc */,
+				E925953B18EE930000564355 /* gtest_uninitialized_test.py */,
+				E925953C18EE930000564355 /* gtest_uninitialized_test_.cc */,
+				E925953D18EE930000564355 /* gtest_unittest.cc */,
+				E925953E18EE930000564355 /* gtest_xml_outfile1_test_.cc */,
+				E925953F18EE930000564355 /* gtest_xml_outfile2_test_.cc */,
+				E925954018EE930000564355 /* gtest_xml_outfiles_test.py */,
+				E925954118EE930000564355 /* gtest_xml_output_unittest.py */,
+				E925954218EE930000564355 /* gtest_xml_output_unittest_.cc */,
+				E925954318EE930000564355 /* gtest_xml_test_utils.py */,
+				E925954418EE930000564355 /* production.cc */,
+				E925954518EE930000564355 /* production.h */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		E925954618EE930000564355 /* xcode */ = {
+			isa = PBXGroup;
+			children = (
+				E925954718EE930000564355 /* Config */,
+				E925954E18EE930000564355 /* gtest.xcodeproj */,
+				E925955118EE930100564355 /* Resources */,
+				E925955318EE930100564355 /* Samples */,
+				E925955D18EE930100564355 /* Scripts */,
+			);
+			path = xcode;
+			sourceTree = "<group>";
+		};
+		E925954718EE930000564355 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E925954818EE930000564355 /* DebugProject.xcconfig */,
+				E925954918EE930000564355 /* FrameworkTarget.xcconfig */,
+				E925954A18EE930000564355 /* General.xcconfig */,
+				E925954B18EE930000564355 /* ReleaseProject.xcconfig */,
+				E925954C18EE930000564355 /* StaticLibraryTarget.xcconfig */,
+				E925954D18EE930000564355 /* TestTarget.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		E925954F18EE930000564355 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E92596A718EE930100564355 /* gtest.framework */,
+				E92596A918EE930100564355 /* libgtest.a */,
+				E92596AB18EE930100564355 /* libgtest_main.a */,
+				E92596AD18EE930100564355 /* gtest_unittest-framework */,
+				E92596AF18EE930100564355 /* gtest_unittest */,
+				E92596B118EE930100564355 /* sample1_unittest-framework */,
+				E92596B318EE930100564355 /* sample1_unittest-static */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E925955118EE930100564355 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E925955218EE930100564355 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E925955318EE930100564355 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				E925955418EE930100564355 /* FrameworkSample */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+		E925955418EE930100564355 /* FrameworkSample */ = {
+			isa = PBXGroup;
+			children = (
+				E925955518EE930100564355 /* Info.plist */,
+				E925955618EE930100564355 /* runtests.sh */,
+				E925955718EE930100564355 /* widget.cc */,
+				E925955818EE930100564355 /* widget.h */,
+				E925955918EE930100564355 /* widget_test.cc */,
+				E925955A18EE930100564355 /* WidgetFramework.xcodeproj */,
+			);
+			path = FrameworkSample;
+			sourceTree = "<group>";
+		};
+		E925955B18EE930100564355 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E92596B918EE930100564355 /* Widget.framework */,
+				E92596BB18EE930100564355 /* WidgetFrameworkTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E925955D18EE930100564355 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				E925955E18EE930100564355 /* runtests.sh */,
+				E925955F18EE930100564355 /* versiongenerate.py */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		E925956018EE930100564355 /* murmurhash3 */ = {
+			isa = PBXGroup;
+			children = (
+				E925956118EE930100564355 /* MurmurHash3.cpp */,
+				E925956218EE930100564355 /* MurmurHash3.h */,
+			);
+			path = murmurhash3;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9258D5018EE424500564355 /* Mango */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9258D8218EE424600564355 /* Build configuration list for PBXNativeTarget "Mango" */;
+			buildPhases = (
+				E9258D4D18EE424500564355 /* Sources */,
+				E9258D4E18EE424500564355 /* Frameworks */,
+				E9258D4F18EE424500564355 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mango;
+			productName = Mango;
+			productReference = E9258D5118EE424600564355 /* Mango.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9258D7118EE424600564355 /* MangoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9258D8518EE424600564355 /* Build configuration list for PBXNativeTarget "MangoTests" */;
+			buildPhases = (
+				E9258D6E18EE424600564355 /* Sources */,
+				E9258D6F18EE424600564355 /* Frameworks */,
+				E9258D7018EE424600564355 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9258D7718EE424600564355 /* PBXTargetDependency */,
+			);
+			name = MangoTests;
+			productName = MangoTests;
+			productReference = E9258D7218EE424600564355 /* MangoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9258D4918EE424500564355 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Mango;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Juan Carlos Moreno";
+				TargetAttributes = {
+					E9258D7118EE424600564355 = {
+						TestTargetID = E9258D5018EE424500564355;
+					};
+				};
+			};
+			buildConfigurationList = E9258D4C18EE424500564355 /* Build configuration list for PBXProject "Mango" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9258D4818EE424500564355;
+			productRefGroup = E9258D5218EE424600564355 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E925954F18EE930000564355 /* Products */;
+					ProjectRef = E925954E18EE930000564355 /* gtest.xcodeproj */;
+				},
+				{
+					ProductGroup = E925955B18EE930100564355 /* Products */;
+					ProjectRef = E925955A18EE930100564355 /* WidgetFramework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E9258D5018EE424500564355 /* Mango */,
+				E9258D7118EE424600564355 /* MangoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E92596A718EE930100564355 /* gtest.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = gtest.framework;
+			remoteRef = E92596A618EE930100564355 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E92596A918EE930100564355 /* libgtest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest.a;
+			remoteRef = E92596A818EE930100564355 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E92596AB18EE930100564355 /* libgtest_main.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest_main.a;
+			remoteRef = E92596AA18EE930100564355 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E92596AD18EE930100564355 /* gtest_unittest-framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "gtest_unittest-framework";
+			remoteRef = E92596AC18EE930100564355 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E92596AF18EE930100564355 /* gtest_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = gtest_unittest;
+			remoteRef = E92596AE18EE930100564355 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E92596B118EE930100564355 /* sample1_unittest-framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "sample1_unittest-framework";
+			remoteRef = E92596B018EE930100564355 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E92596B318EE930100564355 /* sample1_unittest-static */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "sample1_unittest-static";
+			remoteRef = E92596B218EE930100564355 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E92596B918EE930100564355 /* Widget.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Widget.framework;
+			remoteRef = E92596B818EE930100564355 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E92596BB18EE930100564355 /* WidgetFrameworkTest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = WidgetFrameworkTest;
+			remoteRef = E92596BA18EE930100564355 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9258D4F18EE424500564355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92595B718EE930100564355 /* Makefile.in in Resources */,
+				E925962D18EE930100564355 /* gtest_catch_exceptions_test.py in Resources */,
+				E925959D18EE930100564355 /* gtest-param-util-generated.h.pump in Resources */,
+				E925959318EE930100564355 /* configure.ac in Resources */,
+				E925967318EE930100564355 /* gtest_xml_outfiles_test.py in Resources */,
+				E925968118EE930100564355 /* General.xcconfig in Resources */,
+				E925959118EE930100564355 /* configure in Resources */,
+				E925956F18EE930100564355 /* aclocal.m4 in Resources */,
+				E9258D8B18EE4C6F00564355 /* mango.jpg in Resources */,
+				E925957118EE930100564355 /* config.guess in Resources */,
+				E92595BF18EE930100564355 /* gtest.vcproj in Resources */,
+				E92595A518EE930100564355 /* acx_pthread.m4 in Resources */,
+				E925969918EE930100564355 /* SConscript in Resources */,
+				E92595B918EE930100564355 /* gtest-md.sln in Resources */,
+				E925964B18EE930100564355 /* gtest_output_test.py in Resources */,
+				E925958118EE930100564355 /* internal_utils.cmake in Resources */,
+				E92595A918EE930100564355 /* libtool.m4 in Resources */,
+				E92595AF18EE930100564355 /* ltversion.m4 in Resources */,
+				E92595C518EE930100564355 /* gtest_prod_test-md.vcproj in Resources */,
+				E9258D5F18EE424600564355 /* InfoPlist.strings in Resources */,
+				E92595AD18EE930100564355 /* ltsugar.m4 in Resources */,
+				E92595C118EE930100564355 /* gtest_main-md.vcproj in Resources */,
+				E92595A318EE930100564355 /* LICENSE in Resources */,
+				E925967F18EE930100564355 /* FrameworkTarget.xcconfig in Resources */,
+				E92595CB18EE930100564355 /* gtest_unittest.vcproj in Resources */,
+				E92595ED18EE930100564355 /* gen_gtest_pred_impl.py in Resources */,
+				E925957F18EE930100564355 /* CHANGES in Resources */,
+				E925958D18EE930100564355 /* gtest_main.cbproj in Resources */,
+				E92595B518EE930100564355 /* Makefile.am in Resources */,
+				E925969518EE930100564355 /* versiongenerate.py in Resources */,
+				E925969318EE930100564355 /* runtests.sh in Resources */,
+				E9258D8918EE445100564355 /* ConnectionWindow.xib in Resources */,
+				E92595BD18EE930100564355 /* gtest.sln in Resources */,
+				E925963B18EE930100564355 /* gtest_filter_unittest.py in Resources */,
+				E9258D6D18EE424600564355 /* Images.xcassets in Resources */,
+				E92595A718EE930100564355 /* gtest.m4 in Resources */,
+				E92595B118EE930100564355 /* lt~obsolete.m4 in Resources */,
+				E925957318EE930100564355 /* config.h.in in Resources */,
+				E925958518EE930100564355 /* gtest.cbproj in Resources */,
+				E925968B18EE930100564355 /* Info.plist in Resources */,
+				E92595EB18EE930100564355 /* fuse_gtest_files.py in Resources */,
+				E92595E918EE930100564355 /* SConscript in Resources */,
+				E92595EF18EE930100564355 /* gtest-config.in in Resources */,
+				E925968318EE930100564355 /* ReleaseProject.xcconfig in Resources */,
+				E925959518EE930100564355 /* CONTRIBUTORS in Resources */,
+				E925956B18EE930100564355 /* SConscript in Resources */,
+				E925967518EE930100564355 /* gtest_xml_output_unittest.py in Resources */,
+				E925966518EE930100564355 /* gtest_throw_on_failure_test.py in Resources */,
+				E92595C918EE930100564355 /* gtest_unittest-md.vcproj in Resources */,
+				E925956518EE930100564355 /* error_codes.err in Resources */,
+				E925964F18EE930100564355 /* gtest_output_test_golden_lin.txt in Resources */,
+				E92595F118EE930100564355 /* pump.py in Resources */,
+				E925957918EE930100564355 /* install-sh in Resources */,
+				E92595A118EE930100564355 /* gtest-type-util.h.pump in Resources */,
+				E9258D6518EE424600564355 /* Credits.rtf in Resources */,
+				E92595CD18EE930100564355 /* README in Resources */,
+				E925964318EE930100564355 /* gtest_list_tests_unittest.py in Resources */,
+				E925967D18EE930100564355 /* DebugProject.xcconfig in Resources */,
+				E925968918EE930100564355 /* Info.plist in Resources */,
+				E925956918EE930100564355 /* SConscript in Resources */,
+				E925968718EE930100564355 /* TestTarget.xcconfig in Resources */,
+				E92595AB18EE930100564355 /* ltoptions.m4 in Resources */,
+				E925956D18EE930100564355 /* SConscript.client in Resources */,
+				E925957D18EE930100564355 /* missing in Resources */,
+				E92595C318EE930100564355 /* gtest_main.vcproj in Resources */,
+				E925959F18EE930100564355 /* gtest-tuple.h.pump in Resources */,
+				E925958318EE930100564355 /* CMakeLists.txt in Resources */,
+				E925957B18EE930100564355 /* ltmain.sh in Resources */,
+				E925966918EE930100564355 /* gtest_uninitialized_test.py in Resources */,
+				E925968518EE930100564355 /* StaticLibraryTarget.xcconfig in Resources */,
+				E925959B18EE930100564355 /* gtest-param-test.h.pump in Resources */,
+				E925967918EE930100564355 /* gtest_xml_test_utils.py in Resources */,
+				E925965918EE930100564355 /* gtest_shuffle_test.py in Resources */,
+				E9258D6B18EE424600564355 /* MainMenu.xib in Resources */,
+				E925958718EE930100564355 /* gtest.groupproj in Resources */,
+				E925956718EE930100564355 /* generate_error_codes.py in Resources */,
+				E925963F18EE930100564355 /* gtest_help_test.py in Resources */,
+				E92595C718EE930100564355 /* gtest_prod_test.vcproj in Resources */,
+				E925958F18EE930100564355 /* gtest_unittest.cbproj in Resources */,
+				E925957518EE930100564355 /* config.sub in Resources */,
+				E925966118EE930100564355 /* gtest_test_utils.py in Resources */,
+				E925963118EE930100564355 /* gtest_color_test.py in Resources */,
+				E925963518EE930100564355 /* gtest_env_var_test.py in Resources */,
+				E925968D18EE930100564355 /* runtests.sh in Resources */,
+				E925957718EE930100564355 /* depcomp in Resources */,
+				E925962918EE930100564355 /* gtest_break_on_failure_unittest.py in Resources */,
+				E92595BB18EE930100564355 /* gtest-md.vcproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9258D7018EE424600564355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E925967A18EE930100564355 /* gtest_xml_test_utils.py in Resources */,
+				E925958218EE930100564355 /* internal_utils.cmake in Resources */,
+				E92595CA18EE930100564355 /* gtest_unittest-md.vcproj in Resources */,
+				E925958418EE930100564355 /* CMakeLists.txt in Resources */,
+				E9258D7D18EE424600564355 /* InfoPlist.strings in Resources */,
+				E925959C18EE930100564355 /* gtest-param-test.h.pump in Resources */,
+				E92595A418EE930100564355 /* LICENSE in Resources */,
+				E925963618EE930100564355 /* gtest_env_var_test.py in Resources */,
+				E92595F218EE930100564355 /* pump.py in Resources */,
+				E925957818EE930100564355 /* depcomp in Resources */,
+				E925959418EE930100564355 /* configure.ac in Resources */,
+				E925957018EE930100564355 /* aclocal.m4 in Resources */,
+				E92595C618EE930100564355 /* gtest_prod_test-md.vcproj in Resources */,
+				E92595B818EE930100564355 /* Makefile.in in Resources */,
+				E925959218EE930100564355 /* configure in Resources */,
+				E92595AE18EE930100564355 /* ltsugar.m4 in Resources */,
+				E925966A18EE930100564355 /* gtest_uninitialized_test.py in Resources */,
+				E925956618EE930100564355 /* error_codes.err in Resources */,
+				E925968418EE930100564355 /* ReleaseProject.xcconfig in Resources */,
+				E925968218EE930100564355 /* General.xcconfig in Resources */,
+				E925967418EE930100564355 /* gtest_xml_outfiles_test.py in Resources */,
+				E92595EA18EE930100564355 /* SConscript in Resources */,
+				E925963218EE930100564355 /* gtest_color_test.py in Resources */,
+				E92595A218EE930100564355 /* gtest-type-util.h.pump in Resources */,
+				E92595EE18EE930100564355 /* gen_gtest_pred_impl.py in Resources */,
+				E92595EC18EE930100564355 /* fuse_gtest_files.py in Resources */,
+				E925958E18EE930100564355 /* gtest_main.cbproj in Resources */,
+				E92595C418EE930100564355 /* gtest_main.vcproj in Resources */,
+				E925969418EE930100564355 /* runtests.sh in Resources */,
+				E925964418EE930100564355 /* gtest_list_tests_unittest.py in Resources */,
+				E92595BC18EE930100564355 /* gtest-md.vcproj in Resources */,
+				E925962E18EE930100564355 /* gtest_catch_exceptions_test.py in Resources */,
+				E925956E18EE930100564355 /* SConscript.client in Resources */,
+				E92595B618EE930100564355 /* Makefile.am in Resources */,
+				E925968818EE930100564355 /* TestTarget.xcconfig in Resources */,
+				E92595CE18EE930100564355 /* README in Resources */,
+				E925957A18EE930100564355 /* install-sh in Resources */,
+				E92595AC18EE930100564355 /* ltoptions.m4 in Resources */,
+				E92595AA18EE930100564355 /* libtool.m4 in Resources */,
+				E925968C18EE930100564355 /* Info.plist in Resources */,
+				E925957618EE930100564355 /* config.sub in Resources */,
+				E925959E18EE930100564355 /* gtest-param-util-generated.h.pump in Resources */,
+				E92595B018EE930100564355 /* ltversion.m4 in Resources */,
+				E925968A18EE930100564355 /* Info.plist in Resources */,
+				E92595A618EE930100564355 /* acx_pthread.m4 in Resources */,
+				E925957C18EE930100564355 /* ltmain.sh in Resources */,
+				E925969A18EE930100564355 /* SConscript in Resources */,
+				E925956A18EE930100564355 /* SConscript in Resources */,
+				E92595CC18EE930100564355 /* gtest_unittest.vcproj in Resources */,
+				E925965018EE930100564355 /* gtest_output_test_golden_lin.txt in Resources */,
+				E925958018EE930100564355 /* CHANGES in Resources */,
+				E925968018EE930100564355 /* FrameworkTarget.xcconfig in Resources */,
+				E925968E18EE930100564355 /* runtests.sh in Resources */,
+				E92595BE18EE930100564355 /* gtest.sln in Resources */,
+				E925957418EE930100564355 /* config.h.in in Resources */,
+				E925962A18EE930100564355 /* gtest_break_on_failure_unittest.py in Resources */,
+				E925966218EE930100564355 /* gtest_test_utils.py in Resources */,
+				E925967618EE930100564355 /* gtest_xml_output_unittest.py in Resources */,
+				E925956818EE930100564355 /* generate_error_codes.py in Resources */,
+				E925956C18EE930100564355 /* SConscript in Resources */,
+				E925966618EE930100564355 /* gtest_throw_on_failure_test.py in Resources */,
+				E925959618EE930100564355 /* CONTRIBUTORS in Resources */,
+				E92595B218EE930100564355 /* lt~obsolete.m4 in Resources */,
+				E925969618EE930100564355 /* versiongenerate.py in Resources */,
+				E925963C18EE930100564355 /* gtest_filter_unittest.py in Resources */,
+				E92595A018EE930100564355 /* gtest-tuple.h.pump in Resources */,
+				E92595C818EE930100564355 /* gtest_prod_test.vcproj in Resources */,
+				E925958618EE930100564355 /* gtest.cbproj in Resources */,
+				E92595A818EE930100564355 /* gtest.m4 in Resources */,
+				E925967E18EE930100564355 /* DebugProject.xcconfig in Resources */,
+				E925968618EE930100564355 /* StaticLibraryTarget.xcconfig in Resources */,
+				E925964018EE930100564355 /* gtest_help_test.py in Resources */,
+				E92595F018EE930100564355 /* gtest-config.in in Resources */,
+				E92595BA18EE930100564355 /* gtest-md.sln in Resources */,
+				E925957218EE930100564355 /* config.guess in Resources */,
+				E925957E18EE930100564355 /* missing in Resources */,
+				E92595C018EE930100564355 /* gtest.vcproj in Resources */,
+				E925958818EE930100564355 /* gtest.groupproj in Resources */,
+				E925964C18EE930100564355 /* gtest_output_test.py in Resources */,
+				E92595C218EE930100564355 /* gtest_main-md.vcproj in Resources */,
+				E925965A18EE930100564355 /* gtest_shuffle_test.py in Resources */,
+				E925959018EE930100564355 /* gtest_unittest.cbproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9258D4D18EE424500564355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9258D6118EE424600564355 /* main.m in Sources */,
+				E92593D118EE7FA000564355 /* ConnectionWindow.mm in Sources */,
+				E92593CF18EE7F9C00564355 /* MangoAppDelegate.mm in Sources */,
+				E92593D018EE7F9E00564355 /* MangoConnectionManager.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9258D6E18EE424600564355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E925967C18EE930100564355 /* production.cc in Sources */,
+				E925965E18EE930100564355 /* gtest_sole_header_test.cc in Sources */,
+				E925965618EE930100564355 /* gtest_prod_test.cc in Sources */,
+				E925966418EE930100564355 /* gtest_throw_on_failure_ex_test.cc in Sources */,
+				E925960618EE930100564355 /* gtest_main.cc in Sources */,
+				E92595D018EE930100564355 /* sample1.cc in Sources */,
+				E925969018EE930100564355 /* widget.cc in Sources */,
+				E92595D418EE930100564355 /* sample1_unittest.cc in Sources */,
+				E925961018EE930100564355 /* gtest-listener_test.cc in Sources */,
+				E925961618EE930100564355 /* gtest-param-test2_test.cc in Sources */,
+				E925966818EE930100564355 /* gtest_throw_on_failure_test_.cc in Sources */,
+				E925967218EE930100564355 /* gtest_xml_outfile2_test_.cc in Sources */,
+				E92595E418EE930100564355 /* sample7_unittest.cc in Sources */,
+				E925961218EE930100564355 /* gtest-message_test.cc in Sources */,
+				E925961818EE930100564355 /* gtest-param-test_test.cc in Sources */,
+				E925964818EE930100564355 /* gtest_main_unittest.cc in Sources */,
+				E92595E818EE930100564355 /* sample9_unittest.cc in Sources */,
+				E925962C18EE930100564355 /* gtest_break_on_failure_unittest_.cc in Sources */,
+				E92595B418EE930100564355 /* Makefile in Sources */,
+				E925963018EE930100564355 /* gtest_catch_exceptions_test_.cc in Sources */,
+				E92595E618EE930100564355 /* sample8_unittest.cc in Sources */,
+				E925964A18EE930100564355 /* gtest_no_test_unittest.cc in Sources */,
+				E925966E18EE930100564355 /* gtest_unittest.cc in Sources */,
+				E925966018EE930100564355 /* gtest_stress_test.cc in Sources */,
+				E925960E18EE930100564355 /* gtest-linked_ptr_test.cc in Sources */,
+				E925963A18EE930100564355 /* gtest_environment_test.cc in Sources */,
+				E925961C18EE930100564355 /* gtest-printers_test.cc in Sources */,
+				E925965218EE930100564355 /* gtest_pred_impl_unittest.cc in Sources */,
+				E92595D818EE930100564355 /* sample2_unittest.cc in Sources */,
+				E925966C18EE930100564355 /* gtest_uninitialized_test_.cc in Sources */,
+				E925960A18EE930100564355 /* gtest-death-test_test.cc in Sources */,
+				E92595E018EE930100564355 /* sample5_unittest.cc in Sources */,
+				E925963E18EE930100564355 /* gtest_filter_unittest_.cc in Sources */,
+				E925960C18EE930100564355 /* gtest-filepath_test.cc in Sources */,
+				E92595DC18EE930100564355 /* sample4.cc in Sources */,
+				E925963418EE930100564355 /* gtest_color_test_.cc in Sources */,
+				E925962418EE930100564355 /* gtest-typed-test_test.cc in Sources */,
+				E925962018EE930100564355 /* gtest-tuple_test.cc in Sources */,
+				E925965418EE930100564355 /* gtest_premature_exit_test.cc in Sources */,
+				E925969218EE930100564355 /* widget_test.cc in Sources */,
+				E92595D218EE930100564355 /* sample10_unittest.cc in Sources */,
+				E925962618EE930100564355 /* gtest-unittest-api_test.cc in Sources */,
+				E92595F418EE930100564355 /* Makefile in Sources */,
+				E92595D618EE930100564355 /* sample2.cc in Sources */,
+				E925961E18EE930100564355 /* gtest-test-part_test.cc in Sources */,
+				E9258D7F18EE424600564355 /* MangoTests.m in Sources */,
+				E92595DA18EE930100564355 /* sample3_unittest.cc in Sources */,
+				E925960818EE930100564355 /* gtest-death-test_ex_test.cc in Sources */,
+				E925964E18EE930100564355 /* gtest_output_test_.cc in Sources */,
+				E925969818EE930100564355 /* MurmurHash3.cpp in Sources */,
+				E92595F618EE930100564355 /* gtest-all.cc in Sources */,
+				E925962218EE930100564355 /* gtest-typed-test2_test.cc in Sources */,
+				E925959818EE930100564355 /* gtest-all.cc in Sources */,
+				E925958A18EE930100564355 /* gtest_all.cc in Sources */,
+				E925969C18EE930100564355 /* shim_boost.cpp in Sources */,
+				E925961418EE930100564355 /* gtest-options_test.cc in Sources */,
+				E925967018EE930100564355 /* gtest_xml_outfile1_test_.cc in Sources */,
+				E925959A18EE930100564355 /* gtest_main.cc in Sources */,
+				E925960218EE930100564355 /* gtest-typed-test.cc in Sources */,
+				E925960418EE930100564355 /* gtest.cc in Sources */,
+				E92595FC18EE930100564355 /* gtest-port.cc in Sources */,
+				E92595DE18EE930100564355 /* sample4_unittest.cc in Sources */,
+				E925961A18EE930100564355 /* gtest-port_test.cc in Sources */,
+				E925960018EE930100564355 /* gtest-test-part.cc in Sources */,
+				E92595E218EE930100564355 /* sample6_unittest.cc in Sources */,
+				E925965818EE930100564355 /* gtest_repeat_test.cc in Sources */,
+				E925965C18EE930100564355 /* gtest_shuffle_test_.cc in Sources */,
+				E925967818EE930100564355 /* gtest_xml_output_unittest_.cc in Sources */,
+				E92595F818EE930100564355 /* gtest-death-test.cc in Sources */,
+				E925958C18EE930100564355 /* gtest_link.cc in Sources */,
+				E925964218EE930100564355 /* gtest_help_test_.cc in Sources */,
+				E92595FA18EE930100564355 /* gtest-filepath.cc in Sources */,
+				E925963818EE930100564355 /* gtest_env_var_test_.cc in Sources */,
+				E92595FE18EE930100564355 /* gtest-printers.cc in Sources */,
+				E925962818EE930100564355 /* gtest_all_test.cc in Sources */,
+				E925964618EE930100564355 /* gtest_list_tests_unittest_.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9258D7718EE424600564355 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9258D5018EE424500564355 /* Mango */;
+			targetProxy = E9258D7618EE424600564355 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9258D5D18EE424600564355 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9258D5E18EE424600564355 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E9258D6318EE424600564355 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9258D6418EE424600564355 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E9258D6918EE424600564355 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9258D6A18EE424600564355 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		E9258D7B18EE424600564355 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9258D7C18EE424600564355 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9258D8018EE424600564355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E9258D8118EE424600564355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E9258D8318EE424600564355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mango/Mango-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/External/\"/**",
+					/usr/local/Cellar/boost/1.53.0/include/,
+				);
+				INFOPLIST_FILE = "Mango/Mango-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mango/External/**",
+					"/usr/local/lib/**",
+					"$(PROJECT_DIR)/Mango/External",
+					"$(PROJECT_DIR)/External",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E9258D8418EE424600564355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mango/Mango-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/External/\"/**",
+					/usr/local/Cellar/boost/1.53.0/include/,
+				);
+				INFOPLIST_FILE = "Mango/Mango-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mango/External/**",
+					"/usr/local/lib/**",
+					"$(PROJECT_DIR)/Mango/External",
+					"$(PROJECT_DIR)/External",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E9258D8618EE424600564355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mango.app/Contents/MacOS/Mango";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mango/Mango-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MangoTests/MangoTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mango/External",
+					"$(PROJECT_DIR)/External",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E9258D8718EE424600564355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mango.app/Contents/MacOS/Mango";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mango/Mango-Prefix.pch";
+				INFOPLIST_FILE = "MangoTests/MangoTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mango/External",
+					"$(PROJECT_DIR)/External",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9258D4C18EE424500564355 /* Build configuration list for PBXProject "Mango" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9258D8018EE424600564355 /* Debug */,
+				E9258D8118EE424600564355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9258D8218EE424600564355 /* Build configuration list for PBXNativeTarget "Mango" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9258D8318EE424600564355 /* Debug */,
+				E9258D8418EE424600564355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9258D8518EE424600564355 /* Build configuration list for PBXNativeTarget "MangoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9258D8618EE424600564355 /* Debug */,
+				E9258D8718EE424600564355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9258D4918EE424500564355 /* Project object */;
+}
