@@ -10,20 +10,43 @@
 
 @implementation MangoConnectionManager
 
+
 -(void) openConnection
 {
-    mongo::DBClientConnection conn;
-    //
-    try{
+    [self openConnection: nil withPort:nil andUser:nil andPassword:nil];
+}
 
-        //conn.connect("localhost");
-            conn.connect( std::string("127.0.0.1:27017") );
+-(void) openConnection: (NSString *) address withPort: (NSString *) port andUser: (NSString *) username andPassword: (NSString *) password
+{
+    if (!address)
+    {
+        address = @"127.0.0.1";
+    }
+    
+    if (!port)
+    {
+        port = @"27017";
+    }
+    
+    if (!username)
+    {
+        username = @"";
+    }
+
+    if (!password)
+    {
+        password = @"";
+    }
+    
+    mongo::DBClientConnection conn;
+    try{
+        conn.connect( [[NSString stringWithFormat:@"%@:%@", address, port ] cStringUsingEncoding:NSUTF8StringEncoding]);
+        [self setMongoConnection: &conn];
     }
     catch (int exc)
     {
         NSLog(@"Exception: %d", exc);
     }
-    
     NSLog (@"%@", [NSNumber numberWithInt:conn.isFailed()]);
     
 }

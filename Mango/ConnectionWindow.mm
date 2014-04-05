@@ -13,14 +13,15 @@ class MangoAppDelegate;
 @implementation ConnectionWindowController : NSWindowController
 
 
-
-
 - (IBAction)connectButtonWasPressed:(id)sender {
-    MangoAppDelegate *appDel = (__bridge MangoAppDelegate *) [[NSApplication sharedApplication] mainWindow];
-    MangoConnectionManager *connMgr = [[MangoConnectionManager alloc] init];
+    id appDel = [[NSApplication sharedApplication] delegate];
     
-    [connMgr openConnection];
-    
+    SEL setConnMgrSel = sel_registerName("openMangoWindow:");
+    if ([appDel respondsToSelector:setConnMgrSel])
+    {
+        [appDel performSelector:setConnMgrSel withObject:self];
+    }
+
     [self close];
 }
 

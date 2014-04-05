@@ -23,4 +23,12 @@
     });
 }
 
+- (void) openMangoWindow: (ConnectionWindowController *)connectionWindow
+{
+    MangoWindowController *mangowindow = [[MangoWindowController alloc] initWithWindowNibName:@"MangoWindow"];
+    [mangowindow connectAndShow];
+//    [connMgr openConnection];
+
+}
+
 @end

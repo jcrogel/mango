@@ -6,14 +6,18 @@
 //  Copyright (c) 2014 Juan Carlos Moreno. All rights reserved.
 //
 
+#import "MangoWindowController.h"
 #import "ConnectionWindow.h"
-//#import "MangoConnectionManager.h"
 #import <Cocoa/Cocoa.h>
+
+class ConnectionWindow;
 
 @interface MangoAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 @property (nonatomic, strong) ConnectionWindowController *connWinController;
-//@property (assign) MangoConnectionManager *connMgr;
+@property (nonatomic, strong) NSArray *activeWindows;
+
+- (void) openMangoWindow: (ConnectionWindowController *)connectionWindow;
 
 @end

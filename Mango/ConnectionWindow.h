@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Juan Carlos Moreno. All rights reserved.
 //
 
-#import "MangoConnectionManager.h"
 #import <Cocoa/Cocoa.h>
 
 @interface ConnectionWindowController : NSWindowController

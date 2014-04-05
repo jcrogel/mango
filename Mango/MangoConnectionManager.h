@@ -17,7 +17,10 @@
 @property (assign) NSString *port;
 @property (assign) NSString *username;
 @property (assign) NSString *db;
+@property (assign) mongo::DBClientConnection *mongoConnection;
 
 -(void) openConnection;
+-(void) openConnection: (NSString *) address withPort: (NSString *) port andUser: (NSString *) username andPassword: (NSString *) password;
+
 
 @end
