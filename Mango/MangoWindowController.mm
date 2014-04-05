@@ -32,7 +32,8 @@
 }
 
 - (IBAction)checkConnection:(id)sender {
-    NSLog(@"%@", self);
+    NSLog(@"%p", [self connMgr]);
+    [[self  connMgr] dbgConn];
 }
 
 

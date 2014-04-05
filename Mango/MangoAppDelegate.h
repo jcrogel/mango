@@ -15,7 +15,7 @@ class ConnectionWindow;
 
 @property (assign) IBOutlet NSWindow *mainWindow;
 @property (assign) IBOutlet NSWindow *connectionWindow;
-@property (nonatomic, strong) NSMutableArray *activeWindows;
+@property (nonatomic, strong) NSMutableArray *activeSessions;
 
 - (void) openMangoWindow;
 

@@ -13,14 +13,14 @@
 
 @interface MangoConnectionManager : NSObject
 
-@property (assign) NSString *server;
-@property (assign) NSString *port;
-@property (assign) NSString *username;
-@property (assign) NSString *db;
-@property (assign) mongo::DBClientConnection *mongoConnection;
+@property NSString *server;
+@property NSString *port;
+@property NSString *username;
+@property NSString *db;
+@property NSValue *mongoConnection;
 
 -(void) openConnection;
 -(void) openConnection: (NSString *) address withPort: (NSString *) port andUser: (NSString *) username andPassword: (NSString *) password;
-
+-(void) dbgConn;
 
 @end

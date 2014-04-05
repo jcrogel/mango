@@ -13,29 +13,22 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    
-    //
-    [[self mainWindow] close];
+    self.activeSessions = [[NSMutableArray alloc] init];
 }
 
 - (void) openMangoWindow
 {
-    if (![[self mainWindow] windowController])
-    {
-        MangoWindowController *mangowindow = [[MangoWindowController alloc] initWithWindowNibName:@"MangoWindow"];
-        [mangowindow connectAndShow];
-        [[self mainWindow ] setWindowController:mangowindow];
-    }
-    NSLog(@"%@",[[self mainWindow] windowController]);
-    //[[[self mainWindow] windowController] showWindow:self];
-
+    MangoWindowController *mangowindow = [[MangoWindowController alloc] initWithWindowNibName:@"MangoWindow"];
+    [mangowindow connectAndShow];
+    [[self activeSessions] addObject: mangowindow];
 }
 
 - (IBAction)connectButtonWasPressed:(id)sender{
     [self openMangoWindow];
     NSView *sendView =  (NSView *) sender;
     NSWindow *window = [sendView window];
-    [window close];
+    NSLog(@"CM %p", [[[[self activeSessions] objectAtIndex:0] connMgr] mongoConnection] );
+    [window orderOut:self];
 }
 
 

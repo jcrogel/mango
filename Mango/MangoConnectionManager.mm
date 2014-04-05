@@ -38,18 +38,36 @@
         password = @"";
     }
     
-    mongo::DBClientConnection conn;
+    NSValue *mongoConnPtr =  [NSValue valueWithPointer: new mongo::DBClientConnection()];
     try{
-        conn.connect( [[NSString stringWithFormat:@"%@:%@", address, port ] cStringUsingEncoding:NSUTF8StringEncoding]);
-        [self setMongoConnection: &conn];
-        NSLog(@"%d", conn.isStillConnected());
+        mongo::DBClientConnection * conn = (mongo::DBClientConnection *)[mongoConnPtr pointerValue ];
+        conn->connect([[NSString stringWithFormat:@"%@:%@", address, port ] cStringUsingEncoding:NSUTF8StringEncoding]);
+        [self setMongoConnection: mongoConnPtr];
+        
     }
     catch (int exc)
     {
         NSLog(@"Exception: %d", exc);
     }
+}
+
+-(void) dbgConn
+{
+    if ([self mongoConnection])
+    {
+        NSLog(@"Is not null" );
+    }
+    else
+    {
+        NSLog(@"Is null" );
+    }
     
 }
 
+
+-(void) dealloc
+{
+    NSLog(@"Killing Conn Mgr");
+}
 
 @end

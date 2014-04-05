@@ -11,7 +11,7 @@
 
 @interface MangoWindowController : NSWindowController
 
-@property (nonatomic, strong) MangoConnectionManager *connMgr;
+@property MangoConnectionManager *connMgr;
 
 - (void) connectAndShow;
 - (IBAction)checkConnection:(id)sender;
