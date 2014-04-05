@@ -13,22 +13,31 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    [[self window] setLevel:kCGFloatingWindowLevel];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [[[self window] animator] setAlphaValue:0.0];
-        [self setConnWinController:[[ConnectionWindowController alloc] initWithWindowNibName:@"ConnectionWindow"]];
-        [[self connWinController] loadWindow];
-
-    });
+    //
+    [[self mainWindow] close];
 }
 
-- (void) openMangoWindow: (ConnectionWindowController *)connectionWindow
+- (void) openMangoWindow
 {
-    MangoWindowController *mangowindow = [[MangoWindowController alloc] initWithWindowNibName:@"MangoWindow"];
-    [mangowindow connectAndShow];
-//    [connMgr openConnection];
+    if (![[self mainWindow] windowController])
+    {
+        MangoWindowController *mangowindow = [[MangoWindowController alloc] initWithWindowNibName:@"MangoWindow"];
+        [mangowindow connectAndShow];
+        [[self mainWindow ] setWindowController:mangowindow];
+    }
+    NSLog(@"%@",[[self mainWindow] windowController]);
+    //[[[self mainWindow] windowController] showWindow:self];
 
 }
+
+- (IBAction)connectButtonWasPressed:(id)sender{
+    [self openMangoWindow];
+    NSView *sendView =  (NSView *) sender;
+    NSWindow *window = [sendView window];
+    [window close];
+}
+
+
 
 @end

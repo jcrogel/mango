@@ -14,5 +14,6 @@
 @property (nonatomic, strong) MangoConnectionManager *connMgr;
 
 - (void) connectAndShow;
+- (IBAction)checkConnection:(id)sender;
 
 @end

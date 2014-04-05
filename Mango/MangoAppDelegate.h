@@ -7,17 +7,19 @@
 //
 
 #import "MangoWindowController.h"
-#import "ConnectionWindow.h"
 #import <Cocoa/Cocoa.h>
 
 class ConnectionWindow;
 
 @interface MangoAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
-@property (nonatomic, strong) ConnectionWindowController *connWinController;
-@property (nonatomic, strong) NSArray *activeWindows;
+@property (assign) IBOutlet NSWindow *mainWindow;
+@property (assign) IBOutlet NSWindow *connectionWindow;
+@property (nonatomic, strong) NSMutableArray *activeWindows;
 
-- (void) openMangoWindow: (ConnectionWindowController *)connectionWindow;
+- (void) openMangoWindow;
+
+
+- (IBAction)connectButtonWasPressed:(id)sender;
 
 @end

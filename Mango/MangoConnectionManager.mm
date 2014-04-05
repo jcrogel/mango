@@ -42,12 +42,12 @@
     try{
         conn.connect( [[NSString stringWithFormat:@"%@:%@", address, port ] cStringUsingEncoding:NSUTF8StringEncoding]);
         [self setMongoConnection: &conn];
+        NSLog(@"%d", conn.isStillConnected());
     }
     catch (int exc)
     {
         NSLog(@"Exception: %d", exc);
     }
-    NSLog (@"%@", [NSNumber numberWithInt:conn.isFailed()]);
     
 }
 

@@ -27,8 +27,12 @@
 
 - (void) connectAndShow
 {
-    NSLog(@"%@", [self connMgr]);
     [[self connMgr] openConnection];
+    [self loadWindow];
+}
+
+- (IBAction)checkConnection:(id)sender {
+    NSLog(@"%@", self);
 }
 
 
