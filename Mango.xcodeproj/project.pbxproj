@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		E9258D5518EE424600564355 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9258D5418EE424600564355 /* Cocoa.framework */; };
-		E9258D5F18EE424600564355 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9258D5D18EE424600564355 /* InfoPlist.strings */; };
 		E9258D6118EE424600564355 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9258D6018EE424600564355 /* main.m */; };
 		E9258D6518EE424600564355 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E9258D6318EE424600564355 /* Credits.rtf */; };
-		E9258D6B18EE424600564355 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9258D6918EE424600564355 /* MainMenu.xib */; };
 		E9258D6D18EE424600564355 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9258D6C18EE424600564355 /* Images.xcassets */; };
 		E9258D7418EE424600564355 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9258D7318EE424600564355 /* XCTest.framework */; };
 		E9258D7518EE424600564355 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9258D5418EE424600564355 /* Cocoa.framework */; };
 		E9258D7D18EE424600564355 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9258D7B18EE424600564355 /* InfoPlist.strings */; };
 		E9258D7F18EE424600564355 /* MangoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9258D7E18EE424600564355 /* MangoTests.m */; };
-		E9258D8B18EE4C6F00564355 /* mango.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9258D8A18EE4C6F00564355 /* mango.jpg */; };
 		E92593CF18EE7F9C00564355 /* MangoAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9258D6718EE424600564355 /* MangoAppDelegate.mm */; };
 		E92593D018EE7F9E00564355 /* MangoConnectionManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = E92590C818EE7AAA00564355 /* MangoConnectionManager.mm */; };
+		E92714C018F0D30D003EC526 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9258D6918EE424600564355 /* MainMenu.xib */; };
+		E92714D318F0E082003EC526 /* ACEView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92714CE18F0E075003EC526 /* ACEView.framework */; };
+		E92714D418F0E087003EC526 /* ACEView.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = E92714CE18F0E075003EC526 /* ACEView.framework */; };
 		E943649F18EF81760076B9A5 /* MangoWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E943649E18EF81760076B9A5 /* MangoWindowController.mm */; };
 		E94364A218EF82500076B9A5 /* MangoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94364A118EF82500076B9A5 /* MangoWindow.xib */; };
 		E94364A418EFAED10076B9A5 /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94364A318EFAED10076B9A5 /* AboutWindow.xib */; };
-		E99F502918EF285A002C149E /* libmongoclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FFCB6718EF061000B15C19 /* libmongoclient.a */; };
 		E99F502B18EF28D7002C149E /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F502A18EF28D7002C149E /* libboost_system.a */; };
 		E99F502D18EF28F6002C149E /* libboost_thread-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F502C18EF28F6002C149E /* libboost_thread-mt.a */; };
+		E9D589D518F0CA3D00F9B333 /* libmongoclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E93167DB18F0C011008A4FCE /* libmongoclient.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +36,49 @@
 			remoteGlobalIDString = E9258D5018EE424500564355;
 			remoteInfo = Mango;
 		};
-		E9FFCB6618EF061000B15C19 /* PBXContainerItemProxy */ = {
+		E92714CD18F0E075003EC526 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E9FFCB6018EF061000B15C19 /* mongoclient.xcodeproj */;
+			containerPortal = E92714C718F0E075003EC526 /* ACEView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7C8A728C15EA0769007E5EB8;
+			remoteInfo = ACEView;
+		};
+		E92714CF18F0E075003EC526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E92714C718F0E075003EC526 /* ACEView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7C8A72E015EA0F0E007E5EB8;
+			remoteInfo = ACEVIewExample;
+		};
+		E92714D118F0E075003EC526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E92714C718F0E075003EC526 /* ACEView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 36F169E216B9346C00E8965C;
+			remoteInfo = ACEViewTests;
+		};
+		E93167DA18F0C011008A4FCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93167D418F0C010008A4FCE /* mongoclient.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E9A1277618EEFE34003E6E30;
 			remoteInfo = mongoclient;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E94364B718F09B760076B9A5 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E92714D418F0E087003EC526 /* ACEView.framework in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E9258D5118EE424600564355 /* Mango.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mango.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,30 +86,30 @@
 		E9258D5718EE424600564355 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		E9258D5818EE424600564355 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E9258D5918EE424600564355 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E9258D5C18EE424600564355 /* Mango-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mango-Info.plist"; sourceTree = "<group>"; };
+		E9258D5C18EE424600564355 /* Mango-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Mango-Info.plist"; path = "../Mango-Info.plist"; sourceTree = "<group>"; };
 		E9258D5E18EE424600564355 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E9258D6018EE424600564355 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E9258D6218EE424600564355 /* Mango-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mango-Prefix.pch"; sourceTree = "<group>"; };
+		E9258D6018EE424600564355 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
+		E9258D6218EE424600564355 /* Mango-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Mango-Prefix.pch"; path = "../Mango-Prefix.pch"; sourceTree = "<group>"; };
 		E9258D6418EE424600564355 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		E9258D6618EE424600564355 /* MangoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MangoAppDelegate.h; sourceTree = "<group>"; };
-		E9258D6718EE424600564355 /* MangoAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MangoAppDelegate.mm; sourceTree = "<group>"; };
+		E9258D6618EE424600564355 /* MangoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MangoAppDelegate.h; path = ../MangoAppDelegate.h; sourceTree = "<group>"; };
+		E9258D6718EE424600564355 /* MangoAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = MangoAppDelegate.mm; path = ../MangoAppDelegate.mm; sourceTree = "<group>"; };
 		E9258D6A18EE424600564355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		E9258D6C18EE424600564355 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E9258D6C18EE424600564355 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		E9258D7218EE424600564355 /* MangoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9258D7318EE424600564355 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E9258D7A18EE424600564355 /* MangoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MangoTests-Info.plist"; sourceTree = "<group>"; };
 		E9258D7C18EE424600564355 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E9258D7E18EE424600564355 /* MangoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MangoTests.m; sourceTree = "<group>"; };
-		E9258D8A18EE4C6F00564355 /* mango.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mango.jpg; sourceTree = "<group>"; };
-		E92590C718EE7AAA00564355 /* MangoConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangoConnectionManager.h; sourceTree = "<group>"; };
-		E92590C818EE7AAA00564355 /* MangoConnectionManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MangoConnectionManager.mm; sourceTree = "<group>"; };
-		E943649D18EF81760076B9A5 /* MangoWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangoWindowController.h; sourceTree = "<group>"; };
-		E943649E18EF81760076B9A5 /* MangoWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MangoWindowController.mm; sourceTree = "<group>"; };
-		E94364A118EF82500076B9A5 /* MangoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MangoWindow.xib; sourceTree = "<group>"; };
-		E94364A318EFAED10076B9A5 /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
-		E99F502A18EF28D7002C149E /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = External/mongo/libboost_system.a; sourceTree = "<group>"; };
-		E99F502C18EF28F6002C149E /* libboost_thread-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_thread-mt.a"; path = "External/mongo/libboost_thread-mt.a"; sourceTree = "<group>"; };
-		E9FFCB6018EF061000B15C19 /* mongoclient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mongoclient.xcodeproj; path = "External/mongo-cxx-driver/mongoclient.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		E92590C718EE7AAA00564355 /* MangoConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MangoConnectionManager.h; path = ../MangoConnectionManager.h; sourceTree = "<group>"; };
+		E92590C818EE7AAA00564355 /* MangoConnectionManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MangoConnectionManager.mm; path = ../MangoConnectionManager.mm; sourceTree = "<group>"; };
+		E92714C718F0E075003EC526 /* ACEView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ACEView.xcodeproj; path = External/ACEView/ACEView.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E93167D418F0C010008A4FCE /* mongoclient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mongoclient.xcodeproj; path = "External/mongo-cxx-driver/mongoclient.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		E943649D18EF81760076B9A5 /* MangoWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MangoWindowController.h; path = ../MangoWindowController.h; sourceTree = "<group>"; };
+		E943649E18EF81760076B9A5 /* MangoWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MangoWindowController.mm; path = ../MangoWindowController.mm; sourceTree = "<group>"; };
+		E94364A118EF82500076B9A5 /* MangoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MangoWindow.xib; path = ../MangoWindow.xib; sourceTree = "<group>"; };
+		E94364A318EFAED10076B9A5 /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutWindow.xib; path = ../AboutWindow.xib; sourceTree = "<group>"; };
+		E99F502A18EF28D7002C149E /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = External/libboost_system.a; sourceTree = "<group>"; };
+		E99F502C18EF28F6002C149E /* libboost_thread-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_thread-mt.a"; path = "External/libboost_thread-mt.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +117,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92714D318F0E082003EC526 /* ACEView.framework in Frameworks */,
+				E9D589D518F0CA3D00F9B333 /* libmongoclient.a in Frameworks */,
 				E99F502D18EF28F6002C149E /* libboost_thread-mt.a in Frameworks */,
 				E99F502B18EF28D7002C149E /* libboost_system.a in Frameworks */,
-				E99F502918EF285A002C149E /* libmongoclient.a in Frameworks */,
 				E9258D5518EE424600564355 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,7 +188,6 @@
 				E9258D6918EE424600564355 /* MainMenu.xib */,
 				E92590C418EE62FF00564355 /* ConnectionWindow */,
 				E9258D6C18EE424600564355 /* Images.xcassets */,
-				E9258D8A18EE4C6F00564355 /* mango.jpg */,
 				E9258D5B18EE424600564355 /* Supporting Files */,
 			);
 			path = Mango;
@@ -191,7 +226,8 @@
 		E9258D8F18EE623F00564355 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				E9FFCB6018EF061000B15C19 /* mongoclient.xcodeproj */,
+				E92714C718F0E075003EC526 /* ACEView.xcodeproj */,
+				E93167D418F0C010008A4FCE /* mongoclient.xcodeproj */,
 			);
 			path = External;
 			sourceTree = "<group>";
@@ -208,10 +244,20 @@
 			name = ConnectionWindow;
 			sourceTree = "<group>";
 		};
-		E9FFCB6118EF061000B15C19 /* Products */ = {
+		E92714C818F0E075003EC526 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E9FFCB6718EF061000B15C19 /* libmongoclient.a */,
+				E92714CE18F0E075003EC526 /* ACEView.framework */,
+				E92714D018F0E075003EC526 /* ACEVIewExample.app */,
+				E92714D218F0E075003EC526 /* ACEViewTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E93167D518F0C010008A4FCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E93167DB18F0C011008A4FCE /* libmongoclient.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,6 +272,7 @@
 				E9258D4D18EE424500564355 /* Sources */,
 				E9258D4E18EE424500564355 /* Frameworks */,
 				E9258D4F18EE424500564355 /* Resources */,
+				E94364B718F09B760076B9A5 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -282,8 +329,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = E9FFCB6118EF061000B15C19 /* Products */;
-					ProjectRef = E9FFCB6018EF061000B15C19 /* mongoclient.xcodeproj */;
+					ProductGroup = E92714C818F0E075003EC526 /* Products */;
+					ProjectRef = E92714C718F0E075003EC526 /* ACEView.xcodeproj */;
+				},
+				{
+					ProductGroup = E93167D518F0C010008A4FCE /* Products */;
+					ProjectRef = E93167D418F0C010008A4FCE /* mongoclient.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -295,11 +346,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E9FFCB6718EF061000B15C19 /* libmongoclient.a */ = {
+		E92714CE18F0E075003EC526 /* ACEView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ACEView.framework;
+			remoteRef = E92714CD18F0E075003EC526 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E92714D018F0E075003EC526 /* ACEVIewExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ACEVIewExample.app;
+			remoteRef = E92714CF18F0E075003EC526 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E92714D218F0E075003EC526 /* ACEViewTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ACEViewTests.octest;
+			remoteRef = E92714D118F0E075003EC526 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E93167DB18F0C011008A4FCE /* libmongoclient.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libmongoclient.a;
-			remoteRef = E9FFCB6618EF061000B15C19 /* PBXContainerItemProxy */;
+			remoteRef = E93167DA18F0C011008A4FCE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -309,13 +381,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9258D8B18EE4C6F00564355 /* mango.jpg in Resources */,
+				E92714C018F0D30D003EC526 /* MainMenu.xib in Resources */,
 				E94364A218EF82500076B9A5 /* MangoWindow.xib in Resources */,
-				E9258D5F18EE424600564355 /* InfoPlist.strings in Resources */,
 				E94364A418EFAED10076B9A5 /* AboutWindow.xib in Resources */,
 				E9258D6D18EE424600564355 /* Images.xcassets in Resources */,
 				E9258D6518EE424600564355 /* Credits.rtf in Resources */,
-				E9258D6B18EE424600564355 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +436,7 @@
 				E9258D5E18EE424600564355 /* en */,
 			);
 			name = InfoPlist.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		E9258D6318EE424600564355 /* Credits.rtf */ = {
@@ -374,6 +445,7 @@
 				E9258D6418EE424600564355 /* en */,
 			);
 			name = Credits.rtf;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		E9258D6918EE424600564355 /* MainMenu.xib */ = {
@@ -382,6 +454,7 @@
 				E9258D6A18EE424600564355 /* Base */,
 			);
 			name = MainMenu.xib;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		E9258D7B18EE424600564355 /* InfoPlist.strings */ = {
@@ -428,6 +501,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Mango-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -462,6 +536,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Mango-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 			};
@@ -470,24 +545,38 @@
 		E9258D8318EE424600564355 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Mango/Mango-Prefix.pch";
+				GCC_PREFIX_HEADER = "Mango-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/External/ACEView/headers/\"",
+					"\"$(SRCROOT)/External/mongo-cxx-driver/src\"",
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"$(SRCROOT)/External/\"/**",
 					/usr/local/Cellar/boost/1.53.0/include/,
 				);
-				INFOPLIST_FILE = "Mango/Mango-Info.plist";
+				INFOPLIST_FILE = "Mango-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Mango/External/**",
+					"$(PROJECT_DIR)/External/**",
 					"/usr/local/lib/**",
-					"$(PROJECT_DIR)/Mango/External",
+					"$(PROJECT_DIR)/External",
 					"$(PROJECT_DIR)/External",
 					"$(PROJECT_DIR)/External/mongo",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/64/c++11/libc++/osx-version-min_10.7/mongo",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/64/c++11/libc++/osx-version-min_10.7/third_party/gtest-1.7.0",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/64/c++11/libc++/osx-version-min_10.7/third_party",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/64/mongo",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/64/third_party/gtest-1.7.0",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/64/third_party",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/normal",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/normal/mongo",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/normal/third_party/gtest-1.7.0",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/normal/third_party",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/sharedclient",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -497,24 +586,38 @@
 		E9258D8418EE424600564355 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Mango/Mango-Prefix.pch";
+				GCC_PREFIX_HEADER = "Mango-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/External/ACEView/headers/\"",
+					"\"$(SRCROOT)/External/mongo-cxx-driver/src\"",
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"$(SRCROOT)/External/\"/**",
 					/usr/local/Cellar/boost/1.53.0/include/,
 				);
-				INFOPLIST_FILE = "Mango/Mango-Info.plist";
+				INFOPLIST_FILE = "Mango-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Mango/External/**",
+					"$(PROJECT_DIR)/External/**",
 					"/usr/local/lib/**",
-					"$(PROJECT_DIR)/Mango/External",
+					"$(PROJECT_DIR)/External",
 					"$(PROJECT_DIR)/External",
 					"$(PROJECT_DIR)/External/mongo",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/64/c++11/libc++/osx-version-min_10.7/mongo",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/64/c++11/libc++/osx-version-min_10.7/third_party/gtest-1.7.0",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/64/c++11/libc++/osx-version-min_10.7/third_party",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/64/mongo",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/64/third_party/gtest-1.7.0",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/64/third_party",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/normal",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/normal/mongo",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/normal/third_party/gtest-1.7.0",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/normal/third_party",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver",
+					"$(PROJECT_DIR)/External/mongo-cxx-driver/sharedclient",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -531,7 +634,7 @@
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Mango/Mango-Prefix.pch";
+				GCC_PREFIX_HEADER = "Mango-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -539,7 +642,7 @@
 				INFOPLIST_FILE = "MangoTests/MangoTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Mango/External",
+					"$(PROJECT_DIR)/External",
 					"$(PROJECT_DIR)/External",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -558,11 +661,11 @@
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Mango/Mango-Prefix.pch";
+				GCC_PREFIX_HEADER = "Mango-Prefix.pch";
 				INFOPLIST_FILE = "MangoTests/MangoTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Mango/External",
+					"$(PROJECT_DIR)/External",
 					"$(PROJECT_DIR)/External",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
