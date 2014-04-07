@@ -8,16 +8,16 @@
 
 #import <Cocoa/Cocoa.h>
 #import "MangoConnectionManager.h"
-#import "ACEView/ACEView.h"
-
+#import <MGSFragaria/MGSFragaria.h>
+#import <MGSFragaria/SMLTextView.h>
 
 @interface MangoWindowController : NSWindowController
 
 @property MangoConnectionManager *connMgr;
-@property (weak) IBOutlet ACEView *sourceEditor;
+@property (weak) IBOutlet NSView *sourceEditor;
+@property MGSFragaria *fragaria;
 
 - (void) connectAndShow;
-- (IBAction)checkConnection:(id)sender;
 
 
 

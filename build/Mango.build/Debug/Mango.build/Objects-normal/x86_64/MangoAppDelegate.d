@@ -472,6 +472,13 @@ dependencies: /Users/jcarlos/dev/Mango/MangoAppDelegate.mm \
   /Users/jcarlos/dev/Mango/External/mongo-cxx-driver/src/mongo/util/net/ssl_options.h \
   /Users/jcarlos/dev/Mango/External/mongo-cxx-driver/src/mongo/util/net/ssl_manager.h \
   /Users/jcarlos/dev/Mango/External/mongo-cxx-driver/src/mongo/client/undef_macros.h \
-  /Users/jcarlos/dev/Mango/External/ACEView/headers/ACEView/ACEView.h \
-  /Users/jcarlos/dev/Mango/External/ACEView/headers/ACEView/ACEModes.h \
-  /Users/jcarlos/dev/Mango/External/ACEView/headers/ACEView/ACEThemes.h
+  /Users/jcarlos/dev/Mango/External/Fragaria/build/Debug/MGSFragaria.framework/Headers/MGSFragaria.h \
+  /Users/jcarlos/dev/Mango/External/Fragaria/build/Debug/MGSFragaria.framework/Headers/MGSFragariaPreferences.h \
+  /Users/jcarlos/dev/Mango/External/Fragaria/build/Debug/MGSFragaria.framework/Headers/MGSFragariaPrefsViewController.h \
+  /Users/jcarlos/dev/Mango/External/Fragaria/build/Debug/MGSFragaria.framework/Headers/MGSFragariaFontsAndColoursPrefsViewController.h \
+  /Users/jcarlos/dev/Mango/External/Fragaria/build/Debug/MGSFragaria.framework/Headers/MGSFragariaTextEditingPrefsViewController.h \
+  /Users/jcarlos/dev/Mango/External/Fragaria/build/Debug/MGSFragaria.framework/Headers/MGSBreakpointDelegate.h \
+  /Users/jcarlos/dev/Mango/External/Fragaria/build/Debug/MGSFragaria.framework/Headers/SMLSyntaxError.h \
+  /Users/jcarlos/dev/Mango/External/Fragaria/build/Debug/MGSFragaria.framework/Headers/SMLSyntaxColouringDelegate.h \
+  /Users/jcarlos/dev/Mango/External/Fragaria/build/Debug/MGSFragaria.framework/Headers/SMLSyntaxDefinition.h \
+  /Users/jcarlos/dev/Mango/External/Fragaria/build/Debug/MGSFragaria.framework/Headers/SMLTextView.h

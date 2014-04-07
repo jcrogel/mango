@@ -28,20 +28,25 @@
 - (void) connectAndShow
 {
     [[self connMgr] openConnection];
-    [self loadWindow];
+    //[self loadWindow];
+    [self window];
 }
-
-- (IBAction)checkConnection:(id)sender {
-    NSLog(@"%p", [self connMgr]);
-    [[self  connMgr] dbgConn];
-}
-
 
 - (void)windowDidLoad
 {
     [super windowDidLoad];
+
+	_fragaria = [[MGSFragaria alloc] init];
+	[_fragaria setObject:self forKey:MGSFODelegate];
+    [_fragaria setObject:self forKey:MGSFOSyntaxColouringDelegate];
+    [_fragaria setObject:@"JavaScript" forKey:MGSFOSyntaxDefinitionName];
+    [_fragaria setObject:[NSNumber numberWithBool:YES] forKey:MGSFOShowLineNumberGutter];
+
+	[_fragaria embedInView:[self sourceEditor]];
     
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+   // [[self sourceEditor] setWantsLayer:YES];
+   // [[self sourceEditor].layer setBackgroundColor: [NSColor redColor].CGColor];
+
 }
 
 @end

@@ -17,12 +17,12 @@
 		E9258D7F18EE424600564355 /* MangoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9258D7E18EE424600564355 /* MangoTests.m */; };
 		E92593CF18EE7F9C00564355 /* MangoAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9258D6718EE424600564355 /* MangoAppDelegate.mm */; };
 		E92593D018EE7F9E00564355 /* MangoConnectionManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = E92590C818EE7AAA00564355 /* MangoConnectionManager.mm */; };
-		E92714C018F0D30D003EC526 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9258D6918EE424600564355 /* MainMenu.xib */; };
-		E92714D318F0E082003EC526 /* ACEView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92714CE18F0E075003EC526 /* ACEView.framework */; };
-		E92714D418F0E087003EC526 /* ACEView.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = E92714CE18F0E075003EC526 /* ACEView.framework */; };
 		E943649F18EF81760076B9A5 /* MangoWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E943649E18EF81760076B9A5 /* MangoWindowController.mm */; };
 		E94364A218EF82500076B9A5 /* MangoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94364A118EF82500076B9A5 /* MangoWindow.xib */; };
 		E94364A418EFAED10076B9A5 /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94364A318EFAED10076B9A5 /* AboutWindow.xib */; };
+		E97A0E7918F1C1C000098D55 /* MGSFragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92714E318F1A688003EC526 /* MGSFragaria.framework */; };
+		E97A0E7B18F1D58100098D55 /* MGSFragaria.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = E92714E318F1A688003EC526 /* MGSFragaria.framework */; };
+		E97A0E7C18F1D5F800098D55 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9258D6918EE424600564355 /* MainMenu.xib */; };
 		E99F502B18EF28D7002C149E /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F502A18EF28D7002C149E /* libboost_system.a */; };
 		E99F502D18EF28F6002C149E /* libboost_thread-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F502C18EF28F6002C149E /* libboost_thread-mt.a */; };
 		E9D589D518F0CA3D00F9B333 /* libmongoclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E93167DB18F0C011008A4FCE /* libmongoclient.a */; };
@@ -36,26 +36,33 @@
 			remoteGlobalIDString = E9258D5018EE424500564355;
 			remoteInfo = Mango;
 		};
-		E92714CD18F0E075003EC526 /* PBXContainerItemProxy */ = {
+		E92714DC18F1A688003EC526 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E92714C718F0E075003EC526 /* ACEView.xcodeproj */;
+			containerPortal = E92714D518F1A688003EC526 /* Fragaria.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 7C8A728C15EA0769007E5EB8;
-			remoteInfo = ACEView;
+			remoteGlobalIDString = AB648E2A11FB385700AEF7BD;
+			remoteInfo = "Fragaria Doc";
 		};
-		E92714CF18F0E075003EC526 /* PBXContainerItemProxy */ = {
+		E92714DE18F1A688003EC526 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E92714C718F0E075003EC526 /* ACEView.xcodeproj */;
+			containerPortal = E92714D518F1A688003EC526 /* Fragaria.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 7C8A72E015EA0F0E007E5EB8;
-			remoteInfo = ACEVIewExample;
+			remoteGlobalIDString = 8D1107320486CEB800E47090;
+			remoteInfo = "Fragaria GC";
 		};
-		E92714D118F0E075003EC526 /* PBXContainerItemProxy */ = {
+		E92714E018F1A688003EC526 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E92714C718F0E075003EC526 /* ACEView.xcodeproj */;
+			containerPortal = E92714D518F1A688003EC526 /* Fragaria.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 36F169E216B9346C00E8965C;
-			remoteInfo = ACEViewTests;
+			remoteGlobalIDString = ABCA4DAF16137FC000E4849B;
+			remoteInfo = Fragaria;
+		};
+		E92714E218F1A688003EC526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E92714D518F1A688003EC526 /* Fragaria.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AB69B62B118B745700903D1D;
+			remoteInfo = MGSFragaria;
 		};
 		E93167DA18F0C011008A4FCE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -73,7 +80,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E92714D418F0E087003EC526 /* ACEView.framework in Copy Files */,
+				E97A0E7B18F1D58100098D55 /* MGSFragaria.framework in Copy Files */,
 			);
 			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,7 +109,7 @@
 		E9258D7E18EE424600564355 /* MangoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MangoTests.m; sourceTree = "<group>"; };
 		E92590C718EE7AAA00564355 /* MangoConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MangoConnectionManager.h; path = ../MangoConnectionManager.h; sourceTree = "<group>"; };
 		E92590C818EE7AAA00564355 /* MangoConnectionManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MangoConnectionManager.mm; path = ../MangoConnectionManager.mm; sourceTree = "<group>"; };
-		E92714C718F0E075003EC526 /* ACEView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ACEView.xcodeproj; path = External/ACEView/ACEView.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E92714D518F1A688003EC526 /* Fragaria.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Fragaria.xcodeproj; path = External/Fragaria/Fragaria.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E93167D418F0C010008A4FCE /* mongoclient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mongoclient.xcodeproj; path = "External/mongo-cxx-driver/mongoclient.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		E943649D18EF81760076B9A5 /* MangoWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MangoWindowController.h; path = ../MangoWindowController.h; sourceTree = "<group>"; };
 		E943649E18EF81760076B9A5 /* MangoWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MangoWindowController.mm; path = ../MangoWindowController.mm; sourceTree = "<group>"; };
@@ -117,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E92714D318F0E082003EC526 /* ACEView.framework in Frameworks */,
+				E97A0E7918F1C1C000098D55 /* MGSFragaria.framework in Frameworks */,
 				E9D589D518F0CA3D00F9B333 /* libmongoclient.a in Frameworks */,
 				E99F502D18EF28F6002C149E /* libboost_thread-mt.a in Frameworks */,
 				E99F502B18EF28D7002C149E /* libboost_system.a in Frameworks */,
@@ -226,7 +233,7 @@
 		E9258D8F18EE623F00564355 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				E92714C718F0E075003EC526 /* ACEView.xcodeproj */,
+				E92714D518F1A688003EC526 /* Fragaria.xcodeproj */,
 				E93167D418F0C010008A4FCE /* mongoclient.xcodeproj */,
 			);
 			path = External;
@@ -244,12 +251,13 @@
 			name = ConnectionWindow;
 			sourceTree = "<group>";
 		};
-		E92714C818F0E075003EC526 /* Products */ = {
+		E92714D618F1A688003EC526 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E92714CE18F0E075003EC526 /* ACEView.framework */,
-				E92714D018F0E075003EC526 /* ACEVIewExample.app */,
-				E92714D218F0E075003EC526 /* ACEViewTests.octest */,
+				E92714DD18F1A688003EC526 /* Fragaria Doc.app */,
+				E92714DF18F1A688003EC526 /* Fragaria GC.app */,
+				E92714E118F1A688003EC526 /* Fragaria.app */,
+				E92714E318F1A688003EC526 /* MGSFragaria.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -329,8 +337,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = E92714C818F0E075003EC526 /* Products */;
-					ProjectRef = E92714C718F0E075003EC526 /* ACEView.xcodeproj */;
+					ProductGroup = E92714D618F1A688003EC526 /* Products */;
+					ProjectRef = E92714D518F1A688003EC526 /* Fragaria.xcodeproj */;
 				},
 				{
 					ProductGroup = E93167D518F0C010008A4FCE /* Products */;
@@ -346,25 +354,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E92714CE18F0E075003EC526 /* ACEView.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ACEView.framework;
-			remoteRef = E92714CD18F0E075003EC526 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E92714D018F0E075003EC526 /* ACEVIewExample.app */ = {
+		E92714DD18F1A688003EC526 /* Fragaria Doc.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
-			path = ACEVIewExample.app;
-			remoteRef = E92714CF18F0E075003EC526 /* PBXContainerItemProxy */;
+			path = "Fragaria Doc.app";
+			remoteRef = E92714DC18F1A688003EC526 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E92714D218F0E075003EC526 /* ACEViewTests.octest */ = {
+		E92714DF18F1A688003EC526 /* Fragaria GC.app */ = {
 			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ACEViewTests.octest;
-			remoteRef = E92714D118F0E075003EC526 /* PBXContainerItemProxy */;
+			fileType = wrapper.application;
+			path = "Fragaria GC.app";
+			remoteRef = E92714DE18F1A688003EC526 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E92714E118F1A688003EC526 /* Fragaria.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Fragaria.app;
+			remoteRef = E92714E018F1A688003EC526 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E92714E318F1A688003EC526 /* MGSFragaria.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MGSFragaria.framework;
+			remoteRef = E92714E218F1A688003EC526 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		E93167DB18F0C011008A4FCE /* libmongoclient.a */ = {
@@ -381,7 +396,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E92714C018F0D30D003EC526 /* MainMenu.xib in Resources */,
+				E97A0E7C18F1D5F800098D55 /* MainMenu.xib in Resources */,
 				E94364A218EF82500076B9A5 /* MangoWindow.xib in Resources */,
 				E94364A418EFAED10076B9A5 /* AboutWindow.xib in Resources */,
 				E9258D6D18EE424600564355 /* Images.xcassets in Resources */,
@@ -548,10 +563,10 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/External/Fragaria/build/$(CONFIGURATION)\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mango-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/External/ACEView/headers/\"",
 					"\"$(SRCROOT)/External/mongo-cxx-driver/src\"",
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -589,10 +604,10 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/External/Fragaria/build/$(CONFIGURATION)\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mango-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/External/ACEView/headers/\"",
 					"\"$(SRCROOT)/External/mongo-cxx-driver/src\"",
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
