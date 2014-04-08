@@ -52,9 +52,41 @@
 
 -(void) dbgConn
 {
+    //mongo::Query([query cStringUsingEncoding: NSUTF8StringEncoding]);
+    //std::auto_ptr<mongo::DBClientCursor> cursor = conn->query("admin",mongo::Query("{ listDatabases : 1 }"));
+    
+    /*while (cursor->more())
+    {
+        mongo::BSONObj p = cursor->next();
+        NSLog(@"%s",p.getStringField("name"));
+    }*/
+    
+    mongo::BSONObj ret = [self showDBs];
+    
+    if (ret.hasElement("databases"))
+    {
+        mongo::BSONElement db_elem = ret.getField("databases");
+        mongo::BSONObj dbsobj = db_elem.Obj();
+        for( mongo::BSONObj::iterator i = dbsobj.begin(); i.more(); ) {
+            mongo::BSONElement e = i.next();
+            
+            NSLog(@"%s", e.Obj().getFieldDotted("name").toString().c_str());
+        }
+    }
+}
+
+-(mongo::BSONObj) showDBs
+{
     mongo::DBClientConnection * conn = [self connPtr];
-    NSString *query = @"show dbs";
-    mongo::Query([query cStringUsingEncoding: NSUTF8StringEncoding]);
+    bool worked;
+    mongo::BSONObj ret;
+    
+    // clean up old data from any previous tests
+    worked = conn->runCommand( "admin", BSON("listDatabases" << 1), ret );
+    if (worked) {
+        return ret;
+    }
+    return mongo::BSONObj();
 }
 
 -(mongo::DBClientConnection *) connPtr
@@ -66,6 +98,8 @@
     }
     return nil;
 }
+
+
 
 -(void) dealloc
 {

@@ -14,6 +14,9 @@
 {
     // Insert code here to initialize your application
     self.activeSessions = [[NSMutableArray alloc] init];
+    //REMOVE BEGIN
+    [self connectButtonWasPressed: self];
+    //REMOVE END
 }
 
 - (void) openMangoWindow
@@ -26,9 +29,11 @@
 - (IBAction)connectButtonWasPressed:(id)sender{
     [self openMangoWindow];
     NSView *sendView =  (NSView *) sender;
-    NSWindow *window = [sendView window];
-    NSLog(@"CM %p", [[[[self activeSessions] objectAtIndex:0] connMgr] mongoConnection] );
-    [window orderOut:self];
+    if ([sender isKindOfClass:[NSView class]])
+    {
+        NSWindow *window = [sendView window];
+        [window orderOut:self];
+    }
 }
 
 

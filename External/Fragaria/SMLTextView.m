@@ -147,7 +147,8 @@ Unless required by applicable law or agreed to in writing, software distributed 
 - (void)setFrame:(NSRect)rect
 {
 	[super setFrame:rect];
-	[[fragaria objectForKey:ro_MGSFOLineNumbers] updateLineNumbersForClipView:[[self enclosingScrollView] contentView] checkWidth:NO recolour:YES];
+    if ([fragaria objectForKey:ro_MGSFOLineNumbers])
+        [[fragaria objectForKey:ro_MGSFOLineNumbers] updateLineNumbersForClipView:[[self enclosingScrollView] contentView] checkWidth:NO recolour:YES];
 	
 }
 
@@ -190,7 +191,8 @@ Unless required by applicable law or agreed to in writing, software distributed 
 	if ([(__bridge NSString *)context isEqualToString:@"TextFontChanged"]) {
 		[self setFont:[NSUnarchiver unarchiveObjectWithData:[SMLDefaults valueForKey:MGSFragariaPrefsTextFont]]];
 		lineHeight = [[[self textContainer] layoutManager] defaultLineHeightForFont:[NSUnarchiver unarchiveObjectWithData:[SMLDefaults valueForKey:MGSFragariaPrefsTextFont]]];
-		[[fragaria objectForKey:ro_MGSFOLineNumbers] updateLineNumbersForClipView:[[self enclosingScrollView] contentView] checkWidth:NO recolour:YES];
+        if ([fragaria objectForKey:ro_MGSFOLineNumbers])
+            [[fragaria objectForKey:ro_MGSFOLineNumbers] updateLineNumbersForClipView:[[self enclosingScrollView] contentView] checkWidth:NO recolour:YES];
 		[self setPageGuideValues];
 	} else if ([(__bridge NSString *)context isEqualToString:@"TextColourChanged"]) {
 		[self setTextColor:[NSUnarchiver unarchiveObjectWithData:[SMLDefaults valueForKey:MGSFragariaPrefsTextColourWell]]];
@@ -1192,8 +1194,11 @@ Unless required by applicable law or agreed to in writing, software distributed 
 	[[self layoutManager] textContainerChangedGeometry:textContainer];
 
     // redraw the line numbers
-    [[fragaria objectForKey:ro_MGSFOLineNumbers] updateLineNumbersForClipView:[[self enclosingScrollView] contentView] checkWidth:NO recolour:YES];
-
+    //NSLog(@"update line wrap Debug %@", [fragaria objectForKey:ro_MGSFOLineNumbers]);
+    if ([fragaria objectForKey:ro_MGSFOLineNumbers])
+    {
+        [[fragaria objectForKey:ro_MGSFOLineNumbers] updateLineNumbersForClipView:[[self enclosingScrollView] contentView] checkWidth:NO recolour:YES];
+    }
     // redraw the display and reposition scrollers
     NSDisableScreenUpdates();
     [textScrollView display];

@@ -360,7 +360,8 @@ char kcLineWrapPrefChanged;
 	[contentView addSubview:[self.docSpec valueForKey:ro_MGSFOScrollView]];
 	
 	// update line numbers
-	[[self.docSpec valueForKey:ro_MGSFOLineNumbers] updateLineNumbersForClipView:[[self.docSpec valueForKey:ro_MGSFOScrollView] contentView] checkWidth:NO recolour:YES];
+    if ([self.docSpec valueForKey:ro_MGSFOLineNumbers] )
+        [[self.docSpec valueForKey:ro_MGSFOLineNumbers] updateLineNumbersForClipView:[[self.docSpec valueForKey:ro_MGSFOScrollView] contentView] checkWidth:NO recolour:YES];
     
     // update the gutter view
     [self updateGutterView];

@@ -18,6 +18,7 @@
 @property MGSFragaria *fragaria;
 
 - (void) connectAndShow;
+- (IBAction)debugConn:(id)sender;
 
 
 

@@ -149,12 +149,15 @@ Unless required by applicable law or agreed to in writing, software distributed 
         
         // get break points from delegate
         NSSet* breakpoints = NULL;
-        id breakpointDelegate = [MGSFragaria currentInstance][MGSFOBreakpointDelegate];
-        if (breakpointDelegate && [breakpointDelegate respondsToSelector:@selector(breakpointsForFile:)])
+        MGSFragaria *currentInst = [MGSFragaria currentInstance];
+        /*if (currentInst)
         {
-            breakpoints = [breakpointDelegate breakpointsForFile:[gutterScrollView.documentView fileName]];
-        }
-        
+            id breakpointDelegate = [MGSFragaria currentInstance][MGSFOBreakpointDelegate];
+            if (breakpointDelegate && [breakpointDelegate respondsToSelector:@selector(breakpointsForFile:)])
+            {
+                breakpoints = [breakpointDelegate breakpointsForFile:[gutterScrollView.documentView fileName]];
+            }
+        }*/
         NSLayoutManager *layoutManager = [textView layoutManager];
         NSRect visibleRect = [[scrollView contentView] documentVisibleRect];
         NSRange visibleRange = [layoutManager glyphRangeForBoundingRect:visibleRect inTextContainer:[textView textContainer]];

@@ -21,11 +21,16 @@
 		E94364A218EF82500076B9A5 /* MangoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94364A118EF82500076B9A5 /* MangoWindow.xib */; };
 		E94364A418EFAED10076B9A5 /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94364A318EFAED10076B9A5 /* AboutWindow.xib */; };
 		E97A0E7918F1C1C000098D55 /* MGSFragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92714E318F1A688003EC526 /* MGSFragaria.framework */; };
-		E97A0E7B18F1D58100098D55 /* MGSFragaria.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = E92714E318F1A688003EC526 /* MGSFragaria.framework */; };
+		E97A0E7B18F1D58100098D55 /* MGSFragaria.framework in Copy Files (2 items) */ = {isa = PBXBuildFile; fileRef = E92714E318F1A688003EC526 /* MGSFragaria.framework */; };
 		E97A0E7C18F1D5F800098D55 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9258D6918EE424600564355 /* MainMenu.xib */; };
+		E98FEC7D18F30D64004AA776 /* GRProKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98FEC7918F2FDFC004AA776 /* GRProKit.framework */; };
+		E98FEC8A18F3192A004AA776 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E98FEC8918F3192A004AA776 /* libPods.a */; };
+		E98FEC8B18F31E16004AA776 /* GRProKit.framework in Copy Files (2 items) */ = {isa = PBXBuildFile; fileRef = E98FEC7918F2FDFC004AA776 /* GRProKit.framework */; };
 		E99F502B18EF28D7002C149E /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F502A18EF28D7002C149E /* libboost_system.a */; };
 		E99F502D18EF28F6002C149E /* libboost_thread-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F502C18EF28F6002C149E /* libboost_thread-mt.a */; };
 		E9D589D518F0CA3D00F9B333 /* libmongoclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E93167DB18F0C011008A4FCE /* libmongoclient.a */; };
+		E9F5D3E418F3A44C00083B1F /* MMTabBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F5D3E218F3A43F00083B1F /* MMTabBarView.framework */; };
+		E9F5D3E518F3A45100083B1F /* MMTabBarView.framework in Copy Files (2 items) */ = {isa = PBXBuildFile; fileRef = E9F5D3E218F3A43F00083B1F /* MMTabBarView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,23 +76,41 @@
 			remoteGlobalIDString = E9A1277618EEFE34003E6E30;
 			remoteInfo = mongoclient;
 		};
+		E98FEC7818F2FDFC004AA776 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E98FEC7018F2FDFC004AA776 /* GRProKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD7718191822AC7800482CBE;
+			remoteInfo = GRProKit;
+		};
+		E9F5D3E118F3A43F00083B1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9F5D3D818F3A43F00083B1F /* MMTabBarView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06DB23A61609F5830071BDA0;
+			remoteInfo = MMTabBarView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E94364B718F09B760076B9A5 /* Copy Files */ = {
+		E94364B718F09B760076B9A5 /* Copy Files (2 items) */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E97A0E7B18F1D58100098D55 /* MGSFragaria.framework in Copy Files */,
+				E9F5D3E518F3A45100083B1F /* MMTabBarView.framework in Copy Files (2 items) */,
+				E98FEC8B18F31E16004AA776 /* GRProKit.framework in Copy Files (2 items) */,
+				E97A0E7B18F1D58100098D55 /* MGSFragaria.framework in Copy Files (2 items) */,
 			);
-			name = "Copy Files";
+			name = "Copy Files (2 items)";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		89C8FCE185B94B3E870A57CC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABB0700885DC4ABA993CDE74 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		E9258D5118EE424600564355 /* Mango.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mango.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9258D5418EE424600564355 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E9258D5718EE424600564355 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -115,8 +138,11 @@
 		E943649E18EF81760076B9A5 /* MangoWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MangoWindowController.mm; path = ../MangoWindowController.mm; sourceTree = "<group>"; };
 		E94364A118EF82500076B9A5 /* MangoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MangoWindow.xib; path = ../MangoWindow.xib; sourceTree = "<group>"; };
 		E94364A318EFAED10076B9A5 /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutWindow.xib; path = ../AboutWindow.xib; sourceTree = "<group>"; };
+		E98FEC7018F2FDFC004AA776 /* GRProKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GRProKit.xcodeproj; path = External/GRProKit/GRProKit/GRProKit.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E98FEC8918F3192A004AA776 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = Pods/build/Debug/libPods.a; sourceTree = "<group>"; };
 		E99F502A18EF28D7002C149E /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = External/libboost_system.a; sourceTree = "<group>"; };
 		E99F502C18EF28F6002C149E /* libboost_thread-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_thread-mt.a"; path = "External/libboost_thread-mt.a"; sourceTree = "<group>"; };
+		E9F5D3D818F3A43F00083B1F /* MMTabBarView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MMTabBarView.xcodeproj; path = External/MMTabBarView/MMTabBarView/MMTabBarView.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +150,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F5D3E418F3A44C00083B1F /* MMTabBarView.framework in Frameworks */,
+				E98FEC8A18F3192A004AA776 /* libPods.a in Frameworks */,
+				E98FEC7D18F30D64004AA776 /* GRProKit.framework in Frameworks */,
 				E97A0E7918F1C1C000098D55 /* MGSFragaria.framework in Frameworks */,
 				E9D589D518F0CA3D00F9B333 /* libmongoclient.a in Frameworks */,
 				E99F502D18EF28F6002C149E /* libboost_thread-mt.a in Frameworks */,
@@ -151,6 +180,7 @@
 				E9258D7818EE424600564355 /* MangoTests */,
 				E9258D5318EE424600564355 /* Frameworks */,
 				E9258D5218EE424600564355 /* Products */,
+				ABB0700885DC4ABA993CDE74 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,11 +196,13 @@
 		E9258D5318EE424600564355 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E98FEC8918F3192A004AA776 /* libPods.a */,
 				E99F502C18EF28F6002C149E /* libboost_thread-mt.a */,
 				E99F502A18EF28D7002C149E /* libboost_system.a */,
 				E9258D5418EE424600564355 /* Cocoa.framework */,
 				E9258D7318EE424600564355 /* XCTest.framework */,
 				E9258D5618EE424600564355 /* Other Frameworks */,
+				89C8FCE185B94B3E870A57CC /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -233,6 +265,8 @@
 		E9258D8F18EE623F00564355 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				E9F5D3D818F3A43F00083B1F /* MMTabBarView.xcodeproj */,
+				E98FEC7018F2FDFC004AA776 /* GRProKit.xcodeproj */,
 				E92714D518F1A688003EC526 /* Fragaria.xcodeproj */,
 				E93167D418F0C010008A4FCE /* mongoclient.xcodeproj */,
 			);
@@ -270,6 +304,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E98FEC7118F2FDFC004AA776 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E98FEC7918F2FDFC004AA776 /* GRProKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9F5D3D918F3A43F00083B1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9F5D3E218F3A43F00083B1F /* MMTabBarView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -277,10 +327,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9258D8218EE424600564355 /* Build configuration list for PBXNativeTarget "Mango" */;
 			buildPhases = (
+				9F75F91A952E4D87A3EB0535 /* Check Pods Manifest.lock */,
 				E9258D4D18EE424500564355 /* Sources */,
 				E9258D4E18EE424500564355 /* Frameworks */,
 				E9258D4F18EE424500564355 /* Resources */,
-				E94364B718F09B760076B9A5 /* Copy Files */,
+				E94364B718F09B760076B9A5 /* Copy Files (2 items) */,
+				D87976A67CF5491DA93A322E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,6 +393,14 @@
 					ProjectRef = E92714D518F1A688003EC526 /* Fragaria.xcodeproj */;
 				},
 				{
+					ProductGroup = E98FEC7118F2FDFC004AA776 /* Products */;
+					ProjectRef = E98FEC7018F2FDFC004AA776 /* GRProKit.xcodeproj */;
+				},
+				{
+					ProductGroup = E9F5D3D918F3A43F00083B1F /* Products */;
+					ProjectRef = E9F5D3D818F3A43F00083B1F /* MMTabBarView.xcodeproj */;
+				},
+				{
 					ProductGroup = E93167D518F0C010008A4FCE /* Products */;
 					ProjectRef = E93167D418F0C010008A4FCE /* mongoclient.xcodeproj */;
 				},
@@ -389,6 +449,20 @@
 			remoteRef = E93167DA18F0C011008A4FCE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		E98FEC7918F2FDFC004AA776 /* GRProKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GRProKit.framework;
+			remoteRef = E98FEC7818F2FDFC004AA776 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E9F5D3E218F3A43F00083B1F /* MMTabBarView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MMTabBarView.framework;
+			remoteRef = E9F5D3E118F3A43F00083B1F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -413,6 +487,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F75F91A952E4D87A3EB0535 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D87976A67CF5491DA93A322E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9258D4D18EE424500564355 /* Sources */ = {
@@ -559,6 +666,7 @@
 		};
 		E9258D8318EE424600564355 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABB0700885DC4ABA993CDE74 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -592,6 +700,7 @@
 					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/normal/third_party",
 					"$(PROJECT_DIR)/External/mongo-cxx-driver",
 					"$(PROJECT_DIR)/External/mongo-cxx-driver/sharedclient",
+					"$(PROJECT_DIR)/Pods/build/Debug",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -600,6 +709,7 @@
 		};
 		E9258D8418EE424600564355 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABB0700885DC4ABA993CDE74 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -633,6 +743,7 @@
 					"$(PROJECT_DIR)/External/mongo-cxx-driver/build/darwin/normal/third_party",
 					"$(PROJECT_DIR)/External/mongo-cxx-driver",
 					"$(PROJECT_DIR)/External/mongo-cxx-driver/sharedclient",
+					"$(PROJECT_DIR)/Pods/build/Debug",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

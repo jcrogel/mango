@@ -29,7 +29,11 @@
 {
     [[self connMgr] openConnection];
     //[self loadWindow];
+    [[self connMgr] dbgConn];
     [self window];
+}
+
+- (IBAction)debugConn:(id)sender {
 }
 
 - (void)windowDidLoad
