@@ -50,18 +50,12 @@
     }
 }
 
--(void) dbgConn
+-(NSMutableArray *) getDatabases
 {
-    //mongo::Query([query cStringUsingEncoding: NSUTF8StringEncoding]);
-    //std::auto_ptr<mongo::DBClientCursor> cursor = conn->query("admin",mongo::Query("{ listDatabases : 1 }"));
+
+    NSMutableArray *result = [[NSMutableArray alloc] init];
     
-    /*while (cursor->more())
-    {
-        mongo::BSONObj p = cursor->next();
-        NSLog(@"%s",p.getStringField("name"));
-    }*/
-    
-    mongo::BSONObj ret = [self showDBs];
+    mongo::BSONObj ret = [self _showDBsCMD];
     
     if (ret.hasElement("databases"))
     {
@@ -69,13 +63,39 @@
         mongo::BSONObj dbsobj = db_elem.Obj();
         for( mongo::BSONObj::iterator i = dbsobj.begin(); i.more(); ) {
             mongo::BSONElement e = i.next();
-            
-            NSLog(@"%s", e.Obj().getFieldDotted("name").toString().c_str());
+            NSString *name = [NSString stringWithCString:e.Obj().getFieldDotted("name").valuestr() encoding:NSUTF8StringEncoding];
+            [result addObject: name];
         }
     }
+    
+    return result;
 }
 
--(mongo::BSONObj) showDBs
+-(NSArray *) getCollectionNames: (NSString *) dbname;
+{
+    NSMutableArray *result = [[NSMutableArray alloc] init];
+    NSString *ns = [NSString stringWithFormat:@"%@.system.namespaces", dbname];
+    
+    mongo::DBClientConnection * conn = [self connPtr];
+    
+    std::auto_ptr<mongo::DBClientCursor> cursor = conn->query(
+                                        [ns cStringUsingEncoding:NSUTF8StringEncoding], mongo::Query());
+    
+    while (cursor->more())
+    {
+        mongo::BSONObj p = cursor->next();
+        NSString *name = [NSString stringWithUTF8String:p.getStringField("name")];
+        if ([name rangeOfString:@"$"].location != NSNotFound)
+        {
+            continue;
+        }
+        [result addObject: name];
+    }
+    
+    return result;
+}
+
+-(mongo::BSONObj) _showDBsCMD
 {
     mongo::DBClientConnection * conn = [self connPtr];
     bool worked;

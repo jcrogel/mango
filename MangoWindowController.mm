@@ -28,28 +28,46 @@
 - (void) connectAndShow
 {
     [[self connMgr] openConnection];
-    //[self loadWindow];
-    [[self connMgr] dbgConn];
     [self window];
 }
 
 - (IBAction)debugConn:(id)sender {
 }
 
-- (void)windowDidLoad
-{
-    [super windowDidLoad];
+- (IBAction)dbsPopUpButtonAction:(id)sender {
+    NSArray *collections = [[self connMgr] getCollectionNames: [[[self dbsPopUpButton] selectedItem] title]];
+    
+    NSLog(@"%@", collections);
+}
 
-	_fragaria = [[MGSFragaria alloc] init];
+-(void) setupTextEditor
+{
+    _fragaria = [[MGSFragaria alloc] init];
 	[_fragaria setObject:self forKey:MGSFODelegate];
     [_fragaria setObject:self forKey:MGSFOSyntaxColouringDelegate];
     [_fragaria setObject:@"JavaScript" forKey:MGSFOSyntaxDefinitionName];
     [_fragaria setObject:[NSNumber numberWithBool:YES] forKey:MGSFOShowLineNumberGutter];
-
 	[_fragaria embedInView:[self sourceEditor]];
-    
-   // [[self sourceEditor] setWantsLayer:YES];
-   // [[self sourceEditor].layer setBackgroundColor: [NSColor redColor].CGColor];
+}
+
+-(void) setupDBsPopUpButton
+{
+    NSArray * dbs = [[self connMgr] getDatabases];
+    [[self dbsPopUpButton] removeAllItems];
+    [[self dbsPopUpButton] addItemsWithTitles:dbs];
+}
+
+-(void) setupSideBar
+{
+    [[self sideBar] setBackgroundColor:[NSColor darkGrayColor]];
+}
+
+- (void)windowDidLoad
+{
+    [super windowDidLoad];
+    [self setupTextEditor];
+    [self setupDBsPopUpButton];
+    [self setupSideBar];
 
 }
 

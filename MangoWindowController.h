@@ -10,15 +10,19 @@
 #import "MangoConnectionManager.h"
 #import <MGSFragaria/MGSFragaria.h>
 #import <MGSFragaria/SMLTextView.h>
+#import <ITSidebar/ITSidebar.h>
 
 @interface MangoWindowController : NSWindowController
 
 @property MangoConnectionManager *connMgr;
 @property (weak) IBOutlet NSView *sourceEditor;
 @property MGSFragaria *fragaria;
+@property (weak) IBOutlet NSPopUpButton *dbsPopUpButton;
+@property (weak) IBOutlet ITSidebar *sideBar;
 
 - (void) connectAndShow;
 - (IBAction)debugConn:(id)sender;
+- (IBAction)dbsPopUpButtonAction:(id)sender;
 
 
 

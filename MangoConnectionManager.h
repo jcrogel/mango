@@ -23,6 +23,7 @@
 -(void) openConnection: (NSString *) address withPort: (NSString *) port andUser: (NSString *) username andPassword: (NSString *) password;
 -(void) dbgConn;
 -(mongo::DBClientConnection *) connPtr;
--(mongo::BSONObj) showDBs;
+-(NSArray *) getDatabases;
+-(NSArray *) getCollectionNames: (NSString *) dbname;
 
 @end
