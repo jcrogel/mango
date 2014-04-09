@@ -1,0 +1,1101 @@
+TGRProKit
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Resources/Info.plist /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit-Info.plist
+cProcessPCH /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch.pch GRProKit/GRProKit-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSplitView.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSplitView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProAlert.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProAlert.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProMenu.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProMenu.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProToolbar.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProToolbar.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemeStore.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemeStore.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProWindow.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProWindow.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProLabel.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProFont.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProFont.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemePiece.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemePiece.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProColor.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProColor.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProProgressIndicator.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProProgressIndicator.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProButton.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProButton.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProBox.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProBox.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProKit.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/NSData+ZLib.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/NSData+ZLib.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProTableView.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProTableView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSlider.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSlider.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/GRProKit normal x86_64
+cCpHeader GRProKit/GRProBox.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProBox.h
+cCpHeader GRProKit/ThemeFile.h build/Debug/GRProKit.framework/Versions/A/Headers/ThemeFile.h
+cCpHeader GRProKit/GRProProgressIndicator.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProProgressIndicator.h
+cCpHeader GRProKit/GRProAlert.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProAlert.h
+cCpHeader GRProKit/GRProToolbar.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProToolbar.h
+cCpHeader GRProKit/GRProSlider.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProSlider.h
+cCpHeader GRProKit/GRProKit.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProKit.h
+cCpHeader GRProKit/GRProButton.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProButton.h
+cCpHeader GRProKit/GRThemePiece.h build/Debug/GRProKit.framework/Versions/A/Headers/GRThemePiece.h
+cCpHeader GRProKit/GRProTableView.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProTableView.h
+cCpHeader GRProKit/GRThemeStore.h build/Debug/GRProKit.framework/Versions/A/Headers/GRThemeStore.h
+cCpHeader GRProKit/NSData+ZLib.h build/Debug/GRProKit.framework/Versions/A/Headers/NSData+ZLib.h
+cCpHeader GRProKit/GRProSplitView.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProSplitView.h
+cCpHeader GRProKit/GRProLabel.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProLabel.h
+cCpHeader GRProKit/GRProWindow.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProWindow.h
+cCpResource GRProKit/GRProTheme.pack build/Debug/GRProKit.framework/Versions/A/Resources/GRProTheme.pack
+cCopyStringsFile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Resources/en.lproj/InfoPlist.strings GRProKit/en.lproj/InfoPlist.strings
+cCompileXIB /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/xibs/GRProAlert.xib
+cTouch /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c00000000531E3FFA00000000000000AA
+t1394491386
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c0000000052B9C2D6000000000000044C
+t1387905750
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531E3FED00000000000001DE
+t1394491373
+s478
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Carbon
+c00000000531E3FED0000000000002D7C
+t1394491373
+s11644
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c0000000052B9C2D7000000000000253C
+t1387905751
+s9532
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000531E3FED0000000000055BC0
+t1394491373
+s351168
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libz.dylib
+c0000000052B9C2DA00000000000044B8
+t1387905754
+s17592
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProAlert.h
+c000000005342C6120000000000000466
+t1396885010
+s1126
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProAlert.m
+c000000005342C61200000000000009E7
+t1396885010
+s2535
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProBox.h
+c000000005342C61200000000000000F9
+t1396885010
+s249
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProBox.m
+c000000005342C6120000000000000843
+t1396885010
+s2115
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProButton.h
+c000000005342C6120000000000000359
+t1396885010
+s857
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProButton.m
+c000000005342C612000000000000305B
+t1396885010
+s12379
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProColor.m
+c000000005342C61200000000000005B6
+t1396885010
+s1462
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProFont.m
+c000000005342C6120000000000000AC9
+t1396885010
+s2761
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit-Info.plist
+c000000005342C61200000000000003CC
+t1396885010
+s972
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit-Prefix.pch
+c000000005342C61200000000000000C9
+t1396885010
+s201
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit.h
+c000000005342C61200000000000001FE
+t1396885010
+s510
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit.m
+c000000005342C61200000000000001D3
+t1396885010
+s467
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.h
+c000000005342C61200000000000000F2
+t1396885010
+s242
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.m
+c000000005342C61200000000000003A5
+t1396885010
+s933
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProMenu.m
+c000000005342C6120000000000000F90
+t1396885010
+s3984
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProProgressIndicator.h
+c000000005342C6120000000000000897
+t1396885010
+s2199
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProProgressIndicator.m
+c000000005342C6120000000000003709
+t1396885010
+s14089
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSlider.h
+c000000005342C6120000000000000104
+t1396885010
+s260
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSlider.m
+c000000005342C612000000000000055A
+t1396885010
+s1370
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSplitView.h
+c000000005342C61200000000000001C4
+t1396885010
+s452
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSplitView.m
+c000000005342C6120000000000000119
+t1396885010
+s281
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProTableView.h
+c000000005342C61200000000000000E1
+t1396885010
+s225
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProTableView.m
+c000000005342C6120000000000001A8D
+t1396885010
+s6797
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProTheme.pack
+c000000005342C6120000000000033E0E
+t1396885010
+s212494
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProToolbar.h
+c000000005342C6120000000000000107
+t1396885010
+s263
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProToolbar.m
+c000000005342C6120000000000000A97
+t1396885010
+s2711
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProWindow.h
+c000000005342C6120000000000000DFD
+t1396885010
+s3581
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProWindow.m
+c000000005342C61200000000000044C9
+t1396885010
+s17609
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemePiece.h
+c000000005342C61200000000000002BB
+t1396885010
+s699
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemePiece.m
+c000000005342C61200000000000002F7
+t1396885010
+s759
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemeStore.h
+c000000005342C61200000000000004A1
+t1396885010
+s1185
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemeStore.m
+c000000005342C6120000000000001079
+t1396885010
+s4217
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/NSData+ZLib.h
+c000000005342C6120000000000000108
+t1396885010
+s264
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/NSData+ZLib.m
+c000000005342C6120000000000000935
+t1396885010
+s2357
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/ThemeFile.h
+c000000005342C6120000000000000349
+t1396885010
+s841
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/en.lproj/InfoPlist.strings
+c000000005342C612000000000000002D
+t1396885010
+s45
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/xibs/GRProAlert.xib
+c000000005342C6120000000000001BCB
+t1396885010
+s7115
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework
+t1396889110
+s204
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/GRProKit
+t1396889122
+s214636
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProAlert.h
+t1396889127
+s1126
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProBox.h
+t1396889124
+s249
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProButton.h
+t1396889128
+s857
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProKit.h
+t1396889128
+s510
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProLabel.h
+t1396889132
+s242
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProProgressIndicator.h
+t1396889126
+s2199
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProSlider.h
+t1396889127
+s260
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProSplitView.h
+t1396889130
+s452
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProTableView.h
+t1396889129
+s225
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProToolbar.h
+t1396889127
+s263
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProWindow.h
+t1396889132
+s3581
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRThemePiece.h
+t1396889129
+s699
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRThemeStore.h
+t1396889130
+s1185
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/NSData+ZLib.h
+t1396889130
+s264
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/ThemeFile.h
+t1396889125
+s841
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Resources/GRProAlert.nib
+t1396889135
+s6608
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Resources/GRProTheme.pack
+t1396889134
+s212494
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Resources/Info.plist
+t1396889110
+s1261
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Resources/en.lproj/InfoPlist.strings
+t1396889134
+s92
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProAlert.o
+t1396889112
+s50452
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProBox.o
+t1396889117
+s32168
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProButton.o
+t1396889116
+s74320
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProColor.o
+t1396889116
+s15504
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProFont.o
+t1396889114
+s18536
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProKit.LinkFileList
+c000000005342D61600000000000008A9
+t1396889110
+s2217
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProKit.o
+t1396889117
+s6968
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProLabel.o
+t1396889113
+s22040
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProMenu.o
+t1396889113
+s22076
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProProgressIndicator.o
+t1396889116
+s68904
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSlider.o
+t1396889120
+s26344
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSplitView.o
+t1396889112
+s16104
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProTableView.o
+t1396889120
+s54048
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProToolbar.o
+t1396889113
+s35920
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProWindow.o
+t1396889113
+s115396
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemePiece.o
+t1396889116
+s14712
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemeStore.o
+t1396889113
+s27996
+
+N/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/NSData+ZLib.o
+t1396889117
+s10224
+
+N/var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch.pch
+t1396889112
+s13734076
+
+CBuild AST from /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProAlert.m
+r0
+
+CBuild AST from /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProBox.m
+r0
+
+CBuild AST from /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProButton.m
+r0
+
+CBuild AST from /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProColor.m
+r0
+
+CBuild AST from /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProFont.m
+r0
+
+CBuild AST from /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit.m
+r0
+
+CBuild AST from /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.m
+r0
+
+CBuild AST from /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProMenu.m
+r0
+
+CBuild AST from /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProProgressIndicator.m
+r0
+
+CBuild AST from /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSlider.m
+r0
+
+CBuild AST from /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSplitView.m
+r0
+
+CBuild AST from /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProTableView.m
+r0
+
+CBuild AST from /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProToolbar.m
+r0
+
+CBuild AST from /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProWindow.m
+r0
+
+CBuild AST from /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemePiece.m
+r0
+
+CBuild AST from /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemeStore.m
+r0
+
+CBuild AST from /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/NSData+ZLib.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciese42c4c960df3b841^25917d960df3b841^---0#1#1#--18"Check dependencies36"78742CBC-037D-4CFF-8893-22E626F2D255-
+
+CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProAlert.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProAlert.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581912.684614
+e418581912.779724
+r1
+xCompileC
+xbuild/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProAlert.o
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProAlert.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProAlert.m
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProAlert.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProWindow.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProButton.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProAlert.m177"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProAlert.o GRProKit/GRProAlert.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler535eaf980df3b841^889fc7980df3b841^---0#0#1#-19%DVTDocumentLocation2@80"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProAlert.m0000000000000000^3165"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProAlert.o GRProKit/GRProAlert.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProAlert.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProAlert.dia -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProAlert.m -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProAlert.o36"F5FD6335-EE37-46FF-85C2-C3C7D1B75966-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProBox.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProBox.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581916.951167
+e418581917.025142
+r1
+xCompileC
+xbuild/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProBox.o
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProBox.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProBox.m
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProBox.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProBox.m173"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProBox.o GRProKit/GRProBox.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler789bf39c0df3b841^b0fe139d0df3b841^---0#0#1#-19%DVTDocumentLocation2@78"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProBox.m0000000000000000^3153"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProBox.o GRProKit/GRProBox.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProBox.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProBox.dia -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProBox.m -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProBox.o36"D243A79E-0DEF-4EDE-95D3-906CC2F200F7-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProButton.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProButton.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581916.759908
+e418581916.935450
+r1
+xCompileC
+xbuild/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProButton.o
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProButton.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProButton.m
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProButton.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProFont.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProMenu.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProButton.m179"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProButton.o GRProKit/GRProButton.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler9ca7c29c0df3b841^cc61ef9c0df3b841^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProButton.m0000000000000000^3171"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProButton.o GRProKit/GRProButton.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProButton.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProButton.dia -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProButton.m -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProButton.o36"BE14CEBA-42A1-4664-B066-936C4E7F37DC-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProColor.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProColor.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581916.043510
+e418581916.095002
+r1
+xCompileC
+xbuild/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProColor.o
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProColor.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProColor.m
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProColor.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProColor.m177"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProColor.o GRProKit/GRProColor.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler5f400b9c0df3b841^bb7f189c0df3b841^---0#0#1#-19%DVTDocumentLocation2@80"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProColor.m0000000000000000^3165"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProColor.o GRProKit/GRProColor.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProColor.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProColor.dia -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProColor.m -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProColor.o36"55EB356E-CDF6-45FF-BC89-401B654A1A9F-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProFont.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProFont.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581914.131449
+e418581914.190386
+r1
+xCompileC
+xbuild/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProFont.o
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProFont.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProFont.m
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProFont.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProFont.m175"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProFont.o GRProKit/GRProFont.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler3bc2219a0df3b841^8dd3309a0df3b841^---0#0#1#-19%DVTDocumentLocation2@79"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProFont.m0000000000000000^3159"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProFont.o GRProKit/GRProFont.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProFont.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProFont.dia -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProFont.m -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProFont.o36"2D087424-86AB-449F-A0C7-0B4FDC0D0FAC-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProKit.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581917.343351
+e418581917.389340
+r1
+xCompileC
+xbuild/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProKit.o
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit.m
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProWindow.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProToolbar.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSplitView.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProBox.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProButton.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProAlert.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProProgressIndicator.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProTableView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit.m173"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProKit.o GRProKit/GRProKit.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler1d01589d0df3b841^465c709d0df3b841^---0#0#1#-19%DVTDocumentLocation2@78"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit.m0000000000000000^3153"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProKit.o GRProKit/GRProKit.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProKit.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProKit.dia -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit.m -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProKit.o36"F01F96F8-4C0F-4353-92A5-F5ABB6960F5F-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProLabel.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581913.918485
+e418581913.990212
+r1
+xCompileC
+xbuild/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProLabel.o
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.m
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProFont.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.m177"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProLabel.o GRProKit/GRProLabel.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler8a3aeb990df3b841^dca1fd990df3b841^---0#0#1#-19%DVTDocumentLocation2@80"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.m0000000000000000^3165"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProLabel.o GRProKit/GRProLabel.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProLabel.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProLabel.dia -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.m -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProLabel.o36"5F6D6DAA-8292-42E1-87A0-1730277BEE6D-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProMenu.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProMenu.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581912.779986
+e418581913.021525
+r1
+xCompileC
+xbuild/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProMenu.o
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProMenu.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProMenu.m
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProMenu.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProFont.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProMenu.m175"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProMenu.o GRProKit/GRProMenu.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler93c7c7980df3b841^a8c405990df3b841^---0#0#1#-19%DVTDocumentLocation2@79"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProMenu.m0000000000000000^3159"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProMenu.o GRProKit/GRProMenu.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProMenu.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProMenu.dia -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProMenu.m -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProMenu.o36"ED3EEA1C-68A9-42FD-96DC-389E63C566AD-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProProgressIndicator.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProProgressIndicator.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581916.279496
+e418581916.464622
+r1
+xCompileC
+xbuild/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProProgressIndicator.o
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProProgressIndicator.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProProgressIndicator.m
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProProgressIndicator.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProProgressIndicator.m201"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProProgressIndicator.o GRProKit/GRProProgressIndicator.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler14b2479c0df3b841^bf0b779c0df3b841^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProProgressIndicator.m0000000000000000^3237"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProProgressIndicator.o GRProKit/GRProProgressIndicator.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProProgressIndicator.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProProgressIndicator.dia -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProProgressIndicator.m -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProProgressIndicator.o36"33D6EA7D-D9BC-4D53-A6AB-861F0C184870-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSlider.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSlider.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581920.824707
+e418581920.876571
+r1
+xCompileC
+xbuild/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSlider.o
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSlider.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSlider.m
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSlider.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSlider.m179"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSlider.o GRProKit/GRProSlider.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerde3ed3a00df3b841^6668e0a00df3b841^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSlider.m0000000000000000^3171"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSlider.o GRProKit/GRProSlider.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSlider.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSlider.dia -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSlider.m -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSlider.o36"9C8DFFFF-80B6-4F12-9879-C2EBA7B441AE-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSplitView.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSplitView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581912.611920
+e418581912.671274
+r1
+xCompileC
+xbuild/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSplitView.o
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSplitView.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSplitView.m
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSplitView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSplitView.m185"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSplitView.o GRProKit/GRProSplitView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler01c19c980df3b841^58e4ab980df3b841^---0#0#1#-19%DVTDocumentLocation2@84"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSplitView.m0000000000000000^3189"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSplitView.o GRProKit/GRProSplitView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSplitView.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSplitView.dia -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSplitView.m -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSplitView.o36"094EBB85-68D9-45B3-9CFC-C514622F8397-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProTableView.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProTableView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581920.722689
+e418581920.806122
+r1
+xCompileC
+xbuild/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProTableView.o
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProTableView.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProTableView.m
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProTableView.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProFont.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProColor.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProTableView.m185"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProTableView.o GRProKit/GRProTableView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler821bb9a00df3b841^1c60cea00df3b841^---0#0#1#-19%DVTDocumentLocation2@84"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProTableView.m0000000000000000^3189"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProTableView.o GRProKit/GRProTableView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProTableView.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProTableView.dia -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProTableView.m -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProTableView.o36"A40ABF53-701C-40C5-ABFB-069662F348B4-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProToolbar.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProToolbar.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581913.021803
+e418581913.097552
+r1
+xCompileC
+xbuild/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProToolbar.o
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProToolbar.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProToolbar.m
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProToolbar.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProWindow.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProFont.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProToolbar.m181"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProToolbar.o GRProKit/GRProToolbar.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler7daf05990df3b841^7a3819990df3b841^---0#0#1#-19%DVTDocumentLocation2@82"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProToolbar.m0000000000000000^3177"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProToolbar.o GRProKit/GRProToolbar.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProToolbar.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProToolbar.dia -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProToolbar.m -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProToolbar.o36"799347AD-132C-4BD5-BEC6-BC98AAFEB43E-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProWindow.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProWindow.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581913.660554
+e418581913.803968
+r1
+xCompileC
+xbuild/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProWindow.o
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProWindow.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProWindow.m
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProWindow.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProFont.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProColor.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProWindow.m179"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProWindow.o GRProKit/GRProWindow.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler3734a9990df3b841^f4ddcd990df3b841^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProWindow.m0000000000000000^3171"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProWindow.o GRProKit/GRProWindow.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProWindow.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProWindow.dia -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProWindow.m -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProWindow.o36"152AAE9A-1589-4656-B992-2AF2D50BA24C-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemePiece.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemePiece.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581915.946819
+e418581916.008183
+r1
+xCompileC
+xbuild/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemePiece.o
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemePiece.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemePiece.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemePiece.m181"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemePiece.o GRProKit/GRThemePiece.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerc138f49b0df3b841^c24e059c0df3b841^---0#0#1#-19%DVTDocumentLocation2@82"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemePiece.m0000000000000000^3177"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemePiece.o GRProKit/GRThemePiece.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemePiece.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemePiece.dia -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemePiece.m -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemePiece.o36"50A9AECA-1689-40CC-B93D-5B5E5C75AA8A-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemeStore.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemeStore.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581913.473298
+e418581913.539515
+r1
+xCompileC
+xbuild/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemeStore.o
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemeStore.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemeStore.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemeStore.m181"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemeStore.o GRProKit/GRThemeStore.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler844579990df3b841^64218a990df3b841^---0#0#1#-19%DVTDocumentLocation2@82"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemeStore.m0000000000000000^3177"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemeStore.o GRProKit/GRThemeStore.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemeStore.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemeStore.dia -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemeStore.m -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemeStore.o36"8A41F6F1-2354-4929-8AFD-937AD87F4B9B-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/NSData+ZLib.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/NSData+ZLib.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581917.743074
+e418581917.788951
+r1
+xCompileC
+xbuild/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/NSData+ZLib.o
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/NSData+ZLib.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/NSData+ZLib.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/NSData+ZLib.m179"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/NSData+ZLib.o GRProKit/NSData+ZLib.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler7154be9d0df3b841^280cca9d0df3b841^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/NSData+ZLib.m0000000000000000^3171"CompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/NSData+ZLib.o GRProKit/NSData+ZLib.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/NSData+ZLib.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/NSData+ZLib.dia -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/NSData+ZLib.m -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/NSData+ZLib.o36"52C6C28C-C100-4B49-A972-EBFF0B0F3A5D-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCompileXIB /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/xibs/GRProAlert.xib
+s418581935.032926
+e418581935.142658
+r1
+xCompileXIB
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/xibs/GRProAlert.xib
+o/* com.apple.ibtool.document.notices */
+o/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/xibs/GRProAlert.xib:03F-AK-8Lu: note: View is clipping its content [13]
+o/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/xibs/GRProAlert.xib:Vpq-0w-UXM: note: View is clipping its content [13]
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compiling /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/xibs/GRProAlert.xib39"CompileXIB GRProKit/xibs/GRProAlert.xib918108af0df3b841^d28924af0df3b841^-296"/* com.apple.ibtool.document.notices *//Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/xibs/GRProAlert.xib:03F-AK-8Lu: note: View is clipping its content/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/xibs/GRProAlert.xib:Vpq-0w-UXM: note: View is clipping its content2(21%IDEActivityLogMessage2@28"View is clipping its content-418581935#18446744073709551615#0#-0#-23%DVTTextDocumentLocation3@87"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/xibs/GRProAlert.xib0000000000000000^2#18446744073709551615#2#18446744073709551615#18446744073709551615#0#15"Clipped Content--2@28"View is clipping its content-418581935#18446744073709551615#0#-0#-3@87"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/xibs/GRProAlert.xib0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#15"Clipped Content--0#0#1#-19%DVTDocumentLocation4@87"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/xibs/GRProAlert.xib0000000000000000^560"CompileXIB GRProKit/xibs/GRProAlert.xib    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 10.7 --output-format human-readable-text --compile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Resources/GRProAlert.nib /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/xibs/GRProAlert.xib36"5CB0FE6B-F199-4828-86E9-B249B108769D-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCopyStringsFile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Resources/en.lproj/InfoPlist.strings GRProKit/en.lproj/InfoPlist.strings
+s418581934.450437
+e418581934.451867
+r1
+xCopyStringsFile
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Resources/en.lproj/InfoPlist.strings
+xGRProKit/en.lproj/InfoPlist.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Copy GRProKit/en.lproj/InfoPlist.strings130"CopyStringsFile build/Debug/GRProKit.framework/Versions/A/Resources/en.lproj/InfoPlist.strings GRProKit/en.lproj/InfoPlist.strings356173ae0df3b841^60ac73ae0df3b841^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/en.lproj/InfoPlist.strings0000000000000000^432"CopyStringsFile build/Debug/GRProKit.framework/Versions/A/Resources/en.lproj/InfoPlist.strings GRProKit/en.lproj/InfoPlist.strings    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Resources/en.lproj -- GRProKit/en.lproj/InfoPlist.strings36"402307AF-B4B4-49C5-BAD7-952481A34439-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCpHeader GRProKit/GRProAlert.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProAlert.h
+s418581927.098240
+e418581927.099380
+r1
+xCpHeader
+xGRProKit/GRProAlert.h
+xbuild/Debug/GRProKit.framework/Versions/A/Headers/GRProAlert.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Copy build/Debug/GRProKit.framework/Versions/A/Headers/GRProAlert.h93"CpHeader GRProKit/GRProAlert.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProAlert.h153819a70df3b841^c17119a70df3b841^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProAlert.h00341ca6dcffdf42^441"CpHeader GRProKit/GRProAlert.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProAlert.h    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProAlert.h /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers36"373D4FE9-63E7-4157-8C7D-F86E09DA94F1-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCpHeader GRProKit/GRProBox.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProBox.h
+s418581924.285164
+e418581924.287031
+r1
+xCpHeader
+xGRProKit/GRProBox.h
+xbuild/Debug/GRProKit.framework/Versions/A/Headers/GRProBox.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/Debug/GRProKit.framework/Versions/A/Headers/GRProBox.h89"CpHeader GRProKit/GRProBox.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProBox.h3d1049a40df3b841^5b7d49a40df3b841^---0#0#1#-19%DVTDocumentLocation2@119"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProBox.h00341ca6dcffdf42^435"CpHeader GRProKit/GRProBox.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProBox.h    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProBox.h /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers36"1B667004-2BD1-4E5B-B8CE-D57092A95C0D-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCpHeader GRProKit/GRProButton.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProButton.h
+s418581928.859372
+e418581928.860706
+r1
+xCpHeader
+xGRProKit/GRProButton.h
+xbuild/Debug/GRProKit.framework/Versions/A/Headers/GRProButton.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy build/Debug/GRProKit.framework/Versions/A/Headers/GRProButton.h95"CpHeader GRProKit/GRProButton.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProButton.h3812dca80df3b841^ef58dca80df3b841^---0#0#1#-19%DVTDocumentLocation2@122"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProButton.h00341ca6dcffdf42^444"CpHeader GRProKit/GRProButton.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProButton.h    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProButton.h /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers36"8FFE2D2D-12BE-4514-9C4D-FFF200F81C48-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCpHeader GRProKit/GRProKit.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProKit.h
+s418581928.476332
+e418581928.477772
+r1
+xCpHeader
+xGRProKit/GRProKit.h
+xbuild/Debug/GRProKit.framework/Versions/A/Headers/GRProKit.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/Debug/GRProKit.framework/Versions/A/Headers/GRProKit.h89"CpHeader GRProKit/GRProKit.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProKit.h58017aa80df3b841^d4497aa80df3b841^---0#0#1#-19%DVTDocumentLocation2@119"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProKit.h00341ca6dcffdf42^435"CpHeader GRProKit/GRProKit.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProKit.h    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit.h /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers36"02E44901-8063-42C5-A59D-14EC3D8FCA14-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCpHeader GRProKit/GRProLabel.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProLabel.h
+s418581932.168080
+e418581932.169009
+r1
+xCpHeader
+xGRProKit/GRProLabel.h
+xbuild/Debug/GRProKit.framework/Versions/A/Headers/GRProLabel.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Copy build/Debug/GRProKit.framework/Versions/A/Headers/GRProLabel.h93"CpHeader GRProKit/GRProLabel.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProLabel.hf0132bac0df3b841^c3442bac0df3b841^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProLabel.h00341ca6dcffdf42^441"CpHeader GRProKit/GRProLabel.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProLabel.h    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProLabel.h /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers36"E66B4FB7-ADE8-4C47-854A-D2F1395163C8-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCpHeader GRProKit/GRProProgressIndicator.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProProgressIndicator.h
+s418581926.756129
+e418581926.757809
+r1
+xCpHeader
+xGRProKit/GRProProgressIndicator.h
+xbuild/Debug/GRProKit.framework/Versions/A/Headers/GRProProgressIndicator.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Copy build/Debug/GRProKit.framework/Versions/A/Headers/GRProProgressIndicator.h117"CpHeader GRProKit/GRProProgressIndicator.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProProgressIndicator.ha4aac1a60df3b841^97fec1a60df3b841^---0#0#1#-19%DVTDocumentLocation2@133"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProProgressIndicator.h00341ca6dcffdf42^477"CpHeader GRProKit/GRProProgressIndicator.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProProgressIndicator.h    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProProgressIndicator.h /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers36"A4CEFF72-C95F-42CB-B4BA-D5372A6EB62C-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCpHeader GRProKit/GRProSlider.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProSlider.h
+s418581927.472114
+e418581927.473277
+r1
+xCpHeader
+xGRProKit/GRProSlider.h
+xbuild/Debug/GRProKit.framework/Versions/A/Headers/GRProSlider.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy build/Debug/GRProKit.framework/Versions/A/Headers/GRProSlider.h95"CpHeader GRProKit/GRProSlider.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProSlider.hb7ec78a70df3b841^242979a70df3b841^---0#0#1#-19%DVTDocumentLocation2@122"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProSlider.h00341ca6dcffdf42^444"CpHeader GRProKit/GRProSlider.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProSlider.h    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSlider.h /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers36"417FEE86-3C03-4ACD-BD65-9169664FC713-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCpHeader GRProKit/GRProSplitView.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProSplitView.h
+s418581930.868630
+e418581930.869732
+r1
+xCpHeader
+xGRProKit/GRProSplitView.h
+xbuild/Debug/GRProKit.framework/Versions/A/Headers/GRProSplitView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Copy build/Debug/GRProKit.framework/Versions/A/Headers/GRProSplitView.h101"CpHeader GRProKit/GRProSplitView.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProSplitView.h3b70deaa0df3b841^7aa7deaa0df3b841^---0#0#1#-19%DVTDocumentLocation2@125"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProSplitView.h00341ca6dcffdf42^453"CpHeader GRProKit/GRProSplitView.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProSplitView.h    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProSplitView.h /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers36"6EDC3658-3EDC-4576-9035-515AABA0C5F2-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCpHeader GRProKit/GRProTableView.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProTableView.h
+s418581929.871996
+e418581929.873103
+r1
+xCpHeader
+xGRProKit/GRProTableView.h
+xbuild/Debug/GRProKit.framework/Versions/A/Headers/GRProTableView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Copy build/Debug/GRProKit.framework/Versions/A/Headers/GRProTableView.h101"CpHeader GRProKit/GRProTableView.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProTableView.haa46dfa90df3b841^6285dfa90df3b841^---0#0#1#-19%DVTDocumentLocation2@125"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProTableView.h00341ca6dcffdf42^453"CpHeader GRProKit/GRProTableView.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProTableView.h    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProTableView.h /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers36"3F5CEBED-7CA3-4C0C-94F1-15FFB00424F3-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCpHeader GRProKit/GRProToolbar.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProToolbar.h
+s418581927.156481
+e418581927.157956
+r1
+xCpHeader
+xGRProKit/GRProToolbar.h
+xbuild/Debug/GRProKit.framework/Versions/A/Headers/GRProToolbar.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy build/Debug/GRProKit.framework/Versions/A/Headers/GRProToolbar.h97"CpHeader GRProKit/GRProToolbar.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProToolbar.h182128a70df3b841^736928a70df3b841^---0#0#1#-19%DVTDocumentLocation2@123"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProToolbar.h00341ca6dcffdf42^447"CpHeader GRProKit/GRProToolbar.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProToolbar.h    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProToolbar.h /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers36"7FD4AD18-9B11-4ECD-9291-D95B4581AF5B-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCpHeader GRProKit/GRProWindow.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProWindow.h
+s418581932.626865
+e418581932.627916
+r1
+xCpHeader
+xGRProKit/GRProWindow.h
+xbuild/Debug/GRProKit.framework/Versions/A/Headers/GRProWindow.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy build/Debug/GRProKit.framework/Versions/A/Headers/GRProWindow.h95"CpHeader GRProKit/GRProWindow.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProWindow.h338ba0ac0df3b841^bec0a0ac0df3b841^---0#0#1#-19%DVTDocumentLocation2@122"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRProWindow.h00341ca6dcffdf42^444"CpHeader GRProKit/GRProWindow.h build/Debug/GRProKit.framework/Versions/A/Headers/GRProWindow.h    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProWindow.h /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers36"5A2E0551-A5DA-4B6B-A842-3DA850975313-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCpHeader GRProKit/GRThemePiece.h build/Debug/GRProKit.framework/Versions/A/Headers/GRThemePiece.h
+s418581929.745021
+e418581929.746177
+r1
+xCpHeader
+xGRProKit/GRThemePiece.h
+xbuild/Debug/GRProKit.framework/Versions/A/Headers/GRThemePiece.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy build/Debug/GRProKit.framework/Versions/A/Headers/GRThemePiece.h97"CpHeader GRProKit/GRThemePiece.h build/Debug/GRProKit.framework/Versions/A/Headers/GRThemePiece.hf3c9bea90df3b841^d506bfa90df3b841^---0#0#1#-19%DVTDocumentLocation2@123"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRThemePiece.h00341ca6dcffdf42^447"CpHeader GRProKit/GRThemePiece.h build/Debug/GRProKit.framework/Versions/A/Headers/GRThemePiece.h    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemePiece.h /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers36"7830B293-88B8-45DB-B30F-FF41A767C7C8-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCpHeader GRProKit/GRThemeStore.h build/Debug/GRProKit.framework/Versions/A/Headers/GRThemeStore.h
+s418581930.091233
+e418581930.092588
+r1
+xCpHeader
+xGRProKit/GRThemeStore.h
+xbuild/Debug/GRProKit.framework/Versions/A/Headers/GRThemeStore.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy build/Debug/GRProKit.framework/Versions/A/Headers/GRThemeStore.h97"CpHeader GRProKit/GRThemeStore.h build/Debug/GRProKit.framework/Versions/A/Headers/GRThemeStore.hc66a17aa0df3b841^ccb617aa0df3b841^---0#0#1#-19%DVTDocumentLocation2@123"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/GRThemeStore.h00341ca6dcffdf42^447"CpHeader GRProKit/GRThemeStore.h build/Debug/GRProKit.framework/Versions/A/Headers/GRThemeStore.h    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemeStore.h /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers36"DF5D7EBE-DB51-45BD-B425-69338DE4D300-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCpHeader GRProKit/NSData+ZLib.h build/Debug/GRProKit.framework/Versions/A/Headers/NSData+ZLib.h
+s418581930.867013
+e418581930.868385
+r1
+xCpHeader
+xGRProKit/NSData+ZLib.h
+xbuild/Debug/GRProKit.framework/Versions/A/Headers/NSData+ZLib.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy build/Debug/GRProKit.framework/Versions/A/Headers/NSData+ZLib.h95"CpHeader GRProKit/NSData+ZLib.h build/Debug/GRProKit.framework/Versions/A/Headers/NSData+ZLib.hb806deaa0df3b841^6952deaa0df3b841^---0#0#1#-19%DVTDocumentLocation2@122"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/NSData+ZLib.h00341ca6dcffdf42^444"CpHeader GRProKit/NSData+ZLib.h build/Debug/GRProKit.framework/Versions/A/Headers/NSData+ZLib.h    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/NSData+ZLib.h /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers36"14F47FFA-D6A3-406D-9B23-D396BE2C0E20-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCpHeader GRProKit/ThemeFile.h build/Debug/GRProKit.framework/Versions/A/Headers/ThemeFile.h
+s418581925.556341
+e418581925.557700
+r1
+xCpHeader
+xGRProKit/ThemeFile.h
+xbuild/Debug/GRProKit.framework/Versions/A/Headers/ThemeFile.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Copy build/Debug/GRProKit.framework/Versions/A/Headers/ThemeFile.h91"CpHeader GRProKit/ThemeFile.h build/Debug/GRProKit.framework/Versions/A/Headers/ThemeFile.he97e8ea50df3b841^7bd98ea50df3b841^---0#0#1#-19%DVTDocumentLocation2@120"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers/ThemeFile.h00341ca6dcffdf42^438"CpHeader GRProKit/ThemeFile.h build/Debug/GRProKit.framework/Versions/A/Headers/ThemeFile.h    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/ThemeFile.h /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Headers36"68723849-EFF7-4DB7-BFBE-5103E7AAA426-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CCpResource GRProKit/GRProTheme.pack build/Debug/GRProKit.framework/Versions/A/Resources/GRProTheme.pack
+s418581934.223249
+e418581934.225937
+r1
+xCpResource
+xGRProKit/GRProTheme.pack
+xbuild/Debug/GRProKit.framework/Versions/A/Resources/GRProTheme.pack
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Copy build/Debug/GRProKit.framework/Versions/A/Resources/GRProTheme.pack103"CpResource GRProKit/GRProTheme.pack build/Debug/GRProKit.framework/Versions/A/Resources/GRProTheme.packad3439ae0df3b841^27da39ae0df3b841^---0#0#1#-19%DVTDocumentLocation2@126"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Resources/GRProTheme.pack00341ca6dcffdf42^456"CpResource GRProKit/GRProTheme.pack build/Debug/GRProKit.framework/Versions/A/Resources/GRProTheme.pack    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProTheme.pack /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Resources36"EE6EE553-2D5D-4DE6-AB98-B14DD4575B13-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CLd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/GRProKit normal x86_64
+s418581922.320999
+e418581922.579926
+r1
+xLd
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/GRProKit
+xnormal
+xx86_64
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProKit.LinkFileList
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSplitView.o
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProAlert.o
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProMenu.o
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProToolbar.o
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemeStore.o
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProWindow.o
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProLabel.o
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProFont.o
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRThemePiece.o
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProColor.o
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProProgressIndicator.o
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProButton.o
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProBox.o
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProKit.o
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/NSData+ZLib.o
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProTableView.o
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProSlider.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Carbon
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libz.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_macosx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/CoreImage.framework/Versions/A/CoreImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/ScalableUserInterface.framework/Versions/A/ScalableUserInterface
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CommonPanels.framework/Versions/A/CommonPanels
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Help.framework/Versions/A/Help
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/ImageCapture.framework/Versions/A/ImageCapture
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Ink.framework/Versions/A/Ink
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/OpenScripting.framework/Versions/A/OpenScripting
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Print.framework/Versions/A/Print
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SecurityHI.framework/Versions/A/SecurityHI
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SpeechRecognition.framework/Versions/A/SpeechRecognition
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Link /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/GRProKit67"Ld build/Debug/GRProKit.framework/Versions/A/GRProKit normal x86_64bc3b52a20df3b841^797794a20df3b841^---0#0#1#--1226"Ld build/Debug/GRProKit.framework/Versions/A/GRProKit normal x86_64    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export MACOSX_DEPLOYMENT_TARGET=10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug -filelist /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProKit.LinkFileList -install_name @executable_path/../Frameworks/GRProKit.framework/Versions/A/GRProKit -mmacosx-version-min=10.7 -fobjc-arc -fobjc-link-runtime -framework Carbon -framework QuartzCore -lz -framework Cocoa -single_module -compatibility_version 1 -current_version 1 -Xlinker -dependency_info -Xlinker /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProKit_dependency_info.dat -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/GRProKit36"F554AE46-8C82-457F-8FC0-88F22F93B3D1-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CProcessInfoPlistFile /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Resources/Info.plist /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit-Info.plist
+s418581910.486809
+e418581910.489015
+r1
+xProcessInfoPlistFile
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Resources/Info.plist
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Process /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit-Info.plist112"ProcessInfoPlistFile build/Debug/GRProKit.framework/Versions/A/Resources/Info.plist GRProKit/GRProKit-Info.plista6d57c960df3b841^b43c7f960df3b841^---0#0#1#-19%DVTDocumentLocation2@87"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit-Info.plist0000000000000000^438"ProcessInfoPlistFile build/Debug/GRProKit.framework/Versions/A/Resources/Info.plist GRProKit/GRProKit-Info.plist    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    builtin-infoPlistUtility /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit-Info.plist -expandbuildsettings -platform macosx -o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework/Versions/A/Resources/Info.plist36"4F569C2F-3F83-45EA-814A-E9D3D7B766B5-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CProcessPCH /Users/jcarlos/Library/Developer/Xcode/DerivedData/Mango-ajkuweqvpaxeajbdyqdhirpsjrbh/Index/PrecompiledHeaders/GRProKit-Prefix-bqydatdktzgusebptkwbxdtxwwyg_ast/GRProKit-Prefix.pch.pch GRProKit/GRProKit-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch.pch GRProKit/GRProKit-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418581910.489824
+e418581912.310186
+r1
+xProcessPCH
+x/var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch.pch
+xGRProKit/GRProKit-Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit-Prefix.pch
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemeStore.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/NSData+ZLib.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/ThemeFile.h
+d/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRThemePiece.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile GRProKit/GRProKit-Prefix.pch294"ProcessPCH /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch.pch GRProKit/GRProKit-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler1b847d960df3b841^a56a4f980df3b841^---0#0#1#-19%DVTDocumentLocation2@87"file:///Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit-Prefix.pch0000000000000000^3270"ProcessPCH /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch.pch GRProKit/GRProKit-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/GRProKit-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/GRProKit.build/Debug/GRProKit.build/DerivedSources -F/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug --serialize-diagnostics /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch.d -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProKit-Prefix.pch -o /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/GRProKit-Prefix-ccgadlyjohmojialgbhwrkydkbya/GRProKit-Prefix.pch.pch36"DD0D1C1C-EA8B-4C14-985D-525677DF2CD2-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+
+CTouch /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework
+s418581936.859631
+e418581936.864994
+r1
+xTouch
+x/Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Touch /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework36"Touch build/Debug/GRProKit.frameworkaf21dcb00df3b841^8673ddb00df3b841^---0#0#1#--201"Touch build/Debug/GRProKit.framework    cd /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit    /usr/bin/touch -c /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/build/Debug/GRProKit.framework36"4071D1DF-D12D-4F9D-AA91-4FCDF3A94DF5-
+bCDF30E84-BC4A-488A-A3E4-9749343C455B
+

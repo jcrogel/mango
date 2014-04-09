@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0769BA37-F14C-4B51-87EE-5B8EE45A3BE4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>default</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7C12C953-1EDD-40A9-8920-DF60FEEBDD4D</key>
+		<string>https://github.com/jcrogel/MMTabBarView</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>default.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7C12C953-1EDD-40A9-8920-DF60FEEBDD4D</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://spunglin.com/mango</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7C12C953-1EDD-40A9-8920-DF60FEEBDD4D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7C12C953-1EDD-40A9-8920-DF60FEEBDD4D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MMTabBarView</string>
+		</dict>
+	</array>
+</dict>
+</plist>
