@@ -36,8 +36,7 @@
 
 - (IBAction)dbsPopUpButtonAction:(id)sender {
     NSArray *collections = [[self connMgr] getCollectionNames: [[[self dbsPopUpButton] selectedItem] title]];
-    
-    NSLog(@"%@", collections);
+    [[self collectionListView] setCollectionList: collections];
 }
 
 -(void) setupTextEditor

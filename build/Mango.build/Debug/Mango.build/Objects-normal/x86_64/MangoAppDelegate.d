@@ -481,4 +481,5 @@ dependencies: /Users/jcarlos/dev/Mango/MangoAppDelegate.mm \
   /Users/jcarlos/dev/Mango/External/Fragaria/build/Debug/MGSFragaria.framework/Headers/SMLSyntaxError.h \
   /Users/jcarlos/dev/Mango/External/Fragaria/build/Debug/MGSFragaria.framework/Headers/SMLSyntaxColouringDelegate.h \
   /Users/jcarlos/dev/Mango/External/Fragaria/build/Debug/MGSFragaria.framework/Headers/SMLSyntaxDefinition.h \
-  /Users/jcarlos/dev/Mango/External/Fragaria/build/Debug/MGSFragaria.framework/Headers/SMLTextView.h
+  /Users/jcarlos/dev/Mango/External/Fragaria/build/Debug/MGSFragaria.framework/Headers/SMLTextView.h \
+  /Users/jcarlos/dev/Mango/Mango/MangoCollectionListView.h

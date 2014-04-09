@@ -12,6 +12,8 @@
 #import <MGSFragaria/SMLTextView.h>
 #import <ITSidebar/ITSidebar.h>
 
+#import "MangoCollectionListView.h"
+
 @interface MangoWindowController : NSWindowController
 
 @property MangoConnectionManager *connMgr;
@@ -19,6 +21,8 @@
 @property MGSFragaria *fragaria;
 @property (weak) IBOutlet NSPopUpButton *dbsPopUpButton;
 @property (weak) IBOutlet ITSidebar *sideBar;
+
+@property (weak) IBOutlet MangoCollectionListView *collectionListView;
 
 - (void) connectAndShow;
 - (IBAction)debugConn:(id)sender;
