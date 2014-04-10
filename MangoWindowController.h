@@ -14,15 +14,18 @@
 
 #import "MangoCollectionListView.h"
 
-@interface MangoWindowController : NSWindowController
+@interface MangoWindowController : NSWindowController<NSOutlineViewDelegate>
 
 @property MangoConnectionManager *connMgr;
 @property (weak) IBOutlet NSView *sourceEditor;
 @property MGSFragaria *fragaria;
 @property (weak) IBOutlet NSPopUpButton *dbsPopUpButton;
 @property (weak) IBOutlet ITSidebar *sideBar;
+@property (weak) IBOutlet NSOutlineView *collectionListView;
 
-@property (weak) IBOutlet MangoCollectionListView *collectionListView;
+
+@property (strong) IBOutlet NSTreeController *collectionListTC;
+@property NSArray *collectionListItems;
 
 - (void) connectAndShow;
 - (IBAction)debugConn:(id)sender;
