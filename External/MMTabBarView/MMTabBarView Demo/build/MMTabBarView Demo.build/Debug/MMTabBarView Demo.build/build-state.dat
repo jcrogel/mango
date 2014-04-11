@@ -3,7 +3,7 @@ v6
 r1
 cCheck dependencies
 cProcessInfoPlistFile /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app/Contents/Info.plist /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/MMTabBarView\ Demo-Info.plist
-cProcessPCH /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-aiywebbmsujcnphcaruecnfnjcga/MMTabBarView\ Demo-Prefix.pch.pch MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-gxfijqyqanrntfeovpqeazbqfbrj/MMTabBarView\ Demo-Prefix.pch.pch MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/main.o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/MMAppDelegate.o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/MMAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoFakeModel.o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/DemoFakeModel.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -14,7 +14,7 @@ cCpResource MMTabBarView\ Demo/en.lproj/Credits.rtf build/Debug/MMTabBarView\ De
 cCompileXIB /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/en.lproj/MainMenu.xib
 cCpResource MMTabBarView\ Demo/Images/largeImage.png build/Debug/MMTabBarView\ Demo.app/Contents/Resources/largeImage.png
 cCompileXIB /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/en.lproj/DemoWindow.xib
-cPBXCp build/Debug/MMTabBarView.framework build/Debug/MMTabBarView\ Demo.app/Contents/Frameworks/MMTabBarView.framework
+cPBXCp /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework build/Debug/MMTabBarView\ Demo.app/Contents/Frameworks/MMTabBarView.framework
 cTouch /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
@@ -32,15 +32,320 @@ c00000000531E3FED00000000000001DE
 t1394491373
 s478
 
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+c00000000531E3FED0000000000268434
+t1394491373
+s2524212
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+c0000000052B9C2D70000000000007D5C
+t1387905751
+s32092
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+c00000000531E3FED0000000000020D64
+t1394491373
+s134500
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+c0000000052B9C2D7000000000001B3B8
+t1387905751
+s111544
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+c00000000531E3FED0000000000034FAC
+t1394491373
+s217004
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+c0000000052B9C2D7000000000000CB08
+t1387905751
+s51976
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+c0000000052B9C2D7000000000002C5F4
+t1387905751
+s181748
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+c0000000052B9C2D7000000000002B9A8
+t1387905751
+s178600
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+c00000000531E3FED0000000000011EF8
+t1394491373
+s73464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c00000000531E3FED00000000000598A8
+t1394491373
+s366760
+
 N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
 c0000000052B9C2D7000000000000253C
 t1387905751
 s9532
 
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c00000000531E3FED000000000004C7C4
+t1394491373
+s313284
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c00000000531E3FED0000000000085C70
+t1394491373
+s547952
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000531E3FED000000000008B334
+t1394491373
+s570164
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+c0000000052B9C2D7000000000000979C
+t1387905751
+s38812
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+c0000000052B9C2D700000000000223B4
+t1387905751
+s140212
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+c00000000531E3FED0000000000071CA8
+t1394491373
+s466088
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+c0000000052B9C2D70000000000017E1C
+t1387905751
+s97820
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+c00000000531E3FED000000000004F090
+t1394491373
+s323728
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+c00000000531E3FED000000000003AA48
+t1394491373
+s240200
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+c00000000531E3FED00000000000383CC
+t1394491373
+s230348
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+c0000000052B9C2D7000000000001B66C
+t1387905751
+s112236
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+c00000000531E3FED0000000000030448
+t1394491373
+s197704
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000531E3FED00000000000C9E38
+t1394491373
+s826936
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+c00000000531E3FED00000000000394B0
+t1394491373
+s234672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/crt1.10.6.o
+c0000000052B9C2D900000000000022C4
+t1387905753
+s8900
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+c00000000531E3FEE000000000000681C
+t1394491374
+s26652
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.dylib
+c0000000052B9C2D90000000000014EF8
+t1387905753
+s85752
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+c0000000052B9C2DA0000000000004734
+t1387905754
+s18228
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+c0000000052B9C2DA000000000000FC6C
+t1387905754
+s64620
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+c0000000052B9C2DA000000000000F6A0
+t1387905754
+s63136
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+c0000000052B9C2DA0000000000006254
+t1387905754
+s25172
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+c0000000052B9C2DA000000000000E0F8
+t1387905754
+s57592
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+c00000000531E3FEE000000000000D6DC
+t1394491374
+s55004
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+c00000000531E3FEE0000000000006308
+t1394491374
+s25352
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+c0000000052B9C2DA0000000000004050
+t1387905754
+s16464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+c00000000531E3FEE0000000000008570
+t1394491374
+s34160
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+c0000000052B9C2DA0000000000005EA0
+t1387905754
+s24224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+c0000000052B9C2DA0000000000005FAC
+t1387905754
+s24492
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+c0000000052B9C2DA0000000000004440
+t1387905754
+s17472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+c0000000052B9C2DA000000000000AA28
+t1387905754
+s43560
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+c0000000052B9C2DA0000000000003E2C
+t1387905754
+s15916
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+c00000000531E3FEE0000000000030B04
+t1394491374
+s199428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+c00000000531E3FEE0000000000005E54
+t1394491374
+s24148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+c00000000531E3FEE0000000000006A90
+t1394491374
+s27280
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+c0000000052B9C2DA00000000000178AC
+t1387905754
+s96428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+c00000000531E3FEE000000000001ADC8
+t1394491374
+s110024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+c0000000052B9C2DA000000000001028C
+t1387905754
+s66188
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+c00000000531E3FEE0000000000008800
+t1394491374
+s34816
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+c0000000052B9C2DA0000000000011090
+t1387905754
+s69776
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+c0000000052B9C2DA000000000000882C
+t1387905754
+s34860
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+c00000000531E3FEE00000000000067AC
+t1394491374
+s26540
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+c0000000052B9C2DA0000000000008DEC
+t1387905754
+s36332
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+c00000000531E3FEE0000000000004C08
+t1394491374
+s19464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+c00000000531E3FEE0000000000002428
+t1394491374
+s9256
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+c0000000052B9C2DA000000000000439C
+t1387905754
+s17308
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+c0000000052B9C2DA0000000000006768
+t1387905754
+s26472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+c00000000531E3FEE00000000000172F4
+t1394491374
+s94964
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_macosx.a
+c00000000531E3FEE000000000000BAF8
+t1394491374
+s47864
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+c00000000531E3FEE0000000000001770
+t1394491374
+s6000
+
+N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoFakeModel.h
+c000000005342EC4C00000000000003F5
+t1396894796
+s1013
+
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoFakeModel.m
 c000000005342EC4C000000000000049D
 t1396894796
 s1181
+
+N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoWindowController.h
+c000000005342EC4C0000000000000902
+t1396894796
+s2306
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoWindowController.m
 c000000005342EC4C0000000000006043
@@ -51,6 +356,11 @@ N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView D
 c000000005342EC4C000000000000100C
 t1396894796
 s4108
+
+N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/MMAppDelegate.h
+c000000005342EC4C0000000000000121
+t1396894796
+s289
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/MMAppDelegate.m
 c000000005342EC4C0000000000000393
@@ -73,9 +383,9 @@ t1396894796
 s436
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/en.lproj/DemoWindow.xib
-c000000005342EC4C00000000000212F5
-t1396894796
-s135925
+c0000000053473A00000000000000B32A
+t1397176832
+s45866
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/en.lproj/InfoPlist.strings
 c000000005342EC4C000000000000002D
@@ -83,9 +393,9 @@ t1396894796
 s45
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/en.lproj/MainMenu.xib
-c000000005342EC4C0000000000026E21
-t1396894796
-s159265
+c00000000534732AA000000000000B899
+t1397174954
+s47257
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/main.m
 c000000005342EC4C0000000000000110
@@ -93,20 +403,20 @@ t1396894796
 s272
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView Demo.app
-t1396895085
+t1397175517
 s102
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView Demo.app/Contents/Frameworks/MMTabBarView.framework
-t2
-s0
+t1397175181
+s204
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView Demo.app/Contents/Info.plist
 t1396895085
 s1450
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView Demo.app/Contents/MacOS/MMTabBarView Demo
-t2
-s0
+t1397174642
+s98876
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView Demo.app/Contents/PkgInfo
 t1396895085
@@ -117,16 +427,16 @@ t1396895086
 s436
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView Demo.app/Contents/Resources/en.lproj/DemoWindow.nib
-t1396895087
-s25977
+t1397176833
+s25773
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView Demo.app/Contents/Resources/en.lproj/InfoPlist.strings
 t1396895086
 s92
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView Demo.app/Contents/Resources/en.lproj/MainMenu.nib
-t1396895086
-s26958
+t1397175088
+s27124
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView Demo.app/Contents/Resources/largeImage.png
 t1396895086
@@ -143,16 +453,16 @@ t2
 s0
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/MMTabBarView Demo.build/Debug/MMTabBarView Demo.build/Objects-normal/x86_64/DemoFakeModel.o
-t2
-s0
+t1397174641
+s29920
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/MMTabBarView Demo.build/Debug/MMTabBarView Demo.build/Objects-normal/x86_64/DemoWindowController.o
-t2
-s0
+t1397174642
+s145612
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/MMTabBarView Demo.build/Debug/MMTabBarView Demo.build/Objects-normal/x86_64/MMAppDelegate.o
-t2
-s0
+t1397174641
+s42412
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/MMTabBarView Demo.build/Debug/MMTabBarView Demo.build/Objects-normal/x86_64/MMTabBarView Demo.LinkFileList
 c000000005342ED6D000000000000028A
@@ -160,12 +470,75 @@ t1396895085
 s650
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/MMTabBarView Demo.build/Debug/MMTabBarView Demo.build/Objects-normal/x86_64/main.o
-t1396895086
+t1397174641
 s2672
+
+N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework
+c000000005343788D00000000000000CC
+t1396930701
+s204
+
+N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMAttachedTabBarButtonCell.h
+c000000005342EF6D00000000000001B4
+t1396895597
+s436
+
+N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMOverflowPopUpButton.h
+c000000005342EF6D00000000000002FE
+t1396895597
+s766
+
+N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMOverflowPopUpButtonCell.h
+c000000005342EF6D0000000000000310
+t1396895597
+s784
+
+N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMRolloverButton.h
+c000000005342EF6D0000000000000204
+t1396895597
+s516
+
+N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMRolloverButtonCell.h
+c000000005342EF6D000000000000039F
+t1396895597
+s927
+
+N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMTabBarButtonCell.h
+c000000005342EF6D0000000000000FE7
+t1396895597
+s4071
+
+N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMTabBarItem.h
+c000000005342EF6D0000000000000240
+t1396895597
+s576
+
+N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMTabBarView.h
+c000000005342EF6D000000000000419D
+t1396895597
+s16797
+
+N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMTabStyle.h
+c000000005342EF6D0000000000001328
+t1396895597
+s4904
+
+N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/MMTabBarView
+c000000005343788D000000000009D70C
+t1396930701
+s644876
 
 N/var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView Demo-Prefix-aiywebbmsujcnphcaruecnfnjcga/MMTabBarView Demo-Prefix.pch.pch
 t1396895086
 s13714768
+
+N/var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView Demo-Prefix-arrediwvvstvzscotwjositemmwt/MMTabBarView Demo-Prefix.pch.pch
+t1397174611
+s13714916
+
+N/var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView Demo-Prefix-gxfijqyqanrntfeovpqeazbqfbrj/MMTabBarView Demo-Prefix.pch.pch
+t1397174641
+s13714884
 
 CBuild AST from /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/DemoFakeModel.m
 r0
@@ -181,12 +554,12 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciescf2deced24f3b841^6136eded24f3b841^---0#1#1#--18"Check dependencies36"53443E24-22CE-4EFB-ABA5-A0869F3991E8-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies2d7a2f8071f7b841^560d328071f7b841^---0#1#1#--18"Check dependencies36"BDC0E606-9B3B-476E-B13E-54E031C822EC-
 
 CCompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoFakeModel.o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/DemoFakeModel.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s418587886.588319
-e418587886.628918
-r0
+s418867441.893152
+e418867441.927524
+r1
 xCompileC
 xbuild/MMTabBarView Demo.build/Debug/MMTabBarView Demo.build/Objects-normal/x86_64/DemoFakeModel.o
 x/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoFakeModel.m
@@ -194,18 +567,16 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-oIn file included from /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoFakeModel.m:9:
-o/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoFakeModel.h:11:9: fatal error: 'MMTabBarView/MMTabBarItem.h' file not found
-o#import <MMTabBarView/MMTabBarItem.h>
-o        ^
-o1 error generated.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoFakeModel.m213"CompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoFakeModel.o MMTabBarView\ Demo/DemoFakeModel.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerd0b696ee24f3b841^a8ffa0ee24f3b841^-354"In file included from /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoFakeModel.m:9:/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoFakeModel.h:11:9: fatal error: 'MMTabBarView/MMTabBarItem.h' file not found#import <MMTabBarView/MMTabBarItem.h>        ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@44"'MMTabBarView/MMTabBarItem.h' file not found-418587886#18446744073709551615#0#1(2@123"In file included from /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoFakeModel.m:9:-418587886#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@109"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/DemoFakeModel.m0000000000000000^8#8#8#8#158#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@109"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/DemoFakeModel.h0000000000000000^10#8#10#8#183#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@109"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/DemoFakeModel.m0000000000000000^3628"CompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoFakeModel.o MMTabBarView\ Demo/DemoFakeModel.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wdeprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-aiywebbmsujcnphcaruecnfnjcga/MMTabBarView\ Demo-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoFakeModel.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoFakeModel.dia -c /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/DemoFakeModel.m -o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoFakeModel.o36"0F50A667-17D7-4BF0-A1FB-C228957E53F7-
-b8D88E34C-3950-4718-A818-E5E3B9BB5DD9
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoFakeModel.m
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoFakeModel.h
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMTabBarItem.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoFakeModel.m213"CompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoFakeModel.o MMTabBarView\ Demo/DemoFakeModel.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler0abfe4f168f7b841^4f74edf168f7b841^---0#0#1#-19%DVTDocumentLocation2@109"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/DemoFakeModel.m0000000000000000^3702"CompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoFakeModel.o MMTabBarView\ Demo/DemoFakeModel.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wdeprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-gxfijqyqanrntfeovpqeazbqfbrj/MMTabBarView\ Demo-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoFakeModel.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoFakeModel.dia -c /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/DemoFakeModel.m -o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoFakeModel.o36"98731F9E-DDF0-49C4-94DF-CB61237FFA8D-
+b8E203968-EEDD-46E6-A151-60D865FAC38D
 
 CCompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoWindowController.o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/DemoWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s418587886.588636
-e418587886.632864
-r0
+s418867441.893591
+e418867442.008208
+r1
 xCompileC
 xbuild/MMTabBarView Demo.build/Debug/MMTabBarView Demo.build/Objects-normal/x86_64/DemoWindowController.o
 x/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoWindowController.m
@@ -213,17 +584,25 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoWindowController.m:9:9: fatal error: 'MMTabBarView/MMTabBarView.h' file not found
-o#import <MMTabBarView/MMTabBarView.h>
-o        ^
-o1 error generated.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compile /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoWindowController.m227"CompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoWindowController.o MMTabBarView\ Demo/DemoWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler10cb96ee24f3b841^1d03a2ee24f3b841^-236"/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoWindowController.m:9:9: fatal error: 'MMTabBarView/MMTabBarView.h' file not found#import <MMTabBarView/MMTabBarView.h>        ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@44"'MMTabBarView/MMTabBarView.h' file not found-418587886#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@116"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/DemoWindowController.m0000000000000000^8#8#8#8#163#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@116"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/DemoWindowController.m0000000000000000^3670"CompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoWindowController.o MMTabBarView\ Demo/DemoWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wdeprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-aiywebbmsujcnphcaruecnfnjcga/MMTabBarView\ Demo-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoWindowController.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoWindowController.dia -c /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/DemoWindowController.m -o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoWindowController.o36"FDA1DDBD-C890-4156-ACDA-2F8D627D3B48-
-b8D88E34C-3950-4718-A818-E5E3B9BB5DD9
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoWindowController.m
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMTabBarView.h
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMTabStyle.h
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMTabBarButtonCell.h
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMRolloverButton.h
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMRolloverButtonCell.h
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMAttachedTabBarButtonCell.h
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMOverflowPopUpButtonCell.h
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMOverflowPopUpButton.h
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoWindowController.h
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoFakeModel.h
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMTabBarItem.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compile /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoWindowController.m227"CompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoWindowController.o MMTabBarView\ Demo/DemoWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerccd0e4f168f7b841^041c02f268f7b841^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/DemoWindowController.m0000000000000000^3744"CompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoWindowController.o MMTabBarView\ Demo/DemoWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wdeprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-gxfijqyqanrntfeovpqeazbqfbrj/MMTabBarView\ Demo-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoWindowController.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoWindowController.dia -c /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/DemoWindowController.m -o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoWindowController.o36"38FF08EC-E00F-425A-A835-D264707CF4E4-
+b8E203968-EEDD-46E6-A151-60D865FAC38D
 
 CCompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/MMAppDelegate.o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/MMAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s418587886.588058
-e418587886.638183
-r0
+s418867441.892798
+e418867441.939827
+r1
 xCompileC
 xbuild/MMTabBarView Demo.build/Debug/MMTabBarView Demo.build/Objects-normal/x86_64/MMAppDelegate.o
 x/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/MMAppDelegate.m
@@ -231,17 +610,16 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-oIn file included from /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/MMAppDelegate.m:11:
-o/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoWindowController.h:11:9: fatal error: 'MMTabBarView/MMTabBarView.h' file not found
-o#import <MMTabBarView/MMTabBarView.h>
-o        ^
-o1 error generated.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/MMAppDelegate.m213"CompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/MMAppDelegate.o MMTabBarView\ Demo/MMAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler99a096ee24f3b841^5f5fa3ee24f3b841^-362"In file included from /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/MMAppDelegate.m:11:/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoWindowController.h:11:9: fatal error: 'MMTabBarView/MMTabBarView.h' file not found#import <MMTabBarView/MMTabBarView.h>        ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@44"'MMTabBarView/MMTabBarView.h' file not found-418587886#18446744073709551615#0#1(2@124"In file included from /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/MMAppDelegate.m:11:-418587886#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@109"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/MMAppDelegate.m0000000000000000^10#8#10#8#197#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@116"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/DemoWindowController.h0000000000000000^10#8#10#8#188#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@109"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/MMAppDelegate.m0000000000000000^3628"CompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/MMAppDelegate.o MMTabBarView\ Demo/MMAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wdeprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-aiywebbmsujcnphcaruecnfnjcga/MMTabBarView\ Demo-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/MMAppDelegate.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/MMAppDelegate.dia -c /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/MMAppDelegate.m -o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/MMAppDelegate.o36"698085B2-502D-47FD-B5F2-55DB59EE8E97-
-b8D88E34C-3950-4718-A818-E5E3B9BB5DD9
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/MMAppDelegate.m
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/MMAppDelegate.h
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/DemoWindowController.h
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Headers/MMTabBarView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/MMAppDelegate.m213"CompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/MMAppDelegate.o MMTabBarView\ Demo/MMAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler4e9ce4f168f7b841^2899f0f168f7b841^---0#0#1#-19%DVTDocumentLocation2@109"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/MMAppDelegate.m0000000000000000^3702"CompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/MMAppDelegate.o MMTabBarView\ Demo/MMAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wdeprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-gxfijqyqanrntfeovpqeazbqfbrj/MMTabBarView\ Demo-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/MMAppDelegate.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/MMAppDelegate.dia -c /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/MMAppDelegate.m -o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/MMAppDelegate.o36"FDCDAB44-27C3-4B2B-AFE9-392EC067E06D-
+b8E203968-EEDD-46E6-A151-60D865FAC38D
 
 CCompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/main.o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s418587886.587769
-e418587886.610507
+s418867441.892529
+e418867441.910209
 r1
 xCompileC
 xbuild/MMTabBarView Demo.build/Debug/MMTabBarView Demo.build/Objects-normal/x86_64/main.o
@@ -251,29 +629,29 @@ xx86_64
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/main.m
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/main.m195"CompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/main.o MMTabBarView\ Demo/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler6d8f96ee24f3b841^844a9cee24f3b841^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/main.m0000000000000000^3574"CompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/main.o MMTabBarView\ Demo/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wdeprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-aiywebbmsujcnphcaruecnfnjcga/MMTabBarView\ Demo-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/main.dia -c /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/main.m -o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/main.o36"D18394A5-54B1-4FED-B451-6D96862DAAEC-
-b8D88E34C-3950-4718-A818-E5E3B9BB5DD9
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/main.m195"CompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/main.o MMTabBarView\ Demo/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerf790e4f168f7b841^7d05e9f168f7b841^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/main.m0000000000000000^3648"CompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/main.o MMTabBarView\ Demo/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wdeprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug -include /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-gxfijqyqanrntfeovpqeazbqfbrj/MMTabBarView\ Demo-Prefix.pch -MMD -MT dependencies -MF /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/main.dia -c /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/main.m -o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/main.o36"EF4DD4F9-8DB9-466F-9226-D8538E22DB3D-
+b8E203968-EEDD-46E6-A151-60D865FAC38D
 
 CCompileXIB /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/en.lproj/DemoWindow.xib
-s418587886.648578
-e418587887.210590
+s418869632.188981
+e418869633.092998
 r1
 xCompileXIB
 x/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/en.lproj/DemoWindow.xib
 o/* com.apple.ibtool.document.notices */
 o/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/en.lproj/DemoWindow.xib:9: note: View is clipping its content [13]
 o/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/en.lproj/DemoWindow.xib:33: note: View is clipping its content [13]
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Compiling /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/en.lproj/DemoWindow.xib53"CompileXIB MMTabBarView\ Demo/en.lproj/DemoWindow.xib1119a6ee24f3b841^25ea35ef24f3b841^-331"/* com.apple.ibtool.document.notices *//Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/en.lproj/DemoWindow.xib:9: note: View is clipping its content/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/en.lproj/DemoWindow.xib:33: note: View is clipping its content2(21%IDEActivityLogMessage2@28"View is clipping its content-418587887#18446744073709551615#0#-0#-23%DVTTextDocumentLocation3@117"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/en.lproj/DemoWindow.xib0000000000000000^8#18446744073709551615#8#18446744073709551615#18446744073709551615#0#15"Clipped Content--2@28"View is clipping its content-418587887#18446744073709551615#0#-0#-3@117"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/en.lproj/DemoWindow.xib0000000000000000^32#18446744073709551615#32#18446744073709551615#18446744073709551615#0#15"Clipped Content--0#0#1#-19%DVTDocumentLocation4@117"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/en.lproj/DemoWindow.xib0000000000000000^642"CompileXIB MMTabBarView\ Demo/en.lproj/DemoWindow.xib    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 10.6 --output-format human-readable-text --compile /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app/Contents/Resources/en.lproj/DemoWindow.nib /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/en.lproj/DemoWindow.xib36"79EC8F70-67AA-4A31-B9EC-2A276D154C78-
-b8D88E34C-3950-4718-A818-E5E3B9BB5DD9
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Compiling /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/en.lproj/DemoWindow.xib53"CompileXIB MMTabBarView\ Demo/en.lproj/DemoWindow.xib766c308071f7b841^5fcf178171f7b841^-331"/* com.apple.ibtool.document.notices *//Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/en.lproj/DemoWindow.xib:9: note: View is clipping its content/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/en.lproj/DemoWindow.xib:33: note: View is clipping its content2(21%IDEActivityLogMessage2@28"View is clipping its content-418869633#18446744073709551615#0#-0#-23%DVTTextDocumentLocation3@117"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/en.lproj/DemoWindow.xib0000000000000000^8#18446744073709551615#8#18446744073709551615#18446744073709551615#0#15"Clipped Content--2@28"View is clipping its content-418869633#18446744073709551615#0#-0#-3@117"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/en.lproj/DemoWindow.xib0000000000000000^32#18446744073709551615#32#18446744073709551615#18446744073709551615#0#15"Clipped Content--0#0#1#-19%DVTDocumentLocation4@117"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/en.lproj/DemoWindow.xib0000000000000000^642"CompileXIB MMTabBarView\ Demo/en.lproj/DemoWindow.xib    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 10.6 --output-format human-readable-text --compile /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app/Contents/Resources/en.lproj/DemoWindow.nib /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/en.lproj/DemoWindow.xib36"55D206E6-3723-43B8-8829-A5832290A4FF-
+bF1A89884-C491-4F78-A01E-18778671AF6E
 
 CCompileXIB /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/en.lproj/MainMenu.xib
-s418587886.648118
-e418587886.698909
+s418867887.900154
+e418867888.659169
 r1
 xCompileXIB
 x/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/en.lproj/MainMenu.xib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compiling /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/en.lproj/MainMenu.xib51"CompileXIB MMTabBarView\ Demo/en.lproj/MainMenu.xibbef5a5ee24f3b841^f6ebb2ee24f3b841^---0#0#1#-19%DVTDocumentLocation2@115"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/en.lproj/MainMenu.xib0000000000000000^636"CompileXIB MMTabBarView\ Demo/en.lproj/MainMenu.xib    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 10.6 --output-format human-readable-text --compile /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app/Contents/Resources/en.lproj/MainMenu.nib /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/en.lproj/MainMenu.xib36"8E69C6D3-6728-4F25-B7DA-2BFD71D3955C-
-b8D88E34C-3950-4718-A818-E5E3B9BB5DD9
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compiling /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/en.lproj/MainMenu.xib51"CompileXIB MMTabBarView\ Demo/en.lproj/MainMenu.xibd07ce6af6af7b841^e4bfa8b06af7b841^---0#0#1#-19%DVTDocumentLocation2@115"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/en.lproj/MainMenu.xib0000000000000000^636"CompileXIB MMTabBarView\ Demo/en.lproj/MainMenu.xib    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 10.6 --output-format human-readable-text --compile /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app/Contents/Resources/en.lproj/MainMenu.nib /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/en.lproj/MainMenu.xib36"0B879D59-6248-479C-A099-93F785A722E7-
+b43F5D3C0-CA62-4FDB-B90A-630958FD05D2
 
 CCopyStringsFile /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app/Contents/Resources/en.lproj/InfoPlist.strings MMTabBarView\ Demo/en.lproj/InfoPlist.strings
 s418587886.647853
@@ -306,28 +684,101 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Copy bu
 b8D88E34C-3950-4718-A818-E5E3B9BB5DD9
 
 CLd /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app/Contents/MacOS/MMTabBarView\ Demo normal x86_64
-s418587886.639473
-e418587886.647286
-r0
+s418867442.010991
+e418867442.053218
+r1
 xLd
 x/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView Demo.app/Contents/MacOS/MMTabBarView Demo
 xnormal
 xx86_64
 d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/MMTabBarView Demo.build/Debug/MMTabBarView Demo.build/Objects-normal/x86_64/MMTabBarView Demo.LinkFileList
-old: file not found: /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/MMTabBarView Demo.build/Debug/MMTabBarView Demo.build/Objects-normal/x86_64/MMAppDelegate.o
-oclang: error: linker command failed with exit code 1 (use -v to see invocation)
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection136"Link /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView Demo.app/Contents/MacOS/MMTabBarView Demo85"Ld build/Debug/MMTabBarView\ Demo.app/Contents/MacOS/MMTabBarView\ Demo normal x86_64dfc1a3ee24f3b841^57b4a5ee24f3b841^-263"ld: file not found: /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/MMTabBarView Demo.build/Debug/MMTabBarView Demo.build/Objects-normal/x86_64/MMAppDelegate.oclang: error: linker command failed with exit code 1 (use -v to see invocation)2(21%IDEActivityLogMessage2@178"File not found: /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/MMTabBarView Demo.build/Debug/MMTabBarView Demo.build/Objects-normal/x86_64/MMAppDelegate.o-418587886#0#183#-0#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#31"Apple Mach-O Linker (ld) Notice--2@65"Linker command failed with exit code 1 (use -v to see invocation)-418587886#183#80#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#30"Apple Mach-O Linker (ld) Error--0#0#1#--1313"Ld build/Debug/MMTabBarView\ Demo.app/Contents/MacOS/MMTabBarView\ Demo normal x86_64    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    export MACOSX_DEPLOYMENT_TARGET=10.6    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug -filelist /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/MMTabBarView\ Demo.LinkFileList -Xlinker -rpath -Xlinker @loader_path/../Frameworks -mmacosx-version-min=10.6 -framework Foundation -framework AppKit -fobjc-link-runtime -framework MMTabBarView -framework Cocoa -Xlinker -dependency_info -Xlinker /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/MMTabBarView\ Demo_dependency_info.dat -o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app/Contents/MacOS/MMTabBarView\ Demo36"FABEE5DA-B4EE-4259-A15E-2A957860BB74-
-b8D88E34C-3950-4718-A818-E5E3B9BB5DD9
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/crt1.10.6.o
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/MMTabBarView Demo.build/Debug/MMTabBarView Demo.build/Objects-normal/x86_64/main.o
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/MMTabBarView Demo.build/Debug/MMTabBarView Demo.build/Objects-normal/x86_64/MMAppDelegate.o
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/MMTabBarView Demo.build/Debug/MMTabBarView Demo.build/Objects-normal/x86_64/DemoFakeModel.o
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/MMTabBarView Demo.build/Debug/MMTabBarView Demo.build/Objects-normal/x86_64/DemoWindowController.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/MMTabBarView
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_macosx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection136"Link /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView Demo.app/Contents/MacOS/MMTabBarView Demo85"Ld build/Debug/MMTabBarView\ Demo.app/Contents/MacOS/MMTabBarView\ Demo normal x86_6465e202f268f7b841^06a00df268f7b841^---0#0#1#--1387"Ld build/Debug/MMTabBarView\ Demo.app/Contents/MacOS/MMTabBarView\ Demo normal x86_64    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    export MACOSX_DEPLOYMENT_TARGET=10.6    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug -filelist /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/MMTabBarView\ Demo.LinkFileList -Xlinker -rpath -Xlinker @loader_path/../Frameworks -mmacosx-version-min=10.6 -framework Foundation -framework AppKit -fobjc-link-runtime -framework MMTabBarView -framework Cocoa -Xlinker -dependency_info -Xlinker /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/MMTabBarView\ Demo_dependency_info.dat -o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app/Contents/MacOS/MMTabBarView\ Demo36"6E153A52-7283-4C7A-AB6F-A79FE34EFF31-
+b8E203968-EEDD-46E6-A151-60D865FAC38D
+
+CPBXCp /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework build/Debug/MMTabBarView\ Demo.app/Contents/Frameworks/MMTabBarView.framework
+s418867981.864967
+e418867981.913301
+r1
+xPBXCp
+x/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework
+xbuild/Debug/MMTabBarView Demo.app/Contents/Frameworks/MMTabBarView.framework
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Copy build/Debug/MMTabBarView Demo.app/Contents/Frameworks/MMTabBarView.framework178"PBXCp /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework build/Debug/MMTabBarView\ Demo.app/Contents/Frameworks/MMTabBarView.framework967bdd0d6bf7b841^eecfe90d6bf7b841^---0#0#1#-19%DVTDocumentLocation2@152"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/build/Debug/MMTabBarView%20Demo.app/Contents/Frameworks/MMTabBarView.framework0034b45eddffdf42^581"PBXCp /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework build/Debug/MMTabBarView\ Demo.app/Contents/Frameworks/MMTabBarView.framework    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app/Contents/Frameworks36"06D90B34-5E76-4A07-B38E-16D06FC76383-
+b790C2000-822C-479A-8532-121FBAA45659
 
 CPBXCp build/Debug/MMTabBarView.framework build/Debug/MMTabBarView\ Demo.app/Contents/Frameworks/MMTabBarView.framework
-s418587887.211005
-e418587887.211829
+s418867888.681215
+e418867888.681782
 r0
 xPBXCp
 xbuild/Debug/MMTabBarView.framework
 xbuild/Debug/MMTabBarView Demo.app/Contents/Frameworks/MMTabBarView.framework
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Copy build/Debug/MMTabBarView Demo.app/Contents/Frameworks/MMTabBarView.framework118"PBXCp build/Debug/MMTabBarView.framework build/Debug/MMTabBarView\ Demo.app/Contents/Frameworks/MMTabBarView.framework0a0f36ef24f3b841^5c3a36ef24f3b841^-134"error: /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView.framework: No such file or directory1(21%IDEActivityLogMessage2@133"error: /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView.framework: No such file or directory-418587887#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#11"PBXCp Error--0#0#1#-19%DVTDocumentLocation4@152"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/build/Debug/MMTabBarView%20Demo.app/Contents/Frameworks/MMTabBarView.framework00341ca6dcffdf42^527"PBXCp build/Debug/MMTabBarView.framework build/Debug/MMTabBarView\ Demo.app/Contents/Frameworks/MMTabBarView.framework    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView.framework /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app/Contents/Frameworks36"86342396-1E7B-4313-9A15-7DC78E12E57E-
-b8D88E34C-3950-4718-A818-E5E3B9BB5DD9
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Copy build/Debug/MMTabBarView Demo.app/Contents/Frameworks/MMTabBarView.framework118"PBXCp build/Debug/MMTabBarView.framework build/Debug/MMTabBarView\ Demo.app/Contents/Frameworks/MMTabBarView.frameworkbd6daeb06af7b841^938aaeb06af7b841^-134"error: /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView.framework: No such file or directory1(21%IDEActivityLogMessage2@133"error: /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView.framework: No such file or directory-418867888#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#11"PBXCp Error--0#0#1#-19%DVTDocumentLocation4@152"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/build/Debug/MMTabBarView%20Demo.app/Contents/Frameworks/MMTabBarView.framework0034b45eddffdf42^527"PBXCp build/Debug/MMTabBarView.framework build/Debug/MMTabBarView\ Demo.app/Contents/Frameworks/MMTabBarView.framework    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView.framework /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app/Contents/Frameworks36"714BAE02-C906-47C1-977A-F0773EBC2DFC-
+b43F5D3C0-CA62-4FDB-B90A-630958FD05D2
 
 CProcessInfoPlistFile /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app/Contents/Info.plist /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/MMTabBarView\ Demo-Info.plist
 s418587885.927443
@@ -339,7 +790,16 @@ x/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView D
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Process /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/MMTabBarView Demo-Info.plist124"ProcessInfoPlistFile build/Debug/MMTabBarView\ Demo.app/Contents/Info.plist MMTabBarView\ Demo/MMTabBarView\ Demo-Info.pliste57ceded24f3b841^ebc8eded24f3b841^---0#0#1#-19%DVTDocumentLocation2@124"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/MMTabBarView%20Demo-Info.plist0000000000000000^635"ProcessInfoPlistFile build/Debug/MMTabBarView\ Demo.app/Contents/Info.plist MMTabBarView\ Demo/MMTabBarView\ Demo-Info.plist    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    builtin-infoPlistUtility /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/MMTabBarView\ Demo-Info.plist -genpkginfo /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app/Contents/Info.plist36"77D231AC-4C7A-4823-B131-C9F9914EB859-
 b8D88E34C-3950-4718-A818-E5E3B9BB5DD9
 
+CProcessPCH /Users/jcarlos/Library/Developer/Xcode/DerivedData/MMTabBarView_Demo-fqczhjyljugceyhjvthwmdaqsoou/Index/PrecompiledHeaders/MMTabBarView\ Demo-Prefix-dqybnwzgabhzymcnhuetdlmetaag_ast/MMTabBarView\ Demo-Prefix.pch.pch MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/jcarlos/Library/Developer/Xcode/DerivedData/default-bigrpjdqxrwihufeongnkzjgaumd/Index/PrecompiledHeaders/MMTabBarView\ Demo-Prefix-bbfsokpwgyedlkhgsbvstikvziea_ast/MMTabBarView\ Demo-Prefix.pch.pch MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
 CProcessPCH /Users/jcarlos/Library/Developer/Xcode/DerivedData/default-bigrpjdqxrwihufeongnkzjgaumd/Index/PrecompiledHeaders/MMTabBarView\ Demo-Prefix-ddqrtcijmstjulhfwvmbhfhryonk_ast/MMTabBarView\ Demo-Prefix.pch.pch MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/jcarlos/Library/Developer/Xcode/DerivedData/default-bigrpjdqxrwihufeongnkzjgaumd/Index/PrecompiledHeaders/MMTabBarView\ Demo-Prefix-dqybnwzgabhzymcnhuetdlmetaag_ast/MMTabBarView\ Demo-Prefix.pch.pch MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
 CProcessPCH /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-aiywebbmsujcnphcaruecnfnjcga/MMTabBarView\ Demo-Prefix.pch.pch MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -357,12 +817,42 @@ d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView D
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Precompile MMTabBarView Demo/MMTabBarView Demo-Prefix.pch334"ProcessPCH /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-aiywebbmsujcnphcaruecnfnjcga/MMTabBarView\ Demo-Prefix.pch.pch MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler5b08eeed24f3b841^5b4296ee24f3b841^---0#0#1#-19%DVTDocumentLocation2@124"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/MMTabBarView%20Demo-Prefix.pch0000000000000000^3673"ProcessPCH /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-aiywebbmsujcnphcaruecnfnjcga/MMTabBarView\ Demo-Prefix.pch.pch MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wdeprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug --serialize-diagnostics /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-aiywebbmsujcnphcaruecnfnjcga/MMTabBarView\ Demo-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-aiywebbmsujcnphcaruecnfnjcga/MMTabBarView\ Demo-Prefix.pch.d -c /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch -o /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-aiywebbmsujcnphcaruecnfnjcga/MMTabBarView\ Demo-Prefix.pch.pch36"89C576C5-B3C0-4DD7-AC2B-18F4A3771AD3-
 b8D88E34C-3950-4718-A818-E5E3B9BB5DD9
 
+CProcessPCH /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-arrediwvvstvzscotwjositemmwt/MMTabBarView\ Demo-Prefix.pch.pch MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418867410.543802
+e418867411.296754
+r1
+xProcessPCH
+x/var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView Demo-Prefix-arrediwvvstvzscotwjositemmwt/MMTabBarView Demo-Prefix.pch.pch
+xMMTabBarView Demo/MMTabBarView Demo-Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/MMTabBarView Demo-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Precompile MMTabBarView Demo/MMTabBarView Demo-Prefix.pch334"ProcessPCH /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-arrediwvvstvzscotwjositemmwt/MMTabBarView\ Demo-Prefix.pch.pch MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler52478bd268f7b841^7ffa4bd368f7b841^---0#0#1#-19%DVTDocumentLocation2@124"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/MMTabBarView%20Demo-Prefix.pch0000000000000000^3769"ProcessPCH /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-arrediwvvstvzscotwjositemmwt/MMTabBarView\ Demo-Prefix.pch.pch MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wdeprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/../MMTabBarView/build/Debug --serialize-diagnostics /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-arrediwvvstvzscotwjositemmwt/MMTabBarView\ Demo-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-arrediwvvstvzscotwjositemmwt/MMTabBarView\ Demo-Prefix.pch.d -c /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch -o /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-arrediwvvstvzscotwjositemmwt/MMTabBarView\ Demo-Prefix.pch.pch36"0F274E34-F99E-4CFD-9B1C-3138FD5BAE16-
+b78933E19-E661-4774-B126-0C6D6F70CD70
+
+CProcessPCH /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-gxfijqyqanrntfeovpqeazbqfbrj/MMTabBarView\ Demo-Prefix.pch.pch MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418867441.253756
+e418867441.891814
+r1
+xProcessPCH
+x/var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView Demo-Prefix-gxfijqyqanrntfeovpqeazbqfbrj/MMTabBarView Demo-Prefix.pch.pch
+xMMTabBarView Demo/MMTabBarView Demo-Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/MMTabBarView Demo/MMTabBarView Demo-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Precompile MMTabBarView Demo/MMTabBarView Demo-Prefix.pch334"ProcessPCH /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-gxfijqyqanrntfeovpqeazbqfbrj/MMTabBarView\ Demo-Prefix.pch.pch MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler100741f168f7b841^5950e4f168f7b841^---0#0#1#-19%DVTDocumentLocation2@124"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView%20Demo/MMTabBarView%20Demo/MMTabBarView%20Demo-Prefix.pch0000000000000000^3747"ProcessPCH /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-gxfijqyqanrntfeovpqeazbqfbrj/MMTabBarView\ Demo-Prefix.pch.pch MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wdeprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-generated-files.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-own-target-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-all-target-headers.hmap -iquote /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/MMTabBarView\ Demo-project-headers.hmap -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources/x86_64 -I/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug -F/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug --serialize-diagnostics /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-gxfijqyqanrntfeovpqeazbqfbrj/MMTabBarView\ Demo-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-gxfijqyqanrntfeovpqeazbqfbrj/MMTabBarView\ Demo-Prefix.pch.d -c /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/MMTabBarView\ Demo-Prefix.pch -o /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView\ Demo-Prefix-gxfijqyqanrntfeovpqeazbqfbrj/MMTabBarView\ Demo-Prefix.pch.pch36"236B290E-3067-4324-B599-2E177A9DB5EF-
+b8E203968-EEDD-46E6-A151-60D865FAC38D
+
 CTouch /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app
-s418587887.212385
-e418587887.215733
+s418869633.093650
+e418869633.096944
 r1
 xTouch
 x/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView Demo.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Touch /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView Demo.app40"Touch build/Debug/MMTabBarView\ Demo.app736736ef24f3b841^433b37ef24f3b841^---0#0#1#--238"Touch build/Debug/MMTabBarView\ Demo.app    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    /usr/bin/touch -c /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app36"8A08EE43-8B91-4AFC-AC1D-E65EE7067CE4-
-b8D88E34C-3950-4718-A818-E5E3B9BB5DD9
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Touch /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView Demo.app40"Touch build/Debug/MMTabBarView\ Demo.app5803188171f7b841^93c31b8171f7b841^---0#0#1#--238"Touch build/Debug/MMTabBarView\ Demo.app    cd "/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo"    /usr/bin/touch -c /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/build/Debug/MMTabBarView\ Demo.app36"2D4D3F1F-723B-4D4D-9412-D54E44700587-
+bF1A89884-C491-4F78-A01E-18778671AF6E
 

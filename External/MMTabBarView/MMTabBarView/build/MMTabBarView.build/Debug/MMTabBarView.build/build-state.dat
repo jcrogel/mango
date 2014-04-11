@@ -1825,7 +1825,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd00e9cdd0df7b841^630b9ddd0df7b841^---0#1#1#--18"Check dependencies36"15BA351B-DA5B-4B17-AF9A-FC710699A83C-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciese4dcdee190f7b841^c4cfebe190f7b841^---0#1#1#--18"Check dependencies36"DD7EF50A-9266-4B5D-8CB0-B6413F54AF6C-
 
 CCompileC build/MMTabBarView.build/Debug/MMTabBarView.build/Objects-normal/x86_64/MMAdiumTabStyle.o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/MMTabBarView/Styles/MMAdiumTabStyle.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s418588397.521730
@@ -3176,6 +3176,9 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Proces
 b38B9581A-545C-457E-97E8-A81AF53D0D23
 
 CProcessPCH /Users/jcarlos/Library/Developer/Xcode/DerivedData/Mango-ajkuweqvpaxeajbdyqdhirpsjrbh/Index/PrecompiledHeaders/MMTabBarView-Prefix-fruydtcfqviyfeebrhtfzwmwwtpz_ast/MMTabBarView-Prefix.pch.pch MMTabBarView/MMTabBarView-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/jcarlos/Library/Developer/Xcode/DerivedData/default-bigrpjdqxrwihufeongnkzjgaumd/Index/PrecompiledHeaders/MMTabBarView-Prefix-fruydtcfqviyfeebrhtfzwmwwtpz_ast/MMTabBarView-Prefix.pch.pch MMTabBarView/MMTabBarView-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
 CProcessPCH /var/folders/l6/wq31k7l10514f0j70fk4t_j40000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/MMTabBarView-Prefix-djuffozvmhauqsgwwdgmyumozviq/MMTabBarView-Prefix.pch.pch MMTabBarView/MMTabBarView-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler

@@ -21,7 +21,6 @@
         // Initialization code here.
         MangoConnectionManager *connMgr = [[MangoConnectionManager alloc] init];
         [self setConnMgr: connMgr];
-        [[self collectionListView] setDelegate:self];
     }
     return self;
 }
@@ -60,6 +59,15 @@
 -(void) setupSideBar
 {
     [[self sideBar] setBackgroundColor:[NSColor darkGrayColor]];
+    [[self sideBar] addItemWithImage: [NSImage imageNamed:@"AppIcon"]];
+    
+}
+
+-(void) setupTabs
+{
+    [[self tabBarView] setTabView: [self tabView]];
+    MMCardTabStyle *style = [[MMCardTabStyle alloc] init];
+    [[self tabBarView] setStyle:style];
 }
 
 - (void)windowDidLoad
@@ -68,6 +76,7 @@
     [self setupTextEditor];
     [self setupDBsPopUpButton];
     [self setupSideBar];
+    [self setupTabs];
 
 }
 
@@ -135,24 +144,10 @@
 }
 
 
-/*
-- (void)outlineView:(NSOutlineView *)outlineView willDisplayCell:(id)cell forTableColumn:(NSTableColumn *)tableColumn item:(id)item
-{
-	NSLog(@"%@", NSStringFromSelector(_cmd));
-    
-}
-
-- (BOOL)outlineView:(NSOutlineView *)outlineView shouldShowOutlineCellForItem:(id)item
+-(void) outlineViewSelectionDidChange:(NSNotification *)notification
 {
     NSLog(@"%@", NSStringFromSelector(_cmd));
-    return YES;
 }
 
-- (void)outlineView:(NSOutlineView *)outlineView willDisplayOutlineCell:(id)cell forTableColumn:(NSTableColumn *)tableColumn item:(id)item
-{
-    NSLog(@"%@", NSStringFromSelector(_cmd));
-
-}
- */
 
 @end

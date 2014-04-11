@@ -11,14 +11,14 @@
 		0634F0A0160A0D3F00A6C86A /* DemoWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0634F09E160A0D3F00A6C86A /* DemoWindowController.m */; };
 		0634F0A6160A0D6200A6C86A /* largeImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0634F0A5160A0D6200A6C86A /* largeImage.png */; };
 		0634F0AB160A0D7900A6C86A /* DemoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0634F0A7160A0D7900A6C86A /* DemoWindow.xib */; };
-		0634F0B6160A1D5D00A6C86A /* MMTabBarView.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 06DB23EA1609F5D80071BDA0 /* MMTabBarView.framework */; };
 		06DB23CE1609F5B90071BDA0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06DB23CD1609F5B90071BDA0 /* Cocoa.framework */; };
 		06DB23D81609F5B90071BDA0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06DB23D61609F5B90071BDA0 /* InfoPlist.strings */; };
 		06DB23DA1609F5B90071BDA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DB23D91609F5B90071BDA0 /* main.m */; };
 		06DB23DE1609F5B90071BDA0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 06DB23DC1609F5B90071BDA0 /* Credits.rtf */; };
 		06DB23E11609F5B90071BDA0 /* MMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DB23E01609F5B90071BDA0 /* MMAppDelegate.m */; };
 		06DB23E41609F5BA0071BDA0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06DB23E21609F5BA0071BDA0 /* MainMenu.xib */; };
-		06DB23EB1609F5D80071BDA0 /* MMTabBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06DB23EA1609F5D80071BDA0 /* MMTabBarView.framework */; };
+		E956504718F7693D004695BC /* MMTabBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E956504618F7693D004695BC /* MMTabBarView.framework */; };
+		E956504F18F76B0C004695BC /* MMTabBarView.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E956504E18F76B0C004695BC /* MMTabBarView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +28,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0634F0B6160A1D5D00A6C86A /* MMTabBarView.framework in CopyFiles */,
+				E956504F18F76B0C004695BC /* MMTabBarView.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +61,8 @@
 		06DB23E01609F5B90071BDA0 /* MMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMAppDelegate.m; sourceTree = "<group>"; };
 		06DB23E31609F5BA0071BDA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		06DB23EA1609F5D80071BDA0 /* MMTabBarView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MMTabBarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E956504618F7693D004695BC /* MMTabBarView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MMTabBarView.framework; path = ../MMTabBarView/build/Debug/MMTabBarView.framework; sourceTree = "<group>"; };
+		E956504E18F76B0C004695BC /* MMTabBarView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MMTabBarView.framework; path = ../MMTabBarView/build/Debug/MMTabBarView.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06DB23EB1609F5D80071BDA0 /* MMTabBarView.framework in Frameworks */,
+				E956504718F7693D004695BC /* MMTabBarView.framework in Frameworks */,
 				06DB23CE1609F5B90071BDA0 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +121,7 @@
 		06DB23BE1609F5B90071BDA0 = {
 			isa = PBXGroup;
 			children = (
+				E956504E18F76B0C004695BC /* MMTabBarView.framework */,
 				0634F0B7160A1F4600A6C86A /* Configurations */,
 				06DB23D31609F5B90071BDA0 /* MMTabBarView Demo */,
 				06DB23CC1609F5B90071BDA0 /* Frameworks */,
@@ -137,6 +140,7 @@
 		06DB23CC1609F5B90071BDA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E956504618F7693D004695BC /* MMTabBarView.framework */,
 				06DB23EA1609F5D80071BDA0 /* MMTabBarView.framework */,
 				06DB23CD1609F5B90071BDA0 /* Cocoa.framework */,
 				06DB23CF1609F5B90071BDA0 /* Other Frameworks */,
@@ -345,6 +349,10 @@
 			baseConfigurationReference = 0634F0BB160A1F6500A6C86A /* MMTabBarViewDemo-Debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/$(CONFIGURATION)",
+					/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MMTabBarView Demo/MMTabBarView Demo-Prefix.pch";
 				INFOPLIST_FILE = "MMTabBarView Demo/MMTabBarView Demo-Info.plist";
@@ -358,6 +366,10 @@
 			baseConfigurationReference = 0634F0BC160A1F6500A6C86A /* MMTabBarViewDemo-Release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/$(CONFIGURATION)",
+					/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MMTabBarView Demo/MMTabBarView Demo-Prefix.pch";
 				INFOPLIST_FILE = "MMTabBarView Demo/MMTabBarView Demo-Info.plist";

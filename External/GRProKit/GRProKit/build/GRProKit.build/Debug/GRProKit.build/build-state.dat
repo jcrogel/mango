@@ -841,7 +841,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies68039cdd0df7b841^44f79cdd0df7b841^---0#1#1#--18"Check dependencies36"FC4CD277-DD03-4DF8-8AB0-0707160648B2-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies8fe0dee190f7b841^9fccebe190f7b841^---0#1#1#--18"Check dependencies36"8965FFAF-7734-4CFE-8DB1-526DFB795726-
 
 CCompileC build/GRProKit.build/Debug/GRProKit.build/Objects-normal/x86_64/GRProAlert.o /Users/jcarlos/dev/Mango/External/GRProKit/GRProKit/GRProKit/GRProAlert.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s418581912.684614

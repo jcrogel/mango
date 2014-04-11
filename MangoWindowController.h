@@ -11,8 +11,9 @@
 #import <MGSFragaria/MGSFragaria.h>
 #import <MGSFragaria/SMLTextView.h>
 #import <ITSidebar/ITSidebar.h>
+#import <MMTabBarView/MMTabBarView.h>
 
-#import "MangoCollectionListView.h"
+#import <MMTabBarView/MMCardTabStyle.h>
 
 @interface MangoWindowController : NSWindowController<NSOutlineViewDelegate>
 
@@ -21,8 +22,8 @@
 @property MGSFragaria *fragaria;
 @property (weak) IBOutlet NSPopUpButton *dbsPopUpButton;
 @property (weak) IBOutlet ITSidebar *sideBar;
-@property (weak) IBOutlet NSOutlineView *collectionListView;
-
+@property (weak) IBOutlet MMTabBarView *tabBarView;
+@property (weak) IBOutlet NSTabView *tabView;
 
 @property (strong) IBOutlet NSTreeController *collectionListTC;
 @property NSArray *collectionListItems;

@@ -16,6 +16,7 @@
     self.activeSessions = [[NSMutableArray alloc] init];
     //REMOVE BEGIN
     [self connectButtonWasPressed: self];
+    [[self connectionWindow] setAutodisplay:NO];
     //REMOVE END
 }
 
