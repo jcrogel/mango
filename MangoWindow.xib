@@ -9,6 +9,7 @@
                 <outlet property="collectionListTC" destination="Afd-zp-qPz" id="UMK-06-xFJ"/>
                 <outlet property="collectionListView" destination="ZlD-oe-L4w" id="Evy-dX-BKS"/>
                 <outlet property="dbsPopUpButton" destination="Fw2-vN-fY3" id="Zhw-jw-XoO"/>
+                <outlet property="popUpContainerView" destination="6iA-Gk-YCj" id="DbO-7B-UuH"/>
                 <outlet property="sideBar" destination="Uvh-iP-rQa" id="k5h-wx-de3"/>
                 <outlet property="sourceEditor" destination="NGL-Hc-n0h" id="Mt8-qT-nID"/>
                 <outlet property="tabBarView" destination="S88-HY-ic1" id="315-hc-yGx"/>
@@ -18,37 +19,38 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application"/>
-        <window title="Mango" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="Cud-oP-f2n">
+        <window title="Mango" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="Cud-oP-f2n" customClass="INAppStoreWindow">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <rect key="contentRect" x="196" y="200" width="845" height="480"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <value key="minSize" type="size" width="845" height="200"/>
             <view key="contentView" autoresizesSubviews="NO" id="Kgl-y7-AQD">
                 <rect key="frame" x="0.0" y="0.0" width="845" height="480"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <splitView dividerStyle="thin" vertical="YES" id="DCv-yG-BJp">
-                        <rect key="frame" x="64" y="0.0" width="781" height="434"/>
+                        <rect key="frame" x="64" y="0.0" width="781" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <customView id="VCO-WX-Jw5">
-                                <rect key="frame" x="0.0" y="0.0" width="188" height="434"/>
+                                <rect key="frame" x="0.0" y="0.0" width="188" height="480"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
                                     <scrollView autohidesScrollers="YES" horizontalLineScroll="24" horizontalPageScroll="10" verticalLineScroll="24" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="MTX-qP-ZZ8">
-                                        <rect key="frame" x="0.0" y="-1" width="188" height="434"/>
+                                        <rect key="frame" x="0.0" y="-1" width="188" height="480"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <clipView key="contentView" id="08B-Hm-X4z">
-                                            <rect key="frame" x="1" y="1" width="186" height="432"/>
+                                            <rect key="frame" x="1" y="1" width="186" height="478"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" rowSizeStyle="systemDefault" indentationPerLevel="16" outlineTableColumn="fsh-Xs-bdO" id="ZlD-oe-L4w">
-                                                    <rect key="frame" x="0.0" y="0.0" width="186" height="432"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="186" height="478"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <size key="intercellSpacing" width="3" height="0.0"/>
                                                     <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                     <tableColumns>
-                                                        <tableColumn identifier="name" width="182.5" minWidth="16" maxWidth="1000" id="fsh-Xs-bdO">
+                                                        <tableColumn identifier="name" width="183" minWidth="16" maxWidth="1000" id="fsh-Xs-bdO">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
                                                                 <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -85,7 +87,7 @@
                                 </subviews>
                             </customView>
                             <customView autoresizesSubviews="NO" placeholderIntrinsicWidth="549" placeholderIntrinsicHeight="225" id="szg-T9-EOV">
-                                <rect key="frame" x="189" y="0.0" width="592" height="434"/>
+                                <rect key="frame" x="189" y="0.0" width="592" height="480"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
                                     <splitView dividerStyle="thin" id="kva-c0-rJs">
@@ -97,7 +99,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <customView id="NGL-Hc-n0h">
-                                                        <rect key="frame" x="0.0" y="0.0" width="592" height="188"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="592" height="234"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                                     </customView>
                                                 </subviews>
@@ -139,39 +141,6 @@
                             <real value="250"/>
                         </holdingPriorities>
                     </splitView>
-                    <customView id="EaF-DY-OZO">
-                        <rect key="frame" x="64" y="434" width="781" height="46"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="ybw-Bd-1p7">
-                                <rect key="frame" x="-13" y="27" width="189" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="DB &amp; Collections" id="dwQ-Jn-wak">
-                                    <font key="font" size="10" name="OpenSans"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <popUpButton id="Fw2-vN-fY3">
-                                <rect key="frame" x="7" y="5" width="167" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <popUpButtonCell key="cell" type="bevel" title="Item 1" bezelStyle="rounded" alignment="left" state="on" imageScaling="proportionallyDown" inset="2" selectedItem="IlL-iM-bYq" id="VZS-qC-YoD">
-                                    <behavior key="behavior" lightByContents="YES"/>
-                                    <font key="font" size="13" name="OpenSans-Bold"/>
-                                    <menu key="menu" title="OtherViews" id="lae-r7-1qe">
-                                        <items>
-                                            <menuItem title="Item 1" state="on" id="IlL-iM-bYq"/>
-                                            <menuItem title="Item 2" id="Sog-5e-j3G"/>
-                                            <menuItem title="Item 3" id="LAO-sd-Udv"/>
-                                        </items>
-                                    </menu>
-                                </popUpButtonCell>
-                                <connections>
-                                    <action selector="dbsPopUpButtonAction:" target="-2" id="zWv-jq-Qcf"/>
-                                </connections>
-                            </popUpButton>
-                        </subviews>
-                    </customView>
                     <customView id="Uvh-iP-rQa" customClass="ITSidebar">
                         <rect key="frame" x="0.0" y="0.0" width="64" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -184,5 +153,61 @@
                 <binding destination="-2" name="contentArray" keyPath="collectionListItems" id="9ZT-M0-Ijc"/>
             </connections>
         </treeController>
+        <customView id="6iA-Gk-YCj">
+            <rect key="frame" x="0.0" y="0.0" width="492" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="ybw-Bd-1p7">
+                    <rect key="frame" x="-10" y="38" width="189" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Databases" id="dwQ-Jn-wak">
+                        <font key="font" size="13" name="OpenSans-Light"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton id="Fw2-vN-fY3">
+                    <rect key="frame" x="10" y="17" width="167" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="bevel" bezelStyle="rounded" alignment="left" imageScaling="proportionallyDown" inset="2" id="VZS-qC-YoD">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" size="13" name="OpenSans-Bold"/>
+                        <menu key="menu" title="OtherViews" id="lae-r7-1qe">
+                            <items>
+                                <menuItem title="Item 1" id="IlL-iM-bYq"/>
+                                <menuItem title="Item 2" id="Sog-5e-j3G"/>
+                                <menuItem title="Item 3" id="LAO-sd-Udv"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="dbsPopUpButtonAction:" target="-2" id="zWv-jq-Qcf"/>
+                    </connections>
+                </popUpButton>
+                <button id="DUI-7M-kFb">
+                    <rect key="frame" x="198" y="15" width="32" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="playbutton" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="CpT-ca-mjY">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="runCommand:" target="-2" id="5Qn-4y-46A"/>
+                    </connections>
+                </button>
+                <button id="ctd-kx-UsG">
+                    <rect key="frame" x="238" y="15" width="32" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="playselected" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="oIv-sP-HZz">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+            </subviews>
+        </customView>
     </objects>
+    <resources>
+        <image name="playbutton" width="50" height="50"/>
+        <image name="playselected" width="50" height="50"/>
+    </resources>
 </document>

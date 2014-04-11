@@ -13,6 +13,7 @@
 #import <ITSidebar/ITSidebar.h>
 #import <MMTabBarView/MMTabBarView.h>
 
+#import <MMTabBarView/MMSafariTabStyle.h>
 #import <MMTabBarView/MMCardTabStyle.h>
 
 @interface MangoWindowController : NSWindowController<NSOutlineViewDelegate>
@@ -24,10 +25,12 @@
 @property (weak) IBOutlet ITSidebar *sideBar;
 @property (weak) IBOutlet MMTabBarView *tabBarView;
 @property (weak) IBOutlet NSTabView *tabView;
+@property (strong) IBOutlet NSView *popUpContainerView;
 
 @property (strong) IBOutlet NSTreeController *collectionListTC;
 @property NSArray *collectionListItems;
 
+- (IBAction)runCommand:(id)sender;
 - (void) connectAndShow;
 - (IBAction)debugConn:(id)sender;
 - (IBAction)dbsPopUpButtonAction:(id)sender;

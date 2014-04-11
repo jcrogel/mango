@@ -119,6 +119,19 @@
     return nil;
 }
 
+-(NSString *) eval: (NSString *) jscode onDB: (NSString *) dbName
+{
+    mongo::DBClientConnection * conn = [self connPtr];
+    mongo::BSONElement ret;
+    mongo::BSONObj info;
+    bool success = conn->eval([dbName cStringUsingEncoding:NSUTF8StringEncoding], [jscode cStringUsingEncoding:NSUTF8StringEncoding], info, ret);
+    NSString *retVal = [NSString stringWithCString:ret.toString().c_str() encoding:NSUTF8StringEncoding];
+    if (!success)
+    {
+        return nil;
+    }
+    return retVal;
+}
 
 
 -(void) dealloc

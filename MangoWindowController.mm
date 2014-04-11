@@ -7,6 +7,7 @@
 //
 
 #import "MangoWindowController.h"
+#import <INAppStoreWindow/INAppStoreWindow.h>
 
 @interface MangoWindowController ()
 
@@ -25,6 +26,13 @@
     return self;
 }
 
+- (IBAction)runCommand:(id)sender {
+    NSString *jsSource = [[self fragaria] string];
+    NSString *dbName = [[[self dbsPopUpButton] selectedItem]  title];
+    NSString *result = [[self connMgr] eval:jsSource onDB:dbName];
+    NSLog(@"%@", result);
+}
+
 - (void) connectAndShow
 {
     [[self connMgr] openConnection];
@@ -33,6 +41,8 @@
 
 - (IBAction)debugConn:(id)sender {
 }
+
+#pragma mark - UI Setup
 
 - (IBAction)dbsPopUpButtonAction:(id)sender {
     NSArray *collections = [[self connMgr] getCollectionNames: [[[self dbsPopUpButton] selectedItem] title]];
@@ -60,19 +70,74 @@
 {
     [[self sideBar] setBackgroundColor:[NSColor darkGrayColor]];
     [[self sideBar] addItemWithImage: [NSImage imageNamed:@"AppIcon"]];
-    
 }
 
 -(void) setupTabs
 {
     [[self tabBarView] setTabView: [self tabView]];
-    MMCardTabStyle *style = [[MMCardTabStyle alloc] init];
+    MMSafariTabStyle *style = [[MMSafariTabStyle alloc] init];
     [[self tabBarView] setStyle:style];
+}
+
+-(void) setupWindow
+{
+    INAppStoreWindow *window = (INAppStoreWindow *) [self window];
+	window.trafficLightButtonsLeftMargin = 7.0;
+	window.fullScreenButtonRightMargin = 7.0;
+	window.centerFullScreenButton = YES;
+	window.titleBarHeight = 60.0;
+    window.verticalTrafficLightButtons = YES;
+    
+	// set checkboxes
+    
+	window.showsTitle = NO;
+	[self setupCloseButton: window];
+	[self setupMinimizeButton: window];
+	[self setupZoomButton: window];
+    
+    NSRect rect = [[self popUpContainerView] frame];
+    rect.origin.x += 70;
+    [[self popUpContainerView] setFrame:rect];
+    [window.titleBarView addSubview:[self popUpContainerView]];
+}
+
+- (void)setupCloseButton:(INAppStoreWindow *) window
+{
+	INWindowButton *closeButton = [INWindowButton windowButtonWithSize:NSMakeSize(14, 16) groupIdentifier:nil];
+	closeButton.activeImage = [NSImage imageNamed:@"close-active-color"];
+	closeButton.activeNotKeyWindowImage = [NSImage imageNamed:@"close-activenokey-color"];
+	closeButton.inactiveImage = [NSImage imageNamed:@"close-inactive-disabled-color"];
+	closeButton.pressedImage = [NSImage imageNamed:@"close-pd-color"];
+	closeButton.rolloverImage = [NSImage imageNamed:@"close-rollover-color"];
+	window.closeButton = closeButton;
+}
+
+- (void)setupMinimizeButton:(INAppStoreWindow *) window
+{
+	INWindowButton *button = [INWindowButton windowButtonWithSize:NSMakeSize(14, 16) groupIdentifier:nil];
+	button.activeImage = [NSImage imageNamed:@"minimize-active-color"];
+	button.activeNotKeyWindowImage = [NSImage imageNamed:@"minimize-activenokey-color"];
+	button.inactiveImage = [NSImage imageNamed:@"minimize-inactive-disabled-color"];
+	button.pressedImage = [NSImage imageNamed:@"minimize-pd-color"];
+	button.rolloverImage = [NSImage imageNamed:@"minimize-rollover-color"];
+	window.minimizeButton = button;
+}
+
+- (void)setupZoomButton:(INAppStoreWindow *) window
+{
+	INWindowButton *button = [INWindowButton windowButtonWithSize:NSMakeSize(14, 16) groupIdentifier:nil];
+	button.activeImage = [NSImage imageNamed:@"zoom-active-color"];
+	button.activeNotKeyWindowImage = [NSImage imageNamed:@"zoom-activenokey-color"];
+	button.inactiveImage = [NSImage imageNamed:@"zoom-inactive-disabled-color"];
+	button.pressedImage = [NSImage imageNamed:@"zoom-pd-color"];
+	button.rolloverImage = [NSImage imageNamed:@"zoom-rollover-color"];
+	window.zoomButton = button;
 }
 
 - (void)windowDidLoad
 {
     [super windowDidLoad];
+    [self setupWindow];
     [self setupTextEditor];
     [self setupDBsPopUpButton];
     [self setupSideBar];
@@ -80,7 +145,7 @@
 
 }
 
-#pragma mark -- 
+#pragma mark - Collection List
 
 - (void)setCollectionList:(NSArray *)cl
 {
