@@ -203,6 +203,12 @@
         }
     }
     
+    [rootArray sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        NSString *o1 = obj1[@"name"];
+        NSString *o2 = obj2[@"name"];
+
+        return [o1 localizedCaseInsensitiveCompare:o2];
+    }];
     [self setCollectionListItems:rootArray];
 }
 

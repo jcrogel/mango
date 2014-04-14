@@ -7,11 +7,14 @@
 //
 
 #import "MangoPlugin.h"
+#import "MangoConnectionManager.h"
 #import <Cocoa/Cocoa.h>
 
 @interface MangoBrowserView : NSViewController<MangoPlugin>
 @property (weak) IBOutlet NSTableColumn *outlineView;
 @property (weak) IBOutlet NSButton *triggerButton;
 - (IBAction)runQuery:(id)sender;
+@property (weak) IBOutlet NSButton *autorefreshCheckbox;
+@property (weak) IBOutlet NSTextField *queryLimitTextField;
 
 @end

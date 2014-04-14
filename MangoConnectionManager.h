@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#include "mongo/client/dbclient.h"
-
-
 @interface MangoConnectionManager : NSObject
 
 @property NSString *server;
@@ -22,8 +19,9 @@
 -(void) openConnection;
 -(void) openConnection: (NSString *) address withPort: (NSString *) port andUser: (NSString *) username andPassword: (NSString *) password;
 -(NSString *) eval: (NSString *) jscode onDB: (NSString *) dbName;
--(mongo::DBClientConnection *) connPtr;
 -(NSArray *) getDatabases;
 -(NSArray *) getCollectionNames: (NSString *) dbname;
+-(NSArray *) queryNameSpace: (NSString *) nameSpace withOptions: (NSDictionary *) options;
+-(void) dbgSel;
 
 @end

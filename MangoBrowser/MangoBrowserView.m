@@ -23,15 +23,37 @@
 
 
 - (IBAction)runQuery:(id)sender {
-    NSLog(@"Nicely");
+    
+    NSLog(@"Nicely ");
 }
 
+-(BOOL) shouldAutoRefresh
+{
+    if([[self autorefreshCheckbox] state]== NSOnState)
+        return YES;
+    return NO;
+}
 
 #pragma mark - MangoPlugin
 
 -(void) refreshDataFromDB: (NSString *) db withCollection: (NSString *) col andConnMgr: (MangoConnectionManager *) mgr
 {
-    
+    if ([self shouldAutoRefresh])
+    {
+        NSArray *res = [mgr queryNameSpace: [NSString stringWithFormat:@"%@.%@", db, col ] withOptions: @{}];
+        int cnt = 0;
+        for (id i in res )
+        {
+            NSLog(@"X %@", i);
+            if (cnt == 10)
+                break;
+            
+        }
+        NSLog(@"%d", [res count]);
+    }
 }
+
+
+
 
 @end

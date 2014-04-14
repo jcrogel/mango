@@ -7,6 +7,7 @@
 //
 
 #import "MangoConnectionManager.h"
+#include "mongo/client/dbclient.h"
 
 @implementation MangoConnectionManager
 
@@ -100,6 +101,8 @@
         [result addObject: [NSString stringWithCString:mystr.c_str() encoding:NSUTF8StringEncoding]];
     }
     
+    return [result sortedArrayUsingSelector: @selector(localizedCaseInsensitiveCompare:)];
+    
     /*
     std::auto_ptr<mongo::DBClientCursor> cursor = conn->query(
                                         [ns cStringUsingEncoding:NSUTF8StringEncoding], mongo::Query());
@@ -116,8 +119,10 @@
     }
      */
     
-    return result;
+    //return result;
 }
+
+
 
 /*
 -(mongo::BSONObj) _showDBsCMD
@@ -169,10 +174,36 @@
     return nil;
 }
 
-
--(void) dealloc
+-(NSArray *) queryNameSpace: (NSString *) nameSpace withOptions: (NSDictionary *) options
 {
-    NSLog(@"Killing Conn Mgr");
+    // TODO: Do it cleaner a la AjaxUtils
+    //NSString *query = @"{}";
+    NSMutableArray *result = [@[] mutableCopy];
+    
+    mongo::DBClientConnection * conn = [self connPtr];
+    std::auto_ptr<mongo::DBClientCursor> cursor = conn->query([nameSpace cStringUsingEncoding:NSUTF8StringEncoding],
+                                        mongo::Query());
+    
+    while (cursor->more())
+    {
+        mongo::BSONObj p = cursor->next();
+        NSString *name = [NSString stringWithUTF8String:p.getStringField("name")];
+        if ([name rangeOfString:@"$"].location != NSNotFound)
+        {
+            continue;
+        }
+        [result addObject: name];
+    }
+    NSLog(@"Res %d", [result count]);
+    return result;
+    
 }
+
+-(void) dbgSel
+{
+    
+}
+
+
 
 @end
