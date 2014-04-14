@@ -8,27 +8,24 @@
 
 #import <Cocoa/Cocoa.h>
 #import "MangoConnectionManager.h"
-#import <MGSFragaria/MGSFragaria.h>
-#import <MGSFragaria/SMLTextView.h>
 #import <ITSidebar/ITSidebar.h>
 #import <MMTabBarView/MMTabBarView.h>
-
 #import <MMTabBarView/MMSafariTabStyle.h>
 #import <MMTabBarView/MMCardTabStyle.h>
+#import "MangoPlugin.h"
+#import <MangoBrowserView.h>
 
 @interface MangoWindowController : NSWindowController<NSOutlineViewDelegate>
 
 @property MangoConnectionManager *connMgr;
-@property (weak) IBOutlet NSView *sourceEditor;
-@property MGSFragaria *fragaria;
 @property (weak) IBOutlet NSPopUpButton *dbsPopUpButton;
 @property (weak) IBOutlet ITSidebar *sideBar;
 @property (weak) IBOutlet MMTabBarView *tabBarView;
 @property (weak) IBOutlet NSTabView *tabView;
 @property (strong) IBOutlet NSView *popUpContainerView;
-
 @property (strong) IBOutlet NSTreeController *collectionListTC;
 @property NSArray *collectionListItems;
+@property NSDictionary *activePlugins;
 
 - (IBAction)runCommand:(id)sender;
 - (void) connectAndShow;

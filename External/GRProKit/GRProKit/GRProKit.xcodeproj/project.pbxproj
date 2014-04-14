@@ -434,7 +434,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GRProKit/GRProKit-Prefix.pch";
 				INFOPLIST_FILE = "GRProKit/GRProKit-Info.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -450,7 +449,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GRProKit/GRProKit-Prefix.pch";
 				INFOPLIST_FILE = "GRProKit/GRProKit-Info.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};

@@ -54,7 +54,18 @@
 {
 
     NSMutableArray *result = [[NSMutableArray alloc] init];
+    mongo::DBClientConnection * conn = [self connPtr];
     
+    std::list<std::string> dbs = conn->getDatabaseNames();
+    for(std::list<std::string>::iterator iter =dbs.begin();
+        iter != dbs.end(); iter++)
+    {
+        std::string str =  *iter;
+        [result addObject:[NSString stringWithCString: str.c_str() encoding:NSUTF8StringEncoding]];
+    }
+        
+    
+    /*
     mongo::BSONObj ret = [self _showDBsCMD];
     
     if (ret.hasElement("databases"))
@@ -67,6 +78,8 @@
             [result addObject: name];
         }
     }
+     
+     */
     
     return result;
 }
@@ -74,10 +87,20 @@
 -(NSArray *) getCollectionNames: (NSString *) dbname;
 {
     NSMutableArray *result = [[NSMutableArray alloc] init];
-    NSString *ns = [NSString stringWithFormat:@"%@.system.namespaces", dbname];
+    //NSString *ns = [NSString stringWithFormat:@"%@.system.namespaces", dbname];
     
     mongo::DBClientConnection * conn = [self connPtr];
     
+    std::list<std::string> colNames = conn->getCollectionNames(std::string([dbname cStringUsingEncoding:NSUTF8StringEncoding]));
+    
+    for (std::list<std::string>::iterator i = colNames.begin(); i!=colNames.end()
+         ;i++)
+    {
+        std::string mystr = *i;
+        [result addObject: [NSString stringWithCString:mystr.c_str() encoding:NSUTF8StringEncoding]];
+    }
+    
+    /*
     std::auto_ptr<mongo::DBClientCursor> cursor = conn->query(
                                         [ns cStringUsingEncoding:NSUTF8StringEncoding], mongo::Query());
     
@@ -91,10 +114,12 @@
         }
         [result addObject: name];
     }
+     */
     
     return result;
 }
 
+/*
 -(mongo::BSONObj) _showDBsCMD
 {
     mongo::DBClientConnection * conn = [self connPtr];
@@ -108,6 +133,7 @@
     }
     return mongo::BSONObj();
 }
+ */
 
 -(mongo::DBClientConnection *) connPtr
 {
@@ -124,13 +150,23 @@
     mongo::DBClientConnection * conn = [self connPtr];
     mongo::BSONElement ret;
     mongo::BSONObj info;
-    bool success = conn->eval([dbName cStringUsingEncoding:NSUTF8StringEncoding], [jscode cStringUsingEncoding:NSUTF8StringEncoding], info, ret);
-    NSString *retVal = [NSString stringWithCString:ret.toString().c_str() encoding:NSUTF8StringEncoding];
-    if (!success)
-    {
-        return nil;
+    bool success;
+    @try{
+        success = conn->eval([dbName cStringUsingEncoding:NSUTF8StringEncoding], [jscode cStringUsingEncoding:NSUTF8StringEncoding], info, ret);
+
+        if (success)
+        {
+            NSString *retVal = [NSString stringWithCString:ret.toString().c_str() encoding:NSUTF8StringEncoding];
+            return retVal;
+        }
+        
     }
-    return retVal;
+    @catch (NSException *e)
+    {
+        NSLog(@"HERE %@", e);
+    }
+
+    return nil;
 }
 
 

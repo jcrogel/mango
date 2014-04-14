@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MangoWindowController">
@@ -11,7 +11,6 @@
                 <outlet property="dbsPopUpButton" destination="Fw2-vN-fY3" id="Zhw-jw-XoO"/>
                 <outlet property="popUpContainerView" destination="6iA-Gk-YCj" id="DbO-7B-UuH"/>
                 <outlet property="sideBar" destination="Uvh-iP-rQa" id="k5h-wx-de3"/>
-                <outlet property="sourceEditor" destination="NGL-Hc-n0h" id="Mt8-qT-nID"/>
                 <outlet property="tabBarView" destination="S88-HY-ic1" id="315-hc-yGx"/>
                 <outlet property="tabView" destination="yqp-d8-dph" id="94Q-ht-lAU"/>
                 <outlet property="window" destination="Cud-oP-f2n" id="Lri-ii-yBH"/>
@@ -21,36 +20,36 @@
         <customObject id="-3" userLabel="Application"/>
         <window title="Mango" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="Cud-oP-f2n" customClass="INAppStoreWindow">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <rect key="contentRect" x="196" y="200" width="845" height="480"/>
+            <rect key="contentRect" x="196" y="200" width="1020" height="700"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
             <value key="minSize" type="size" width="845" height="200"/>
             <view key="contentView" autoresizesSubviews="NO" id="Kgl-y7-AQD">
-                <rect key="frame" x="0.0" y="0.0" width="845" height="480"/>
+                <rect key="frame" x="0.0" y="0.0" width="1020" height="700"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <splitView dividerStyle="thin" vertical="YES" id="DCv-yG-BJp">
-                        <rect key="frame" x="64" y="0.0" width="781" height="480"/>
+                        <rect key="frame" x="64" y="0.0" width="956" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <customView id="VCO-WX-Jw5">
-                                <rect key="frame" x="0.0" y="0.0" width="188" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="230" height="700"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
-                                    <scrollView autohidesScrollers="YES" horizontalLineScroll="24" horizontalPageScroll="10" verticalLineScroll="24" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="MTX-qP-ZZ8">
-                                        <rect key="frame" x="0.0" y="-1" width="188" height="480"/>
+                                    <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="24" horizontalPageScroll="10" verticalLineScroll="24" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="MTX-qP-ZZ8">
+                                        <rect key="frame" x="0.0" y="-1" width="230" height="700"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <clipView key="contentView" id="08B-Hm-X4z">
-                                            <rect key="frame" x="1" y="1" width="186" height="478"/>
+                                        <clipView key="contentView" copiesOnScroll="NO" id="08B-Hm-X4z">
+                                            <rect key="frame" x="0.0" y="0.0" width="230" height="700"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" rowSizeStyle="systemDefault" indentationPerLevel="16" outlineTableColumn="fsh-Xs-bdO" id="ZlD-oe-L4w">
-                                                    <rect key="frame" x="0.0" y="0.0" width="186" height="478"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="230" height="700"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <size key="intercellSpacing" width="3" height="0.0"/>
                                                     <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                     <tableColumns>
-                                                        <tableColumn identifier="name" width="183" minWidth="16" maxWidth="1000" id="fsh-Xs-bdO">
+                                                        <tableColumn identifier="name" width="227" minWidth="16" maxWidth="1000" id="fsh-Xs-bdO">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
                                                                 <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -87,39 +86,29 @@
                                 </subviews>
                             </customView>
                             <customView autoresizesSubviews="NO" placeholderIntrinsicWidth="549" placeholderIntrinsicHeight="225" id="szg-T9-EOV">
-                                <rect key="frame" x="189" y="0.0" width="592" height="480"/>
+                                <rect key="frame" x="231" y="0.0" width="725" height="700"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
                                     <splitView dividerStyle="thin" id="kva-c0-rJs">
-                                        <rect key="frame" x="0.0" y="0.0" width="601" height="480"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="725" height="700"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <customView id="VgR-ua-pfF">
-                                                <rect key="frame" x="0.0" y="0.0" width="601" height="234"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <customView id="NGL-Hc-n0h">
-                                                        <rect key="frame" x="0.0" y="0.0" width="592" height="234"/>
-                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
-                                                    </customView>
-                                                </subviews>
-                                            </customView>
                                             <customView id="gi2-2W-WuC">
-                                                <rect key="frame" x="0.0" y="235" width="601" height="245"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="725" height="700"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <subviews>
                                                     <customView id="S88-HY-ic1" customClass="MMTabBarView">
-                                                        <rect key="frame" x="0.0" y="223" width="601" height="21.5"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <rect key="frame" x="0.0" y="678" width="725" height="21.5"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                     </customView>
                                                     <tabView type="noTabsNoBorder" id="yqp-d8-dph">
-                                                        <rect key="frame" x="0.0" y="-1" width="601" height="226"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="725" height="675"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                         <tabViewItems>
                                                             <tabViewItem label="Tab" identifier="1" id="hhl-Uc-xxp">
                                                                 <view key="view" id="f70-rv-esc">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="601" height="226"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="725" height="675"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 </view>
                                                             </tabViewItem>
@@ -129,7 +118,6 @@
                                             </customView>
                                         </subviews>
                                         <holdingPriorities>
-                                            <real value="250"/>
                                             <real value="250"/>
                                         </holdingPriorities>
                                     </splitView>
@@ -142,8 +130,8 @@
                         </holdingPriorities>
                     </splitView>
                     <customView id="Uvh-iP-rQa" customClass="ITSidebar">
-                        <rect key="frame" x="0.0" y="0.0" width="64" height="480"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <rect key="frame" x="0.0" y="0.0" width="64" height="700"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                     </customView>
                 </subviews>
             </view>
@@ -185,9 +173,9 @@
                     </connections>
                 </popUpButton>
                 <button id="DUI-7M-kFb">
-                    <rect key="frame" x="198" y="15" width="32" height="38"/>
+                    <rect key="frame" x="198" y="13" width="40" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="playbutton" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="CpT-ca-mjY">
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="playbutton" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="CpT-ca-mjY">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>

@@ -22,15 +22,15 @@
         // Initialization code here.
         MangoConnectionManager *connMgr = [[MangoConnectionManager alloc] init];
         [self setConnMgr: connMgr];
+        [self setActivePlugins:@{}];
     }
     return self;
 }
 
 - (IBAction)runCommand:(id)sender {
-    NSString *jsSource = [[self fragaria] string];
     NSString *dbName = [[[self dbsPopUpButton] selectedItem]  title];
-    NSString *result = [[self connMgr] eval:jsSource onDB:dbName];
-    NSLog(@"%@", result);
+    NSLog(@"%@", dbName);
+
 }
 
 - (void) connectAndShow
@@ -49,15 +49,6 @@
     [self setCollectionList: collections];
 }
 
--(void) setupTextEditor
-{
-    _fragaria = [[MGSFragaria alloc] init];
-	[_fragaria setObject:self forKey:MGSFODelegate];
-    [_fragaria setObject:self forKey:MGSFOSyntaxColouringDelegate];
-    [_fragaria setObject:@"JavaScript" forKey:MGSFOSyntaxDefinitionName];
-    [_fragaria setObject:[NSNumber numberWithBool:YES] forKey:MGSFOShowLineNumberGutter];
-	[_fragaria embedInView:[self sourceEditor]];
-}
 
 -(void) setupDBsPopUpButton
 {
@@ -77,6 +68,14 @@
     [[self tabBarView] setTabView: [self tabView]];
     MMSafariTabStyle *style = [[MMSafariTabStyle alloc] init];
     [[self tabBarView] setStyle:style];
+    MangoBrowserView *tabContent = [[MangoBrowserView alloc] initWithNibName:@"Browser" bundle:[NSBundle bundleForClass:[self class]]];
+
+    NSTabViewItem *currentTab = [[self tabView] tabViewItemAtIndex:0];
+    [[tabContent view] setFrame:[[currentTab view]frame]];
+    [[currentTab view] addSubview:[tabContent view]];
+    NSMutableDictionary *activePlugins = [[self activePlugins] mutableCopy];
+    activePlugins[currentTab.label] = tabContent;
+    [self setActivePlugins: activePlugins];
 }
 
 -(void) setupWindow
@@ -138,7 +137,6 @@
 {
     [super windowDidLoad];
     [self setupWindow];
-    [self setupTextEditor];
     [self setupDBsPopUpButton];
     [self setupSideBar];
     [self setupTabs];
@@ -209,9 +207,29 @@
 }
 
 
+-(NSString *) getSelectedCollectionName
+{
+    NSTreeNode *selectedNode = [[[self collectionListTC] selectedNodes] objectAtIndex:0];
+    NSDictionary *selectedNodeObj = [selectedNode representedObject];
+    NSString *selectedCollection = selectedNodeObj[@"name"];
+    return selectedCollection;
+}
+
+-(NSString *) getSelectedDatabase
+{
+    return [[[self dbsPopUpButton] selectedItem]  title];
+}
+
 -(void) outlineViewSelectionDidChange:(NSNotification *)notification
 {
-    NSLog(@"%@", NSStringFromSelector(_cmd));
+    NSString *selectedCollection = [self getSelectedCollectionName];
+    NSString *selectedDB = [self getSelectedDatabase];
+    NSTabViewItem *selectedItem = [[self tabView] selectedTabViewItem];
+    NSString *tabName = [selectedItem label];
+    id<MangoPlugin> plugin = [self activePlugins][tabName];
+    [plugin refreshDataFromDB:selectedDB withCollection:selectedCollection andConnMgr:[self connMgr]];
+
+//    SEL refreshDB = NSSelectorFromString(@"refreshDataFromDB:withCollection:andConnMgr:");
 }
 
 
