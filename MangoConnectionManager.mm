@@ -187,15 +187,28 @@
     while (cursor->more())
     {
         mongo::BSONObj p = cursor->next();
-        NSString *name = [NSString stringWithUTF8String:p.getStringField("name")];
-        if ([name rangeOfString:@"$"].location != NSNotFound)
+        NSError *e;
+        NSString *json = [NSString stringWithCString: p.jsonString().c_str() encoding:NSUTF8StringEncoding ];
+        id jsonObj = [NSJSONSerialization JSONObjectWithData:[json dataUsingEncoding:NSUTF8StringEncoding]
+                                        options:0
+                                          error:&e];
+        if (e)
         {
-            continue;
+            
+            NSLog(@"%@", e );
+            NSLog(@"%@", json);
+            return @[];
         }
-        [result addObject: name];
+        
+        if (jsonObj)
+        {
+            [result addObject: jsonObj];
+        }
     }
-    NSLog(@"Res %d", [result count]);
-    return result;
+    
+    // TODO: Do propper limit by
+    NSUInteger min = MIN([result count], 10);
+    return [result subarrayWithRange:NSMakeRange(0, min)];
     
 }
 

@@ -7,7 +7,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="MangoBrowserView">
             <connections>
                 <outlet property="autorefreshCheckbox" destination="OC0-ur-uLS" id="vzq-6X-R7I"/>
-                <outlet property="outlineView" destination="I78-GC-cee" id="tA3-gh-iMn"/>
+                <outlet property="outlineView" destination="fke-Kb-cHQ" id="wsD-bq-wk2"/>
                 <outlet property="queryLimitTextField" destination="2Qv-72-Oo5" id="SYF-hb-69V"/>
                 <outlet property="triggerButton" destination="Koz-9n-V6k" id="D0M-4d-8iC"/>
                 <outlet property="view" destination="2Es-I0-zxG" id="NeC-CK-7rd"/>
@@ -78,14 +78,14 @@
                                 <rect key="frame" x="1" y="17" width="545" height="332"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" headerView="p68-eo-ZgO" indentationPerLevel="16" outlineTableColumn="I78-GC-cee" id="fke-Kb-cHQ">
+                                    <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="firstColumnOnly" multipleSelection="NO" autosaveColumns="NO" headerView="p68-eo-ZgO" indentationPerLevel="16" outlineTableColumn="I78-GC-cee" id="fke-Kb-cHQ">
                                         <rect key="frame" x="0.0" y="0.0" width="545" height="332"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <size key="intercellSpacing" width="3" height="2"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                         <tableColumns>
-                                            <tableColumn width="101" minWidth="16" maxWidth="1000" id="I78-GC-cee">
+                                            <tableColumn width="423" minWidth="16" maxWidth="1000" id="I78-GC-cee">
                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
                                                     <font key="font" metaFont="smallSystem"/>
                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -98,20 +98,11 @@
                                                 </textFieldCell>
                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             </tableColumn>
-                                            <tableColumn width="438" minWidth="40" maxWidth="1000" id="lGJ-ku-wwt">
-                                                <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
-                                                    <font key="font" metaFont="smallSystem"/>
-                                                    <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
-                                                    <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
-                                                </tableHeaderCell>
-                                                <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="s2y-OC-IVQ">
-                                                    <font key="font" metaFont="system"/>
-                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                </textFieldCell>
-                                                <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                            </tableColumn>
                                         </tableColumns>
+                                        <connections>
+                                            <outlet property="dataSource" destination="-2" id="JPH-ur-m9X"/>
+                                            <outlet property="delegate" destination="-2" id="reM-co-wOi"/>
+                                        </connections>
                                     </outlineView>
                                 </subviews>
                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>

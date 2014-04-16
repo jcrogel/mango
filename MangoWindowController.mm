@@ -234,8 +234,6 @@
     NSString *tabName = [selectedItem label];
     id<MangoPlugin> plugin = [self activePlugins][tabName];
     [plugin refreshDataFromDB:selectedDB withCollection:selectedCollection andConnMgr:[self connMgr]];
-
-//    SEL refreshDB = NSSelectorFromString(@"refreshDataFromDB:withCollection:andConnMgr:");
 }
 
 
