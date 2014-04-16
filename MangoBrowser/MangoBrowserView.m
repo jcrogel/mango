@@ -43,120 +43,111 @@
     if ([self shouldAutoRefresh])
     {
         NSArray *res = [mgr queryNameSpace: [NSString stringWithFormat:@"%@.%@", db, col ] withOptions: @{}];
+        res = [self reformatQueryResults:res];
         [self setDbData:res];
         [[self outlineView] reloadData];
     }
 }
 
-- (NSInteger)outlineView:(NSOutlineView *)outlineView numberOfChildrenOfItem:(id)item
+-(NSArray *) reformatQueryResults: (NSArray *) data
 {
-    if (!item)
-    {
-        return [[self dbData] count];
-    }
-    
-    if ([item count]>0)
+    // ROOT
+    NSMutableArray *retval = [@[] mutableCopy];
+    for (id item in data)
     {
         if ([item isKindOfClass:[NSDictionary class]])
         {
-            id childItem = [item mutableCopy];
-            [childItem removeObjectForKey:@"_id"];
-            return [childItem count];
-        }
-    }
-    // TODO: Fix
-    return 0;
-}
-
-
-- (BOOL)outlineView:(NSOutlineView *)outlineView isItemExpandable:(id)item
-{
-    if (item == nil) return YES;
-    
-    if ([item isKindOfClass: [NSDictionary class]] && [item count]>0)
-    {
-        return YES;
-    }
-    return NO;
-}
-
-- (id)outlineView:(NSOutlineView *)outlineView child:(NSInteger)index ofItem:(id)item
-{
-    if (!item)
-    {
-        id obj = [self dbData][index];
-        if ([obj isKindOfClass:[NSDictionary class]])
-        {
-            return obj;
-        }
-    }
-    else
-    {
-        id childItem = [item mutableCopy];
-        [childItem removeObjectForKey:@"_id"];
-        NSArray *keys = [[childItem keyEnumerator] allObjects];
-        id key = [keys objectAtIndex:index];
-        id retval = item[key];
-        NSLog(@"class %@ %@", key,[retval class]);
-        return retval;
-    }
-    
-    return nil;
-}
-
-
-- (NSCell *)outlineView:(NSOutlineView *)outlineView dataCellForTableColumn:(NSTableColumn *)tableColumn item:(id)item
-{
-    if (item)
-    {
-        if ([item isKindOfClass: [NSDictionary class]])
-        {
+            NSMutableDictionary *reformattedItem = [@{} mutableCopy];
+            NSString *title = @"";
             id oid = item[@"_id"];
             if (oid && [oid isKindOfClass: [NSDictionary class]])
             {
-                NSTextFieldCell *cell = [[NSTextFieldCell alloc] initTextCell: oid[@"$oid"]];
-                
-                return cell;
+               title = [NSString stringWithFormat:@"ObjectId(%@)", oid[@"$oid"]];
             }
+            
+            reformattedItem[@"Name"] = title;
+            
+            NSArray *children = [self reformatJSONDict: item];
+            reformattedItem[@"Children"] = children;
+            reformattedItem[@"Type"] = @"Dictionary";
+            [retval addObject:reformattedItem];
         }
         else
         {
-            
+            NSLog(@"OOPS %@", item);
         }
-        
-        
-        NSLog(@"ABCD: %@", item);
     }
     
-    return nil;
+    return retval;
+}
+
+-(NSDictionary *) reformatJSONValue: (id) value withName: (NSString *) name
+{
+    NSMutableDictionary *reformattedItem = [@{} mutableCopy];
+    reformattedItem[@"Name"] = name;
     
-}
-
-- (void)outlineViewSelectionDidChange:(NSNotification *)notification
-{
-    //NSLog(@"%@", [[self outlineView] selectedCell]);
-}
-
-- (void)outlineView:(NSOutlineView *)outlineView willDisplayCell:(id)cell forTableColumn:(NSTableColumn *)tableColumn item:(id)item
-{
-    //NSLog(@"%@ %@", tableColumn, item);
-}
-
-- (id)outlineView:(NSOutlineView *)outlineView objectValueForTableColumn:(NSTableColumn *)tableColumn byItem:(id)item
-{
-    if (item)
+    if ([value isKindOfClass:[NSDictionary class]])
     {
-        if ([item isKindOfClass: [NSDictionary class]])
+        NSArray *children = [self reformatJSONDict: value];
+        reformattedItem[@"Children"] = children;
+        reformattedItem[@"Type"] = @"Dictionary";
+    }
+    else if ([value isKindOfClass:[NSArray class]])
+    {
+        NSMutableArray *reformattedChildren = [@[] mutableCopy];
+        for (int i=0; i<[value count]; i++)
         {
-            id oid = item[@"_id"];
-            if ([oid isKindOfClass: [NSDictionary class]])
-            {
-                return [NSString stringWithFormat:@"ObjectId(%@)", oid[@"$oid"] ];
-            }
+            NSDictionary *reformattedChild = [self reformatJSONValue:[value objectAtIndex:i] withName:[NSString stringWithFormat:@"%d", i ]];
+            [reformattedChildren addObject:reformattedChild];
+        }
+        reformattedItem[@"Children"] = reformattedChildren;
+        reformattedItem[@"Value"] = [NSNumber numberWithInt:[value count]];
+        reformattedItem[@"Type"] = @"Array";
+    }
+    else if ([value isKindOfClass:[NSString class]])
+    {
+        reformattedItem[@"Value"] = value;
+        reformattedItem[@"Type"] = @"String";
+    }
+    else if ([value isKindOfClass:[NSNumber class]])
+    {
+        reformattedItem[@"Value"] = value;
+        
+        if ([value isKindOfClass:[[NSNumber numberWithBool: YES] class]])
+        {
+            reformattedItem[@"Type"] = @"Bool";
+        }
+        else
+        {
+            reformattedItem[@"Type"] = @"Number";
         }
     }
-    
-    return nil;
+    else if([value isKindOfClass:[NSNull class]])
+    {
+        reformattedItem[@"Value"] = @"";
+        reformattedItem[@"Type"] = @"Null";
+        NSLog(@"%@ %@", name ,[value class]);
+    }
+    else
+    {
+        
+        NSLog(@"Unknown %@ %@", name ,[value class]);
+    }
+    return reformattedItem;
 }
+
+-(NSArray *) reformatJSONDict: (NSDictionary *) data
+{
+    NSMutableArray *retval = [@[] mutableCopy];
+    for (id key in [data keyEnumerator])
+    {
+        id value = data[key];
+        NSDictionary *reformattedItem = [self reformatJSONValue:value withName:key];
+        [retval addObject:reformattedItem];
+    }
+    return retval;
+}
+
+
 
 @end

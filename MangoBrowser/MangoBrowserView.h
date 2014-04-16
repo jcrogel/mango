@@ -19,6 +19,8 @@
 @property (weak) IBOutlet NSButton *autorefreshCheckbox;
 @property (weak) IBOutlet NSTextField *queryLimitTextField;
 
+@property (strong) IBOutlet NSTreeController *browserTC;
+
 @property NSArray *dbData;
 
 @end
