@@ -62,7 +62,7 @@
             id oid = item[@"_id"];
             if (oid && [oid isKindOfClass: [NSDictionary class]])
             {
-               title = [NSString stringWithFormat:@"ObjectId(%@)", oid[@"$oid"]];
+               title = [NSString stringWithFormat:@"ObjectId %@", oid[@"$oid"]];
             }
             
             reformattedItem[@"Name"] = title;
@@ -157,11 +157,22 @@
 //    NSLog(@"%d", );
     NSDictionary *rObj = [item representedObject];
     
-    if (rObj && [rObj objectForKey:@"Type"] && [[outlineView tableColumns] objectAtIndex:0] == tableColumn)
+    if (rObj && [rObj objectForKey:@"Type"])
     {
-        MangoBrowserCell *cell = [[MangoBrowserCell alloc] init];
-        [cell setDataType:[rObj objectForKey:@"Type"]];
-        return cell;
+        if ([[outlineView tableColumns] objectAtIndex:0] == tableColumn)
+        {
+            // Key
+            MangoBrowserCell *cell = [[MangoBrowserCell alloc] init];
+            [cell setDataType:[rObj objectForKey:@"Type"]];
+            return cell;
+        }
+        else if ([[outlineView tableColumns] objectAtIndex:1] == tableColumn)
+        {
+            MangoBrowserValueCell *cell = [[MangoBrowserValueCell alloc]init];
+            [cell setDataType:[rObj objectForKey:@"Type"]];
+            return cell;
+        }
+        
     }
     
     return [tableColumn dataCell];

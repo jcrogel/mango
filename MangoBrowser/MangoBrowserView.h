@@ -10,6 +10,7 @@
 #import "MangoConnectionManager.h"
 #import <Cocoa/Cocoa.h>
 #import "MangoBrowserCell.h"
+#import "MangoBrowserValueCell.h"
 
 @interface MangoBrowserView : NSViewController<MangoPlugin,
                                                     NSOutlineViewDataSource,

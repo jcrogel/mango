@@ -1829,7 +1829,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd5ce7cab43ffb841^f1f181ab43ffb841^---0#1#1#--18"Check dependencies36"040162EC-9828-44CA-A61E-F7024E5A4197-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies938f551d49ffb841^d046561d49ffb841^---0#1#1#--18"Check dependencies36"DFD5C90C-51CB-4F6A-B7CF-35E77D01939A-
 
 CCompileC build/MMTabBarView.build/Debug/MMTabBarView.build/Objects-normal/x86_64/MMAdiumTabStyle.o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/MMTabBarView/Styles/MMAdiumTabStyle.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s418972086.408131

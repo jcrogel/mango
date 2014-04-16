@@ -22,14 +22,13 @@
 		E943649F18EF81760076B9A5 /* MangoWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E943649E18EF81760076B9A5 /* MangoWindowController.mm */; };
 		E94364A218EF82500076B9A5 /* MangoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94364A118EF82500076B9A5 /* MangoWindow.xib */; };
 		E94364A418EFAED10076B9A5 /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94364A318EFAED10076B9A5 /* AboutWindow.xib */; };
-		E97A0E7918F1C1C000098D55 /* MGSFragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92714E318F1A688003EC526 /* MGSFragaria.framework */; };
-		E97A0E7B18F1D58100098D55 /* MGSFragaria.framework in Copy Files (2 items) */ = {isa = PBXBuildFile; fileRef = E92714E318F1A688003EC526 /* MGSFragaria.framework */; };
 		E97A0E7C18F1D5F800098D55 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9258D6918EE424600564355 /* MainMenu.xib */; };
 		E98FEC8A18F3192A004AA776 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E98FEC8918F3192A004AA776 /* libPods.a */; };
 		E99F502B18EF28D7002C149E /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F502A18EF28D7002C149E /* libboost_system.a */; };
 		E99F502D18EF28F6002C149E /* libboost_thread-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F502C18EF28F6002C149E /* libboost_thread-mt.a */; };
 		E9AEB78A18FF2639008F3C9D /* MangoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEB78918FF2639008F3C9D /* MangoBrowserCell.m */; };
 		E9AEB79218FF2AC5008F3C9D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AEB79118FF2AC5008F3C9D /* QuartzCore.framework */; };
+		E9AEB79518FF46DC008F3C9D /* MangoBrowserValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEB79418FF46DC008F3C9D /* MangoBrowserValueCell.m */; };
 		E9D589D518F0CA3D00F9B333 /* libmongoclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E93167DB18F0C011008A4FCE /* libmongoclient.a */; };
 		E9F5D3E418F3A44C00083B1F /* MMTabBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F5D3E218F3A43F00083B1F /* MMTabBarView.framework */; };
 		E9F5D3E518F3A45100083B1F /* MMTabBarView.framework in Copy Files (2 items) */ = {isa = PBXBuildFile; fileRef = E9F5D3E218F3A43F00083B1F /* MMTabBarView.framework */; };
@@ -42,34 +41,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = E9258D5018EE424500564355;
 			remoteInfo = Mango;
-		};
-		E92714DC18F1A688003EC526 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E92714D518F1A688003EC526 /* Fragaria.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AB648E2A11FB385700AEF7BD;
-			remoteInfo = "Fragaria Doc";
-		};
-		E92714DE18F1A688003EC526 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E92714D518F1A688003EC526 /* Fragaria.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8D1107320486CEB800E47090;
-			remoteInfo = "Fragaria GC";
-		};
-		E92714E018F1A688003EC526 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E92714D518F1A688003EC526 /* Fragaria.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ABCA4DAF16137FC000E4849B;
-			remoteInfo = Fragaria;
-		};
-		E92714E218F1A688003EC526 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E92714D518F1A688003EC526 /* Fragaria.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AB69B62B118B745700903D1D;
-			remoteInfo = MGSFragaria;
 		};
 		E93167DA18F0C011008A4FCE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -95,7 +66,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				E9F5D3E518F3A45100083B1F /* MMTabBarView.framework in Copy Files (2 items) */,
-				E97A0E7B18F1D58100098D55 /* MGSFragaria.framework in Copy Files (2 items) */,
 			);
 			name = "Copy Files (2 items)";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,7 +96,6 @@
 		E9258D7E18EE424600564355 /* MangoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MangoTests.m; sourceTree = "<group>"; };
 		E92590C718EE7AAA00564355 /* MangoConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MangoConnectionManager.h; path = ../MangoConnectionManager.h; sourceTree = "<group>"; };
 		E92590C818EE7AAA00564355 /* MangoConnectionManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MangoConnectionManager.mm; path = ../MangoConnectionManager.mm; sourceTree = "<group>"; };
-		E92714D518F1A688003EC526 /* Fragaria.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Fragaria.xcodeproj; path = External/Fragaria/Fragaria.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E93167D418F0C010008A4FCE /* mongoclient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mongoclient.xcodeproj; path = "External/mongo-cxx-driver/mongoclient.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		E9429A1918F9D74C00C367A4 /* Browser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Browser.xib; path = MangoBrowser/Browser.xib; sourceTree = "<group>"; };
 		E9429A1B18FB91E100C367A4 /* MangoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MangoBrowserView.h; path = MangoBrowser/MangoBrowserView.h; sourceTree = "<group>"; };
@@ -142,6 +111,8 @@
 		E9AEB78818FF2639008F3C9D /* MangoBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MangoBrowserCell.h; path = MangoBrowser/MangoBrowserCell.h; sourceTree = "<group>"; };
 		E9AEB78918FF2639008F3C9D /* MangoBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MangoBrowserCell.m; path = MangoBrowser/MangoBrowserCell.m; sourceTree = "<group>"; };
 		E9AEB79118FF2AC5008F3C9D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E9AEB79318FF46DC008F3C9D /* MangoBrowserValueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MangoBrowserValueCell.h; path = MangoBrowser/MangoBrowserValueCell.h; sourceTree = "<group>"; };
+		E9AEB79418FF46DC008F3C9D /* MangoBrowserValueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MangoBrowserValueCell.m; path = MangoBrowser/MangoBrowserValueCell.m; sourceTree = "<group>"; };
 		E9F5D3D818F3A43F00083B1F /* MMTabBarView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MMTabBarView.xcodeproj; path = External/MMTabBarView/MMTabBarView/MMTabBarView.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -153,7 +124,6 @@
 				E9AEB79218FF2AC5008F3C9D /* QuartzCore.framework in Frameworks */,
 				E9F5D3E418F3A44C00083B1F /* MMTabBarView.framework in Frameworks */,
 				E98FEC8A18F3192A004AA776 /* libPods.a in Frameworks */,
-				E97A0E7918F1C1C000098D55 /* MGSFragaria.framework in Frameworks */,
 				E9D589D518F0CA3D00F9B333 /* libmongoclient.a in Frameworks */,
 				E99F502D18EF28F6002C149E /* libboost_thread-mt.a in Frameworks */,
 				E99F502B18EF28D7002C149E /* libboost_system.a in Frameworks */,
@@ -268,7 +238,6 @@
 			isa = PBXGroup;
 			children = (
 				E9F5D3D818F3A43F00083B1F /* MMTabBarView.xcodeproj */,
-				E92714D518F1A688003EC526 /* Fragaria.xcodeproj */,
 				E93167D418F0C010008A4FCE /* mongoclient.xcodeproj */,
 			);
 			path = External;
@@ -283,17 +252,6 @@
 				E92590C818EE7AAA00564355 /* MangoConnectionManager.mm */,
 			);
 			name = ConnectionWindow;
-			sourceTree = "<group>";
-		};
-		E92714D618F1A688003EC526 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E92714DD18F1A688003EC526 /* Fragaria Doc.app */,
-				E92714DF18F1A688003EC526 /* Fragaria GC.app */,
-				E92714E118F1A688003EC526 /* Fragaria.app */,
-				E92714E318F1A688003EC526 /* MGSFragaria.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		E93167D518F0C010008A4FCE /* Products */ = {
@@ -312,6 +270,8 @@
 				E9429A1C18FB91E100C367A4 /* MangoBrowserView.m */,
 				E9AEB78818FF2639008F3C9D /* MangoBrowserCell.h */,
 				E9AEB78918FF2639008F3C9D /* MangoBrowserCell.m */,
+				E9AEB79318FF46DC008F3C9D /* MangoBrowserValueCell.h */,
+				E9AEB79418FF46DC008F3C9D /* MangoBrowserValueCell.m */,
 			);
 			name = MangoBrowser;
 			path = ..;
@@ -404,10 +364,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = E92714D618F1A688003EC526 /* Products */;
-					ProjectRef = E92714D518F1A688003EC526 /* Fragaria.xcodeproj */;
-				},
-				{
 					ProductGroup = E9F5D3D918F3A43F00083B1F /* Products */;
 					ProjectRef = E9F5D3D818F3A43F00083B1F /* MMTabBarView.xcodeproj */;
 				},
@@ -425,34 +381,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E92714DD18F1A688003EC526 /* Fragaria Doc.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "Fragaria Doc.app";
-			remoteRef = E92714DC18F1A688003EC526 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E92714DF18F1A688003EC526 /* Fragaria GC.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "Fragaria GC.app";
-			remoteRef = E92714DE18F1A688003EC526 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E92714E118F1A688003EC526 /* Fragaria.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = Fragaria.app;
-			remoteRef = E92714E018F1A688003EC526 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E92714E318F1A688003EC526 /* MGSFragaria.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MGSFragaria.framework;
-			remoteRef = E92714E218F1A688003EC526 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		E93167DB18F0C011008A4FCE /* libmongoclient.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -534,6 +462,7 @@
 				E9258D6118EE424600564355 /* main.m in Sources */,
 				E92593CF18EE7F9C00564355 /* MangoAppDelegate.mm in Sources */,
 				E943649F18EF81760076B9A5 /* MangoWindowController.mm in Sources */,
+				E9AEB79518FF46DC008F3C9D /* MangoBrowserValueCell.m in Sources */,
 				E9AEB78A18FF2639008F3C9D /* MangoBrowserCell.m in Sources */,
 				E92593D018EE7F9E00564355 /* MangoConnectionManager.mm in Sources */,
 				E9429A1D18FB91E100C367A4 /* MangoBrowserView.m in Sources */,
