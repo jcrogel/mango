@@ -101,7 +101,7 @@
             [reformattedChildren addObject:reformattedChild];
         }
         reformattedItem[@"Children"] = reformattedChildren;
-        reformattedItem[@"Value"] = [NSNumber numberWithInt:[value count]];
+        reformattedItem[@"Value"] = [NSNumber numberWithLong:[value count]];
         reformattedItem[@"Type"] = @"Array";
     }
     else if ([value isKindOfClass:[NSString class]])
@@ -126,7 +126,6 @@
     {
         reformattedItem[@"Value"] = @"";
         reformattedItem[@"Type"] = @"Null";
-        NSLog(@"%@ %@", name ,[value class]);
     }
     else
     {
@@ -148,6 +147,29 @@
     return retval;
 }
 
+- (void)outlineView:(NSOutlineView *)olv willDisplayCell:(NSCell*)cell forTableColumn:(NSTableColumn *)tableColumn item:(id)item
+{
+    //NSLog(@"%@ %@", NSStringFromSelector(_cmd), item);
+}
+
+- (NSCell*) outlineView:(NSOutlineView*) outlineView dataCellForTableColumn:(NSTableColumn*) tableColumn item:(id) item
+{
+//    NSLog(@"%d", );
+    NSDictionary *rObj = [item representedObject];
+    
+    if (rObj && [rObj objectForKey:@"Type"] && [[outlineView tableColumns] objectAtIndex:0] == tableColumn)
+    {
+        MangoBrowserCell *cell = [[MangoBrowserCell alloc] init];
+        [cell setDataType:[rObj objectForKey:@"Type"]];
+        return cell;
+    }
+    
+    return [tableColumn dataCell];
+}
 
 
+- (CGFloat)outlineView:(NSOutlineView *)outlineView heightOfRowByItem:(id)item
+{
+    return 25;
+}
 @end

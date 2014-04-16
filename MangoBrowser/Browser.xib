@@ -80,7 +80,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="firstColumnOnly" multipleSelection="NO" autosaveColumns="NO" headerView="p68-eo-ZgO" indentationPerLevel="16" outlineTableColumn="I78-GC-cee" id="fke-Kb-cHQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="545" height="332"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <size key="intercellSpacing" width="3" height="2"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -93,7 +93,7 @@
                                                     <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
                                                 </tableHeaderCell>
                                                 <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="Ipv-Na-kNl">
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" size="13" name="LucidaGrande"/>
                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
@@ -118,22 +118,6 @@
                                                     <binding destination="ndM-aZ-5qJ" name="value" keyPath="arrangedObjects.Value" id="9oY-MZ-KeY"/>
                                                 </connections>
                                             </tableColumn>
-                                            <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="T3R-Pl-AnM">
-                                                <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Type">
-                                                    <font key="font" metaFont="smallSystem"/>
-                                                    <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
-                                                    <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
-                                                </tableHeaderCell>
-                                                <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="Q2M-tL-A63">
-                                                    <font key="font" metaFont="system"/>
-                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                </textFieldCell>
-                                                <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                <connections>
-                                                    <binding destination="ndM-aZ-5qJ" name="value" keyPath="arrangedObjects.Type" id="dfk-VH-Xgw"/>
-                                                </connections>
-                                            </tableColumn>
                                         </tableColumns>
                                         <connections>
                                             <outlet property="dataSource" destination="-2" id="JPH-ur-m9X"/>
@@ -143,7 +127,7 @@
                                 </subviews>
                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </clipView>
-                            <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="fMR-II-t7W">
+                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="fMR-II-t7W">
                                 <rect key="frame" x="1" y="333" width="545" height="16"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </scroller>
@@ -152,7 +136,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </scroller>
                             <tableHeaderView key="headerView" id="p68-eo-ZgO">
-                                <rect key="frame" x="0.0" y="0.0" width="560" height="17"/>
+                                <rect key="frame" x="0.0" y="0.0" width="545" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </tableHeaderView>
                         </scrollView>
