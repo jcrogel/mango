@@ -14,12 +14,13 @@
 #import <MMTabBarView/MMCardTabStyle.h>
 #import "MangoPlugin.h"
 #import <MangoBrowserView.h>
+#import "ConnectionBannerView.h"
 
 @interface MangoWindowController : NSWindowController<NSOutlineViewDelegate>
 
 @property MangoConnectionManager *connMgr;
 @property (weak) IBOutlet NSPopUpButton *dbsPopUpButton;
-@property (weak) IBOutlet ITSidebar *sideBar;
+@property (weak) IBOutlet ConnectionBannerView *sideBar;
 @property (weak) IBOutlet MMTabBarView *tabBarView;
 @property (weak) IBOutlet NSTabView *tabView;
 @property (strong) IBOutlet NSView *popUpContainerView;

@@ -59,8 +59,7 @@
 
 -(void) setupSideBar
 {
-    [[self sideBar] setBackgroundColor:[NSColor darkGrayColor]];
-    [[self sideBar] addItemWithImage: [NSImage imageNamed:@"AppIcon"]];
+    [[self sideBar] setConnectionURL:@"<anonymous>@localhost"];
 }
 
 -(void) setupTabs

@@ -21,8 +21,6 @@
 	return self;
 }
 
-
-
 - (void) drawInteriorWithFrame:(NSRect)cellFrame inView:(NSView *)controlView
 {
     
@@ -31,6 +29,7 @@
         if ([[self dataType] isEqualToString:@"Array"])
         {
             //color = ARRAY_COLOR.CGColor;
+
         }
         if ([[self dataType] isEqualToString:@"String"])
         {

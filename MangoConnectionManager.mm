@@ -178,11 +178,17 @@
 {
     // TODO: Do it cleaner a la AjaxUtils
     //NSString *query = @"{}";
+    
+    int limit = 0;
+    if ([options objectForKey:@"limit"])
+    {
+        limit = [(NSNumber *) [options objectForKey:@"limit"] intValue];
+    }
     NSMutableArray *result = [@[] mutableCopy];
     
     mongo::DBClientConnection * conn = [self connPtr];
-    std::auto_ptr<mongo::DBClientCursor> cursor = conn->query([nameSpace cStringUsingEncoding:NSUTF8StringEncoding],
-                                        mongo::Query());
+    std::auto_ptr<mongo::DBClientCursor> cursor = conn->query([nameSpace cStringUsingEncoding:NSUTF8StringEncoding], mongo::Query(), limit);
+
     
     while (cursor->more())
     {
@@ -207,8 +213,9 @@
     }
     
     // TODO: Do propper limit by
-    NSUInteger min = MIN([result count], 10);
-    return [result subarrayWithRange:NSMakeRange(0, min)];
+    //NSUInteger min = MIN([result count], 10);
+    //return [result subarrayWithRange:NSMakeRange(0, min)];
+    return result;
     
 }
 

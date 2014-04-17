@@ -17,11 +17,11 @@
                                                     NSOutlineViewDelegate>
 @property (weak) IBOutlet NSOutlineView *outlineView;
 @property (weak) IBOutlet NSButton *triggerButton;
-- (IBAction)runQuery:(id)sender;
 @property (weak) IBOutlet NSButton *autorefreshCheckbox;
 @property (weak) IBOutlet NSTextField *queryLimitTextField;
-
 @property (strong) IBOutlet NSTreeController *browserTC;
+
+- (IBAction)runQueryButtonWasPressed:(id)sender;
 
 @property NSArray *dbData;
 

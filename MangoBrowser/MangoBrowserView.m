@@ -23,12 +23,6 @@
 }
 
 
-
-- (IBAction)runQuery:(id)sender {
-    
-    NSLog(@"Nicely ");
-}
-
 -(BOOL) shouldAutoRefresh
 {
     if([[self autorefreshCheckbox] state]== NSOnState)
@@ -42,7 +36,17 @@
 {
     if ([self shouldAutoRefresh])
     {
-        NSArray *res = [mgr queryNameSpace: [NSString stringWithFormat:@"%@.%@", db, col ] withOptions: @{}];
+        NSMutableDictionary *options = [@{} mutableCopy];
+        
+        if (![[[self queryLimitTextField] stringValue] isEqualToString:@"0"])
+        {
+            NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+            [f setNumberStyle:NSNumberFormatterDecimalStyle];
+            NSNumber * limit = [f numberFromString:[[self queryLimitTextField] stringValue]];
+            options[@"limit"] = limit;
+        }
+        
+        NSArray *res = [mgr queryNameSpace: [NSString stringWithFormat:@"%@.%@", db, col ] withOptions: options];
         res = [self reformatQueryResults:res];
         [self setDbData:res];
         [[self outlineView] reloadData];
@@ -58,18 +62,24 @@
         if ([item isKindOfClass:[NSDictionary class]])
         {
             NSMutableDictionary *reformattedItem = [@{} mutableCopy];
+            reformattedItem[@"Type"] = @"Dictionary";
+            
             NSString *title = @"";
             id oid = item[@"_id"];
-            if (oid && [oid isKindOfClass: [NSDictionary class]])
+            if (oid && [oid isKindOfClass: [NSDictionary class]] && [oid valueForKey:@"$oid"])
             {
-               title = [NSString stringWithFormat:@"ObjectId %@", oid[@"$oid"]];
+                title = @"Document";
+                reformattedItem[@"Type"] = @"ObjectID";
+                reformattedItem[@"Value"] = [NSString stringWithFormat:@"ObjectId(%@)", oid[@"$oid"]];
             }
             
             reformattedItem[@"Name"] = title;
-            
-            NSArray *children = [self reformatJSONDict: item];
+            // remove _id from view
+            NSMutableDictionary *cleanedItem = [item mutableCopy];
+            [cleanedItem removeObjectForKey:@"_id"];
+            NSArray *children = [self reformatJSONDict: cleanedItem];
             reformattedItem[@"Children"] = children;
-            reformattedItem[@"Type"] = @"Dictionary";
+            
             [retval addObject:reformattedItem];
         }
         else
@@ -88,9 +98,28 @@
     
     if ([value isKindOfClass:[NSDictionary class]])
     {
-        NSArray *children = [self reformatJSONDict: value];
+        
+        NSMutableDictionary *cleanedItem = [value mutableCopy];
+    
+        if ([cleanedItem valueForKey:@"$oid"])
+        {
+            id rOID = [cleanedItem valueForKey:@"$oid"];
+            reformattedItem[@"Type"] = @"ObjectID";
+            reformattedItem[@"Value"] = [NSString stringWithFormat:@"ObjectId(%@)", rOID];
+            reformattedItem[@"Links"] = rOID;
+            [cleanedItem removeObjectForKey:@"$oid"];
+        } else
+        {
+            reformattedItem[@"Type"] = @"Dictionary";
+            reformattedItem[@"Value"] = [NSString stringWithFormat:@"{ %@ }", [NSNumber numberWithLong:[value count]]];
+        }
+
+        
+        NSArray *children = [self reformatJSONDict: cleanedItem];
         reformattedItem[@"Children"] = children;
-        reformattedItem[@"Type"] = @"Dictionary";
+        
+        
+        
     }
     else if ([value isKindOfClass:[NSArray class]])
     {
@@ -101,7 +130,8 @@
             [reformattedChildren addObject:reformattedChild];
         }
         reformattedItem[@"Children"] = reformattedChildren;
-        reformattedItem[@"Value"] = [NSNumber numberWithLong:[value count]];
+        reformattedItem[@"Value"] = [NSString stringWithFormat:@"[ %@ ]", [NSNumber numberWithLong:[value count]]];
+
         reformattedItem[@"Type"] = @"Array";
     }
     else if ([value isKindOfClass:[NSString class]])
@@ -170,6 +200,7 @@
         {
             MangoBrowserValueCell *cell = [[MangoBrowserValueCell alloc]init];
             [cell setDataType:[rObj objectForKey:@"Type"]];
+            //[cell setValue:[rObj objectForKey:@"Value"]];
             return cell;
         }
         
@@ -182,5 +213,8 @@
 - (CGFloat)outlineView:(NSOutlineView *)outlineView heightOfRowByItem:(id)item
 {
     return 25;
+}
+
+- (IBAction)runQueryButtonWasPressed:(id)sender {
 }
 @end

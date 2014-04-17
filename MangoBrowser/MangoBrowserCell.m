@@ -30,73 +30,91 @@
 	return self;
 }
 
-
+- (void) drawBadgeInFrame: (NSRect)objTypeRect
+{
+    CGContextRef ctx = [[NSGraphicsContext currentContext] graphicsPort];
+    CGColorRef color = OBJECT_COLOR.CGColor;
+    NSString *badgeStr = @"O";
+    
+    if (![self dataType])
+    {
+        [self setDataType:@"Dictionary"];
+    }
+    
+    if ([[self dataType] isEqualToString:@"Dictionary"])
+    {
+        color = OBJECT_COLOR.CGColor;
+    }
+    if ([[self dataType] isEqualToString:@"Array"])
+    {
+        color = ARRAY_COLOR.CGColor;
+    }
+    if ([[self dataType] isEqualToString:@"String"])
+    {
+        color = STRING_COLOR.CGColor;
+    }
+    if ([[self dataType] isEqualToString:@"Bool"])
+    {
+        color = BOOL_COLOR.CGColor;
+    }
+    if ([[self dataType] isEqualToString:@"Null"])
+    {
+        color = NULL_COLOR.CGColor;
+    }
+    if ([[self dataType] isEqualToString:@"Number"])
+    {
+        color = NUMBER_COLOR.CGColor;
+    }
+    
+    
+    if([[self dataType] isNotEqualTo:@"ObjectID"])
+    {
+        CGContextSetFillColorWithColor(ctx, color);
+        CGContextFillEllipseInRect(ctx, objTypeRect);
+    
+        NSRect badgeStrRect = objTypeRect;
+        badgeStrRect.origin.y -=4;
+    
+        // substringWithRange:NSMakeRange(
+        if ([self dataType])
+        {
+            if (![[self dataType] isEqualToString:@"Dictionary"] && ![[self dataType] isEqualToString:@"Null"])
+            {
+                badgeStr = [[self dataType] substringWithRange:NSMakeRange(0, 1)];
+            }
+            if ([[self dataType] isEqualToString:@"Null"])
+            {
+                badgeStr = @"-";
+            }
+        }
+        NSMutableParagraphStyle *paragraphStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+        /// Set line break mode
+        paragraphStyle.lineBreakMode = NSLineBreakByTruncatingTail;
+        /// Set text alignment
+        paragraphStyle.alignment = kCTTextAlignmentCenter;
+        [badgeStr drawInRect:badgeStrRect withAttributes:@{
+                                                       NSFontAttributeName:[NSFont fontWithName:@"OpenSans-Light" size:13.0],
+                                                       NSParagraphStyleAttributeName:paragraphStyle,
+                                                       NSForegroundColorAttributeName: [NSColor whiteColor]
+                                                       }];
+    }
+    else
+    {
+        NSImage *image = [NSImage imageNamed:@"mongo_obj_badge"];
+        [image drawInRect:objTypeRect];
+    }
+    
+}
 
 - (void) drawInteriorWithFrame:(NSRect)cellFrame inView:(NSView *)controlView
 {
-    CGContextRef ctx = [[NSGraphicsContext // 1
-                               currentContext] graphicsPort];
-    NSRect objTypeRect = CGRectMake(cellFrame.origin.x+5, cellFrame.origin.y+2, cellFrame.size.height-4, cellFrame.size.height-4);
     
-    CGColorRef color = OBJECT_COLOR.CGColor;
-    
-    if ([self dataType])
-    {
-        if ([[self dataType] isEqualToString:@"Array"])
-        {
-            color = ARRAY_COLOR.CGColor;
-        }
-        if ([[self dataType] isEqualToString:@"String"])
-        {
-            color = STRING_COLOR.CGColor;
-        }
-        if ([[self dataType] isEqualToString:@"Bool"])
-        {
-            color = BOOL_COLOR.CGColor;
-        }
-        if ([[self dataType] isEqualToString:@"Null"])
-        {
-            color = NULL_COLOR.CGColor;
-        }
-        if ([[self dataType] isEqualToString:@"Number"])
-        {
-            color = NUMBER_COLOR.CGColor;
-        }
-        
-    }
-    CGContextSetFillColorWithColor(ctx, color);
-    CGContextFillEllipseInRect(ctx, objTypeRect);
+    NSRect objTypeRect = CGRectMake(cellFrame.origin.x+5, cellFrame.origin.y+2,
+                                    cellFrame.size.height-4, cellFrame.size.height-4);
+    [self drawBadgeInFrame: objTypeRect];
     
     NSRect textFrame = cellFrame;
     textFrame.origin.x += 28;
-    
-    
-    NSRect badgeStrRect = objTypeRect;
-    badgeStrRect.origin.y -=4;
-    
-    NSString *badgeStr = @"O";// substringWithRange:NSMakeRange(
-    if ([self dataType])
-    {
-        if (![[self dataType] isEqualToString:@"Dictionary"] && ![[self dataType] isEqualToString:@"Null"])
-        {
-            badgeStr = [[self dataType] substringWithRange:NSMakeRange(0, 1)];
-        }
-        if ([[self dataType] isEqualToString:@"Null"])
-        {
-            badgeStr = @"-";
-        }
-    }
-    NSMutableParagraphStyle *paragraphStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
-    /// Set line break mode
-    paragraphStyle.lineBreakMode = NSLineBreakByTruncatingTail;
-    /// Set text alignment
-    paragraphStyle.alignment = kCTTextAlignmentCenter;
-    [badgeStr drawInRect:badgeStrRect withAttributes:@{
-                                    NSFontAttributeName:[NSFont fontWithName:@"OpenSans-Light" size:13.0],
-                                    NSParagraphStyleAttributeName:paragraphStyle,
-                                    NSForegroundColorAttributeName: [NSColor whiteColor]
-                                    }];
-    
     
 	[super drawInteriorWithFrame:textFrame inView:controlView];
 }
