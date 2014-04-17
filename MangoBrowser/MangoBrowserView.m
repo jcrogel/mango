@@ -101,6 +101,9 @@
         
         NSMutableDictionary *cleanedItem = [value mutableCopy];
     
+        reformattedItem[@"Type"] = @"Dictionary";
+        reformattedItem[@"Value"] = [NSString stringWithFormat:@"{ %@ }", [NSNumber numberWithLong:[value count]]];
+        
         if ([cleanedItem valueForKey:@"$oid"])
         {
             id rOID = [cleanedItem valueForKey:@"$oid"];
@@ -108,10 +111,30 @@
             reformattedItem[@"Value"] = [NSString stringWithFormat:@"ObjectId(%@)", rOID];
             reformattedItem[@"Links"] = rOID;
             [cleanedItem removeObjectForKey:@"$oid"];
-        } else
+        }
+        
+        if ([cleanedItem valueForKey:@"$date"])
         {
-            reformattedItem[@"Type"] = @"Dictionary";
-            reformattedItem[@"Value"] = [NSString stringWithFormat:@"{ %@ }", [NSNumber numberWithLong:[value count]]];
+            id date = [cleanedItem valueForKey:@"$date"];
+            if([date isKindOfClass:[NSString class]])
+            {
+                reformattedItem[@"Type"] = @"Date";
+                
+                NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+                [dateFormatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'SSS'Z'"];
+                NSDate *myDate = [dateFormatter dateFromString:date];
+                
+                //NSDate *myDate = [NSDate sam_dateFromISO8601String:@"2012-04-28T15:00:00.000"];
+                NSDateFormatter *anotherDateFormatter = [[NSDateFormatter alloc] init];
+                [anotherDateFormatter setDateStyle:NSDateFormatterLongStyle];
+                [anotherDateFormatter setTimeStyle:NSDateFormatterShortStyle];
+                
+                reformattedItem[@"Value"] = [NSString stringWithFormat:@"Date(%@)", [anotherDateFormatter stringFromDate:myDate]];
+                //NSLog(@"%@ %@", date, myDate);
+                
+                [cleanedItem removeObjectForKey:@"$date"];
+            }
+            
         }
 
         
@@ -216,5 +239,6 @@
 }
 
 - (IBAction)runQueryButtonWasPressed:(id)sender {
+    
 }
 @end

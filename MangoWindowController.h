@@ -15,6 +15,7 @@
 #import "MangoPlugin.h"
 #import <MangoBrowserView.h>
 #import "ConnectionBannerView.h"
+#import "InfoWindow/InfoWindowController.h"
 
 @interface MangoWindowController : NSWindowController<NSOutlineViewDelegate>
 
@@ -27,6 +28,7 @@
 @property (strong) IBOutlet NSTreeController *collectionListTC;
 @property NSArray *collectionListItems;
 @property NSDictionary *activePlugins;
+- (IBAction)dbInfoButtonPressed:(id)sender;
 
 - (IBAction)runCommand:(id)sender;
 - (void) connectAndShow;

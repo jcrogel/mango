@@ -24,4 +24,7 @@
 -(NSArray *) queryNameSpace: (NSString *) nameSpace withOptions: (NSDictionary *) options;
 -(void) dbgSel;
 
+-(void) getDBStats: (NSString *) dbname;
+
+
 @end

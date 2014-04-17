@@ -16,9 +16,19 @@
 	{
         NSFont *font = [NSFont fontWithName:@"OpenSans-Light" size:13.0];
         [self setFont: font];
+        trackingArea = [[NSTrackingArea alloc] initWithRect:NSZeroRect options:NSTrackingInVisibleRect | NSTrackingActiveAlways | NSTrackingMouseEnteredAndExited owner:self userInfo:nil];
+        
 	}
 	
 	return self;
+}
+
+- (void)mouseEntered:(NSEvent *)theEvent {
+    mouseInside = YES;
+}
+
+- (void)mouseExited:(NSEvent *)theEvent {
+    mouseInside = NO;
 }
 
 - (void) drawInteriorWithFrame:(NSRect)cellFrame inView:(NSView *)controlView
@@ -50,6 +60,7 @@
         if ([[self dataType] isEqualToString:@"Null"])
         {
             //color = NULL_COLOR.CGColor;
+            [self setTitle:@"null"];
         }
         if ([[self dataType] isEqualToString:@"Number"])
         {

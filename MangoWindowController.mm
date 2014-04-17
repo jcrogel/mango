@@ -27,6 +27,13 @@
     return self;
 }
 
+- (IBAction)dbInfoButtonPressed:(id)sender {
+    [[self connMgr] getDBStats: [self getSelectedDatabase]];
+    InfoWindowController *mangowindow = [[InfoWindowController alloc] initWithWindowNibName:@"MangoWindow"];
+    [mangowindow window];
+    
+}
+
 - (IBAction)runCommand:(id)sender {
     NSString *dbName = [[[self dbsPopUpButton] selectedItem]  title];
     NSLog(@"%@", dbName);

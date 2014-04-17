@@ -259,6 +259,9 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" size="13" name="OpenSans"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="dbInfoButtonPressed:" target="-2" id="d8w-a5-6Zc"/>
+                    </connections>
                 </button>
             </subviews>
         </customView>

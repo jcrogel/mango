@@ -9,7 +9,13 @@
 #import <Cocoa/Cocoa.h>
 
 @interface MangoBrowserValueCell : NSTextFieldCell
+{
+@private
+    BOOL mouseInside;
+    NSTrackingArea *trackingArea;
+}
 
 @property NSString *dataType;
+
 
 @end

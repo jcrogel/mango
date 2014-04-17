@@ -11,6 +11,7 @@
 #import <Cocoa/Cocoa.h>
 #import "MangoBrowserCell.h"
 #import "MangoBrowserValueCell.h"
+#import "NSDate+SAMAdditions.h"
 
 @interface MangoBrowserView : NSViewController<MangoPlugin,
                                                     NSOutlineViewDataSource,

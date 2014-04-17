@@ -124,21 +124,20 @@
 
 
 
-/*
--(mongo::BSONObj) _showDBsCMD
+
+-(mongo::BSONObj) runCommand: (NSString *) cmd onDatabase: (NSString *) db
 {
     mongo::DBClientConnection * conn = [self connPtr];
     bool worked;
     mongo::BSONObj ret;
     
-    // clean up old data from any previous tests
-    worked = conn->runCommand( "admin", BSON("listDatabases" << 1), ret );
+    worked = conn->runCommand( [db cStringUsingEncoding:NSUTF8StringEncoding],  BSON([cmd cStringUsingEncoding:NSUTF8StringEncoding] << 1), ret );
     if (worked) {
         return ret;
     }
     return mongo::BSONObj();
 }
- */
+
 
 -(mongo::DBClientConnection *) connPtr
 {
@@ -222,6 +221,12 @@
 -(void) dbgSel
 {
     
+}
+
+-(void) getDBStats: (NSString *) dbname
+{
+    mongo::BSONObj result = [self runCommand:@"dbStats" onDatabase:dbname];
+    NSLog(@"%@", [NSString stringWithCString: result.toString().c_str() encoding:NSUTF8StringEncoding] );
 }
 
 

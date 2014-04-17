@@ -16,7 +16,7 @@
     self.activeSessions = [[NSMutableArray alloc] init];
     //REMOVE BEGIN
     [self connectButtonWasPressed: self];
-    [[self connectionWindow] orderOut:self];
+    [[self connectionWindow] orderOut:nil];
     //REMOVE END
 }
 
@@ -24,6 +24,7 @@
 {
     MangoWindowController *mangowindow = [[MangoWindowController alloc] initWithWindowNibName:@"MangoWindow"];
     [mangowindow connectAndShow];
+    
     [[self activeSessions] addObject: mangowindow];
     
 }
