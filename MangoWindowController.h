@@ -7,7 +7,6 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "MangoConnectionManager.h"
 #import <ITSidebar/ITSidebar.h>
 #import <MMTabBarView/MMTabBarView.h>
 #import <MMTabBarView/MMSafariTabStyle.h>
@@ -16,17 +15,20 @@
 #import <MangoBrowserView.h>
 #import "ConnectionBannerView.h"
 #import "InfoWindow/InfoWindowController.h"
+#import "MangoDataManager.h"
 
-@interface MangoWindowController : NSWindowController<NSOutlineViewDelegate>
+@interface MangoWindowController : NSWindowController<NSOutlineViewDelegate, MangoDataManager>
 
-@property MangoConnectionManager *connMgr;
+@property MangoDataManager *dataManager;
 @property (weak) IBOutlet NSPopUpButton *dbsPopUpButton;
 @property (weak) IBOutlet ConnectionBannerView *sideBar;
 @property (weak) IBOutlet MMTabBarView *tabBarView;
 @property (weak) IBOutlet NSTabView *tabView;
 @property (strong) IBOutlet NSView *popUpContainerView;
 @property (strong) IBOutlet NSTreeController *collectionListTC;
+@property (weak) IBOutlet NSSearchField *collectionSearchField;
 @property NSArray *collectionListItems;
+
 @property NSDictionary *activePlugins;
 - (IBAction)dbInfoButtonPressed:(id)sender;
 

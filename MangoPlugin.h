@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@class MangoConnectionManager;
+@class MangoDataManager;
 
 @protocol MangoPlugin <NSObject>
 
--(void) refreshDataFromDB: (NSString *) db withCollection: (NSString *) col andConnMgr: (MangoConnectionManager *) mgr;
+-(void) refreshDataFromDB: (NSString *) db withCollection: (NSString *) col andDataManager: (MangoDataManager *) mgr;
 
 @end

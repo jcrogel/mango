@@ -7,7 +7,7 @@
 //
 
 #import "MangoPlugin.h"
-#import "MangoConnectionManager.h"
+#import "MangoDataManager.h"
 #import <Cocoa/Cocoa.h>
 #import "MangoBrowserCell.h"
 #import "MangoBrowserValueCell.h"

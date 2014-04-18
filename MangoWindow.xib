@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="collectionListTC" destination="Afd-zp-qPz" id="UMK-06-xFJ"/>
                 <outlet property="collectionListView" destination="ZlD-oe-L4w" id="Evy-dX-BKS"/>
+                <outlet property="collectionSearchField" destination="gKa-j9-a3m" id="6eG-43-1rx"/>
                 <outlet property="dbsPopUpButton" destination="Fw2-vN-fY3" id="Zhw-jw-XoO"/>
                 <outlet property="popUpContainerView" destination="6iA-Gk-YCj" id="DbO-7B-UuH"/>
                 <outlet property="sideBar" destination="w1a-Zk-36e" id="E7M-iN-Vje"/>
@@ -95,6 +96,9 @@
                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </searchFieldCell>
+                                                <connections>
+                                                    <outlet property="delegate" destination="-2" id="F34-a4-ot0"/>
+                                                </connections>
                                             </searchField>
                                             <button verticalHuggingPriority="750" id="5xL-7w-92c">
                                                 <rect key="frame" x="15" y="53" width="44" height="32"/>
@@ -118,6 +122,9 @@
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="collectionInfoButtonPressed:" target="-2" id="pHb-vF-L9X"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </customView>
@@ -178,6 +185,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="serverInfoButtonPressed:" target="-2" id="3YY-PF-dRl"/>
+                                </connections>
                             </button>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="oXz-4g-JXw">
                                 <rect key="frame" x="7" y="20" width="52" height="52"/>
@@ -191,7 +201,7 @@
         </window>
         <treeController editable="NO" automaticallyPreparesContent="YES" childrenKeyPath="children" id="Afd-zp-qPz" userLabel="CollectionListTreeController">
             <connections>
-                <binding destination="-2" name="contentArray" keyPath="collectionListItems" id="9ZT-M0-Ijc"/>
+                <binding destination="-2" name="contentArray" keyPath="collectionListItems" id="IU9-s5-ab9"/>
             </connections>
         </treeController>
         <customView id="6iA-Gk-YCj">

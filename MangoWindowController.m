@@ -20,29 +20,66 @@
     self = [super initWithWindow:window];
     if (self) {
         // Initialization code here.
-        MangoConnectionManager *connMgr = [[MangoConnectionManager alloc] init];
-        [self setConnMgr: connMgr];
+        MangoDataManager *dataManager = [[MangoDataManager alloc] init];
+        [dataManager setDelegate:self];
+        [self setDataManager:dataManager];
         [self setActivePlugins:@{}];
     }
     return self;
 }
 
+#pragma mark - Server Actions
+
+- (IBAction)serverInfoButtonPressed:(id)sender {
+    //[[self connMgr] getServerStatus];
+}
+
+#pragma mark - Database Actions
+
 - (IBAction)dbInfoButtonPressed:(id)sender {
-    [[self connMgr] getDBStats: [self getSelectedDatabase]];
-    InfoWindowController *mangowindow = [[InfoWindowController alloc] initWithWindowNibName:@"MangoWindow"];
-    [mangowindow window];
+    //[[self connMgr] getDBStats: [self getSelectedDatabase]];
+    InfoWindowController *mangowindow = [[InfoWindowController alloc] initWithWindowNibName:@"InfoWindow"];
+    //[mangowindow showWindow: self];
     
 }
 
-- (IBAction)runCommand:(id)sender {
-    NSString *dbName = [[[self dbsPopUpButton] selectedItem]  title];
-    NSLog(@"%@", dbName);
+- (IBAction)dbsPopUpButtonAction:(id)sender
+{
+    [[self collectionSearchField] setStringValue:@""];
+    [[self dataManager] fetchCollectionNamesForDB: [self getSelectedDatabase]];
+    [[self dataManager] processCollectionsWithFilter:[[self collectionSearchField] stringValue]];
+}
 
+#pragma mark - Collection Actions
+
+- (IBAction)collectionInfoButtonPressed:(id)sender{
+    //[[self connMgr] getCollectionInfo: [NSString stringWithFormat:@"%@.%@", [self getSelectedDatabase], [self getSelectedCollectionName]]];
+}
+
+
+- (void)controlTextDidChange:(NSNotification *)aNotification {
+    if ([[aNotification object] isKindOfClass: [NSSearchField class ]])
+    {
+        [[self dataManager] processCollectionsWithFilter:[[self collectionSearchField] stringValue]];
+    }
+}
+
+
+#pragma mark - Document UI Actions
+
+-(void) outlineViewSelectionDidChange:(NSNotification *)notification
+{
+    NSString *selectedCollection = [self getSelectedCollectionName];
+    NSString *selectedDB = [self getSelectedDatabase];
+    NSTabViewItem *selectedItem = [[self tabView] selectedTabViewItem];
+    NSString *tabName = [selectedItem label];
+    id<MangoPlugin> plugin = [self activePlugins][tabName];
+    [plugin refreshDataFromDB:selectedDB withCollection:selectedCollection andDataManager:[self dataManager]];
 }
 
 - (void) connectAndShow
 {
-    [[self connMgr] openConnection];
+    [[[self dataManager] ConnectionManager ] openConnection];
     [self window];
 }
 
@@ -51,15 +88,9 @@
 
 #pragma mark - UI Setup
 
-- (IBAction)dbsPopUpButtonAction:(id)sender {
-    NSArray *collections = [[self connMgr] getCollectionNames: [[[self dbsPopUpButton] selectedItem] title]];
-    [self setCollectionList: collections];
-}
-
-
 -(void) setupDBsPopUpButton
 {
-    NSArray * dbs = [[self connMgr] getDatabases];
+    NSArray * dbs = [[[self dataManager] ConnectionManager] getDatabases];
     [[self dbsPopUpButton] removeAllItems];
     [[self dbsPopUpButton] addItemsWithTitles:dbs];
 }
@@ -146,78 +177,16 @@
     [self setupDBsPopUpButton];
     [self setupSideBar];
     [self setupTabs];
-
 }
 
 #pragma mark - Collection List
 
 - (void)setCollectionList:(NSArray *)cl
 {
-    NSMutableDictionary *aux = [NSMutableDictionary new];
-    
-    NSString *rootTitle;
-    for (NSString *cl_fullname in cl)
-    {
-        NSArray *fname_elements = [cl_fullname componentsSeparatedByString:@"."];
-        NSUInteger length = [fname_elements count];
-        NSMutableDictionary *ptr = aux;
-        if (!rootTitle)
-        {
-            rootTitle = fname_elements[0];
-        }
-        
-        for (int i=1; i<length; i++)
-        {
-            if (i == length-1)
-            {
-                // Last item
-                [ptr setObject:@"" forKey:fname_elements[i]];
-            }else
-            {
-                NSMutableDictionary *column = [ptr valueForKey:fname_elements[i]];
-                if (column)
-                {
-                    ptr = column;
-                }
-                else
-                {
-                    NSMutableDictionary *value = [@{} mutableCopy];
-                    [ptr setObject:value forKey:fname_elements[i]];
-                    ptr = value;
-                }
-            }
-        }
-    }
-    
-    NSMutableArray *rootArray = [NSMutableArray new];
-    
-    /// THIS NEEDS TO SUPPORT CHILDREN
-    for (id rootKey in aux)
-    {
-        id value = aux[rootKey];
-        
-        if ([value isKindOfClass:[NSString class]])
-        {
-            NSMutableDictionary *item = [NSMutableDictionary new];
-            item[@"name"] = rootKey;
-            item[@"children"] = @[];
-            [rootArray addObject:item];
-        }
-        else
-        {
-            // Forward Pointer
-        }
-    }
-    
-    [rootArray sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-        NSString *o1 = obj1[@"name"];
-        NSString *o2 = obj2[@"name"];
-
-        return [o1 localizedCaseInsensitiveCompare:o2];
-    }];
-    [self setCollectionListItems:rootArray];
+   
 }
 
+# pragma mark - Utility functions
 
 -(NSString *) getSelectedCollectionName
 {
@@ -232,15 +201,17 @@
     return [[[self dbsPopUpButton] selectedItem]  title];
 }
 
--(void) outlineViewSelectionDidChange:(NSNotification *)notification
-{
-    NSString *selectedCollection = [self getSelectedCollectionName];
-    NSString *selectedDB = [self getSelectedDatabase];
-    NSTabViewItem *selectedItem = [[self tabView] selectedTabViewItem];
-    NSString *tabName = [selectedItem label];
-    id<MangoPlugin> plugin = [self activePlugins][tabName];
-    [plugin refreshDataFromDB:selectedDB withCollection:selectedCollection andConnMgr:[self connMgr]];
+- (IBAction)runCommand:(id)sender {
+    NSString *dbName = [[[self dbsPopUpButton] selectedItem]  title];
+    NSLog(@"%@", dbName);
+    
 }
 
+# pragma mark - DataManager callbacks
+
+-(void) setCollectionData: (NSArray *)data
+{
+    [self setCollectionListItems: data];
+}
 
 @end

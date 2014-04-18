@@ -230,5 +230,16 @@
 }
 
 
+-(void) getServerStatus
+{
+    mongo::BSONObj result = [self runCommand:@"serverStatus" onDatabase:@"admin"];
+    NSLog(@"%@", [NSString stringWithCString: result.toString().c_str() encoding:NSUTF8StringEncoding] );
+}
+
+-(void) getCollectionInfo: (NSString *) nspace
+{
+    mongo::BSONObj result = [self runCommand:@"serverStatus" onDatabase:@"admin"];
+    NSLog(@"%@", [NSString stringWithCString: result.toString().c_str() encoding:NSUTF8StringEncoding] );
+}
 
 @end

@@ -32,7 +32,7 @@
 
 #pragma mark - MangoPlugin
 
--(void) refreshDataFromDB: (NSString *) db withCollection: (NSString *) col andConnMgr: (MangoConnectionManager *) mgr
+-(void) refreshDataFromDB: (NSString *) db withCollection: (NSString *) col andDataManager: (MangoDataManager *) mgr
 {
     if ([self shouldAutoRefresh])
     {
@@ -46,7 +46,7 @@
             options[@"limit"] = limit;
         }
         
-        NSArray *res = [mgr queryNameSpace: [NSString stringWithFormat:@"%@.%@", db, col ] withOptions: options];
+        NSArray *res = [[mgr ConnectionManager] queryNameSpace: [NSString stringWithFormat:@"%@.%@", db, col ] withOptions: options];
         res = [self reformatQueryResults:res];
         [self setDbData:res];
         [[self outlineView] reloadData];
