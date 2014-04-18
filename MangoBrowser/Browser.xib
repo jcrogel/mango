@@ -169,7 +169,7 @@
                                 <rect key="frame" x="0.0" y="17" width="547" height="333"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="firstColumnOnly" multipleSelection="NO" autosaveColumns="NO" headerView="p68-eo-ZgO" indentationPerLevel="16" outlineTableColumn="I78-GC-cee" id="fke-Kb-cHQ">
+                                    <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="firstColumnOnly" multipleSelection="NO" autosaveColumns="NO" headerView="p68-eo-ZgO" indentationPerLevel="16" outlineTableColumn="I78-GC-cee" id="fke-Kb-cHQ" customClass="MangoBrowserOutlineView">
                                         <rect key="frame" x="0.0" y="0.0" width="547" height="333"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <size key="intercellSpacing" width="3" height="2"/>
@@ -190,6 +190,7 @@
                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                 <connections>
                                                     <binding destination="ndM-aZ-5qJ" name="value" keyPath="arrangedObjects.Name" id="1MN-iU-wYu"/>
+                                                    <binding destination="ndM-aZ-5qJ" name="editable" keyPath="arrangedObjects.Editable" id="RUN-IY-0eD"/>
                                                 </connections>
                                             </tableColumn>
                                             <tableColumn width="236" minWidth="10" maxWidth="3.4028234663852886e+38" id="IaE-gy-shS">
@@ -206,6 +207,7 @@
                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                 <connections>
                                                     <binding destination="ndM-aZ-5qJ" name="value" keyPath="arrangedObjects.Value" id="9oY-MZ-KeY"/>
+                                                    <binding destination="ndM-aZ-5qJ" name="editable" keyPath="arrangedObjects.Editable" id="buQ-U5-uqk"/>
                                                 </connections>
                                             </tableColumn>
                                         </tableColumns>

@@ -95,7 +95,7 @@
 {
     NSMutableDictionary *reformattedItem = [@{} mutableCopy];
     reformattedItem[@"Name"] = name;
-    
+    reformattedItem[@"Editable"] = [NSNumber numberWithBool: YES];
     if ([value isKindOfClass:[NSDictionary class]])
     {
         
@@ -110,6 +110,7 @@
             reformattedItem[@"Type"] = @"ObjectID";
             reformattedItem[@"Value"] = [NSString stringWithFormat:@"ObjectId(%@)", rOID];
             reformattedItem[@"Links"] = rOID;
+            reformattedItem[@"Editable"] = NO;
             [cleanedItem removeObjectForKey:@"$oid"];
         }
         
@@ -207,7 +208,6 @@
 
 - (NSCell*) outlineView:(NSOutlineView*) outlineView dataCellForTableColumn:(NSTableColumn*) tableColumn item:(id) item
 {
-//    NSLog(@"%d", );
     NSDictionary *rObj = [item representedObject];
     
     if (rObj && [rObj objectForKey:@"Type"])
@@ -215,7 +215,7 @@
         if ([[outlineView tableColumns] objectAtIndex:0] == tableColumn)
         {
             // Key
-            MangoBrowserCell *cell = [[MangoBrowserCell alloc] init];
+            MangoBrowserKeyCell *cell = [[MangoBrowserKeyCell alloc] init];
             [cell setDataType:[rObj objectForKey:@"Type"]];
             return cell;
         }
@@ -223,7 +223,6 @@
         {
             MangoBrowserValueCell *cell = [[MangoBrowserValueCell alloc]init];
             [cell setDataType:[rObj objectForKey:@"Type"]];
-            //[cell setValue:[rObj objectForKey:@"Value"]];
             return cell;
         }
         

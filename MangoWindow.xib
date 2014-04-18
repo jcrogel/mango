@@ -179,9 +179,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                         <subviews>
                             <button id="bcl-ze-bhf">
-                                <rect key="frame" x="15" y="653" width="37" height="33"/>
+                                <rect key="frame" x="15" y="649" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="settings_icon" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="jzC-zi-sI4">
+                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="pi" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="jzC-zi-sI4">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -287,8 +287,8 @@
         <image name="Splash" width="150" height="150"/>
         <image name="add_icon" width="100" height="100"/>
         <image name="info_icon" width="100" height="100"/>
+        <image name="pi" width="16" height="16"/>
         <image name="playbutton" width="50" height="50"/>
         <image name="playselected" width="50" height="50"/>
-        <image name="settings_icon" width="100" height="100"/>
     </resources>
 </document>

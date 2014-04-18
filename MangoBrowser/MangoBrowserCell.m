@@ -25,98 +25,30 @@
 	{
         NSFont *font = [NSFont fontWithName:@"OpenSans-Light" size:13.0];
         [self setFont: font];
+        trackingArea = [[NSTrackingArea alloc] initWithRect:NSZeroRect options:NSTrackingInVisibleRect | NSTrackingActiveAlways | NSTrackingMouseEnteredAndExited owner:self userInfo:nil];
 	}
 	
 	return self;
 }
 
-- (void) drawBadgeInFrame: (NSRect)objTypeRect
-{
-    CGContextRef ctx = [[NSGraphicsContext currentContext] graphicsPort];
-    CGColorRef color = OBJECT_COLOR.CGColor;
-    NSString *badgeStr = @"O";
-    
-    if (![self dataType])
-    {
-        [self setDataType:@"Dictionary"];
-    }
-    
-    if ([[self dataType] isEqualToString:@"Dictionary"])
-    {
-        color = OBJECT_COLOR.CGColor;
-    }
-    if ([[self dataType] isEqualToString:@"Array"])
-    {
-        color = ARRAY_COLOR.CGColor;
-    }
-    if ([[self dataType] isEqualToString:@"String"])
-    {
-        color = STRING_COLOR.CGColor;
-    }
-    if ([[self dataType] isEqualToString:@"Bool"])
-    {
-        color = BOOL_COLOR.CGColor;
-    }
-    if ([[self dataType] isEqualToString:@"Null"])
-    {
-        color = NULL_COLOR.CGColor;
-    }
-    if ([[self dataType] isEqualToString:@"Number"])
-    {
-        color = NUMBER_COLOR.CGColor;
-    }
+
+- (void)addTrackingAreasForView:(NSView *)controlView inRect:(NSRect)cellFrame withUserInfo:(NSDictionary *)userInfo mouseLocation:(NSPoint)mouseLocation {
     
     
-    if([[self dataType] isNotEqualTo:@"ObjectID"])
-    {
-        CGContextSetFillColorWithColor(ctx, color);
-        CGContextFillEllipseInRect(ctx, objTypeRect);
+    NSTrackingAreaOptions options = NSTrackingEnabledDuringMouseDrag | NSTrackingMouseEnteredAndExited | NSTrackingActiveAlways;
     
-        NSRect badgeStrRect = objTypeRect;
-        badgeStrRect.origin.y -=4;
+
     
-        // substringWithRange:NSMakeRange(
-        if ([self dataType])
-        {
-            if (![[self dataType] isEqualToString:@"Dictionary"] && ![[self dataType] isEqualToString:@"Null"])
-            {
-                badgeStr = [[self dataType] substringWithRange:NSMakeRange(0, 1)];
-            }
-            if ([[self dataType] isEqualToString:@"Null"])
-            {
-                badgeStr = @"-";
-            }
-        }
-        NSMutableParagraphStyle *paragraphStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
-        /// Set line break mode
-        paragraphStyle.lineBreakMode = NSLineBreakByTruncatingTail;
-        /// Set text alignment
-        paragraphStyle.alignment = kCTTextAlignmentCenter;
-        [badgeStr drawInRect:badgeStrRect withAttributes:@{
-                                                       NSFontAttributeName:[NSFont fontWithName:@"OpenSans-Light" size:13.0],
-                                                       NSParagraphStyleAttributeName:paragraphStyle,
-                                                       NSForegroundColorAttributeName: [NSColor whiteColor]
-                                                       }];
-    }
-    else
-    {
-        NSImage *image = [NSImage imageNamed:@"mongo_obj_badge"];
-        [image drawInRect:objTypeRect];
-    }
-    
+    // We make the view the owner, and it delegates the calls back to the cell after it is
+    // properly setup for the corresponding row/column in the outlineview
+    NSTrackingArea *area = [[NSTrackingArea alloc] initWithRect:cellFrame options:options owner:controlView userInfo:userInfo];
+    [controlView addTrackingArea:area];
 }
 
 - (void) drawInteriorWithFrame:(NSRect)cellFrame inView:(NSView *)controlView
 {
     
-    NSRect objTypeRect = CGRectMake(cellFrame.origin.x+5, cellFrame.origin.y+2,
-                                    cellFrame.size.height-4, cellFrame.size.height-4);
-    [self drawBadgeInFrame: objTypeRect];
-    
-    NSRect textFrame = cellFrame;
-    textFrame.origin.x += 28;
-    
-	[super drawInteriorWithFrame:textFrame inView:controlView];
+	[super drawInteriorWithFrame:cellFrame inView:controlView];
 }
 
 - (NSRect)titleRectForBounds:(NSRect)theRect {
@@ -124,6 +56,19 @@
     NSSize titleSize = [[self attributedStringValue] size];
     titleFrame.origin.y = theRect.origin.y - .5 + (theRect.size.height - titleSize.height) / 2.0;
     return titleFrame;
+}
+
+
+- (void)mouseEntered:(NSEvent *)theEvent {
+    mouseInside = YES;
+    [[NSCursor pointingHandCursor] set];
+    [(NSControl *)[self controlView] updateCellInside:self];
+}
+
+- (void)mouseExited:(NSEvent *)theEvent {
+    mouseInside = NO;
+    [[NSCursor arrowCursor] set];
+    [(NSControl *)[self controlView] updateCellInside:self];
 }
 
 

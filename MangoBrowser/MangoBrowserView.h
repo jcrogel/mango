@@ -9,14 +9,15 @@
 #import "MangoPlugin.h"
 #import "MangoDataManager.h"
 #import <Cocoa/Cocoa.h>
-#import "MangoBrowserCell.h"
+#import "MangoBrowserKeyCell.h"
 #import "MangoBrowserValueCell.h"
 #import "NSDate+SAMAdditions.h"
+#import "MangoBrowserOutlineView.h"
 
 @interface MangoBrowserView : NSViewController<MangoPlugin,
                                                     NSOutlineViewDataSource,
                                                     NSOutlineViewDelegate>
-@property (weak) IBOutlet NSOutlineView *outlineView;
+@property (weak) IBOutlet MangoBrowserOutlineView *outlineView;
 @property (weak) IBOutlet NSButton *triggerButton;
 @property (weak) IBOutlet NSButton *autorefreshCheckbox;
 @property (weak) IBOutlet NSTextField *queryLimitTextField;

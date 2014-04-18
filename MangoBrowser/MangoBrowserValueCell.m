@@ -10,30 +10,10 @@
 
 @implementation MangoBrowserValueCell
 
-- (id) initTextCell:(NSString*)aString
-{
-	if ((self = [super initTextCell:aString]))
-	{
-        NSFont *font = [NSFont fontWithName:@"OpenSans-Light" size:13.0];
-        [self setFont: font];
-        trackingArea = [[NSTrackingArea alloc] initWithRect:NSZeroRect options:NSTrackingInVisibleRect | NSTrackingActiveAlways | NSTrackingMouseEnteredAndExited owner:self userInfo:nil];
-        
-	}
-	
-	return self;
-}
 
-- (void)mouseEntered:(NSEvent *)theEvent {
-    mouseInside = YES;
-}
-
-- (void)mouseExited:(NSEvent *)theEvent {
-    mouseInside = NO;
-}
 
 - (void) drawInteriorWithFrame:(NSRect)cellFrame inView:(NSView *)controlView
 {
-    
     if ([self dataType])
     {
         if ([[self dataType] isEqualToString:@"Array"])
@@ -66,13 +46,17 @@
         {
             //color = NUMBER_COLOR.CGColor;
         }
-        
     }
-    
-    
+
+    if (mouseInside)
+    {
+        NSMutableAttributedString *str = [[self attributedStringValue] mutableCopy];
+        NSLog(@"%@", str.string);
+        [str addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInt:NSUnderlineStyleSingle] range:NSMakeRange(0, str.length)];
+        
+        [self setAttributedStringValue:str];
+    }
 	[super drawInteriorWithFrame:cellFrame inView:controlView];
 }
-
-
 
 @end

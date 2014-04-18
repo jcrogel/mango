@@ -7,15 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MangoBrowserCell.h"
 
-@interface MangoBrowserValueCell : NSTextFieldCell
-{
-@private
-    BOOL mouseInside;
-    NSTrackingArea *trackingArea;
-}
-
-@property NSString *dataType;
+@interface MangoBrowserValueCell : MangoBrowserCell
 
 
 @end
