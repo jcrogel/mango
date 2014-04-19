@@ -109,8 +109,8 @@
             id rOID = [cleanedItem valueForKey:@"$oid"];
             reformattedItem[@"Type"] = @"ObjectID";
             reformattedItem[@"Value"] = [NSString stringWithFormat:@"ObjectId(%@)", rOID];
-            reformattedItem[@"Links"] = rOID;
-            reformattedItem[@"Editable"] = NO;
+            reformattedItem[@"Links"] = [rOID copy];
+            reformattedItem[@"Editable"] = [NSNumber numberWithBool: NO];
             [cleanedItem removeObjectForKey:@"$oid"];
         }
         

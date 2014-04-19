@@ -48,14 +48,6 @@
         }
     }
 
-    if (mouseInside)
-    {
-        NSMutableAttributedString *str = [[self attributedStringValue] mutableCopy];
-        NSLog(@"%@", str.string);
-        [str addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInt:NSUnderlineStyleSingle] range:NSMakeRange(0, str.length)];
-        
-        [self setAttributedStringValue:str];
-    }
 	[super drawInteriorWithFrame:cellFrame inView:controlView];
 }
 

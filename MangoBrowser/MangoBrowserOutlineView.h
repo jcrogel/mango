@@ -10,6 +10,10 @@
 #import "NSCell+TrackingCell.h"
 
 @interface MangoBrowserOutlineView : NSOutlineView
-
+{
+@private
+    NSInteger iMouseRow, iMouseCol;
+    NSCell *iMouseCell;
+}
 
 @end

@@ -47,7 +47,13 @@
 
 - (void) drawInteriorWithFrame:(NSRect)cellFrame inView:(NSView *)controlView
 {
-    
+    if (mouseInside)
+    {
+        NSMutableAttributedString *str = [[self attributedStringValue] mutableCopy];
+        [str addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInt:NSUnderlineStyleSingle] range:NSMakeRange(0, str.length)];
+        
+        [self setAttributedStringValue:str];
+    }
 	[super drawInteriorWithFrame:cellFrame inView:controlView];
 }
 
@@ -63,12 +69,24 @@
     mouseInside = YES;
     [[NSCursor pointingHandCursor] set];
     [(NSControl *)[self controlView] updateCellInside:self];
+    [(NSControl *)[self controlView] updateCell:self];
 }
 
 - (void)mouseExited:(NSEvent *)theEvent {
     mouseInside = NO;
     [[NSCursor arrowCursor] set];
     [(NSControl *)[self controlView] updateCellInside:self];
+    [(NSControl *)[self controlView] updateCell:self];
+}
+
+- (void)mouseDown:(NSEvent *)theEvent
+{
+    
+}
+
+- (void)mouseUp:(NSEvent *)theEvent
+{
+
 }
 
 

@@ -15,6 +15,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code here.
+        [self setTarget:self];
+        [self setDoubleAction:@selector(doubleClick:)];
     }
     return self;
 }
@@ -67,25 +69,22 @@
         NSInteger rowVal = [row integerValue];
         NSInteger colVal = [col integerValue];
         NSCell *cell = [self preparedCellAtColumn:colVal row:rowVal];
-        /*
-        // Only set the mouseCell properties AFTER calling preparedCellAtColumn:row:.
-        if (iMouseCell != cell) {
-            [iMouseCell release];
-            // Store off the col/row
-            iMouseCol = colVal;
-            iMouseRow = rowVal;
-            // Store a COPY of the cell for use when tracking in an area
-            iMouseCell = [cell copy];
-            [iMouseCell setControlView:self];
-            [iMouseCell mouseEntered:event];
-         */
-        [cell setControlView:self];
-        [cell mouseEntered: event];
-        //}
+        NSTreeNode *item = [self itemAtRow:rowVal];
+        if([[item representedObject] valueForKey:@"Links"])
+        {
+            if (iMouseCell != cell) {
+                // Store off the col/row
+                iMouseCol = colVal;
+                iMouseRow = rowVal;
+                iMouseCell = [cell copy];
+                [iMouseCell setControlView:self];
+                [iMouseCell mouseEntered: event];
+            }
+        }
     }
 }
 
--(void) mouseUp:(NSEvent *)event
+-(void) doubleClick:(NSEvent *)event
 {
     if (event.clickCount == 2) {
         NSLog(@"Double click");
@@ -102,9 +101,29 @@
         [cell setControlView:self];
         [cell mouseExited:event];
         // We are now done with the copied cell
-        //iMouseCell = nil;
-        //iMouseCol = -1;
-        //iMouseRow = -1;
+        iMouseCell = nil;
+        iMouseCol = -1;
+        iMouseRow = -1;
+    }
+}
+
+
+
+- (NSCell *)preparedCellAtColumn:(NSInteger)column row:(NSInteger)row
+{
+    if ([self selectedCell] == nil && (row == iMouseRow) && (column == iMouseCol) && iMouseCell) {
+        return iMouseCell;
+    }
+    return [super preparedCellAtColumn:column row:row];
+    
+}
+
+- (void)updateCell:(NSCell *)aCell {
+    
+    if (aCell == iMouseCell) {
+        [self setNeedsDisplayInRect:[self frameOfCellAtColumn:iMouseCol row:iMouseRow]];
+    } else {
+        [super updateCell:aCell];
     }
 }
 @end
