@@ -189,8 +189,8 @@
                                                 </textFieldCell>
                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                 <connections>
-                                                    <binding destination="ndM-aZ-5qJ" name="value" keyPath="arrangedObjects.Name" id="1MN-iU-wYu"/>
                                                     <binding destination="ndM-aZ-5qJ" name="editable" keyPath="arrangedObjects.Editable" id="RUN-IY-0eD"/>
+                                                    <binding destination="ndM-aZ-5qJ" name="value" keyPath="arrangedObjects.Name" id="1MN-iU-wYu"/>
                                                 </connections>
                                             </tableColumn>
                                             <tableColumn width="236" minWidth="10" maxWidth="3.4028234663852886e+38" id="IaE-gy-shS">
@@ -206,8 +206,8 @@
                                                 </textFieldCell>
                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                 <connections>
-                                                    <binding destination="ndM-aZ-5qJ" name="value" keyPath="arrangedObjects.Value" id="9oY-MZ-KeY"/>
                                                     <binding destination="ndM-aZ-5qJ" name="editable" keyPath="arrangedObjects.Editable" id="buQ-U5-uqk"/>
+                                                    <binding destination="ndM-aZ-5qJ" name="value" keyPath="arrangedObjects.Value" id="9oY-MZ-KeY"/>
                                                 </connections>
                                             </tableColumn>
                                         </tableColumns>
@@ -245,7 +245,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <subviews>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GR1-9G-dMP">
-                            <rect key="frame" x="286" y="6" width="251" height="17"/>
+                            <rect key="frame" x="286" y="4" width="251" height="19"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="247" id="NNe-CB-CSJ"/>

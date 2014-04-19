@@ -10,11 +10,10 @@
 
 @implementation MangoBrowserOutlineView
 
-- (id)initWithFrame:(NSRect)frame
+- (instancetype)initWithCoder:(NSCoder *)coder
 {
-    self = [super initWithFrame:frame];
+    self = [super initWithCoder:coder];
     if (self) {
-        // Initialization code here.
         [self setTarget:self];
         [self setDoubleAction:@selector(doubleClick:)];
     }
@@ -86,8 +85,22 @@
 
 -(void) doubleClick:(NSEvent *)event
 {
-    if (event.clickCount == 2) {
-        NSLog(@"Double click");
+    NSTreeNode *item = [self itemAtRow:[self clickedRow]];
+    NSDictionary *rObj = [item representedObject];
+    NSNumber *editableN = [rObj valueForKey:@"Editable"];
+    id link = [rObj valueForKey:@"Links"];
+    
+    
+    if (!editableN || [editableN boolValue]==NO)
+    {
+        if (link)
+        {
+            NSLog(@"Open Link %@", link);
+        }
+    }
+    else
+    {
+        [self editColumn:[self clickedColumn] row:[self clickedRow] withEvent:nil select:YES];
     }
 }
 
