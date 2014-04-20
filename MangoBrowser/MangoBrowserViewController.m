@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Juan Carlos Moreno. All rights reserved.
 //
 
-#import "MangoBrowserView.h"
+#import "MangoBrowserViewController.h"
 
-@implementation MangoBrowserView
+@implementation MangoBrowserViewController
 
 -(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

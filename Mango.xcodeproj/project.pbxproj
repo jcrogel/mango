@@ -20,8 +20,8 @@
 		E9258D7F18EE424600564355 /* MangoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9258D7E18EE424600564355 /* MangoTests.m */; };
 		E92593CF18EE7F9C00564355 /* MangoAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9258D6718EE424600564355 /* MangoAppDelegate.mm */; };
 		E92593D018EE7F9E00564355 /* MangoConnectionManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = E92590C818EE7AAA00564355 /* MangoConnectionManager.mm */; };
-		E9429A1A18F9D74C00C367A4 /* Browser.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9429A1918F9D74C00C367A4 /* Browser.xib */; };
-		E9429A1D18FB91E100C367A4 /* MangoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9429A1C18FB91E100C367A4 /* MangoBrowserView.m */; };
+		E9429A1A18F9D74C00C367A4 /* MangoBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9429A1918F9D74C00C367A4 /* MangoBrowserViewController.xib */; };
+		E9429A1D18FB91E100C367A4 /* MangoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9429A1C18FB91E100C367A4 /* MangoBrowserViewController.m */; };
 		E943649F18EF81760076B9A5 /* MangoWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E943649E18EF81760076B9A5 /* MangoWindowController.m */; };
 		E94364A218EF82500076B9A5 /* MangoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94364A118EF82500076B9A5 /* MangoWindow.xib */; };
 		E94364A418EFAED10076B9A5 /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94364A318EFAED10076B9A5 /* AboutWindow.xib */; };
@@ -35,6 +35,9 @@
 		E9AEB79818FF937E008F3C9D /* ConnectionBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEB79718FF937E008F3C9D /* ConnectionBannerView.m */; };
 		E9AEB79B19003099008F3C9D /* InfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9AEB79A19003098008F3C9D /* InfoWindow.xib */; };
 		E9AEB79E1900311B008F3C9D /* InfoWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEB79D1900311B008F3C9D /* InfoWindowController.m */; };
+		E9BC45511902EE9A0094A8D8 /* MangoPluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BC45501902EE9A0094A8D8 /* MangoPluginManager.m */; };
+		E9BC4558190318470094A8D8 /* MangoSimpleBrowserVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BC4556190318470094A8D8 /* MangoSimpleBrowserVC.m */; };
+		E9BC4559190318470094A8D8 /* MangoSimpleBrowserVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BC4557190318470094A8D8 /* MangoSimpleBrowserVC.xib */; };
 		E9D589D518F0CA3D00F9B333 /* libmongoclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E93167DB18F0C011008A4FCE /* libmongoclient.a */; };
 		E9F5D3E418F3A44C00083B1F /* MMTabBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F5D3E218F3A43F00083B1F /* MMTabBarView.framework */; };
 		E9F5D3E518F3A45100083B1F /* MMTabBarView.framework in Copy Files (2 items) */ = {isa = PBXBuildFile; fileRef = E9F5D3E218F3A43F00083B1F /* MMTabBarView.framework */; };
@@ -110,9 +113,9 @@
 		E92590C718EE7AAA00564355 /* MangoConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MangoConnectionManager.h; path = ../MangoConnectionManager.h; sourceTree = "<group>"; };
 		E92590C818EE7AAA00564355 /* MangoConnectionManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MangoConnectionManager.mm; path = ../MangoConnectionManager.mm; sourceTree = "<group>"; };
 		E93167D418F0C010008A4FCE /* mongoclient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mongoclient.xcodeproj; path = "External/mongo-cxx-driver/mongoclient.xcodeproj"; sourceTree = SOURCE_ROOT; };
-		E9429A1918F9D74C00C367A4 /* Browser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Browser.xib; path = MangoBrowser/Browser.xib; sourceTree = "<group>"; };
-		E9429A1B18FB91E100C367A4 /* MangoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MangoBrowserView.h; path = MangoBrowser/MangoBrowserView.h; sourceTree = "<group>"; };
-		E9429A1C18FB91E100C367A4 /* MangoBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MangoBrowserView.m; path = MangoBrowser/MangoBrowserView.m; sourceTree = "<group>"; };
+		E9429A1918F9D74C00C367A4 /* MangoBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MangoBrowserViewController.xib; path = MangoBrowser/MangoBrowserViewController.xib; sourceTree = "<group>"; };
+		E9429A1B18FB91E100C367A4 /* MangoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MangoBrowserViewController.h; path = MangoBrowser/MangoBrowserViewController.h; sourceTree = "<group>"; };
+		E9429A1C18FB91E100C367A4 /* MangoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MangoBrowserViewController.m; path = MangoBrowser/MangoBrowserViewController.m; sourceTree = "<group>"; };
 		E9429A1E18FB94E800C367A4 /* MangoPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangoPlugin.h; sourceTree = SOURCE_ROOT; };
 		E943649D18EF81760076B9A5 /* MangoWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangoWindowController.h; sourceTree = SOURCE_ROOT; };
 		E943649E18EF81760076B9A5 /* MangoWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangoWindowController.m; sourceTree = SOURCE_ROOT; };
@@ -131,6 +134,11 @@
 		E9AEB79A19003098008F3C9D /* InfoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoWindow.xib; sourceTree = "<group>"; };
 		E9AEB79C1900311B008F3C9D /* InfoWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoWindowController.h; path = InfoWindow/InfoWindowController.h; sourceTree = SOURCE_ROOT; };
 		E9AEB79D1900311B008F3C9D /* InfoWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoWindowController.m; path = InfoWindow/InfoWindowController.m; sourceTree = SOURCE_ROOT; };
+		E9BC454F1902EE9A0094A8D8 /* MangoPluginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangoPluginManager.h; sourceTree = SOURCE_ROOT; };
+		E9BC45501902EE9A0094A8D8 /* MangoPluginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangoPluginManager.m; sourceTree = SOURCE_ROOT; };
+		E9BC4555190318470094A8D8 /* MangoSimpleBrowserVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MangoSimpleBrowserVC.h; path = MangoBrowser/MangoSimpleBrowserVC.h; sourceTree = "<group>"; };
+		E9BC4556190318470094A8D8 /* MangoSimpleBrowserVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MangoSimpleBrowserVC.m; path = MangoBrowser/MangoSimpleBrowserVC.m; sourceTree = "<group>"; };
+		E9BC4557190318470094A8D8 /* MangoSimpleBrowserVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MangoSimpleBrowserVC.xib; path = MangoBrowser/MangoSimpleBrowserVC.xib; sourceTree = "<group>"; };
 		E9F5D3D818F3A43F00083B1F /* MMTabBarView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MMTabBarView.xcodeproj; path = External/MMTabBarView/MMTabBarView/MMTabBarView.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -225,10 +233,10 @@
 				E9258D8F18EE623F00564355 /* External */,
 				E9AEB7991900308E008F3C9D /* InfoWindow */,
 				E9429A1818F9D71800C367A4 /* MangoBrowser */,
+				E9BC45541902EEB10094A8D8 /* Plugins */,
 				E94FD28B18F4D5A00052FB55 /* MangoWindow */,
 				E9258D6618EE424600564355 /* MangoAppDelegate.h */,
 				E9258D6718EE424600564355 /* MangoAppDelegate.mm */,
-				E9429A1E18FB94E800C367A4 /* MangoPlugin.h */,
 				E92590C418EE62FF00564355 /* ConnectionWindow */,
 				E9258D6C18EE424600564355 /* Images.xcassets */,
 				E9258D5B18EE424600564355 /* Supporting Files */,
@@ -297,11 +305,14 @@
 		E9429A1818F9D71800C367A4 /* MangoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				E9429A1918F9D74C00C367A4 /* Browser.xib */,
-				E9429A1B18FB91E100C367A4 /* MangoBrowserView.h */,
-				E9429A1C18FB91E100C367A4 /* MangoBrowserView.m */,
+				E9BC4555190318470094A8D8 /* MangoSimpleBrowserVC.h */,
+				E9BC4556190318470094A8D8 /* MangoSimpleBrowserVC.m */,
+				E9BC4557190318470094A8D8 /* MangoSimpleBrowserVC.xib */,
 				E915478B1900F36900188F70 /* MangoBrowserOutlineView.h */,
 				E915478C1900F36900188F70 /* MangoBrowserOutlineView.m */,
+				E9429A1918F9D74C00C367A4 /* MangoBrowserViewController.xib */,
+				E9429A1B18FB91E100C367A4 /* MangoBrowserViewController.h */,
+				E9429A1C18FB91E100C367A4 /* MangoBrowserViewController.m */,
 				E91547981901761900188F70 /* Cells */,
 				E91547921900FE1A00188F70 /* NSCell+TrackingCell.h */,
 			);
@@ -331,6 +342,16 @@
 				E9AEB79D1900311B008F3C9D /* InfoWindowController.m */,
 			);
 			name = InfoWindow;
+			sourceTree = "<group>";
+		};
+		E9BC45541902EEB10094A8D8 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				E9BC454F1902EE9A0094A8D8 /* MangoPluginManager.h */,
+				E9BC45501902EE9A0094A8D8 /* MangoPluginManager.m */,
+				E9429A1E18FB94E800C367A4 /* MangoPlugin.h */,
+			);
+			name = Plugins;
 			sourceTree = "<group>";
 		};
 		E9F5D3D918F3A43F00083B1F /* Products */ = {
@@ -448,8 +469,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9429A1A18F9D74C00C367A4 /* Browser.xib in Resources */,
+				E9429A1A18F9D74C00C367A4 /* MangoBrowserViewController.xib in Resources */,
 				E97A0E7C18F1D5F800098D55 /* MainMenu.xib in Resources */,
+				E9BC4559190318470094A8D8 /* MangoSimpleBrowserVC.xib in Resources */,
 				E94364A218EF82500076B9A5 /* MangoWindow.xib in Resources */,
 				E94364A418EFAED10076B9A5 /* AboutWindow.xib in Resources */,
 				E9258D6D18EE424600564355 /* Images.xcassets in Resources */,
@@ -506,16 +528,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9BC4558190318470094A8D8 /* MangoSimpleBrowserVC.m in Sources */,
 				E9258D6118EE424600564355 /* main.m in Sources */,
 				E92593CF18EE7F9C00564355 /* MangoAppDelegate.mm in Sources */,
 				E9AEB79818FF937E008F3C9D /* ConnectionBannerView.m in Sources */,
 				E9AEB79E1900311B008F3C9D /* InfoWindowController.m in Sources */,
 				E943649F18EF81760076B9A5 /* MangoWindowController.m in Sources */,
 				E9AEB79518FF46DC008F3C9D /* MangoBrowserValueCell.m in Sources */,
+				E9BC45511902EE9A0094A8D8 /* MangoPluginManager.m in Sources */,
 				E9AEB78A18FF2639008F3C9D /* MangoBrowserCell.m in Sources */,
 				E915478D1900F36900188F70 /* MangoBrowserOutlineView.m in Sources */,
 				E92593D018EE7F9E00564355 /* MangoConnectionManager.mm in Sources */,
-				E9429A1D18FB91E100C367A4 /* MangoBrowserView.m in Sources */,
+				E9429A1D18FB91E100C367A4 /* MangoBrowserViewController.m in Sources */,
 				E91547881900B90800188F70 /* MangoDataManager.m in Sources */,
 				E91547971901748400188F70 /* MangoBrowserKeyCell.m in Sources */,
 			);

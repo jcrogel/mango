@@ -23,7 +23,8 @@
         MangoDataManager *dataManager = [[MangoDataManager alloc] init];
         [dataManager setDelegate:self];
         [self setDataManager:dataManager];
-        [self setActivePlugins:@{}];
+        [self setPluginManager:[[MangoPluginManager alloc] init]];
+        [[self pluginManager] setDelegate: self];
     }
     return self;
 }
@@ -38,7 +39,7 @@
 
 - (IBAction)dbInfoButtonPressed:(id)sender {
     //[[self connMgr] getDBStats: [self getSelectedDatabase]];
-    InfoWindowController *mangowindow = [[InfoWindowController alloc] initWithWindowNibName:@"InfoWindow"];
+    //InfoWindowController *mangowindow = [[InfoWindowController alloc] initWithWindowNibName:@"InfoWindow"];
     //[mangowindow showWindow: self];
     
 }
@@ -73,7 +74,9 @@
     NSString *selectedDB = [self getSelectedDatabase];
     NSTabViewItem *selectedItem = [[self tabView] selectedTabViewItem];
     NSString *tabName = [selectedItem label];
-    id<MangoPlugin> plugin = [self activePlugins][tabName];
+    
+    id<MangoPlugin> plugin = [[self pluginManager] activePluginNamed: tabName];
+    
     [plugin refreshDataFromDB:selectedDB withCollection:selectedCollection andDataManager:[self dataManager]];
 }
 
@@ -105,14 +108,11 @@
     [[self tabBarView] setTabView: [self tabView]];
     MMSafariTabStyle *style = [[MMSafariTabStyle alloc] init];
     [[self tabBarView] setStyle:style];
-    MangoBrowserView *tabContent = [[MangoBrowserView alloc] initWithNibName:@"Browser" bundle:[NSBundle bundleForClass:[self class]]];
-
+    MangoBrowserViewController *tabContent = [[MangoBrowserViewController alloc] initWithNibName:@"MangoBrowserViewController" bundle:[NSBundle bundleForClass:[self class]]];
     NSTabViewItem *currentTab = [[self tabView] tabViewItemAtIndex:0];
     [[tabContent view] setFrame:[[currentTab view]frame]];
     [[currentTab view] addSubview:[tabContent view]];
-    NSMutableDictionary *activePlugins = [[self activePlugins] mutableCopy];
-    activePlugins[currentTab.label] = tabContent;
-    [self setActivePlugins: activePlugins];
+    [[self pluginManager] setActivePlugin:tabContent withName: currentTab.label];
 }
 
 -(void) setupWindow
@@ -204,7 +204,6 @@
 - (IBAction)runCommand:(id)sender {
     NSString *dbName = [[[self dbsPopUpButton] selectedItem]  title];
     NSLog(@"%@", dbName);
-    
 }
 
 # pragma mark - DataManager callbacks
@@ -212,6 +211,33 @@
 -(void) setCollectionData: (NSArray *)data
 {
     [self setCollectionListItems: data];
+}
+
+# pragma mark - MangoPluginDelegate
+
+-(void) addPluginNamed: (NSString *) name withInstance:(id<MangoPlugin>) plugin
+{
+
+    NSTabViewItem *newTab = [[NSTabViewItem alloc] init];
+    [newTab setLabel:name];
+    [[self tabView] addTabViewItem:newTab];
+    [[self tabView] selectTabViewItem:newTab];
+    if ([plugin isKindOfClass:[NSViewController class]])
+    {
+        NSViewController *pVC = (NSViewController *)plugin;
+        [[pVC view] setFrame:[[newTab view]frame]];
+        [[newTab view] addSubview:[pVC view]];
+    }
+    [[self tabBarView] setNeedsUpdate:YES];
+
+    [[self pluginManager] setActivePlugin:plugin withName: name];
+}
+
+-(id<MangoPlugin>) createPluginInstanceWithClass:(Class)cls andInstanceName:(NSString *)name
+{
+    
+    id<MangoPlugin> newPlugin = [[cls alloc] init];
+    return newPlugin;
 }
 
 @end

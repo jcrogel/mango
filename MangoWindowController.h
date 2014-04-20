@@ -12,13 +12,16 @@
 #import <MMTabBarView/MMSafariTabStyle.h>
 #import <MMTabBarView/MMCardTabStyle.h>
 #import "MangoPlugin.h"
-#import <MangoBrowserView.h>
+#import <MangoBrowserViewController.h>
 #import "ConnectionBannerView.h"
 #import "InfoWindow/InfoWindowController.h"
 #import "MangoDataManager.h"
+#import "MangoPluginManager.h"
 
-@interface MangoWindowController : NSWindowController<NSOutlineViewDelegate, MangoDataManager>
 
+@interface MangoWindowController : NSWindowController<NSOutlineViewDelegate,
+                                                        MangoDataManager,
+                                                        MangoPluginDelegate>
 @property MangoDataManager *dataManager;
 @property (weak) IBOutlet NSPopUpButton *dbsPopUpButton;
 @property (weak) IBOutlet ConnectionBannerView *sideBar;
@@ -28,8 +31,8 @@
 @property (strong) IBOutlet NSTreeController *collectionListTC;
 @property (weak) IBOutlet NSSearchField *collectionSearchField;
 @property NSArray *collectionListItems;
+@property MangoPluginManager *pluginManager;
 
-@property NSDictionary *activePlugins;
 - (IBAction)dbInfoButtonPressed:(id)sender;
 
 - (IBAction)runCommand:(id)sender;

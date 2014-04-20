@@ -403,7 +403,7 @@ t1396894796
 s272
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView Demo.app
-t1397176833
+t1397495461
 s102
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView Demo/build/Debug/MMTabBarView Demo.app/Contents/Frameworks/MMTabBarView.framework
@@ -558,7 +558,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesce3627244efcb841^4a6231244efcb841^---0#1#1#--18"Check dependencies36"221F19F7-2B34-4571-A550-162ACC2E57FE-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies01e0f4485003b941^9df5fd485003b941^---0#1#1#--18"Check dependencies36"F705E8C4-B7DF-4430-9DA2-149998E78F62-
 
 CCompileC build/MMTabBarView\ Demo.build/Debug/MMTabBarView\ Demo.build/Objects-normal/x86_64/DemoFakeModel.o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView\ Demo/MMTabBarView\ Demo/DemoFakeModel.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s419188260.886095

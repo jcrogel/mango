@@ -81,7 +81,7 @@
     [newModel setTitle:aTitle];
 	NSTabViewItem *newItem = [[NSTabViewItem alloc] initWithIdentifier:newModel];
 	[tabView addTabViewItem:newItem];
-    [tabView selectTabViewItem:newItem];    
+    [tabView selectTabViewItem:newItem];
     [newModel release];
     [newItem release];
 }

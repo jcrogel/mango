@@ -14,7 +14,8 @@
 #import "NSDate+SAMAdditions.h"
 #import "MangoBrowserOutlineView.h"
 
-@interface MangoBrowserView : NSViewController<MangoPlugin,
+
+@interface MangoBrowserViewController : NSViewController<MangoPlugin,
                                                     NSOutlineViewDataSource,
                                                     NSOutlineViewDelegate>
 @property (weak) IBOutlet MangoBrowserOutlineView *outlineView;
@@ -22,6 +23,7 @@
 @property (weak) IBOutlet NSButton *autorefreshCheckbox;
 @property (weak) IBOutlet NSTextField *queryLimitTextField;
 @property (strong) IBOutlet NSTreeController *browserTC;
+
 
 - (IBAction)runQueryButtonWasPressed:(id)sender;
 

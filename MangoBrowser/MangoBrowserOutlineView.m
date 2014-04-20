@@ -7,6 +7,7 @@
 //
 
 #import "MangoBrowserOutlineView.h"
+#import "MangoWindowController.h"
 
 @implementation MangoBrowserOutlineView
 
@@ -95,7 +96,16 @@
     {
         if (link)
         {
-            NSLog(@"Open Link %@", link);
+            NSString *dataType = [rObj valueForKey:@"Type"];
+            if (dataType && [dataType isEqualToString:@"ObjectID"])
+            {
+                NSString *value = [rObj valueForKey:@"Value"];
+            
+                id<MangoPluginDelegate> mangoWC = [[self window] windowController];
+                MangoSimpleBrowserVC *simpleBrowser = [[MangoSimpleBrowserVC alloc] initWithNibName:@"MangoSimpleBrowserVC" bundle:[NSBundle bundleForClass:[self class]]];
+                [mangoWC addPluginNamed:value withInstance:simpleBrowser];
+            }
+            
         }
     }
     else

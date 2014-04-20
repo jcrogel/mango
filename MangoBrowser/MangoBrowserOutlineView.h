@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "NSCell+TrackingCell.h"
+#import "MangoSimpleBrowserVC.h"
 
 @interface MangoBrowserOutlineView : NSOutlineView
 {

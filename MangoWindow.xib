@@ -179,9 +179,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                         <subviews>
                             <button id="bcl-ze-bhf">
-                                <rect key="frame" x="15" y="649" width="37" height="37"/>
+                                <rect key="frame" x="15" y="646" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="pi" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="jzC-zi-sI4">
+                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="CloudInfo" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="jzC-zi-sI4">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -205,7 +205,7 @@
             </connections>
         </treeController>
         <customView id="6iA-Gk-YCj">
-            <rect key="frame" x="0.0" y="0.0" width="492" height="69"/>
+            <rect key="frame" x="0.0" y="0.0" width="714" height="69"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <button id="DUI-7M-kFb">
@@ -273,21 +273,21 @@
                         <action selector="dbInfoButtonPressed:" target="-2" id="d8w-a5-6Zc"/>
                     </connections>
                 </button>
+                <box autoresizesSubviews="NO" horizontalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="I0o-Ua-P2o">
+                    <rect key="frame" x="458" y="8" width="5" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <font key="titleFont" metaFont="system"/>
+                </box>
             </subviews>
         </customView>
-        <box autoresizesSubviews="NO" horizontalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="1JA-2a-jef">
-            <rect key="frame" x="0.0" y="0.0" width="5" height="96"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-            <font key="titleFont" metaFont="system"/>
-        </box>
     </objects>
     <resources>
+        <image name="CloudInfo" width="40" height="35"/>
         <image name="Splash" width="150" height="150"/>
         <image name="add_icon" width="100" height="100"/>
         <image name="info_icon" width="100" height="100"/>
-        <image name="pi" width="16" height="16"/>
         <image name="playbutton" width="50" height="50"/>
         <image name="playselected" width="50" height="50"/>
     </resources>
