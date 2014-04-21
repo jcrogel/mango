@@ -70,7 +70,7 @@
             {
                 title = @"Document";
                 reformattedItem[@"Type"] = @"ObjectID";
-                reformattedItem[@"Value"] = [NSString stringWithFormat:@"ObjectId(%@)", oid[@"$oid"]];
+                reformattedItem[@"Value"] = [NSString stringWithFormat:@"%@", oid[@"$oid"]];
             }
             
             reformattedItem[@"Name"] = title;
@@ -108,7 +108,7 @@
         {
             id rOID = [cleanedItem valueForKey:@"$oid"];
             reformattedItem[@"Type"] = @"ObjectID";
-            reformattedItem[@"Value"] = [NSString stringWithFormat:@"ObjectId(%@)", rOID];
+            reformattedItem[@"Value"] = [NSString stringWithFormat:@"%@", rOID];
             reformattedItem[@"Links"] = [rOID copy];
             reformattedItem[@"Editable"] = [NSNumber numberWithBool: NO];
             [cleanedItem removeObjectForKey:@"$oid"];
@@ -240,4 +240,6 @@
 - (IBAction)runQueryButtonWasPressed:(id)sender {
     
 }
+
+
 @end

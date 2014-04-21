@@ -21,7 +21,8 @@
 
 @interface MangoWindowController : NSWindowController<NSOutlineViewDelegate,
                                                         MangoDataManager,
-                                                        MangoPluginDelegate>
+                                                        MangoPluginDelegate,
+                                                        MMTabBarViewDelegate>
 @property MangoDataManager *dataManager;
 @property (weak) IBOutlet NSPopUpButton *dbsPopUpButton;
 @property (weak) IBOutlet ConnectionBannerView *sideBar;

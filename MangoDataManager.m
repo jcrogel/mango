@@ -105,4 +105,9 @@
 }
 
 
+- (void) getObjectID: (NSString *) oid
+{
+    [[self ConnectionManager] getObjectID: oid];
+}
+
 @end

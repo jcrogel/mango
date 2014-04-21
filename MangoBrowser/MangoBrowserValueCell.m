@@ -16,10 +16,13 @@
 {
     if ([self dataType])
     {
+        if ([[self dataType] isEqualToString:@"ObjectID"])
+        {
+            [self setTitle: [NSString stringWithFormat:@"ObjectID(%@)", [self title]]];
+        }
         if ([[self dataType] isEqualToString:@"Array"])
         {
             //color = ARRAY_COLOR.CGColor;
-
         }
         if ([[self dataType] isEqualToString:@"String"])
         {

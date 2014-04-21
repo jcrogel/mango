@@ -25,7 +25,8 @@
 @property id<MangoDataManager> delegate;
 
 
--(void) fetchCollectionNamesForDB: (NSString *) DBName;
+- (void) fetchCollectionNamesForDB: (NSString *) DBName;
 - (void) processCollectionsWithFilter: (NSString *) filterBy;
+- (void) getObjectID: (NSString *) oid;
 
 @end

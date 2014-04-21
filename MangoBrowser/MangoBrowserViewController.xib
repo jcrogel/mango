@@ -4,11 +4,13 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="MangoBrowserView">
+        <customObject id="-2" userLabel="File's Owner" customClass="MangoBrowserViewController">
             <connections>
                 <outlet property="autorefreshCheckbox" destination="OC0-ur-uLS" id="vzq-6X-R7I"/>
                 <outlet property="browserTC" destination="ndM-aZ-5qJ" id="RLa-hb-BcX"/>
+                <outlet property="messageInfo" destination="GR1-9G-dMP" id="I9s-19-gOm"/>
                 <outlet property="outlineView" destination="fke-Kb-cHQ" id="wsD-bq-wk2"/>
+                <outlet property="progressBar" destination="goA-ac-1B8" id="Jre-jE-144"/>
                 <outlet property="queryLimitTextField" destination="2Qv-72-Oo5" id="SYF-hb-69V"/>
                 <outlet property="triggerButton" destination="Koz-9n-V6k" id="D0M-4d-8iC"/>
                 <outlet property="view" destination="2Es-I0-zxG" id="NeC-CK-7rd"/>

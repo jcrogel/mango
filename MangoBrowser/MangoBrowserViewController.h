@@ -13,6 +13,7 @@
 #import "MangoBrowserValueCell.h"
 #import "NSDate+SAMAdditions.h"
 #import "MangoBrowserOutlineView.h"
+#import "MangoPluginTabItem.h"
 
 
 @interface MangoBrowserViewController : NSViewController<MangoPlugin,
@@ -24,6 +25,8 @@
 @property (weak) IBOutlet NSTextField *queryLimitTextField;
 @property (strong) IBOutlet NSTreeController *browserTC;
 
+@property (weak) IBOutlet NSProgressIndicator *progressBar;
+@property (weak) IBOutlet NSTextField *messageInfo;
 
 - (IBAction)runQueryButtonWasPressed:(id)sender;
 

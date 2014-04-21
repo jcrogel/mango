@@ -108,6 +108,10 @@
     [[self tabBarView] setTabView: [self tabView]];
     MMSafariTabStyle *style = [[MMSafariTabStyle alloc] init];
     [[self tabBarView] setStyle:style];
+    
+    [[self tabBarView] setDelegate:self];
+    [[self tabBarView] setCanCloseOnlyTab:YES]; // The only tab left does not have a button
+    
     MangoBrowserViewController *tabContent = [[MangoBrowserViewController alloc] initWithNibName:@"MangoBrowserViewController" bundle:[NSBundle bundleForClass:[self class]]];
     NSTabViewItem *currentTab = [[self tabView] tabViewItemAtIndex:0];
     [[tabContent view] setFrame:[[currentTab view]frame]];
@@ -217,9 +221,10 @@
 
 -(void) addPluginNamed: (NSString *) name withInstance:(id<MangoPlugin>) plugin
 {
-
-    NSTabViewItem *newTab = [[NSTabViewItem alloc] init];
-    [newTab setLabel:name];
+    MangoPluginTabItem *item = [[MangoPluginTabItem alloc] init];
+    [item setTitle:name];
+    [item setHasCloseButton:YES];
+    NSTabViewItem *newTab = [[NSTabViewItem alloc] initWithIdentifier:item];
     [[self tabView] addTabViewItem:newTab];
     [[self tabView] selectTabViewItem:newTab];
     if ([plugin isKindOfClass:[NSViewController class]])
@@ -238,6 +243,12 @@
     
     id<MangoPlugin> newPlugin = [[cls alloc] init];
     return newPlugin;
+}
+
+- (void)tabView:(NSTabView *)aTabView didCloseTabViewItem:(NSTabViewItem *)tabViewItem
+{
+    [[self pluginManager] removePluginNamed:[tabViewItem label]];
+    [[self tabBarView] setNeedsUpdate:YES];
 }
 
 @end

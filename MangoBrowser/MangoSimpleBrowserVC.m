@@ -23,4 +23,9 @@
     return self;
 }
 
+-(void)refreshDataFromDB:(NSString *)db withCollection:(NSString *)col andDataManager:(MangoDataManager *)mgr
+{
+// TODO:
+}
+
 @end

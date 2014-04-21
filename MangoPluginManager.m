@@ -40,4 +40,11 @@
     [self setActivePlugins: activePlugins];
 }
 
+-(void) removePluginNamed: (NSString *) name
+{
+    NSMutableDictionary *activePlugins = [[self activePlugins] mutableCopy];
+    [activePlugins removeObjectForKey:name];
+    [self setActivePlugins:activePlugins];
+}
+
 @end

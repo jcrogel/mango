@@ -28,4 +28,6 @@
 -(void) getServerStatus;
 -(void) getCollectionInfo: (NSString *) nspace;
 
+- (void) getObjectID: (NSString *) oid;
+
 @end

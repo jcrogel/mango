@@ -100,10 +100,13 @@
             if (dataType && [dataType isEqualToString:@"ObjectID"])
             {
                 NSString *value = [rObj valueForKey:@"Value"];
-            
+                NSString *title = [NSString stringWithFormat:@"ObjectID(%@)", value];
                 id<MangoPluginDelegate> mangoWC = [[self window] windowController];
-                MangoSimpleBrowserVC *simpleBrowser = [[MangoSimpleBrowserVC alloc] initWithNibName:@"MangoSimpleBrowserVC" bundle:[NSBundle bundleForClass:[self class]]];
-                [mangoWC addPluginNamed:value withInstance:simpleBrowser];
+                MangoSimpleBrowserVC *simpleBrowser = [[MangoSimpleBrowserVC alloc]
+                                            initWithNibName:@"MangoSimpleBrowserVC" bundle:
+                                            [NSBundle bundleForClass:[self class]]];
+                [[mangoWC dataManager] getObjectID: value];
+                [mangoWC addPluginNamed:title withInstance:simpleBrowser];
             }
             
         }

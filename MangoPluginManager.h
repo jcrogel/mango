@@ -25,6 +25,7 @@
 @property id<MangoPluginDelegate> delegate;
 
 -(void) registerPluginName: (NSString *) name withPluginClass: (Class *) MangoPlugin;
+-(void) removePluginNamed: (NSString *) name;
 -(id<MangoPlugin>) activePluginNamed: (NSString *) name;
 -(void) setActivePlugin:(id<MangoPlugin>) plugin withName: (NSString *) name;
 @end
