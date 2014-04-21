@@ -36,6 +36,9 @@
 {
     if ([self shouldAutoRefresh])
     {
+        [[self progressBar] startAnimation:self];
+        [[self progressBar] setHidden: NO];
+        [[[self progressBar] animator] setAlphaValue:1];
         [[self messageInfo] setStringValue: [NSString stringWithFormat:@"Loading %@.%@", db, col]];
         NSDate *start = [NSDate date];
         NSMutableDictionary *options = [@{} mutableCopy];
@@ -53,7 +56,8 @@
         [self setDbData:res];
         [[self outlineView] reloadData];
         NSTimeInterval timeInterval = [start timeIntervalSinceNow];
-        
+        [[self progressBar] stopAnimation:self];
+        [[[self progressBar] animator] setAlphaValue:0.0];
         [[self messageInfo] setStringValue: [NSString stringWithFormat:@"Loaded %@.%@ in %f", db, col, timeInterval]];
     }
 }
@@ -125,18 +129,17 @@
             if([date isKindOfClass:[NSString class]])
             {
                 reformattedItem[@"Type"] = @"Date";
-                
+
                 NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-                [dateFormatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'SSS'Z'"];
+                [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:SS.SSSZ"];
+                
                 NSDate *myDate = [dateFormatter dateFromString:date];
                 
-                //NSDate *myDate = [NSDate sam_dateFromISO8601String:@"2012-04-28T15:00:00.000"];
                 NSDateFormatter *anotherDateFormatter = [[NSDateFormatter alloc] init];
                 [anotherDateFormatter setDateStyle:NSDateFormatterLongStyle];
                 [anotherDateFormatter setTimeStyle:NSDateFormatterShortStyle];
                 
-                reformattedItem[@"Value"] = [NSString stringWithFormat:@"Date(%@)", [anotherDateFormatter stringFromDate:myDate]];
-                //NSLog(@"%@ %@", date, myDate);
+                reformattedItem[@"Value"] = [anotherDateFormatter stringFromDate:myDate];
                 
                 [cleanedItem removeObjectForKey:@"$date"];
             }
