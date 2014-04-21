@@ -36,6 +36,8 @@
 {
     if ([self shouldAutoRefresh])
     {
+        [[self messageInfo] setStringValue: [NSString stringWithFormat:@"Loading %@.%@", db, col]];
+        NSDate *start = [NSDate date];
         NSMutableDictionary *options = [@{} mutableCopy];
         
         if (![[[self queryLimitTextField] stringValue] isEqualToString:@"0"])
@@ -50,6 +52,9 @@
         res = [self reformatQueryResults:res];
         [self setDbData:res];
         [[self outlineView] reloadData];
+        NSTimeInterval timeInterval = [start timeIntervalSinceNow];
+        
+        [[self messageInfo] setStringValue: [NSString stringWithFormat:@"Loaded %@.%@ in %f", db, col, timeInterval]];
     }
 }
 
