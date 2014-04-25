@@ -223,10 +223,10 @@
     
 }
 
-- (void) getObjectID: (NSString *) oid
+- (void) getObjectID: (NSString *) oid onDB: (NSString *) dbname;
 {
-    mongo::OID oidObj = mongo::OID([oid cStringUsingEncoding:NSUTF8StringEncoding]);
-    std::cerr << oidObj << std::endl;
+    //mongo::OID oidObj = mongo::OID([oid cStringUsingEncoding:NSUTF8StringEncoding]);
+    
 }
 
 -(void) getDBStats: (NSString *) dbname

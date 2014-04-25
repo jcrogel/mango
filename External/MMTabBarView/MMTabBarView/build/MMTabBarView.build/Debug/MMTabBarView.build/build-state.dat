@@ -1237,7 +1237,7 @@ t1396894796
 s45
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework
-t1398025646
+t1398369005
 s204
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Versions/A/Headers/MMAdiumTabStyle.h
@@ -1437,8 +1437,8 @@ t1396895597
 s150
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Versions/A/Resources/Info.plist
-t1397279283
-s1268
+t1398369005
+s1270
 
 N/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Versions/A/Resources/SafariAWATClose.tiff
 t1396895598
@@ -1829,7 +1829,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies51873da47505b941^895f41a47505b941^---0#1#1#--18"Check dependencies36"BDA99304-0751-41FB-A494-1F2197F34023-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesc424d4563b0ab941^fce4d8563b0ab941^---0#1#1#--18"Check dependencies36"A057FE34-29F9-4821-A6C1-F3B8DFCAD929-
 
 CCompileC build/MMTabBarView.build/Debug/MMTabBarView.build/Objects-normal/x86_64/MMAdiumTabStyle.o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/MMTabBarView/Styles/MMAdiumTabStyle.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s418972086.408131
@@ -3170,14 +3170,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Libtool
 b4E672CAF-F166-4B37-AB3F-257FF8A7145A
 
 CProcessInfoPlistFile /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Versions/A/Resources/Info.plist /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/MMTabBarView/MMTabBarView-Info.plist
-s418972083.345220
-e418972083.352613
+s420061805.512901
+e420061805.516002
 r1
 xProcessInfoPlistFile
 x/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Versions/A/Resources/Info.plist
 x/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/MMTabBarView/MMTabBarView-Info.plist
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Process /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/MMTabBarView/MMTabBarView-Info.plist124"ProcessInfoPlistFile build/Debug/MMTabBarView.framework/Versions/A/Resources/Info.plist MMTabBarView/MMTabBarView-Info.plist767058b301f9b841^c3455ab301f9b841^---0#0#1#-19%DVTDocumentLocation2@103"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/MMTabBarView/MMTabBarView-Info.plist0000000000000000^486"ProcessInfoPlistFile build/Debug/MMTabBarView.framework/Versions/A/Resources/Info.plist MMTabBarView/MMTabBarView-Info.plist    cd /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView    builtin-infoPlistUtility /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/MMTabBarView/MMTabBarView-Info.plist -expandbuildsettings -platform macosx -o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Versions/A/Resources/Info.plist36"CC679E23-29FC-4425-A382-A59477AB6EE9-
-b98A54D6E-25A2-4C3F-A7B7-A93D29CF3CAC
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Process /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/MMTabBarView/MMTabBarView-Info.plist124"ProcessInfoPlistFile build/Debug/MMTabBarView.framework/Versions/A/Resources/Info.plist MMTabBarView/MMTabBarView-Info.plisteeb2836da209b941^c618846da209b941^---0#0#1#-19%DVTDocumentLocation2@103"file:///Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/MMTabBarView/MMTabBarView-Info.plist0000000000000000^486"ProcessInfoPlistFile build/Debug/MMTabBarView.framework/Versions/A/Resources/Info.plist MMTabBarView/MMTabBarView-Info.plist    cd /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView    builtin-infoPlistUtility /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/MMTabBarView/MMTabBarView-Info.plist -expandbuildsettings -platform macosx -o /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework/Versions/A/Resources/Info.plist36"E209056B-26B0-4E91-B2E2-24335D4D8F2E-
+b3029BBEC-29F8-4E98-B512-617114A6F04E
 
 CProcessPCH /Users/jcarlos/Library/Developer/Xcode/DerivedData/Mango-ajkuweqvpaxeajbdyqdhirpsjrbh/Index/PrecompiledHeaders/MMTabBarView-Prefix-eskkxnyxhdjairaukpdmefaqcqes_ast/MMTabBarView-Prefix.pch.pch MMTabBarView/MMTabBarView-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
@@ -3569,11 +3569,11 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection34"TiffUti
 b38B9581A-545C-457E-97E8-A81AF53D0D23
 
 CTouch /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework
-s419718446.640536
-e419718446.644358
+s420061805.552257
+e420061805.557156
 r1
 xTouch
 x/Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Touch /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework40"Touch build/Debug/MMTabBarView.frameworkea04a42e6504b941^4df5a42e6504b941^---0#0#1#--225"Touch build/Debug/MMTabBarView.framework    cd /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView    /usr/bin/touch -c /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework36"08B49122-40CE-46EC-B711-20C017B0778E-
-bEDD6C9CA-34ED-4C4E-A206-56921049F053
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Touch /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework40"Touch build/Debug/MMTabBarView.framework5c718d6da209b941^cfa38e6da209b941^---0#0#1#--225"Touch build/Debug/MMTabBarView.framework    cd /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView    /usr/bin/touch -c /Users/jcarlos/dev/Mango/External/MMTabBarView/MMTabBarView/build/Debug/MMTabBarView.framework36"AFCAF2B7-A1CF-40F0-9867-4C094692F842-
+b3029BBEC-29F8-4E98-B512-617114A6F04E
 

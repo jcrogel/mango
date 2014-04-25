@@ -31,6 +31,7 @@
 @property (strong) IBOutlet NSView *popUpContainerView;
 @property (strong) IBOutlet NSTreeController *collectionListTC;
 @property (weak) IBOutlet NSSearchField *collectionSearchField;
+@property InfoWindowController *infoWindowController;
 @property NSArray *collectionListItems;
 @property MangoPluginManager *pluginManager;
 
@@ -41,6 +42,7 @@
 - (IBAction)debugConn:(id)sender;
 - (IBAction)dbsPopUpButtonAction:(id)sender;
 
-
+-(NSString *) getSelectedDatabase;
+-(NSString *) getSelectedCollectionName;
 
 @end

@@ -28,6 +28,6 @@
 -(void) getServerStatus;
 -(void) getCollectionInfo: (NSString *) nspace;
 
-- (void) getObjectID: (NSString *) oid;
+- (void) getObjectID: (NSString *) oid onDB: (NSString *) dbname;
 
 @end

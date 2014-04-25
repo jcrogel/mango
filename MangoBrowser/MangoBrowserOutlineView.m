@@ -105,8 +105,15 @@
                 MangoSimpleBrowserVC *simpleBrowser = [[MangoSimpleBrowserVC alloc]
                                             initWithNibName:@"MangoSimpleBrowserVC" bundle:
                                             [NSBundle bundleForClass:[self class]]];
-                [[mangoWC dataManager] getObjectID: value];
-                [mangoWC addPluginNamed:title withInstance:simpleBrowser];
+                
+                MangoWindowController *mwc = (MangoWindowController *) mangoWC;
+                
+                if(mwc)
+                {
+                    [[mangoWC dataManager] getObjectID: value onDB:[mwc getSelectedDatabase]];
+                    [mangoWC addPluginNamed:title withInstance:simpleBrowser];
+
+                }
             }
             
         }

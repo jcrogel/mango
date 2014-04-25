@@ -27,6 +27,6 @@
 
 - (void) fetchCollectionNamesForDB: (NSString *) DBName;
 - (void) processCollectionsWithFilter: (NSString *) filterBy;
-- (void) getObjectID: (NSString *) oid;
+- (void) getObjectID: (NSString *) oid onDB: (NSString *) dbname;
 
 @end

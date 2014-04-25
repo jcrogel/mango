@@ -41,8 +41,10 @@
     NSMutableDictionary *aux = [NSMutableDictionary new];
     
     NSString *rootTitle;
+
     for (NSString *cl_fullname in filteredCollections)
     {
+
         NSArray *fname_elements = [cl_fullname componentsSeparatedByString:@"."];
         NSUInteger length = [fname_elements count];
         NSMutableDictionary *ptr = aux;
@@ -53,26 +55,35 @@
         
         for (int i=1; i<length; i++)
         {
+            NSLog(@"------ ");
             if (i == length-1)
             {
                 // Last item
+                NSLog(@"item %d",i);
+                NSLog(@"%@", fname_elements);
+                id element = fname_elements[i];
+                NSLog(@"%@ %@", [ptr class], ptr );
                 [ptr setObject:@"" forKey:fname_elements[i]];
             }else
             {
                 NSMutableDictionary *column = [ptr valueForKey:fname_elements[i]];
                 if (column)
                 {
+                    NSLog(@"Tres");
                     ptr = column;
                 }
                 else
                 {
+                    NSLog(@"Tres .5");
                     NSMutableDictionary *value = [@{} mutableCopy];
                     [ptr setObject:value forKey:fname_elements[i]];
                     ptr = value;
                 }
             }
+            NSLog(@"------");
         }
-    }
+        
+    };
     
     NSMutableArray *rootArray = [NSMutableArray new];
     
@@ -105,9 +116,9 @@
 }
 
 
-- (void) getObjectID: (NSString *) oid
+- (void) getObjectID: (NSString *) oid onDB: (NSString *) dbname;
 {
-    [[self ConnectionManager] getObjectID: oid];
+    [[self ConnectionManager] getObjectID: oid onDB:dbname];
 }
 
 @end

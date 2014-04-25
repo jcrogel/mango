@@ -18,7 +18,8 @@
     {
         if ([[self dataType] isEqualToString:@"ObjectID"])
         {
-            [self setTitle: [NSString stringWithFormat:@"ObjectID(%@)", [self title]]];
+            if (! [[self title] hasPrefix:@"ObjectID("])
+                [self setTitle: [NSString stringWithFormat:@"ObjectID(%@)", [self title]]];
         }
         if ([[self dataType] isEqualToString:@"Array"])
         {

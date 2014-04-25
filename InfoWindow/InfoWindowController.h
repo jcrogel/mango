@@ -9,5 +9,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface InfoWindowController : NSWindowController
+@property (weak) IBOutlet NSView *cal;
 
 @end
