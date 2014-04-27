@@ -40,7 +40,6 @@
 - (IBAction)dbInfoButtonPressed:(id)sender {
     //[[self connMgr] getDBStats: [self getSelectedDatabase]];
     InfoWindowController *mangowindow = [[InfoWindowController alloc] initWithWindowNibName:@"InfoWindow"];
-    
     [mangowindow showWindow: self];
     [self setInfoWindowController:mangowindow];
     

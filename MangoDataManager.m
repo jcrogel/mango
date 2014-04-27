@@ -55,32 +55,34 @@
         
         for (int i=1; i<length; i++)
         {
-            NSLog(@"------ ");
             if (i == length-1)
             {
                 // Last item
-                NSLog(@"item %d",i);
-                NSLog(@"%@", fname_elements);
                 id element = fname_elements[i];
-                NSLog(@"%@ %@", [ptr class], ptr );
-                [ptr setObject:@"" forKey:fname_elements[i]];
+                if ([ptr isKindOfClass:[NSDictionary class]])
+                {
+                    [ptr setObject:@"" forKey:element];
+                }
+                else
+                {
+                    NSLog(@"Malformed object Skipped: %@ from %@",element, filteredCollections);
+                }
+                
+                
             }else
             {
                 NSMutableDictionary *column = [ptr valueForKey:fname_elements[i]];
                 if (column)
                 {
-                    NSLog(@"Tres");
                     ptr = column;
                 }
                 else
                 {
-                    NSLog(@"Tres .5");
                     NSMutableDictionary *value = [@{} mutableCopy];
                     [ptr setObject:value forKey:fname_elements[i]];
                     ptr = value;
                 }
             }
-            NSLog(@"------");
         }
         
     };

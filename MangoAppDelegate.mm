@@ -24,8 +24,9 @@
 {
     MangoWindowController *mangowindow = [[MangoWindowController alloc] initWithWindowNibName:@"MangoWindow"];
     [mangowindow connectAndShow];
-    
+    [mangowindow dbInfoButtonPressed: self];
     [[self activeSessions] addObject: mangowindow];
+    
     
 }
 

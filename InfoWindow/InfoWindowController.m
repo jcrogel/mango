@@ -30,6 +30,11 @@
     
     CGRect rect = NSRectToCGRect([[self cal] frame]);
     CKCalendarView *ckv = [[CKCalendarView alloc] initWithFrame: rect];
+    [ckv setWantsLayer:YES];
+    [ckv setTitleFont:[NSFont fontWithName:@"OpenSans-Semibold" size:15.0]];
+    //[ckv setDateOfWeekFont:[NSFont fontWithName:@"OpenSans-Regular" size:15.0]];
+    [ckv setDateFont:[NSFont fontWithName:@"OpenSans-Light" size:13.0]];
+    [[ckv layer] setBackgroundColor: [NSColor whiteColor].CGColor];
     [[self cal] addSubview:ckv];
 
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
