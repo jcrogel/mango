@@ -22,11 +22,12 @@
 
 #define BUTTON_MARGIN 2
 #define BUTTON_WIDTH 25
-#define CALENDAR_MARGIN 5
+#define CALENDAR_MARGIN 0
 #define TOP_HEIGHT 30
 #define DAYS_HEADER_HEIGHT 22
 #define DEFAULT_CELL_WIDTH 43
 #define CELL_BORDER_WIDTH 0
+#define MIN_CAL_WIDTH 257
 
 #define NSColorFromRGB(rgbValue) [NSColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
@@ -94,10 +95,10 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.backgroundColor = [NSColor colorWithRed:242 green:242 blue:242 alpha:1];
-        self.selectedBackgroundColor = [NSColor colorWithRed:136 green:182 blue:219 alpha:1];
-        self.textColor = [NSColor colorWithRed:57 green:59 blue:64 alpha:1];
-        self.selectedTextColor = [NSColor colorWithRed:242 green:242 blue:242 alpha:1];
+        self.backgroundColor = [NSColor colorWithRed:.94 green:.94 blue:.94 alpha:1];
+        self.selectedBackgroundColor = [NSColor colorWithRed:.53 green:.71 blue:.85 alpha:1];
+        self.textColor = [NSColor colorWithRed:.22 green:.23 blue:.25 alpha:1];
+        self.selectedTextColor = [NSColor colorWithRed:.94 green:.94 blue:.94 alpha:1];
     }
     return self;
 }
@@ -175,14 +176,11 @@
     NSTextField *titleLabel = [[NSTextField alloc] initWithFrame:CGRectZero];
     titleLabel.alignment = kCTTextAlignmentCenter;
     titleLabel.backgroundColor = [NSColor clearColor];
-    // CHECKME titleLabel.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
     [self addSubview:titleLabel];
     self.titleLabel = titleLabel;
 
     NSButton *prevButton = [[NSButton alloc] init];
-    [prevButton setImage:[NSImage imageNamed:@"LeftArrow"]];
-    [prevButton setImagePosition:NSImageOnly];
-    [[prevButton cell] setImageScaling: NSImageScaleProportionallyUpOrDown];
+    [prevButton setTitle:@"❮"];
     [prevButton setBordered:NO];
     [prevButton setTarget:self];
     [prevButton setAction:@selector(_moveCalendarToPreviousMonth) ];
@@ -190,9 +188,7 @@
     self.prevButton = prevButton;
 
     NSButton *nextButton = [[NSButton alloc]  init];
-    [nextButton setImage:[NSImage imageNamed:@"RightArrow"]];
-    [nextButton setImagePosition:NSImageOnly];
-    [[nextButton cell] setImageScaling: NSImageScaleProportionallyUpOrDown];
+    [nextButton setTitle:@"❯"];
     [nextButton setBordered:NO];
     [nextButton setTarget:self];
     [nextButton setAction:@selector(_moveCalendarToNextMonth) ];
@@ -203,9 +199,7 @@
     CKCalendarContainer *calendarContainer = [[CKCalendarContainer alloc] initWithFrame:CGRectZero];
     calendarContainer.layer.borderWidth = 1.0f;
     calendarContainer.layer.borderColor = [NSColor blackColor].CGColor;
-    //calendarContainer.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
     calendarContainer.layer.cornerRadius = 4.0f;
-    //calendarContainer.clipsToBounds = YES;
     [self addSubview:calendarContainer];
     self.calendarContainer = calendarContainer;
 
@@ -278,7 +272,19 @@
     CGFloat containerHeight = (numberOfWeeksToShow * (self.cellWidth + CELL_BORDER_WIDTH) + DAYS_HEADER_HEIGHT);
 
     CGRect newFrame = self.frame;
-    newFrame.size.height = containerHeight + CALENDAR_MARGIN + TOP_HEIGHT;
+    if (newFrame.size.width < MIN_CAL_WIDTH)
+    {
+        newFrame.size.width =  MIN_CAL_WIDTH;
+    }
+    CGFloat height = containerHeight + CALENDAR_MARGIN + TOP_HEIGHT +20;
+    CGFloat delta = height-newFrame.size.height;
+    if (delta)
+    {
+        // size change
+        newFrame.size.height = height;
+        newFrame.origin.y -= delta;
+    }
+
     self.frame = newFrame;
     self.layer.borderColor = [NSColor redColor].CGColor;
 
@@ -286,9 +292,12 @@
 
     self.titleLabel.stringValue = [self.dateFormatter stringFromDate:_monthShowing];
     [self.titleLabel setEditable:NO];
-    self.titleLabel.frame = CGRectMake(0, 0, self.bounds.size.width, TOP_HEIGHT);
-    self.prevButton.frame = CGRectMake(BUTTON_MARGIN, BUTTON_MARGIN, BUTTON_WIDTH, BUTTON_WIDTH);
-    self.nextButton.frame = CGRectMake(self.bounds.size.width - BUTTON_WIDTH - 10, BUTTON_MARGIN, BUTTON_WIDTH, BUTTON_WIDTH);
+    [[self titleLabel] setBordered:NO];
+
+    self.titleLabel.frame = CGRectMake(0,TOP_HEIGHT-10,
+                                       self.bounds.size.width, TOP_HEIGHT);
+    self.prevButton.frame = CGRectMake(BUTTON_MARGIN, TOP_HEIGHT-10, BUTTON_WIDTH, TOP_HEIGHT);
+    self.nextButton.frame = CGRectMake(self.bounds.size.width - BUTTON_WIDTH - 10, TOP_HEIGHT-10, BUTTON_WIDTH, TOP_HEIGHT);
 
     self.calendarContainer.frame = CGRectMake(CALENDAR_MARGIN, CGRectGetMaxY(self.titleLabel.frame), containerWidth, containerHeight);
     self.daysHeader.frame = CGRectMake(0, 0, self.calendarContainer.frame.size.width, DAYS_HEADER_HEIGHT);
@@ -337,7 +346,7 @@
 
         if (self.selectedDate && [self date:self.selectedDate isSameDayAsDate:date]) {
             [dateButton setTitleColor:item.selectedTextColor];
-            [[dateButton cell] setBackgroundColor: [NSColor colorWithRed:.85 green:.505 blue:.505 alpha:1]];
+            [[dateButton cell] setBackgroundColor: item.selectedBackgroundColor];
         } else {
             [dateButton  setTitleColor:item.textColor];
             [[dateButton cell] setBackgroundColor: item.backgroundColor ];
@@ -358,10 +367,10 @@
     [super layout];
 }
 
-/*- (BOOL)isFlipped
+- (BOOL)isFlipped
 {
     return YES;
-}*/
+}
 
 - (void)_updateDayOfWeekLabels {
     NSArray *weekdays = [self.dateFormatter shortWeekdaySymbols];
@@ -452,12 +461,12 @@
     self.layer.backgroundColor = (__bridge CGColorRef)(NSColorFromRGB(0x393B40));
 
     [self setTitleFont:[NSFont boldSystemFontOfSize:17.0]];
-
-    [self setDayOfWeekFont:[NSFont boldSystemFontOfSize:12.0]];
+    
+    [self setDayOfWeekFont:[NSFont systemFontOfSize:11.0]];
     [self setDayOfWeekTextColor:NSColorFromRGB(0x999999)];
     [self setDayOfWeekBottomColor:NSColorFromRGB(0xCCCFD5) topColor:[NSColor whiteColor]];
 
-    [self setDateFont:[NSFont boldSystemFontOfSize:16.0f]];
+    [self setDateFont:[NSFont systemFontOfSize:12.0f]];
     [self setDateBorderColor:NSColorFromRGB(0xDAE1E6)];
 }
 
@@ -520,6 +529,8 @@
 
 - (void)setTitleFont:(NSFont *)font {
     self.titleLabel.font = font;
+    self.prevButton.font = font;
+    self.nextButton.font = font;
 }
 - (NSFont *)titleFont {
     return self.titleLabel.font;
