@@ -142,6 +142,11 @@
     }
 }
 
+-(void) copyToJSONClipboard: (id) sender
+{
+    NSLog(@"Convert to JSON");
+}
+
 -(void) copyToClipboard: (id) sender
 {
     NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
@@ -178,7 +183,11 @@
         [theMenu insertItem:copyMI atIndex:0];
     }
     
+    NSMenuItem *copyJSONMI = [[NSMenuItem alloc] initWithTitle:@"Copy as JSON" action:@selector(copyToJSONClipboard:) keyEquivalent:@""];
+    [copyJSONMI setRepresentedObject:representedObject];
+    [theMenu insertItem:copyJSONMI atIndex:[theMenu numberOfItems]];
     [NSMenu popUpContextMenu:theMenu withEvent:theEvent forView:self];
+    
 }
 
 - (void)mouseExited:(NSEvent *)event {
