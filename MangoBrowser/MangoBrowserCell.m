@@ -37,8 +37,6 @@
     
     NSTrackingAreaOptions options = NSTrackingEnabledDuringMouseDrag | NSTrackingMouseEnteredAndExited | NSTrackingActiveAlways;
     
-
-    
     // We make the view the owner, and it delegates the calls back to the cell after it is
     // properly setup for the corresponding row/column in the outlineview
     NSTrackingArea *area = [[NSTrackingArea alloc] initWithRect:cellFrame options:options owner:controlView userInfo:userInfo];

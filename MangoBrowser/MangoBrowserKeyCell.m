@@ -65,7 +65,6 @@
         NSRect badgeStrRect = objTypeRect;
         badgeStrRect.origin.y -=4;
         
-        // substringWithRange:NSMakeRange(
         if ([self dataType])
         {
             if (![[self dataType] isEqualToString:@"Dictionary"] && ![[self dataType] isEqualToString:@"Null"])

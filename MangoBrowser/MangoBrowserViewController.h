@@ -24,11 +24,13 @@
 @property (weak) IBOutlet NSButton *autorefreshCheckbox;
 @property (weak) IBOutlet NSTextField *queryLimitTextField;
 @property (strong) IBOutlet NSTreeController *browserTC;
+@property (strong) IBOutlet NSPopover *fieldPopover;
 
 @property (weak) IBOutlet NSProgressIndicator *progressBar;
 @property (weak) IBOutlet NSTextField *messageInfo;
 
 - (IBAction)runQueryButtonWasPressed:(id)sender;
+- (IBAction)indicesButtonWasPressed:(id)sender;
 
 @property NSArray *dbData;
 

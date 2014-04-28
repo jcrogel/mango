@@ -52,9 +52,19 @@
         }
         
         NSArray *res = [[mgr ConnectionManager] queryNameSpace: [NSString stringWithFormat:@"%@.%@", db, col ] withOptions: options];
-        res = [self reformatQueryResults:res];
-        [self setDbData:res];
-        [[self outlineView] reloadData];
+        //res = [self reformatQueryResults:res];
+        NSWindowController *wc = [[[self view] window] windowController];
+        SEL dmSelector = NSSelectorFromString(@"dataManager");
+        if ([wc respondsToSelector:dmSelector])
+        {
+            #pragma clang diagnostic push
+            #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+            MangoDataManager *dm = [wc performSelector:dmSelector];
+            #pragma clang diagnostic pop
+            res = [dm convertMultipleJSONDocumentsToMango: res];
+            [self setDbData:res];
+            [[self outlineView] reloadData];
+        }
         NSTimeInterval timeInterval = [start timeIntervalSinceNow];
         [[self progressBar] stopAnimation:self];
         [[[self progressBar] animator] setAlphaValue:0.0];
@@ -62,152 +72,6 @@
     }
 }
 
--(NSArray *) reformatQueryResults: (NSArray *) data
-{
-    // ROOT
-    NSMutableArray *retval = [@[] mutableCopy];
-    for (id item in data)
-    {
-        if ([item isKindOfClass:[NSDictionary class]])
-        {
-            NSMutableDictionary *reformattedItem = [@{} mutableCopy];
-            reformattedItem[@"Type"] = @"Dictionary";
-            
-            NSString *title = @"";
-            id oid = item[@"_id"];
-            if (oid && [oid isKindOfClass: [NSDictionary class]] && [oid valueForKey:@"$oid"])
-            {
-                title = @"Document";
-                reformattedItem[@"Type"] = @"ObjectID";
-                reformattedItem[@"Value"] = [NSString stringWithFormat:@"%@", oid[@"$oid"]];
-            }
-            
-            reformattedItem[@"Name"] = title;
-            // remove _id from view
-            NSMutableDictionary *cleanedItem = [item mutableCopy];
-            [cleanedItem removeObjectForKey:@"_id"];
-            NSArray *children = [self reformatJSONDict: cleanedItem];
-            reformattedItem[@"Children"] = children;
-            
-            [retval addObject:reformattedItem];
-        }
-        else
-        {
-            NSLog(@"OOPS %@", item);
-        }
-    }
-    
-    return retval;
-}
-
--(NSDictionary *) reformatJSONValue: (id) value withName: (NSString *) name
-{
-    NSMutableDictionary *reformattedItem = [@{} mutableCopy];
-    reformattedItem[@"Name"] = name;
-    reformattedItem[@"Editable"] = [NSNumber numberWithBool: YES];
-    if ([value isKindOfClass:[NSDictionary class]])
-    {
-        
-        NSMutableDictionary *cleanedItem = [value mutableCopy];
-    
-        reformattedItem[@"Type"] = @"Dictionary";
-        reformattedItem[@"Value"] = [NSString stringWithFormat:@"{ %@ }", [NSNumber numberWithLong:[value count]]];
-        
-        if ([cleanedItem valueForKey:@"$oid"])
-        {
-            id rOID = [cleanedItem valueForKey:@"$oid"];
-            reformattedItem[@"Type"] = @"ObjectID";
-            reformattedItem[@"Value"] = [NSString stringWithFormat:@"%@", rOID];
-            reformattedItem[@"Links"] = [rOID copy];
-            reformattedItem[@"Editable"] = [NSNumber numberWithBool: NO];
-            [cleanedItem removeObjectForKey:@"$oid"];
-        }
-        
-        if ([cleanedItem valueForKey:@"$date"])
-        {
-            id date = [cleanedItem valueForKey:@"$date"];
-            if([date isKindOfClass:[NSString class]])
-            {
-                reformattedItem[@"Type"] = @"Date";
-
-                NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-                [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:SS.SSSZ"];
-                
-                NSDate *myDate = [dateFormatter dateFromString:date];
-                
-                NSDateFormatter *anotherDateFormatter = [[NSDateFormatter alloc] init];
-                [anotherDateFormatter setDateStyle:NSDateFormatterLongStyle];
-                [anotherDateFormatter setTimeStyle:NSDateFormatterShortStyle];
-                
-                reformattedItem[@"Value"] = [anotherDateFormatter stringFromDate:myDate];
-                
-                [cleanedItem removeObjectForKey:@"$date"];
-            }
-            
-        }
-
-        
-        NSArray *children = [self reformatJSONDict: cleanedItem];
-        reformattedItem[@"Children"] = children;
-        
-        
-        
-    }
-    else if ([value isKindOfClass:[NSArray class]])
-    {
-        NSMutableArray *reformattedChildren = [@[] mutableCopy];
-        for (int i=0; i<[value count]; i++)
-        {
-            NSDictionary *reformattedChild = [self reformatJSONValue:[value objectAtIndex:i] withName:[NSString stringWithFormat:@"%d", i ]];
-            [reformattedChildren addObject:reformattedChild];
-        }
-        reformattedItem[@"Children"] = reformattedChildren;
-        reformattedItem[@"Value"] = [NSString stringWithFormat:@"[ %@ ]", [NSNumber numberWithLong:[value count]]];
-
-        reformattedItem[@"Type"] = @"Array";
-    }
-    else if ([value isKindOfClass:[NSString class]])
-    {
-        reformattedItem[@"Value"] = value;
-        reformattedItem[@"Type"] = @"String";
-    }
-    else if ([value isKindOfClass:[NSNumber class]])
-    {
-        reformattedItem[@"Value"] = value;
-        
-        if ([value isKindOfClass:[[NSNumber numberWithBool: YES] class]])
-        {
-            reformattedItem[@"Type"] = @"Bool";
-        }
-        else
-        {
-            reformattedItem[@"Type"] = @"Number";
-        }
-    }
-    else if([value isKindOfClass:[NSNull class]])
-    {
-        reformattedItem[@"Value"] = @"";
-        reformattedItem[@"Type"] = @"Null";
-    }
-    else
-    {
-        
-        NSLog(@"Unknown %@ %@", name ,[value class]);
-    }
-    return reformattedItem;
-}
-
--(NSArray *) reformatJSONDict: (NSDictionary *) data
-{
-    NSMutableArray *retval = [@[] mutableCopy];
-    for (id key in [data keyEnumerator])
-    {
-        id value = data[key];
-        NSDictionary *reformattedItem = [self reformatJSONValue:value withName:key];
-        [retval addObject:reformattedItem];
-    }
-    return retval;
-}
 
 - (void)outlineView:(NSOutlineView *)olv willDisplayCell:(NSCell*)cell forTableColumn:(NSTableColumn *)tableColumn item:(id)item
 {
@@ -246,6 +110,18 @@
 }
 
 - (IBAction)runQueryButtonWasPressed:(id)sender {
+    
+}
+
+- (IBAction)indicesButtonWasPressed:(id)sender {
+    if ([[self fieldPopover] isShown])
+    {
+        [[self fieldPopover] close];
+    }
+    else
+    {
+        [[self fieldPopover] showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxYEdge];
+    }
     
 }
 

@@ -272,10 +272,7 @@
     CGFloat containerHeight = (numberOfWeeksToShow * (self.cellWidth + CELL_BORDER_WIDTH) + DAYS_HEADER_HEIGHT);
 
     CGRect newFrame = self.frame;
-    if (newFrame.size.width < MIN_CAL_WIDTH)
-    {
-        newFrame.size.width =  MIN_CAL_WIDTH;
-    }
+
     CGFloat height = containerHeight + CALENDAR_MARGIN + TOP_HEIGHT +20;
     CGFloat delta = height-newFrame.size.height;
     if (delta)

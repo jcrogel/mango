@@ -124,6 +124,63 @@
     }
 }
 
+- (void) rightMouseDown: (NSEvent*) theEvent
+{
+    [super rightMouseDown:theEvent];
+    
+    NSPoint p = [self convertPoint:[theEvent locationInWindow] fromView:nil];
+    
+    long row = [self rowAtPoint:p];
+    long column = [self columnAtPoint:p];
+    NSTreeNode *item = [self itemAtRow:row];
+    
+    NSCell *cell = [self preparedCellAtColumn:column row: row];
+    if ([cell isKindOfClass:[MangoBrowserCell class]])
+    {
+        MangoBrowserCell *mcell = (MangoBrowserCell *)cell;
+        [self rightClickOnCell: mcell treeNode:item andEvent:theEvent];
+    }
+}
+
+-(void) copyToClipboard: (id) sender
+{
+    NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
+    [pasteBoard declareTypes:[NSArray arrayWithObjects:NSStringPboardType, nil] owner:nil];
+    [pasteBoard setString: [sender representedObject] forType:NSStringPboardType];
+}
+
+-(void)rightClickOnCell: (MangoBrowserCell *) cell treeNode: (NSTreeNode *) item andEvent: (NSEvent *)theEvent
+{
+    NSDictionary *representedObject = [item representedObject];
+    if (!representedObject || ![representedObject isKindOfClass:[NSDictionary class]])
+    {
+        return;
+    }
+    
+    NSString *dataType = [representedObject valueForKey:@"Type"];
+    if (!dataType)
+    {
+        return;
+    }
+    
+
+    NSMenu *theMenu = [[NSMenu alloc] initWithTitle:@"Contextual Menu"];
+    if ([ dataType isEqualToString:@"String"])
+    {
+        //[theMenu insertItemWithTitle:@"Beep" action:@selector(beep:) keyEquivalent:@"" atIndex:0];
+    }
+
+    NSString *value = [representedObject valueForKey:@"Value"];
+    if (value && [value length])
+    {
+        NSMenuItem *copyMI = [[NSMenuItem alloc] initWithTitle:@"Copy" action:@selector(copyToClipboard:) keyEquivalent:@""];
+        [copyMI setRepresentedObject:value];
+        [theMenu insertItem:copyMI atIndex:0];
+    }
+    
+    [NSMenu popUpContextMenu:theMenu withEvent:theEvent forView:self];
+}
+
 - (void)mouseExited:(NSEvent *)event {
     
     NSDictionary *userInfo = [event userData];

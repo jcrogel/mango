@@ -10,5 +10,6 @@
 
 @interface InfoWindowController : NSWindowController
 @property (weak) IBOutlet NSView *cal;
+@property (weak) IBOutlet NSDatePicker *calendar;
 
 @end

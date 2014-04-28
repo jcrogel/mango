@@ -19,4 +19,6 @@
 
 @property NSString *dataType;
 
+-(void)rightClickedEvent: (NSEvent *)theEvent withSender: (id)sender;
+
 @end
