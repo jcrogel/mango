@@ -144,7 +144,13 @@
 
 -(void) copyToJSONClipboard: (id) sender
 {
-    NSLog(@"Convert to JSON");
+    MangoWindowController *mwc = (MangoWindowController *) [[self window] windowController];
+    
+    if(mwc && [mwc isKindOfClass:[MangoWindowController class]])
+    {
+        id json = [[mwc dataManager] mangoToJSON: [sender representedObject]];
+        NSLog(@"%@", json);
+    }
 }
 
 -(void) copyToClipboard: (id) sender

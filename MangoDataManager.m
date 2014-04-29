@@ -271,7 +271,49 @@
 
 #pragma mark - Mango to JSON
 
+-(id)mangoToJSON: (id) d
+{
+    // We assume all are objects of kind dict
+    NSDictionary *data = (NSDictionary *)d;
+    if (![data isKindOfClass:[NSDictionary class]])
+    {
+        NSLog(@"Verify data %@", data);
+        return nil;
+    }
 
+    NSString *type = [data valueForKey:@"Type"];
+    id value = [data valueForKey:@"Value"];
+    id retval;
+    if ([type isEqualToString:@"Dictionary"] || [type isEqualToString:@"ObjectID"])
+    {
+        NSMutableDictionary *_retVal = [@{} mutableCopy];
+        for (NSDictionary *child in [data valueForKey:@"Children"])
+        {
+            id _jsonChild = [self mangoToJSON:child];
+            [_retVal setValue:_jsonChild forKey:[child valueForKey:@"Name"]];
+        }
+        return _retVal;
+    }
+    
+    if ([type isEqualToString:@"Array"])
+    {
+        NSMutableArray *_retVal = [@[] mutableCopy];
+        for (NSDictionary *child in [data valueForKey:@"Children"])
+        {
+            id _jsonChild = [self mangoToJSON:child];
+            [_retVal addObject: _jsonChild];
+        }
+        return _retVal;
+    }
+    
+    else
+    {
+        // TODO: Do extra encapsulation for numbers or bools
+        return value;
+    }
+    
+    return retval;
+}
 
 
 @end

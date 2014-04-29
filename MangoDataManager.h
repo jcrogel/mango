@@ -33,5 +33,7 @@
 -(NSArray *) convertMultipleJSONDocumentsToMango: (NSArray *) data;
 -(NSArray *) convertJSONDictionaryToMango: (NSDictionary *) data;
 -(NSDictionary *) convertJSONToMangoFromValue: (id) value withName: (NSString *) name;
+# pragma mark - Mango to JSON
+-(id)mangoToJSON: (id) data;
 
 @end
