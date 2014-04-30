@@ -15,8 +15,9 @@
     if (self == [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         [[self view] setAutoresizesSubviews: YES];
         [[self view] setAutoresizingMask:NSViewWidthSizable|NSViewHeightSizable];
+        [self setAutoRefresh:YES];
+        [self setQueryLimit:@(10)];
         self.dbData = @[];
-
     }
 
     return self;
@@ -25,9 +26,7 @@
 
 -(BOOL) shouldAutoRefresh
 {
-    if([[self autorefreshCheckbox] state]== NSOnState)
-        return YES;
-    return NO;
+    return [self autoRefresh];
 }
 
 #pragma mark - MangoPlugin
@@ -43,11 +42,11 @@
         NSDate *start = [NSDate date];
         NSMutableDictionary *options = [@{} mutableCopy];
         
-        if (![[[self queryLimitTextField] stringValue] isEqualToString:@"0"])
+        if (![[self queryLimit] isEqualToNumber:@(0)])
         {
             NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
             [f setNumberStyle:NSNumberFormatterDecimalStyle];
-            NSNumber * limit = [f numberFromString:[[self queryLimitTextField] stringValue]];
+            NSNumber * limit = [f numberFromString:[[self queryLimit] stringValue]];
             options[@"limit"] = limit;
         }
         
@@ -109,20 +108,36 @@
     return 25;
 }
 
-- (IBAction)runQueryButtonWasPressed:(id)sender {
+- (IBAction)mapReduceButtonWasPressed:(id)sender
+{
+    [self togglePopOver:[self mapReducePopover] withSender:sender];
+}
+
+- (IBAction)filterButtonWasPressed:(id)sender
+{
+    [self togglePopOver:[self filterPopover] withSender:sender];
+}
+
+- (IBAction)runQueryButtonWasPressed:(id)sender
+{
     
 }
 
-- (IBAction)indicesButtonWasPressed:(id)sender {
-    if ([[self fieldPopover] isShown])
+- (IBAction)indicesButtonWasPressed:(id)sender
+{
+    [self togglePopOver:[self indicesPopover] withSender:sender];
+}
+
+-(void) togglePopOver: (NSPopover *) popover withSender: (id) sender
+{
+    if ([popover isShown])
     {
-        [[self fieldPopover] close];
+        [popover close];
     }
     else
     {
-        [[self fieldPopover] showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxYEdge];
+        [popover showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxYEdge];
     }
-    
 }
 
 

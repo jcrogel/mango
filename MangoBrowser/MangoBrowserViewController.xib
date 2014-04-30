@@ -6,9 +6,11 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MangoBrowserViewController">
             <connections>
-                <outlet property="autorefreshCheckbox" destination="OC0-ur-uLS" id="vzq-6X-R7I"/>
                 <outlet property="browserTC" destination="ndM-aZ-5qJ" id="RLa-hb-BcX"/>
                 <outlet property="fieldPopover" destination="CdU-Na-FyY" id="9Ye-ZP-q2R"/>
+                <outlet property="filterPopover" destination="vRZ-vS-5lf" id="rKx-Mk-4qZ"/>
+                <outlet property="indicesPopover" destination="tVp-ib-8vi" id="GPB-Hr-2Eg"/>
+                <outlet property="mapReducePopover" destination="ijX-cm-avb" id="lC7-Yg-06q"/>
                 <outlet property="messageInfo" destination="GR1-9G-dMP" id="I9s-19-gOm"/>
                 <outlet property="outlineView" destination="fke-Kb-cHQ" id="wsD-bq-wk2"/>
                 <outlet property="progressBar" destination="goA-ac-1B8" id="Jre-jE-144"/>
@@ -49,6 +51,13 @@
                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
+                            <connections>
+                                <binding destination="-2" name="value" keyPath="self.queryLimit" id="DxH-vP-Zaq">
+                                    <dictionary key="options">
+                                        <bool key="NSValidatesImmediately" value="YES"/>
+                                    </dictionary>
+                                </binding>
+                            </connections>
                         </textField>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0IU-3D-d39">
                             <rect key="frame" x="430" y="35" width="51" height="23"/>
@@ -69,11 +78,17 @@
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                 <font key="font" size="13" name="OpenSans"/>
                             </buttonCell>
+                            <connections>
+                                <binding destination="-2" name="value" keyPath="self.autoRefresh" id="5zn-pb-sAJ"/>
+                            </connections>
                         </button>
                         <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aTf-ek-zzu">
                             <rect key="frame" x="511" y="32" width="19" height="27"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" id="eNu-LN-tOc"/>
+                            <connections>
+                                <binding destination="-2" name="value" keyPath="self.queryLimit" id="Re2-mj-9HP"/>
+                            </connections>
                         </stepper>
                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fvZ-xv-5zG">
                             <rect key="frame" x="205" y="5" width="56" height="53"/>
@@ -110,6 +125,9 @@
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
+                            <connections>
+                                <action selector="filterButtonWasPressed:" target="-2" id="uiz-te-3zJ"/>
+                            </connections>
                         </button>
                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XaE-yp-gj3">
                             <rect key="frame" x="269" y="5" width="83" height="53"/>
@@ -118,6 +136,9 @@
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
+                            <connections>
+                                <action selector="mapReduceButtonWasPressed:" target="-2" id="zLP-RJ-FVd"/>
+                            </connections>
                         </button>
                         <searchField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BdF-mg-LBq">
                             <rect key="frame" x="360" y="8" width="65" height="22"/>
@@ -299,12 +320,12 @@
             </connections>
         </treeController>
         <userDefaultsController representsSharedInstance="YES" id="DIg-JW-lTW"/>
-        <viewController id="PE4-MB-UX4" userLabel="Popover View Controller">
+        <viewController id="PE4-MB-UX4" userLabel="FieldPopover View Controller">
             <connections>
                 <outlet property="view" destination="MGf-5Z-idO" id="QvJ-UY-Fp3"/>
             </connections>
         </viewController>
-        <popover id="CdU-Na-FyY">
+        <popover id="CdU-Na-FyY" userLabel="FieldPopover">
             <connections>
                 <outlet property="contentViewController" destination="PE4-MB-UX4" id="9Tk-Q7-ll1"/>
             </connections>
@@ -316,6 +337,103 @@
                 <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9yU-NQ-Ll2" customClass="CKCalendarView">
                     <rect key="frame" x="20" y="59" width="254" height="234"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </customView>
+            </subviews>
+        </customView>
+        <viewController id="geX-vT-jmL" userLabel="MRPopover View Controller">
+            <connections>
+                <outlet property="view" destination="pcY-k1-pRa" id="qVJ-Lm-WsU"/>
+            </connections>
+        </viewController>
+        <popover id="ijX-cm-avb" userLabel="MRPopover">
+            <connections>
+                <outlet property="contentViewController" destination="geX-vT-jmL" id="DHP-Zq-LjF"/>
+            </connections>
+        </popover>
+        <customView id="pcY-k1-pRa">
+            <rect key="frame" x="0.0" y="0.0" width="188" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0X-bD-ztc">
+                    <rect key="frame" x="75" y="50" width="39" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="round" bezelStyle="circular" imagePosition="above" alignment="left" borderStyle="border" imageScaling="proportionallyDown" id="9jl-Rd-CnZ">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="label"/>
+                    </buttonCell>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6fh-lo-Tgq">
+                    <rect key="frame" x="82" y="108" width="24" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="MR" id="UAM-ed-lj1">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+        </customView>
+        <viewController id="2qF-ji-JQV" userLabel="IndicesPopover View Controller">
+            <connections>
+                <outlet property="view" destination="dll-ms-DgM" id="qlW-js-uBI"/>
+            </connections>
+        </viewController>
+        <popover id="tVp-ib-8vi" userLabel="IndicesPopover">
+            <connections>
+                <outlet property="contentViewController" destination="2qF-ji-JQV" id="26b-St-klP"/>
+            </connections>
+        </popover>
+        <customView id="dll-ms-DgM">
+            <rect key="frame" x="0.0" y="0.0" width="163" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQM-d6-jOT">
+                    <rect key="frame" x="33" y="35" width="110" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="squareTextured" title="Textured Button" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3nq-dg-bp9">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kNk-C2-wzo">
+                    <rect key="frame" x="62" y="67" width="48" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Indices" id="WHq-aJ-kT8">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+        </customView>
+        <viewController id="l0A-ZT-5jF" userLabel="FilterPopover View Controller">
+            <connections>
+                <outlet property="view" destination="C66-wh-UQD" id="M2f-hT-Lz4"/>
+            </connections>
+        </viewController>
+        <popover id="vRZ-vS-5lf" userLabel="FilterPopover">
+            <connections>
+                <outlet property="contentViewController" destination="l0A-ZT-5jF" id="Syy-c6-h3n"/>
+            </connections>
+        </popover>
+        <customView id="UQR-bP-VyZ">
+            <rect key="frame" x="0.0" y="0.0" width="163" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C66-wh-UQD">
+                    <rect key="frame" x="0.0" y="0.0" width="163" height="96"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n87-EA-aI2">
+                            <rect key="frame" x="57" y="45" width="36" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Filter" id="HxY-oY-g79">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
                 </customView>
             </subviews>
         </customView>

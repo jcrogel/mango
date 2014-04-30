@@ -60,6 +60,34 @@
 			remoteGlobalIDString = E9A1277618EEFE34003E6E30;
 			remoteInfo = mongoclient;
 		};
+		E98DAA92191169D500561C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E98DAA8B191169D500561C3C /* Fragaria.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AB648E2A11FB385700AEF7BD;
+			remoteInfo = "Fragaria Doc";
+		};
+		E98DAA94191169D500561C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E98DAA8B191169D500561C3C /* Fragaria.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1107320486CEB800E47090;
+			remoteInfo = "Fragaria GC";
+		};
+		E98DAA96191169D500561C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E98DAA8B191169D500561C3C /* Fragaria.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ABCA4DAF16137FC000E4849B;
+			remoteInfo = Fragaria;
+		};
+		E98DAA98191169D500561C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E98DAA8B191169D500561C3C /* Fragaria.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AB69B62B118B745700903D1D;
+			remoteInfo = MGSFragaria;
+		};
 		E9F5D3E118F3A43F00083B1F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E9F5D3D818F3A43F00083B1F /* MMTabBarView.xcodeproj */;
@@ -125,6 +153,7 @@
 		E94364A318EFAED10076B9A5 /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutWindow.xib; path = ../AboutWindow.xib; sourceTree = "<group>"; };
 		E98B09451909A26A00579980 /* CKCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCalendarView.h; sourceTree = SOURCE_ROOT; };
 		E98B09461909A26A00579980 /* CKCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKCalendarView.m; sourceTree = SOURCE_ROOT; };
+		E98DAA8B191169D500561C3C /* Fragaria.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Fragaria.xcodeproj; path = External/Fragaria/Fragaria.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E98FEC8918F3192A004AA776 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = Pods/build/Debug/libPods.a; sourceTree = "<group>"; };
 		E99F502A18EF28D7002C149E /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = External/libboost_system.a; sourceTree = "<group>"; };
 		E99F502C18EF28F6002C149E /* libboost_thread-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_thread-mt.a"; path = "External/libboost_thread-mt.a"; sourceTree = "<group>"; };
@@ -293,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				E90D917E19082C8100D399AE /* CKCalendarView */,
+				E98DAA8B191169D500561C3C /* Fragaria.xcodeproj */,
 				E9F5D3D818F3A43F00083B1F /* MMTabBarView.xcodeproj */,
 				E93167D418F0C010008A4FCE /* mongoclient.xcodeproj */,
 			);
@@ -348,6 +378,17 @@
 				E91547871900B90800188F70 /* MangoDataManager.m */,
 			);
 			name = MangoWindow;
+			sourceTree = "<group>";
+		};
+		E98DAA8C191169D500561C3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E98DAA93191169D500561C3C /* Fragaria Doc.app */,
+				E98DAA95191169D500561C3C /* Fragaria GC.app */,
+				E98DAA97191169D500561C3C /* Fragaria.app */,
+				E98DAA99191169D500561C3C /* MGSFragaria.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		E9AEB7991900308E008F3C9D /* InfoWindow */ = {
@@ -449,6 +490,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = E98DAA8C191169D500561C3C /* Products */;
+					ProjectRef = E98DAA8B191169D500561C3C /* Fragaria.xcodeproj */;
+				},
+				{
 					ProductGroup = E9F5D3D918F3A43F00083B1F /* Products */;
 					ProjectRef = E9F5D3D818F3A43F00083B1F /* MMTabBarView.xcodeproj */;
 				},
@@ -471,6 +516,34 @@
 			fileType = archive.ar;
 			path = libmongoclient.a;
 			remoteRef = E93167DA18F0C011008A4FCE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E98DAA93191169D500561C3C /* Fragaria Doc.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Fragaria Doc.app";
+			remoteRef = E98DAA92191169D500561C3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E98DAA95191169D500561C3C /* Fragaria GC.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Fragaria GC.app";
+			remoteRef = E98DAA94191169D500561C3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E98DAA97191169D500561C3C /* Fragaria.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Fragaria.app;
+			remoteRef = E98DAA96191169D500561C3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E98DAA99191169D500561C3C /* MGSFragaria.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MGSFragaria.framework;
+			remoteRef = E98DAA98191169D500561C3C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		E9F5D3E218F3A43F00083B1F /* MMTabBarView.framework */ = {

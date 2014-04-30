@@ -21,14 +21,20 @@
                                                     NSOutlineViewDelegate>
 @property (weak) IBOutlet MangoBrowserOutlineView *outlineView;
 @property (weak) IBOutlet NSButton *triggerButton;
-@property (weak) IBOutlet NSButton *autorefreshCheckbox;
-@property (weak) IBOutlet NSTextField *queryLimitTextField;
 @property (strong) IBOutlet NSTreeController *browserTC;
-@property (strong) IBOutlet NSPopover *fieldPopover;
-
 @property (weak) IBOutlet NSProgressIndicator *progressBar;
 @property (weak) IBOutlet NSTextField *messageInfo;
 
+@property (strong) IBOutlet NSPopover *fieldPopover;
+@property (strong) IBOutlet NSPopover *filterPopover;
+@property (strong) IBOutlet NSPopover *mapReducePopover;
+@property (strong) IBOutlet NSPopover *indicesPopover;
+
+@property (assign) BOOL autoRefresh;
+@property NSNumber *queryLimit;
+
+- (IBAction)mapReduceButtonWasPressed:(id)sender;
+- (IBAction)filterButtonWasPressed:(id)sender;
 - (IBAction)runQueryButtonWasPressed:(id)sender;
 - (IBAction)indicesButtonWasPressed:(id)sender;
 
