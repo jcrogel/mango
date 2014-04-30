@@ -35,9 +35,11 @@
 @property NSArray *collectionListItems;
 @property MangoPluginManager *pluginManager;
 
+- (IBAction)addCollectionWasPressed:(id)sender;
+- (IBAction)createDBWasPressed:(id)sender;
+- (IBAction)dropDBWasPressed:(id)sender;
+- (IBAction)showUsersWasPressed:(id)sender;
 - (IBAction)dbInfoButtonPressed:(id)sender;
-
-- (IBAction)runCommand:(id)sender;
 - (void) connectAndShow;
 - (IBAction)debugConn:(id)sender;
 - (IBAction)dbsPopUpButtonAction:(id)sender;

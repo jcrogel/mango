@@ -45,6 +45,18 @@
 
 #pragma mark - Database Actions
 
+- (IBAction)addCollectionWasPressed:(id)sender {
+}
+
+- (IBAction)createDBWasPressed:(id)sender {
+}
+
+- (IBAction)dropDBWasPressed:(id)sender {
+}
+
+- (IBAction)showUsersWasPressed:(id)sender {
+}
+
 - (IBAction)dbInfoButtonPressed:(id)sender {
     [[[self dataManager] ConnectionManager] getDBStats: [self getSelectedDatabase]];
     
@@ -212,10 +224,7 @@
     return [[[self dbsPopUpButton] selectedItem]  title];
 }
 
-- (IBAction)runCommand:(id)sender {
-    NSString *dbName = [[[self dbsPopUpButton] selectedItem]  title];
-    NSLog(@"%@", dbName);
-}
+
 
 # pragma mark - DataManager callbacks
 
