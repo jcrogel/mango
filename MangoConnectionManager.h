@@ -25,7 +25,7 @@
 -(void) dbgSel;
 
 -(void) getDBStats: (NSString *) dbname;
--(void) getServerStatus;
+-(NSString *) getServerStatus;
 -(void) getCollectionInfo: (NSString *) nspace;
 
 - (void) getObjectID: (NSString *) oid onDB: (NSString *) dbname;

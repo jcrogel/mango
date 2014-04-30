@@ -20,6 +20,8 @@
     self = [super initWithWindow:window];
     if (self) {
         // Initialization code here.
+        [self setRefreshRate:[NSNumber numberWithInt:5]];
+        [self setPulses:[NSNumber numberWithBool:YES]];
     }
     return self;
 }

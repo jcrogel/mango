@@ -32,16 +32,22 @@
 #pragma mark - Server Actions
 
 - (IBAction)serverInfoButtonPressed:(id)sender {
-    //[[self connMgr] getServerStatus];
+    NSString *json = [[[self dataManager] ConnectionManager] getServerStatus];
+    NSError *e;
+                  
+    id jsonObj = [NSJSONSerialization JSONObjectWithData:[json dataUsingEncoding:NSUTF8StringEncoding]
+                                                 options:0 error:&e];
+//    NSLog(@"%@", jsonObj);
+    InfoWindowController *mangowindow = [[InfoWindowController alloc] initWithWindowNibName:@"InfoWindow"];
+    [mangowindow showWindow: self];
+    [self setInfoWindowController:mangowindow];
 }
 
 #pragma mark - Database Actions
 
 - (IBAction)dbInfoButtonPressed:(id)sender {
-    //[[self connMgr] getDBStats: [self getSelectedDatabase]];
-    InfoWindowController *mangowindow = [[InfoWindowController alloc] initWithWindowNibName:@"InfoWindow"];
-    [mangowindow showWindow: self];
-    [self setInfoWindowController:mangowindow];
+    [[[self dataManager] ConnectionManager] getDBStats: [self getSelectedDatabase]];
+    
     
 }
 

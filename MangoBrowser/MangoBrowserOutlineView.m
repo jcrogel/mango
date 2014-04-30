@@ -148,8 +148,16 @@
     
     if(mwc && [mwc isKindOfClass:[MangoWindowController class]])
     {
-        id json = [[mwc dataManager] mangoToJSON: [sender representedObject]];
-        NSLog(@"%@", json);
+        id jsonObj = [[mwc dataManager] mangoToJSON: [sender representedObject]];
+        NSError *e;
+        
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:jsonObj options:NSJSONWritingPrettyPrinted error: &e];
+
+        NSString *jsonStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        
+        NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
+        [pasteBoard declareTypes:[NSArray arrayWithObjects:NSStringPboardType, nil] owner:nil];
+        [pasteBoard setString: jsonStr forType:NSStringPboardType];
     }
 }
 
