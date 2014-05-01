@@ -25,6 +25,7 @@
 		E943649F18EF81760076B9A5 /* MangoWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E943649E18EF81760076B9A5 /* MangoWindowController.m */; };
 		E94364A218EF82500076B9A5 /* MangoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94364A118EF82500076B9A5 /* MangoWindow.xib */; };
 		E94364A418EFAED10076B9A5 /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94364A318EFAED10076B9A5 /* AboutWindow.xib */; };
+		E9535FD519121D2F00BD2480 /* NSAlert+Popover.m in Sources */ = {isa = PBXBuildFile; fileRef = E9535FD419121D2F00BD2480 /* NSAlert+Popover.m */; };
 		E97A0E7C18F1D5F800098D55 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9258D6918EE424600564355 /* MainMenu.xib */; };
 		E98B09471909A26A00579980 /* CKCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E98B09461909A26A00579980 /* CKCalendarView.m */; };
 		E98FEC8A18F3192A004AA776 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E98FEC8918F3192A004AA776 /* libPods.a */; };
@@ -102,7 +103,7 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolderSpec = 7;
 			files = (
 				E9F5D3E518F3A45100083B1F /* MMTabBarView.framework in Copy Files (2 items) */,
 			);
@@ -151,6 +152,8 @@
 		E943649E18EF81760076B9A5 /* MangoWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangoWindowController.m; sourceTree = SOURCE_ROOT; };
 		E94364A118EF82500076B9A5 /* MangoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MangoWindow.xib; sourceTree = SOURCE_ROOT; };
 		E94364A318EFAED10076B9A5 /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutWindow.xib; path = ../AboutWindow.xib; sourceTree = "<group>"; };
+		E9535FD319121D2F00BD2480 /* NSAlert+Popover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAlert+Popover.h"; sourceTree = SOURCE_ROOT; };
+		E9535FD419121D2F00BD2480 /* NSAlert+Popover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+Popover.m"; sourceTree = SOURCE_ROOT; };
 		E98B09451909A26A00579980 /* CKCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCalendarView.h; sourceTree = SOURCE_ROOT; };
 		E98B09461909A26A00579980 /* CKCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKCalendarView.m; sourceTree = SOURCE_ROOT; };
 		E98DAA8B191169D500561C3C /* Fragaria.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Fragaria.xcodeproj; path = External/Fragaria/Fragaria.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -321,6 +324,7 @@
 		E9258D8F18EE623F00564355 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				E9535FD219121D1700BD2480 /* NSPopupAlert */,
 				E90D917E19082C8100D399AE /* CKCalendarView */,
 				E98DAA8B191169D500561C3C /* Fragaria.xcodeproj */,
 				E9F5D3D818F3A43F00083B1F /* MMTabBarView.xcodeproj */,
@@ -378,6 +382,15 @@
 				E91547871900B90800188F70 /* MangoDataManager.m */,
 			);
 			name = MangoWindow;
+			sourceTree = "<group>";
+		};
+		E9535FD219121D1700BD2480 /* NSPopupAlert */ = {
+			isa = PBXGroup;
+			children = (
+				E9535FD319121D2F00BD2480 /* NSAlert+Popover.h */,
+				E9535FD419121D2F00BD2480 /* NSAlert+Popover.m */,
+			);
+			name = NSPopupAlert;
 			sourceTree = "<group>";
 		};
 		E98DAA8C191169D500561C3C /* Products */ = {
@@ -627,6 +640,7 @@
 				E9AEB79E1900311B008F3C9D /* InfoWindowController.m in Sources */,
 				E943649F18EF81760076B9A5 /* MangoWindowController.m in Sources */,
 				E9AEB79518FF46DC008F3C9D /* MangoBrowserValueCell.m in Sources */,
+				E9535FD519121D2F00BD2480 /* NSAlert+Popover.m in Sources */,
 				E9BC45511902EE9A0094A8D8 /* MangoPluginManager.m in Sources */,
 				E9AEB78A18FF2639008F3C9D /* MangoBrowserCell.m in Sources */,
 				E915478D1900F36900188F70 /* MangoBrowserOutlineView.m in Sources */,

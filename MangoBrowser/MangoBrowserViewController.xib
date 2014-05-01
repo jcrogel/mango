@@ -52,11 +52,8 @@
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                             <connections>
-                                <binding destination="-2" name="value" keyPath="self.queryLimit" id="DxH-vP-Zaq">
-                                    <dictionary key="options">
-                                        <bool key="NSValidatesImmediately" value="YES"/>
-                                    </dictionary>
-                                </binding>
+                                <binding destination="-2" name="value" keyPath="self.queryLimit" id="JFu-uv-BTW"/>
+                                <outlet property="formatter" destination="ikS-4k-e9k" id="OB8-fo-pah"/>
                             </connections>
                         </textField>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0IU-3D-d39">
@@ -437,6 +434,7 @@
                 </customView>
             </subviews>
         </customView>
+        <numberFormatter formatterBehavior="default10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="ikS-4k-e9k" userLabel="limitResultsNumberFormatter"/>
     </objects>
     <resources>
         <image name="playbutton" width="50" height="50"/>

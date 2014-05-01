@@ -223,29 +223,64 @@
     
 }
 
-- (void) getObjectID: (NSString *) oid onDB: (NSString *) dbname;
+- (id) getObjectID: (NSString *) oid onDB: (NSString *) dbname;
 {
     //mongo::OID oidObj = mongo::OID([oid cStringUsingEncoding:NSUTF8StringEncoding]);
-    
+    return nil;
 }
 
--(void) getDBStats: (NSString *) dbname
+-(id) stringToJSON: (NSString *) json
+{
+    NSError *e;
+    if (!json)
+        return nil;
+    id jsonObj = [NSJSONSerialization JSONObjectWithData:[json dataUsingEncoding:NSUTF8StringEncoding]
+                                                 options:0
+                                                   error:&e];
+    if (!e)
+        return jsonObj;
+    return nil;
+}
+
+-(BOOL) createDBNamed: (NSString *) dbname
+{
+    mongo::DBClientConnection * conn = [self connPtr];
+    bool worked;
+    mongo::BSONObj ret;
+    
+    NSString *ns = [NSString stringWithFormat:@"%@.__mango__", dbname];
+    
+    worked = conn->createCollection( [ns cStringUsingEncoding:NSUTF8StringEncoding]);
+    if (worked) {
+        worked = conn->dropCollection ([ns cStringUsingEncoding:NSUTF8StringEncoding]);
+        if (worked)
+            return YES;
+    }
+    return NO;
+}
+
+-(id) getDBStats: (NSString *) dbname
 {
     mongo::BSONObj result = [self runCommand:@"dbStats" onDatabase:dbname];
-    NSLog(@"%@", [NSString stringWithCString: result.toString().c_str() encoding:NSUTF8StringEncoding] );
+    return [self stringToJSON: [NSString stringWithCString: result.toString().c_str() encoding:NSUTF8StringEncoding]];
 }
 
-
--(NSString *) getServerStatus
+-(id) dropDB: (NSString *) dbname
 {
-    mongo::BSONObj result = [self runCommand:@"serverStatus" onDatabase:@"admin"];
-    return [NSString stringWithCString: result.jsonString().c_str() encoding:NSUTF8StringEncoding];
+    mongo::BSONObj result = [self runCommand:@"dropDatabase" onDatabase:dbname];
+    return [self stringToJSON: [NSString stringWithCString: result.toString().c_str() encoding:NSUTF8StringEncoding]];
 }
 
--(void) getCollectionInfo: (NSString *) nspace
+-(id) getServerStatus
 {
     mongo::BSONObj result = [self runCommand:@"serverStatus" onDatabase:@"admin"];
-    NSLog(@"%@", [NSString stringWithCString: result.toString().c_str() encoding:NSUTF8StringEncoding] );
+    return [self stringToJSON: [NSString stringWithCString: result.jsonString().c_str() encoding:NSUTF8StringEncoding]];
+}
+
+-(id) getCollectionInfo: (NSString *) nspace
+{
+    mongo::BSONObj result = [self runCommand:@"serverStatus" onDatabase:@"admin"];
+    return [self stringToJSON:[NSString stringWithCString: result.toString().c_str() encoding:NSUTF8StringEncoding]];
 }
 
 @end

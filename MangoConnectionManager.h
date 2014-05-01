@@ -24,10 +24,12 @@
 -(NSArray *) queryNameSpace: (NSString *) nameSpace withOptions: (NSDictionary *) options;
 -(void) dbgSel;
 
--(void) getDBStats: (NSString *) dbname;
--(NSString *) getServerStatus;
--(void) getCollectionInfo: (NSString *) nspace;
+-(BOOL) createDBNamed: (NSString *) dbname;
+-(id) getDBStats: (NSString *) dbname;
+-(id) getServerStatus;
+-(id) dropDB: (NSString *) dbname;
+-(id) getCollectionInfo: (NSString *) nspace;
 
-- (void) getObjectID: (NSString *) oid onDB: (NSString *) dbname;
+- (id) getObjectID: (NSString *) oid onDB: (NSString *) dbname;
 
 @end

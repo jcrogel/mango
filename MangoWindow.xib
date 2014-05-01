@@ -9,6 +9,8 @@
                 <outlet property="collectionListTC" destination="Afd-zp-qPz" id="UMK-06-xFJ"/>
                 <outlet property="collectionListView" destination="ZlD-oe-L4w" id="Evy-dX-BKS"/>
                 <outlet property="collectionSearchField" destination="gKa-j9-a3m" id="6eG-43-1rx"/>
+                <outlet property="createDBInputField" destination="RlY-yR-cWk" id="MnW-SW-5Jv"/>
+                <outlet property="createDBPopover" destination="8J2-GF-1EG" id="9Bm-yy-T8T"/>
                 <outlet property="dbsPopUpButton" destination="Fw2-vN-fY3" id="Zhw-jw-XoO"/>
                 <outlet property="popUpContainerView" destination="6iA-Gk-YCj" id="DbO-7B-UuH"/>
                 <outlet property="sideBar" destination="w1a-Zk-36e" id="E7M-iN-Vje"/>
@@ -217,10 +219,10 @@
                     <buttonCell key="cell" type="smallSquare" title="Create" bezelStyle="smallSquare" image="playbutton" alignment="center" imageScaling="proportionallyDown" inset="2" id="CpT-ca-mjY">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" size="13" name="OpenSans"/>
-                        <connections>
-                            <action selector="createDBWasPressed:" target="-2" id="BAv-yE-d7P"/>
-                        </connections>
                     </buttonCell>
+                    <connections>
+                        <action selector="showCreateDBPopoverWasPressed:" target="-2" id="CRO-jL-uB0"/>
+                    </connections>
                 </button>
                 <button id="ctd-kx-UsG">
                     <rect key="frame" x="274" y="18" width="42" height="31"/>
@@ -289,6 +291,51 @@
                     <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <font key="titleFont" metaFont="system"/>
                 </box>
+            </subviews>
+        </customView>
+        <viewController id="6u4-IS-Ulq" userLabel="Popover View Controller">
+            <connections>
+                <outlet property="view" destination="255-xV-YDA" id="phB-Bp-Ujh"/>
+            </connections>
+        </viewController>
+        <popover id="8J2-GF-1EG">
+            <connections>
+                <outlet property="contentViewController" destination="6u4-IS-Ulq" id="E28-cP-g9M"/>
+            </connections>
+        </popover>
+        <customView id="255-xV-YDA">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" id="0fa-d8-cLh">
+                    <rect key="frame" x="207" y="18" width="55" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="roundTextured" title="Create" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="r1n-mI-JpG">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name="OpenSans-Light"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="createDBButtonWasPressed:" target="-2" id="aYl-lV-72z"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" id="RlY-yR-cWk">
+                    <rect key="frame" x="20" y="48" width="242" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="VeH-9C-Zhb">
+                        <font key="font" size="13" name="OpenSans-Light"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="ATp-zH-KiF">
+                    <rect key="frame" x="18" y="78" width="246" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Creating a new DB" id="UQ5-NR-nEi">
+                        <font key="font" size="13" name="OpenSans-Light"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
         </customView>
     </objects>

@@ -17,6 +17,7 @@
 #import "InfoWindow/InfoWindowController.h"
 #import "MangoDataManager.h"
 #import "MangoPluginManager.h"
+#import "NSAlert+Popover.h"
 
 
 @interface MangoWindowController : NSWindowController<NSOutlineViewDelegate,
@@ -34,9 +35,14 @@
 @property InfoWindowController *infoWindowController;
 @property NSArray *collectionListItems;
 @property MangoPluginManager *pluginManager;
+@property NSAlert *popupAlert;
 
+@property (strong) IBOutlet NSPopover *createDBPopover;
+@property (weak) IBOutlet NSTextField *createDBInputField;
+
+- (IBAction)createDBButtonWasPressed:(id)sender;
 - (IBAction)addCollectionWasPressed:(id)sender;
-- (IBAction)createDBWasPressed:(id)sender;
+- (IBAction)showCreateDBPopoverWasPressed:(id)sender;
 - (IBAction)dropDBWasPressed:(id)sender;
 - (IBAction)showUsersWasPressed:(id)sender;
 - (IBAction)dbInfoButtonPressed:(id)sender;

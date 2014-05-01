@@ -32,12 +32,14 @@
 #pragma mark - Server Actions
 
 - (IBAction)serverInfoButtonPressed:(id)sender {
+/*
     NSString *json = [[[self dataManager] ConnectionManager] getServerStatus];
     NSError *e;
                   
     id jsonObj = [NSJSONSerialization JSONObjectWithData:[json dataUsingEncoding:NSUTF8StringEncoding]
                                                  options:0 error:&e];
-//    NSLog(@"%@", jsonObj);
+    NSLog(@"%@", jsonObj);
+ */
     InfoWindowController *mangowindow = [[InfoWindowController alloc] initWithWindowNibName:@"InfoWindow"];
     [mangowindow showWindow: self];
     [self setInfoWindowController:mangowindow];
@@ -45,13 +47,58 @@
 
 #pragma mark - Database Actions
 
+- (IBAction)createDBButtonWasPressed:(id)sender
+{
+    if ([[self createDBInputField] stringValue]  && [[[self createDBInputField] stringValue] length]>0)
+    {
+        NSString *newDBName = [[self createDBInputField] stringValue];
+        newDBName = [newDBName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        if([[[self dataManager] ConnectionManager] createDBNamed:newDBName])
+        {
+            [self setupDBsPopUpButton];
+            [[self createDBPopover] close];
+        }
+        
+    }
+}
+
 - (IBAction)addCollectionWasPressed:(id)sender {
 }
 
-- (IBAction)createDBWasPressed:(id)sender {
+- (IBAction)showCreateDBPopoverWasPressed:(id)sender {
+   if ([[self createDBPopover] isShown])
+    {
+        [[self createDBPopover] close];
+    }
+    else
+    {
+        [[self createDBPopover] showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxYEdge];
+    }
+
 }
 
 - (IBAction)dropDBWasPressed:(id)sender {
+    NSAlert *alert = [NSAlert alertWithMessageText:@"Do you really want to drop database this item?"
+                                     defaultButton:@"Delete"
+                                   alternateButton:@"Learn more"
+                                       otherButton:@"Cancel"
+                         informativeTextWithFormat:@"Deleting this item will erase all associated data in the database. Click learn more if you need additional information."];
+    
+    [self setPopupAlert:alert];
+    NSButton *sButton = (NSButton *) sender;
+    [alert runAsPopoverForView:sButton withCompletionBlock:^(NSInteger result) {
+		// handle result
+        if (result==NSAlertFirstButtonReturn)
+        {
+            NSDictionary *result = [[[self dataManager] ConnectionManager] dropDB:[self getSelectedDatabase]];
+            NSLog(@"%@", result);
+            id isOk = [result valueForKey:@"ok"];
+//            if (isOk and isOK isEqua)
+            // Add if code
+            [self setupDBsPopUpButton];
+        }
+	}];
+    
 }
 
 - (IBAction)showUsersWasPressed:(id)sender {
@@ -213,10 +260,14 @@
 
 -(NSString *) getSelectedCollectionName
 {
-    NSTreeNode *selectedNode = [[[self collectionListTC] selectedNodes] objectAtIndex:0];
-    NSDictionary *selectedNodeObj = [selectedNode representedObject];
-    NSString *selectedCollection = selectedNodeObj[@"name"];
-    return selectedCollection;
+    if ([[[self collectionListTC] selectedNodes] count])
+    {
+        NSTreeNode *selectedNode = [[[self collectionListTC] selectedNodes] objectAtIndex:0];
+        NSDictionary *selectedNodeObj = [selectedNode representedObject];
+        NSString *selectedCollection = selectedNodeObj[@"name"];
+        return selectedCollection;
+    }
+    return @"";
 }
 
 -(NSString *) getSelectedDatabase
