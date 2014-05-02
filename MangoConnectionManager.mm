@@ -265,10 +265,16 @@
     return [self stringToJSON: [NSString stringWithCString: result.toString().c_str() encoding:NSUTF8StringEncoding]];
 }
 
--(id) dropDB: (NSString *) dbname
+-(BOOL) dropDB: (NSString *) dbname
 {
     mongo::BSONObj result = [self runCommand:@"dropDatabase" onDatabase:dbname];
-    return [self stringToJSON: [NSString stringWithCString: result.toString().c_str() encoding:NSUTF8StringEncoding]];
+    mongo::BSONElement isOk = result.getField("ok");
+    if (isOk.isNumber())
+    {
+        if (isOk.numberInt()!=0.0)
+            return YES;
+    }
+    return NO;
 }
 
 -(id) getServerStatus

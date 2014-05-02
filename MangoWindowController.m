@@ -78,11 +78,11 @@
 }
 
 - (IBAction)dropDBWasPressed:(id)sender {
-    NSAlert *alert = [NSAlert alertWithMessageText:@"Do you really want to drop database this item?"
-                                     defaultButton:@"Delete"
+    NSAlert *alert = [NSAlert alertWithMessageText:@"Do you really want to drop database?"
+                                     defaultButton:@"Drop"
                                    alternateButton:@"Learn more"
                                        otherButton:@"Cancel"
-                         informativeTextWithFormat:@"Deleting this item will erase all associated data in the database. Click learn more if you need additional information."];
+                         informativeTextWithFormat:@"Deleting this item will erase all associated data in the database. This action cannot be undone."];
     
     [self setPopupAlert:alert];
     NSButton *sButton = (NSButton *) sender;
@@ -90,12 +90,18 @@
 		// handle result
         if (result==NSAlertFirstButtonReturn)
         {
-            NSDictionary *result = [[[self dataManager] ConnectionManager] dropDB:[self getSelectedDatabase]];
-            NSLog(@"%@", result);
-            id isOk = [result valueForKey:@"ok"];
-//            if (isOk and isOK isEqua)
-            // Add if code
-            [self setupDBsPopUpButton];
+            BOOL result = [[[self dataManager] ConnectionManager] dropDB:[self getSelectedDatabase]];
+            if(result)
+            {
+                [self setupDBsPopUpButton];
+            }
+            else
+            {
+                NSAlert *alert2 = [[NSAlert alloc] init];
+                [alert2 setMessageText: [NSString stringWithFormat:@"Unable to drop database %@", [self getSelectedDatabase]]];
+                [alert2 runModal];
+                
+            }
         }
 	}];
     
@@ -107,14 +113,17 @@
 - (IBAction)dbInfoButtonPressed:(id)sender {
     [[[self dataManager] ConnectionManager] getDBStats: [self getSelectedDatabase]];
     
-    
 }
 
 - (IBAction)dbsPopUpButtonAction:(id)sender
 {
     [[self collectionSearchField] setStringValue:@""];
+    [self  setCollectionData:@[]];
     [[self dataManager] fetchCollectionNamesForDB: [self getSelectedDatabase]];
     [[self dataManager] processCollectionsWithFilter:[[self collectionSearchField] stringValue]];
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
+    [[self collectionListView]  selectRowIndexes:indexSet byExtendingSelection:NO];
+    
 }
 
 #pragma mark - Collection Actions

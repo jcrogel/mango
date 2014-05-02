@@ -36,6 +36,7 @@
 @property NSArray *collectionListItems;
 @property MangoPluginManager *pluginManager;
 @property NSAlert *popupAlert;
+@property (weak) IBOutlet NSOutlineView *collectionListView;
 
 @property (strong) IBOutlet NSPopover *createDBPopover;
 @property (weak) IBOutlet NSTextField *createDBInputField;

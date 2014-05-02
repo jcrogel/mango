@@ -27,7 +27,7 @@
 -(BOOL) createDBNamed: (NSString *) dbname;
 -(id) getDBStats: (NSString *) dbname;
 -(id) getServerStatus;
--(id) dropDB: (NSString *) dbname;
+-(BOOL) dropDB: (NSString *) dbname;
 -(id) getCollectionInfo: (NSString *) nspace;
 
 - (id) getObjectID: (NSString *) oid onDB: (NSString *) dbname;

@@ -7,7 +7,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="MangoWindowController">
             <connections>
                 <outlet property="collectionListTC" destination="Afd-zp-qPz" id="UMK-06-xFJ"/>
-                <outlet property="collectionListView" destination="ZlD-oe-L4w" id="Evy-dX-BKS"/>
+                <outlet property="collectionListView" destination="ZlD-oe-L4w" id="DcU-tw-Xvr"/>
                 <outlet property="collectionSearchField" destination="gKa-j9-a3m" id="6eG-43-1rx"/>
                 <outlet property="createDBInputField" destination="RlY-yR-cWk" id="MnW-SW-5Jv"/>
                 <outlet property="createDBPopover" destination="8J2-GF-1EG" id="9Bm-yy-T8T"/>

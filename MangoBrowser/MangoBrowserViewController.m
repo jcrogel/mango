@@ -35,39 +35,48 @@
 {
     if ([self shouldAutoRefresh])
     {
-        [[self progressBar] startAnimation:self];
-        [[self progressBar] setHidden: NO];
-        [[[self progressBar] animator] setAlphaValue:1];
-        [[self messageInfo] setStringValue: [NSString stringWithFormat:@"Loading %@.%@", db, col]];
-        NSDate *start = [NSDate date];
-        NSMutableDictionary *options = [@{} mutableCopy];
-        
-        if (![[self queryLimit] isEqualToNumber:@(0)])
+        if ([[col stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] != 0)
         {
-            NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
-            [f setNumberStyle:NSNumberFormatterDecimalStyle];
-            NSNumber * limit = [f numberFromString:[[self queryLimit] stringValue]];
-            options[@"limit"] = limit;
+            [[self progressBar] startAnimation:self];
+            [[self progressBar] setHidden: NO];
+            [[[self progressBar] animator] setAlphaValue:1];
+            [[self messageInfo] setStringValue: [NSString stringWithFormat:@"Loading %@.%@", db, col]];
+            NSDate *start = [NSDate date];
+            NSMutableDictionary *options = [@{} mutableCopy];
+            
+            if (![[self queryLimit] isEqualToNumber:@(0)])
+            {
+                NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+                [f setNumberStyle:NSNumberFormatterDecimalStyle];
+                NSNumber * limit = [f numberFromString:[[self queryLimit] stringValue]];
+                options[@"limit"] = limit;
+            }
+            
+            NSArray *res = [[mgr ConnectionManager] queryNameSpace: [NSString stringWithFormat:@"%@.%@", db, col ] withOptions: options];
+            //res = [self reformatQueryResults:res];
+            NSWindowController *wc = [[[self view] window] windowController];
+            SEL dmSelector = NSSelectorFromString(@"dataManager");
+            if ([wc respondsToSelector:dmSelector])
+            {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+                MangoDataManager *dm = [wc performSelector:dmSelector];
+#pragma clang diagnostic pop
+                res = [dm convertMultipleJSONDocumentsToMango: res];
+                [self setDbData:res];
+                [[self outlineView] reloadData];
+            }
+            NSTimeInterval timeInterval = [start timeIntervalSinceNow];
+            [[self progressBar] stopAnimation:self];
+            [[[self progressBar] animator] setAlphaValue:0.0];
+            [[self messageInfo] setStringValue: [NSString stringWithFormat:@"Loaded %@.%@ in %f", db, col, timeInterval]];
         }
-        
-        NSArray *res = [[mgr ConnectionManager] queryNameSpace: [NSString stringWithFormat:@"%@.%@", db, col ] withOptions: options];
-        //res = [self reformatQueryResults:res];
-        NSWindowController *wc = [[[self view] window] windowController];
-        SEL dmSelector = NSSelectorFromString(@"dataManager");
-        if ([wc respondsToSelector:dmSelector])
+        else
         {
-            #pragma clang diagnostic push
-            #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-            MangoDataManager *dm = [wc performSelector:dmSelector];
-            #pragma clang diagnostic pop
-            res = [dm convertMultipleJSONDocumentsToMango: res];
-            [self setDbData:res];
+            [[self messageInfo] setStringValue: @""];
+            [self setDbData:@[]];
             [[self outlineView] reloadData];
         }
-        NSTimeInterval timeInterval = [start timeIntervalSinceNow];
-        [[self progressBar] stopAnimation:self];
-        [[[self progressBar] animator] setAlphaValue:0.0];
-        [[self messageInfo] setStringValue: [NSString stringWithFormat:@"Loaded %@.%@ in %f", db, col, timeInterval]];
     }
 }
 
