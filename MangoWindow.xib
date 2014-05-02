@@ -308,11 +308,11 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <button verticalHuggingPriority="750" id="0fa-d8-cLh">
-                    <rect key="frame" x="207" y="18" width="55" height="25"/>
+                    <rect key="frame" x="191" y="6" width="71" height="36"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <buttonCell key="cell" type="roundTextured" title="Create" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="r1n-mI-JpG">
+                    <buttonCell key="cell" type="smallSquare" title="Create" bezelStyle="smallSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="r1n-mI-JpG">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" size="13" name="OpenSans-Light"/>
+                        <font key="font" size="13" name="OpenSans-Bold"/>
                     </buttonCell>
                     <connections>
                         <action selector="createDBButtonWasPressed:" target="-2" id="aYl-lV-72z"/>
@@ -322,7 +322,7 @@
                     <rect key="frame" x="20" y="48" width="242" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="VeH-9C-Zhb">
-                        <font key="font" size="13" name="OpenSans-Light"/>
+                        <font key="font" metaFont="system"/>
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>

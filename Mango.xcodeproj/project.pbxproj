@@ -38,12 +38,20 @@
 		E9AEB79B19003099008F3C9D /* InfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9AEB79A19003098008F3C9D /* InfoWindow.xib */; };
 		E9AEB79E1900311B008F3C9D /* InfoWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEB79D1900311B008F3C9D /* InfoWindowController.m */; };
 		E9BC45511902EE9A0094A8D8 /* MangoPluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BC45501902EE9A0094A8D8 /* MangoPluginManager.m */; };
-		E9BC4558190318470094A8D8 /* MangoSimpleBrowserVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BC4556190318470094A8D8 /* MangoSimpleBrowserVC.m */; };
-		E9BC4559190318470094A8D8 /* MangoSimpleBrowserVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BC4557190318470094A8D8 /* MangoSimpleBrowserVC.xib */; };
 		E9BC455C1904277B0094A8D8 /* MangoPluginTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BC455B1904277B0094A8D8 /* MangoPluginTabItem.m */; };
+		E9D361721913EB4D0045D640 /* OpenSans-Light.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9D361691913EA3C0045D640 /* OpenSans-Light.ttf */; };
+		E9D3617D1913EBC90045D640 /* OpenSans-Bold.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9D361741913EBBE0045D640 /* OpenSans-Bold.ttf */; };
+		E9D3617E1913EBCB0045D640 /* OpenSans-BoldItalic.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9D361751913EBBE0045D640 /* OpenSans-BoldItalic.ttf */; };
+		E9D3617F1913EBCE0045D640 /* OpenSans-ExtraBold.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9D361761913EBBE0045D640 /* OpenSans-ExtraBold.ttf */; };
+		E9D361801913EBD00045D640 /* OpenSans-ExtraBoldItalic.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9D361771913EBBE0045D640 /* OpenSans-ExtraBoldItalic.ttf */; };
+		E9D361811913EBD20045D640 /* OpenSans-Italic.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9D361781913EBBE0045D640 /* OpenSans-Italic.ttf */; };
+		E9D361821913EBD60045D640 /* OpenSans-LightItalic.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9D361791913EBBE0045D640 /* OpenSans-LightItalic.ttf */; };
+		E9D361831913EBD90045D640 /* OpenSans-Regular.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9D3617A1913EBBE0045D640 /* OpenSans-Regular.ttf */; };
+		E9D361841913EBDB0045D640 /* OpenSans-Semibold.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9D3617B1913EBBE0045D640 /* OpenSans-Semibold.ttf */; };
+		E9D361851913EBE00045D640 /* OpenSans-SemiboldItalic.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9D3617C1913EBBE0045D640 /* OpenSans-SemiboldItalic.ttf */; };
+		E9D361871913F7900045D640 /* MMTabBarView.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9F5D3E218F3A43F00083B1F /* MMTabBarView.framework */; };
 		E9D589D518F0CA3D00F9B333 /* libmongoclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E93167DB18F0C011008A4FCE /* libmongoclient.a */; };
 		E9F5D3E418F3A44C00083B1F /* MMTabBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F5D3E218F3A43F00083B1F /* MMTabBarView.framework */; };
-		E9F5D3E518F3A45100083B1F /* MMTabBarView.framework in Copy Files (2 items) */ = {isa = PBXBuildFile; fileRef = E9F5D3E218F3A43F00083B1F /* MMTabBarView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,15 +107,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E94364B718F09B760076B9A5 /* Copy Files (2 items) */ = {
+		E9D361711913EB340045D640 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Fonts;
+			dstSubfolderSpec = 7;
+			files = (
+				E9D361811913EBD20045D640 /* OpenSans-Italic.ttf in CopyFiles */,
+				E9D3617F1913EBCE0045D640 /* OpenSans-ExtraBold.ttf in CopyFiles */,
+				E9D361821913EBD60045D640 /* OpenSans-LightItalic.ttf in CopyFiles */,
+				E9D361801913EBD00045D640 /* OpenSans-ExtraBoldItalic.ttf in CopyFiles */,
+				E9D3617D1913EBC90045D640 /* OpenSans-Bold.ttf in CopyFiles */,
+				E9D361721913EB4D0045D640 /* OpenSans-Light.ttf in CopyFiles */,
+				E9D361831913EBD90045D640 /* OpenSans-Regular.ttf in CopyFiles */,
+				E9D3617E1913EBCB0045D640 /* OpenSans-BoldItalic.ttf in CopyFiles */,
+				E9D361841913EBDB0045D640 /* OpenSans-Semibold.ttf in CopyFiles */,
+				E9D361851913EBE00045D640 /* OpenSans-SemiboldItalic.ttf in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D361861913F7840045D640 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 7;
+			dstSubfolderSpec = 10;
 			files = (
-				E9F5D3E518F3A45100083B1F /* MMTabBarView.framework in Copy Files (2 items) */,
+				E9D361871913F7900045D640 /* MMTabBarView.framework in CopyFiles */,
 			);
-			name = "Copy Files (2 items)";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -172,11 +198,18 @@
 		E9AEB79D1900311B008F3C9D /* InfoWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoWindowController.m; path = InfoWindow/InfoWindowController.m; sourceTree = SOURCE_ROOT; };
 		E9BC454F1902EE9A0094A8D8 /* MangoPluginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangoPluginManager.h; sourceTree = SOURCE_ROOT; };
 		E9BC45501902EE9A0094A8D8 /* MangoPluginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangoPluginManager.m; sourceTree = SOURCE_ROOT; };
-		E9BC4555190318470094A8D8 /* MangoSimpleBrowserVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MangoSimpleBrowserVC.h; path = MangoBrowser/MangoSimpleBrowserVC.h; sourceTree = "<group>"; };
-		E9BC4556190318470094A8D8 /* MangoSimpleBrowserVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MangoSimpleBrowserVC.m; path = MangoBrowser/MangoSimpleBrowserVC.m; sourceTree = "<group>"; };
-		E9BC4557190318470094A8D8 /* MangoSimpleBrowserVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MangoSimpleBrowserVC.xib; path = MangoBrowser/MangoSimpleBrowserVC.xib; sourceTree = "<group>"; };
 		E9BC455A1904277B0094A8D8 /* MangoPluginTabItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangoPluginTabItem.h; sourceTree = SOURCE_ROOT; };
 		E9BC455B1904277B0094A8D8 /* MangoPluginTabItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangoPluginTabItem.m; sourceTree = SOURCE_ROOT; };
+		E9D361691913EA3C0045D640 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Light.ttf"; path = "Fonts/OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		E9D361741913EBBE0045D640 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "Fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		E9D361751913EBBE0045D640 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-BoldItalic.ttf"; path = "Fonts/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E9D361761913EBBE0045D640 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-ExtraBold.ttf"; path = "Fonts/OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		E9D361771913EBBE0045D640 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-ExtraBoldItalic.ttf"; path = "Fonts/OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		E9D361781913EBBE0045D640 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Italic.ttf"; path = "Fonts/OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		E9D361791913EBBE0045D640 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-LightItalic.ttf"; path = "Fonts/OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		E9D3617A1913EBBE0045D640 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.ttf"; path = "Fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		E9D3617B1913EBBE0045D640 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Semibold.ttf"; path = "Fonts/OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		E9D3617C1913EBBE0045D640 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-SemiboldItalic.ttf"; path = "Fonts/OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		E9F5D3D818F3A43F00083B1F /* MMTabBarView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MMTabBarView.xcodeproj; path = External/MMTabBarView/MMTabBarView/MMTabBarView.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -277,6 +310,7 @@
 		E9258D5A18EE424600564355 /* Mango */ = {
 			isa = PBXGroup;
 			children = (
+				E9D361731913EB5E0045D640 /* Fonts */,
 				E9258D8F18EE623F00564355 /* External */,
 				E9AEB7991900308E008F3C9D /* InfoWindow */,
 				E9429A1818F9D71800C367A4 /* MangoBrowser */,
@@ -355,9 +389,6 @@
 		E9429A1818F9D71800C367A4 /* MangoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				E9BC4555190318470094A8D8 /* MangoSimpleBrowserVC.h */,
-				E9BC4556190318470094A8D8 /* MangoSimpleBrowserVC.m */,
-				E9BC4557190318470094A8D8 /* MangoSimpleBrowserVC.xib */,
 				E915478B1900F36900188F70 /* MangoBrowserOutlineView.h */,
 				E915478C1900F36900188F70 /* MangoBrowserOutlineView.m */,
 				E9429A1918F9D74C00C367A4 /* MangoBrowserViewController.xib */,
@@ -426,6 +457,24 @@
 			name = Plugins;
 			sourceTree = "<group>";
 		};
+		E9D361731913EB5E0045D640 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E9D361741913EBBE0045D640 /* OpenSans-Bold.ttf */,
+				E9D361751913EBBE0045D640 /* OpenSans-BoldItalic.ttf */,
+				E9D361761913EBBE0045D640 /* OpenSans-ExtraBold.ttf */,
+				E9D361771913EBBE0045D640 /* OpenSans-ExtraBoldItalic.ttf */,
+				E9D361781913EBBE0045D640 /* OpenSans-Italic.ttf */,
+				E9D361791913EBBE0045D640 /* OpenSans-LightItalic.ttf */,
+				E9D3617A1913EBBE0045D640 /* OpenSans-Regular.ttf */,
+				E9D3617B1913EBBE0045D640 /* OpenSans-Semibold.ttf */,
+				E9D3617C1913EBBE0045D640 /* OpenSans-SemiboldItalic.ttf */,
+				E9D361691913EA3C0045D640 /* OpenSans-Light.ttf */,
+			);
+			name = Fonts;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		E9F5D3D918F3A43F00083B1F /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,7 +494,8 @@
 				E9258D4D18EE424500564355 /* Sources */,
 				E9258D4E18EE424500564355 /* Frameworks */,
 				E9258D4F18EE424500564355 /* Resources */,
-				E94364B718F09B760076B9A5 /* Copy Files (2 items) */,
+				E9D361711913EB340045D640 /* CopyFiles */,
+				E9D361861913F7840045D640 /* CopyFiles */,
 				D87976A67CF5491DA93A322E /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -575,7 +625,6 @@
 			files = (
 				E9429A1A18F9D74C00C367A4 /* MangoBrowserViewController.xib in Resources */,
 				E97A0E7C18F1D5F800098D55 /* MainMenu.xib in Resources */,
-				E9BC4559190318470094A8D8 /* MangoSimpleBrowserVC.xib in Resources */,
 				E94364A218EF82500076B9A5 /* MangoWindow.xib in Resources */,
 				E94364A418EFAED10076B9A5 /* AboutWindow.xib in Resources */,
 				E9258D6D18EE424600564355 /* Images.xcassets in Resources */,
@@ -632,7 +681,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9BC4558190318470094A8D8 /* MangoSimpleBrowserVC.m in Sources */,
 				E9258D6118EE424600564355 /* main.m in Sources */,
 				E92593CF18EE7F9C00564355 /* MangoAppDelegate.mm in Sources */,
 				E9AEB79818FF937E008F3C9D /* ConnectionBannerView.m in Sources */,

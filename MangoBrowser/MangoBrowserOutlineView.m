@@ -102,10 +102,10 @@
                 NSString *value = [rObj valueForKey:@"Value"];
                 NSString *title = [NSString stringWithFormat:@"ObjectID(%@)", value];
                 id<MangoPluginDelegate> mangoWC = [[self window] windowController];
-                MangoSimpleBrowserVC *simpleBrowser = [[MangoSimpleBrowserVC alloc]
-                                            initWithNibName:@"MangoSimpleBrowserVC" bundle:
+                MangoBrowserViewController *simpleBrowser = [[MangoBrowserViewController alloc]
+                                            initWithNibName:@"MangoBrowserViewController" bundle:
                                             [NSBundle bundleForClass:[self class]]];
-                
+                [simpleBrowser setSimpleMode];
                 MangoWindowController *mwc = (MangoWindowController *) mangoWC;
                 
                 if(mwc)

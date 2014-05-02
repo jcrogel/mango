@@ -23,7 +23,7 @@
                         <rect key="frame" x="18" y="401" width="493" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Label" id="qP2-cR-dF8">
-                            <font key="font" size="14" name="OpenSansLight-Italic"/>
+                            <font key="font" size="14" name="OpenSans-Light"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -52,12 +52,12 @@
                         <font key="font" size="13" name="OpenSans-Light"/>
                         <tabViewItems>
                             <tabViewItem label="Indices" identifier="1" id="hdD-gq-jFk">
-                                <view key="view" id="qlb-D7-8We">
-                                    <rect key="frame" x="10" y="33" width="554" height="295"/>
+                                <view key="view" ambiguous="YES" id="qlb-D7-8We">
+                                    <rect key="frame" x="10" y="33" width="167" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="elQ-hq-3lo">
-                                            <rect key="frame" x="9" y="269" width="77" height="18"/>
+                                            <rect key="frame" x="9" y="-26" width="77" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Accesses" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="8dj-pX-D4K">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -65,7 +65,7 @@
                                             </buttonCell>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rAL-NJ-Z2J">
-                                            <rect key="frame" x="176" y="269" width="47" height="18"/>
+                                            <rect key="frame" x="176" y="-26" width="47" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Hits" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="i3M-xM-qf6">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -73,7 +73,7 @@
                                             </buttonCell>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gkS-rp-6r5">
-                                            <rect key="frame" x="100" y="269" width="63" height="18"/>
+                                            <rect key="frame" x="100" y="-26" width="63" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Misses" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="ECt-51-3Hl">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -81,7 +81,7 @@
                                             </buttonCell>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uHx-j4-EAv">
-                                            <rect key="frame" x="247" y="269" width="62" height="18"/>
+                                            <rect key="frame" x="247" y="-26" width="62" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Resets" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="vwQ-xE-UOF">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -98,7 +98,7 @@
                                 </view>
                             </tabViewItem>
                             <tabViewItem label="Metrics" identifier="" id="5pj-kq-hQm">
-                                <view key="view" ambiguous="YES" id="0Dt-Bh-4DK">
+                                <view key="view" id="0Dt-Bh-4DK">
                                     <rect key="frame" x="10" y="33" width="167" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>

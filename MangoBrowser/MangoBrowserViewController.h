@@ -29,6 +29,7 @@
 @property (strong) IBOutlet NSPopover *filterPopover;
 @property (strong) IBOutlet NSPopover *mapReducePopover;
 @property (strong) IBOutlet NSPopover *indicesPopover;
+@property (weak) IBOutlet NSView *toolBar;
 
 @property (assign) BOOL autoRefresh;
 @property NSNumber *queryLimit;
@@ -39,5 +40,7 @@
 - (IBAction)indicesButtonWasPressed:(id)sender;
 
 @property NSArray *dbData;
+
+-(void) setSimpleMode;
 
 @end

@@ -15,6 +15,7 @@
                 <outlet property="outlineView" destination="fke-Kb-cHQ" id="wsD-bq-wk2"/>
                 <outlet property="progressBar" destination="goA-ac-1B8" id="Jre-jE-144"/>
                 <outlet property="queryLimitTextField" destination="2Qv-72-Oo5" id="SYF-hb-69V"/>
+                <outlet property="toolBar" destination="oye-Y6-pZe" id="fVl-Ub-9Wt"/>
                 <outlet property="triggerButton" destination="Koz-9n-V6k" id="D0M-4d-8iC"/>
                 <outlet property="view" destination="2Es-I0-zxG" id="NeC-CK-7rd"/>
             </connections>

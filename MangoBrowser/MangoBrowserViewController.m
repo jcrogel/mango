@@ -150,4 +150,15 @@
 }
 
 
+-(void) setSimpleMode
+{
+    NSArray *subViews = [[self toolBar] subviews];
+    
+    for(NSView *subview in subViews)
+    {
+        [subview setHidden:YES];
+    }
+    [self setAutoRefresh:NO];
+}
+
 @end
