@@ -47,34 +47,96 @@
 
 #pragma mark - Database Actions
 
-- (IBAction)createDBButtonWasPressed:(id)sender
-{
-    if ([[self createDBInputField] stringValue]  && [[[self createDBInputField] stringValue] length]>0)
-    {
-        NSString *newDBName = [[self createDBInputField] stringValue];
-        newDBName = [newDBName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-        if([[[self dataManager] ConnectionManager] createDBNamed:newDBName])
+- (IBAction)removeCollectionWasPressed:(id)sender {
+    NSAlert *alert = [NSAlert alertWithMessageText:@"Do you really want to drop this collection?"
+                                     defaultButton:@"Drop Collection"
+                                   alternateButton:@"Learn more"
+                                       otherButton:@"Cancel"
+                         informativeTextWithFormat:@"Deleting this item will erase all associated data in the collection. This action cannot be undone."];
+    
+    [self setPopupAlert:alert];
+    NSButton *sButton = (NSButton *) sender;
+    [alert runAsPopoverForView:sButton withCompletionBlock:^(NSInteger result) {
+		// handle result
+        if (result==NSAlertFirstButtonReturn)
         {
-            [self setupDBsPopUpButton];
-            [[self createDBPopover] close];
+            BOOL result = [[[self dataManager] ConnectionManager] dropCollectionNamed:[self getSelectedCollectionName] onDB: (NSString *)[self getSelectedDatabase]];
+            if(result)
+            {
+                [self refrechCollectionOutline];
+            }
+            else
+            {
+                NSAlert *alert2 = [[NSAlert alloc] init];
+                [alert2 setMessageText: [NSString stringWithFormat:@"Unable to drop collection %@", [self getSelectedCollectionName]]];
+                [alert2 runModal];
+                
+            }
+        }
+	}];
+}
+
+
+- (IBAction)addCollectionWasPressed:(id)sender {
+    [self showPopOver:[self createCollectionPopover] withSender:sender];
+}
+
+-(void) showPopOver: ( NSPopover *) po withSender: (id) sender
+{
+    if ([po isShown])
+    {
+        [po close];
+    }
+    else
+    {
+        [po showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxYEdge];
+    }
+}
+
+- (IBAction)createCollectionAction:(id)sender {
+
+    CreateItemPopover *pvc = (CreateItemPopover *) [[self createCollectionPopover] contentViewController];
+    NSString *newDBName = [[pvc inputTextField] stringValue];
+    if (newDBName  && [newDBName length]>0)
+    {
+        newDBName = [newDBName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        if([[[self dataManager] ConnectionManager] createCollectionNamed:newDBName onDB:[self getSelectedDatabase]])
+        {
+            //[self setupDBsPopUpButton];
+            [self refrechCollectionOutline];
+            [[pvc inputTextField] setStringValue:@""];
+            [[self createCollectionPopover] close];
         }
         
     }
 }
 
-- (IBAction)addCollectionWasPressed:(id)sender {
+- (IBAction)createDBAction:(id)sender {
+    // TODO: Fix that when the control loses focus, it adds DB
+    CreateItemPopover *pvc = (CreateItemPopover *) [[self createDBPopover] contentViewController];
+    NSString *newDBName = [[pvc inputTextField] stringValue];
+
+    if (newDBName  && [newDBName length]>0)
+    {
+        newDBName = [newDBName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        if([[[self dataManager] ConnectionManager] createDBNamed:newDBName])
+        {
+            if ([[self createDBPopover] isShown])
+            {
+                NSLog(@"Closing");
+                [[self createDBPopover] close];
+            }
+            NSLog(@"Refresh");
+            [self setupDBsPopUpButton];
+
+            [[pvc inputTextField] setStringValue:@""];
+        }
+        
+    }
 }
 
 - (IBAction)showCreateDBPopoverWasPressed:(id)sender {
-   if ([[self createDBPopover] isShown])
-    {
-        [[self createDBPopover] close];
-    }
-    else
-    {
-        [[self createDBPopover] showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxYEdge];
-    }
-
+    [self showPopOver:[self createDBPopover] withSender:sender];
 }
 
 - (IBAction)dropDBWasPressed:(id)sender {
@@ -94,6 +156,7 @@
             if(result)
             {
                 [self setupDBsPopUpButton];
+                [self refrechCollectionOutline];
             }
             else
             {
@@ -118,12 +181,16 @@
 - (IBAction)dbsPopUpButtonAction:(id)sender
 {
     [[self collectionSearchField] setStringValue:@""];
+    [self refrechCollectionOutline];
+}
+
+-(void) refrechCollectionOutline
+{
     [self  setCollectionData:@[]];
     [[self dataManager] fetchCollectionNamesForDB: [self getSelectedDatabase]];
     [[self dataManager] processCollectionsWithFilter:[[self collectionSearchField] stringValue]];
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
     [[self collectionListView]  selectRowIndexes:indexSet byExtendingSelection:NO];
-    
 }
 
 #pragma mark - Collection Actions
@@ -327,4 +394,6 @@
     [[self tabBarView] setNeedsUpdate:YES];
 }
 
+- (IBAction)editCollectionWasPressed:(id)sender {
+}
 @end

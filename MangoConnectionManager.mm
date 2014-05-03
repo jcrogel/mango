@@ -259,6 +259,39 @@
     return NO;
 }
 
+
+-(BOOL) createCollectionNamed: (NSString *)collection onDB: (NSString *) dbname
+{
+    mongo::DBClientConnection * conn = [self connPtr];
+    bool worked;
+    mongo::BSONObj ret;
+    
+    NSString *ns = [NSString stringWithFormat:@"%@.%@",dbname, collection];
+    
+    worked = conn->createCollection( [ns cStringUsingEncoding:NSUTF8StringEncoding]);
+    if (worked) {
+        return YES;
+    }
+    return NO;
+}
+
+
+-(BOOL) dropCollectionNamed: (NSString *)collection onDB: (NSString *) dbname;
+{
+    
+    mongo::DBClientConnection * conn = [self connPtr];
+    bool worked;
+    mongo::BSONObj ret;
+    
+    NSString *ns = [NSString stringWithFormat:@"%@.%@",dbname, collection];
+    
+    worked = conn->dropCollection( [ns cStringUsingEncoding:NSUTF8StringEncoding]);
+    if (worked) {
+        return YES;
+    }
+    return NO;
+}
+
 -(id) getDBStats: (NSString *) dbname
 {
     mongo::BSONObj result = [self runCommand:@"dbStats" onDatabase:dbname];

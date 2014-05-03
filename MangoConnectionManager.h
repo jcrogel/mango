@@ -25,6 +25,8 @@
 -(void) dbgSel;
 
 -(BOOL) createDBNamed: (NSString *) dbname;
+-(BOOL) createCollectionNamed: (NSString *)collection onDB: (NSString *) dbname;
+-(BOOL) dropCollectionNamed: (NSString *)collection onDB: (NSString *) dbname;
 -(id) getDBStats: (NSString *) dbname;
 -(id) getServerStatus;
 -(BOOL) dropDB: (NSString *) dbname;

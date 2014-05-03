@@ -52,6 +52,7 @@
 		E9D361871913F7900045D640 /* MMTabBarView.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9F5D3E218F3A43F00083B1F /* MMTabBarView.framework */; };
 		E9D589D518F0CA3D00F9B333 /* libmongoclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E93167DB18F0C011008A4FCE /* libmongoclient.a */; };
 		E9F5D3E418F3A44C00083B1F /* MMTabBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F5D3E218F3A43F00083B1F /* MMTabBarView.framework */; };
+		E9F7D6C81914433D00744FB2 /* CreateItemPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F7D6C71914433D00744FB2 /* CreateItemPopover.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -211,6 +212,8 @@
 		E9D3617B1913EBBE0045D640 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Semibold.ttf"; path = "Fonts/OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		E9D3617C1913EBBE0045D640 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-SemiboldItalic.ttf"; path = "Fonts/OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		E9F5D3D818F3A43F00083B1F /* MMTabBarView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MMTabBarView.xcodeproj; path = External/MMTabBarView/MMTabBarView/MMTabBarView.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E9F7D6C61914433D00744FB2 /* CreateItemPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateItemPopover.h; sourceTree = "<group>"; };
+		E9F7D6C71914433D00744FB2 /* CreateItemPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateItemPopover.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -406,6 +409,8 @@
 			children = (
 				E943649D18EF81760076B9A5 /* MangoWindowController.h */,
 				E943649E18EF81760076B9A5 /* MangoWindowController.m */,
+				E9F7D6C61914433D00744FB2 /* CreateItemPopover.h */,
+				E9F7D6C71914433D00744FB2 /* CreateItemPopover.m */,
 				E94364A118EF82500076B9A5 /* MangoWindow.xib */,
 				E9AEB79618FF937E008F3C9D /* ConnectionBannerView.h */,
 				E9AEB79718FF937E008F3C9D /* ConnectionBannerView.m */,
@@ -687,6 +692,7 @@
 				E9BC455C1904277B0094A8D8 /* MangoPluginTabItem.m in Sources */,
 				E9AEB79E1900311B008F3C9D /* InfoWindowController.m in Sources */,
 				E943649F18EF81760076B9A5 /* MangoWindowController.m in Sources */,
+				E9F7D6C81914433D00744FB2 /* CreateItemPopover.m in Sources */,
 				E9AEB79518FF46DC008F3C9D /* MangoBrowserValueCell.m in Sources */,
 				E9535FD519121D2F00BD2480 /* NSAlert+Popover.m in Sources */,
 				E9BC45511902EE9A0094A8D8 /* MangoPluginManager.m in Sources */,

@@ -9,7 +9,7 @@
                 <outlet property="collectionListTC" destination="Afd-zp-qPz" id="UMK-06-xFJ"/>
                 <outlet property="collectionListView" destination="ZlD-oe-L4w" id="DcU-tw-Xvr"/>
                 <outlet property="collectionSearchField" destination="gKa-j9-a3m" id="6eG-43-1rx"/>
-                <outlet property="createDBInputField" destination="RlY-yR-cWk" id="MnW-SW-5Jv"/>
+                <outlet property="createCollectionPopover" destination="PKS-CB-VPR" id="xWe-Vu-M6I"/>
                 <outlet property="createDBPopover" destination="8J2-GF-1EG" id="9Bm-yy-T8T"/>
                 <outlet property="dbsPopUpButton" destination="Fw2-vN-fY3" id="Zhw-jw-XoO"/>
                 <outlet property="popUpContainerView" destination="6iA-Gk-YCj" id="DbO-7B-UuH"/>
@@ -103,14 +103,36 @@
                                                 </connections>
                                             </searchField>
                                             <button verticalHuggingPriority="750" id="5xL-7w-92c">
-                                                <rect key="frame" x="15" y="53" width="44" height="32"/>
+                                                <rect key="frame" x="15" y="40" width="41" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                <buttonCell key="cell" type="smallSquare" title="Add" bezelStyle="smallSquare" image="add_icon" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="E0K-AK-d5r">
+                                                <buttonCell key="cell" type="smallSquare" alternateTitle="Add Collection" bezelStyle="smallSquare" image="AddCollection" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="E0K-AK-d5r">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
                                                 <connections>
                                                     <action selector="addCollectionWasPressed:" target="-2" id="9Fq-sx-o6o"/>
+                                                </connections>
+                                            </button>
+                                            <button verticalHuggingPriority="750" id="hvH-J8-haQ">
+                                                <rect key="frame" x="117" y="40" width="41" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <buttonCell key="cell" type="smallSquare" title="Add" bezelStyle="smallSquare" image="EditCollections" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2K9-Az-csU">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="editCollectionWasPressed:" target="-2" id="qxm-Hs-x5M"/>
+                                                </connections>
+                                            </button>
+                                            <button verticalHuggingPriority="750" id="poO-NT-KBh">
+                                                <rect key="frame" x="169" y="40" width="41" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <buttonCell key="cell" type="smallSquare" title="Add" bezelStyle="smallSquare" image="RemoveCollections" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gUT-2N-LGX">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="removeCollectionWasPressed:" target="-2" id="eRp-Sl-bgF"/>
                                                 </connections>
                                             </button>
                                             <box autoresizesSubviews="NO" verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="Qxr-Hv-vwi">
@@ -121,9 +143,9 @@
                                                 <font key="titleFont" metaFont="system"/>
                                             </box>
                                             <button verticalHuggingPriority="750" id="Gmc-ct-0eN">
-                                                <rect key="frame" x="67" y="53" width="109" height="32"/>
+                                                <rect key="frame" x="65" y="40" width="41" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                <buttonCell key="cell" type="smallSquare" title="Collection info" bezelStyle="smallSquare" image="info_icon" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="qMk-AL-84N">
+                                                <buttonCell key="cell" type="smallSquare" title="Collection info" bezelStyle="smallSquare" image="CollectionsInfo" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="qMk-AL-84N">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
@@ -131,6 +153,15 @@
                                                     <action selector="collectionInfoButtonPressed:" target="-2" id="pHb-vF-L9X"/>
                                                 </connections>
                                             </button>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="0yK-3W-5Iq">
+                                                <rect key="frame" x="13" y="74" width="199" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Collections" id="Ya9-5d-P9z">
+                                                    <font key="font" size="11" name="OpenSans-Light"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
                                         </subviews>
                                     </customView>
                                 </subviews>
@@ -216,7 +247,7 @@
                 <button id="DUI-7M-kFb">
                     <rect key="frame" x="213" y="18" width="53" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <buttonCell key="cell" type="smallSquare" title="Create" bezelStyle="smallSquare" image="playbutton" alignment="center" imageScaling="proportionallyDown" inset="2" id="CpT-ca-mjY">
+                    <buttonCell key="cell" type="smallSquare" title="Create" bezelStyle="smallSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="CpT-ca-mjY">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" size="13" name="OpenSans"/>
                     </buttonCell>
@@ -227,7 +258,7 @@
                 <button id="ctd-kx-UsG">
                     <rect key="frame" x="274" y="18" width="42" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <buttonCell key="cell" type="smallSquare" title="Drop" bezelStyle="smallSquare" image="playselected" alignment="center" imageScaling="proportionallyDown" inset="2" id="oIv-sP-HZz">
+                    <buttonCell key="cell" type="smallSquare" title="Drop" bezelStyle="smallSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="oIv-sP-HZz">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" size="13" name="OpenSans"/>
                     </buttonCell>
@@ -285,7 +316,7 @@
                     </connections>
                 </button>
                 <box autoresizesSubviews="NO" horizontalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="I0o-Ua-P2o">
-                    <rect key="frame" x="458" y="8" width="5" height="54"/>
+                    <rect key="frame" x="458" y="18" width="5" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                     <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -293,12 +324,13 @@
                 </box>
             </subviews>
         </customView>
-        <viewController id="6u4-IS-Ulq" userLabel="Popover View Controller">
+        <viewController id="6u4-IS-Ulq" userLabel="CreateDBPopover View Controller" customClass="CreateItemPopover">
             <connections>
-                <outlet property="view" destination="255-xV-YDA" id="phB-Bp-Ujh"/>
+                <outlet property="inputTextField" destination="Wta-Cd-Gvq" id="VHW-iB-0E0"/>
+                <outlet property="view" destination="iUB-tK-E9v" id="JGt-1a-J6c"/>
             </connections>
         </viewController>
-        <popover id="8J2-GF-1EG">
+        <popover id="8J2-GF-1EG" userLabel="CreateDBPopover">
             <connections>
                 <outlet property="contentViewController" destination="6u4-IS-Ulq" id="E28-cP-g9M"/>
             </connections>
@@ -315,7 +347,7 @@
                         <font key="font" size="13" name="OpenSans-Bold"/>
                     </buttonCell>
                     <connections>
-                        <action selector="createDBButtonWasPressed:" target="-2" id="aYl-lV-72z"/>
+                        <action selector="createCollectionAction:" target="-2" id="pGa-o2-X18"/>
                     </connections>
                 </button>
                 <textField verticalHuggingPriority="750" id="RlY-yR-cWk">
@@ -326,11 +358,63 @@
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
+                    <connections>
+                        <action selector="createCollectionAction:" target="-2" id="WhE-zG-dBu"/>
+                    </connections>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="ATp-zH-KiF">
                     <rect key="frame" x="18" y="78" width="246" height="27"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Creating a new DB" id="UQ5-NR-nEi">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Creating a new Collection" id="UQ5-NR-nEi">
+                        <font key="font" size="13" name="OpenSans-Light"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+        </customView>
+        <viewController id="XOH-WK-EhV" userLabel="CreateCollectionPopover View Controller" customClass="CreateItemPopover">
+            <connections>
+                <outlet property="inputTextField" destination="RlY-yR-cWk" id="2Bt-8h-sDF"/>
+                <outlet property="view" destination="255-xV-YDA" id="aDT-2I-XZQ"/>
+            </connections>
+        </viewController>
+        <popover id="PKS-CB-VPR" userLabel="CreateCollectionPopover">
+            <connections>
+                <outlet property="contentViewController" destination="XOH-WK-EhV" id="pTT-Eh-HGT"/>
+            </connections>
+        </popover>
+        <customView id="iUB-tK-E9v">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" id="TUt-SI-H2H">
+                    <rect key="frame" x="191" y="6" width="71" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" title="Create" bezelStyle="smallSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wTh-EP-ilE">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name="OpenSans-Bold"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="createDBAction:" target="-2" id="XOC-RG-3t8"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" id="Wta-Cd-Gvq">
+                    <rect key="frame" x="20" y="48" width="242" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="xpk-5F-nwa">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="createDBAction:" target="-2" id="W5P-Rm-Viw"/>
+                    </connections>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="f9K-CQ-aox">
+                    <rect key="frame" x="18" y="78" width="246" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Creating a new DB" id="Q0g-iX-9CF">
                         <font key="font" size="13" name="OpenSans-Light"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -340,11 +424,11 @@
         </customView>
     </objects>
     <resources>
+        <image name="AddCollection" width="60" height="50"/>
         <image name="CloudInfo" width="40" height="35"/>
+        <image name="CollectionsInfo" width="60" height="50"/>
+        <image name="EditCollections" width="60" height="50"/>
+        <image name="RemoveCollections" width="60" height="50"/>
         <image name="Splash" width="150" height="150"/>
-        <image name="add_icon" width="100" height="100"/>
-        <image name="info_icon" width="100" height="100"/>
-        <image name="playbutton" width="50" height="50"/>
-        <image name="playselected" width="50" height="50"/>
     </resources>
 </document>
