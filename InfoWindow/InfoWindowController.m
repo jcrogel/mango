@@ -44,4 +44,15 @@
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 }
 
+
+
+-(void) getServerInfo
+{
+    id json = [[[self dataManager] ConnectionManager] getServerStatus];
+    
+   // NSLog(@"Do I have a dataMGR %@", [self dataManager] );
+    NSLog(@"%@", json);
+}
+
+
 @end

@@ -20,6 +20,7 @@
     self = [super initWithWindow:window];
     if (self) {
         // Initialization code here.
+        [window setDelegate:self];
         MangoDataManager *dataManager = [[MangoDataManager alloc] init];
         [dataManager setDelegate:self];
         [self setDataManager:dataManager];
@@ -32,18 +33,15 @@
 #pragma mark - Server Actions
 
 - (IBAction)serverInfoButtonPressed:(id)sender {
-/*
-    NSString *json = [[[self dataManager] ConnectionManager] getServerStatus];
-    NSError *e;
-                  
-    id jsonObj = [NSJSONSerialization JSONObjectWithData:[json dataUsingEncoding:NSUTF8StringEncoding]
-                                                 options:0 error:&e];
-    NSLog(@"%@", jsonObj);
- */
     InfoWindowController *mangowindow = [[InfoWindowController alloc] initWithWindowNibName:@"InfoWindow"];
-    [mangowindow showWindow: self];
+
+    [[mangowindow window] setTitle:[[[self dataManager] ConnectionManager] connectionDecriptionString]];
+    [mangowindow setDataManager: [self dataManager]];
     [self setInfoWindowController:mangowindow];
+    [mangowindow showWindow: self];
+    [mangowindow getServerInfo];
 }
+
 
 #pragma mark - Database Actions
 
@@ -76,6 +74,9 @@
 	}];
 }
 
+- (IBAction)editCollectionWasPressed:(id)sender {
+    [self showPopOver:[self renameCollectionPopover] withSender:sender];
+}
 
 - (IBAction)addCollectionWasPressed:(id)sender {
     [self showPopOver:[self createCollectionPopover] withSender:sender];
@@ -100,7 +101,24 @@
     if (newDBName  && [newDBName length]>0)
     {
         newDBName = [newDBName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-        if([[[self dataManager] ConnectionManager] createCollectionNamed:newDBName onDB:[self getSelectedDatabase]])
+        /*if([[[self dataManager] ConnectionManager] createCollectionNamed:newDBName onDB:[self getSelectedDatabase]])
+        {
+         
+        }*/
+        [self refrechCollectionOutline];
+        [[pvc inputTextField] setStringValue:@""];
+        [[self createCollectionPopover] close];
+        
+    }
+}
+
+- (IBAction)renameDBWasPressed:(id)sender {
+    CreateItemPopover *pvc = (CreateItemPopover *) [[self renameCollectionPopover] contentViewController];
+    NSString *newCollName = [[pvc inputTextField] stringValue];
+    if (newCollName  && [newCollName length]>0)
+    {
+        newCollName = [newCollName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        if([[[self dataManager] ConnectionManager] createCollectionNamed:newCollName onDB:[self getSelectedDatabase]])
         {
             //[self setupDBsPopUpButton];
             [self refrechCollectionOutline];
@@ -242,7 +260,7 @@
 
 -(void) setupSideBar
 {
-    [[self sideBar] setConnectionURL:@"<anonymous>@localhost"];
+    [[self sideBar] setConnectionURL: [[[self dataManager] ConnectionManager] connectionDecriptionString] ];
 }
 
 -(void) setupTabs
@@ -394,6 +412,4 @@
     [[self tabBarView] setNeedsUpdate:YES];
 }
 
-- (IBAction)editCollectionWasPressed:(id)sender {
-}
 @end

@@ -7,11 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MangoDataManager.h"
 
 @interface InfoWindowController : NSWindowController
 @property (weak) IBOutlet NSView *cal;
 @property (weak) IBOutlet NSDatePicker *calendar;
+@property MangoDataManager *dataManager;
 @property NSNumber *refreshRate;
 @property NSNumber *pulses;
+
+-(void) getServerInfo;
 
 @end

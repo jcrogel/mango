@@ -10,11 +10,8 @@
 
 @interface MangoConnectionManager : NSObject
 
-@property NSString *server;
-@property NSString *port;
-@property NSString *username;
-@property NSString *db;
 @property NSValue *mongoConnection;
+@property NSString *connectionDecriptionString;
 
 -(void) openConnection;
 -(void) openConnection: (NSString *) address withPort: (NSString *) port andUser: (NSString *) username andPassword: (NSString *) password;

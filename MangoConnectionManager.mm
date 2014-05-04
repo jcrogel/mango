@@ -49,6 +49,22 @@
     {
         NSLog(@"Exception: %d", exc);
     }
+    
+    
+    // Now format the connection string
+    NSString *user = username;
+    NSString *url = address;
+    if ([username isEqualToString:@""])
+    {
+        user = @"<anonymous>";
+    }
+    
+    if ([address isEqualToString:@"127.0.0.1"])
+    {
+        url = @"localhost";
+    }
+    
+    [self setConnectionDecriptionString:[NSString stringWithFormat:@"%@@%@:%@", user, url, port]];
 }
 
 -(NSMutableArray *) getDatabases

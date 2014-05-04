@@ -13,6 +13,7 @@
                 <outlet property="createDBPopover" destination="8J2-GF-1EG" id="9Bm-yy-T8T"/>
                 <outlet property="dbsPopUpButton" destination="Fw2-vN-fY3" id="Zhw-jw-XoO"/>
                 <outlet property="popUpContainerView" destination="6iA-Gk-YCj" id="DbO-7B-UuH"/>
+                <outlet property="renameCollectionPopover" destination="BQJ-gl-ILG" id="qCg-vN-pBG"/>
                 <outlet property="sideBar" destination="w1a-Zk-36e" id="E7M-iN-Vje"/>
                 <outlet property="tabBarView" destination="S88-HY-ic1" id="315-hc-yGx"/>
                 <outlet property="tabView" destination="yqp-d8-dph" id="94Q-ht-lAU"/>
@@ -415,6 +416,54 @@
                     <rect key="frame" x="18" y="78" width="246" height="27"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Creating a new DB" id="Q0g-iX-9CF">
+                        <font key="font" size="13" name="OpenSans-Light"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+        </customView>
+        <viewController id="dDh-Sp-wv2" userLabel="RenameCollectionPopover View Controller">
+            <connections>
+                <outlet property="view" destination="o60-gK-CPn" id="hed-4u-Vke"/>
+            </connections>
+        </viewController>
+        <popover id="BQJ-gl-ILG" userLabel="RenameCollectionPopover">
+            <connections>
+                <outlet property="contentViewController" destination="dDh-Sp-wv2" id="cet-lC-5Sx"/>
+            </connections>
+        </popover>
+        <customView id="o60-gK-CPn">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" id="Za5-gl-6nO">
+                    <rect key="frame" x="191" y="6" width="71" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" title="Rename" bezelStyle="smallSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nhK-A5-aHG">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name="OpenSans-Bold"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="renameDBWasPressed:" target="-2" id="g2Z-5C-Tpr"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" id="Gzo-Rf-TZd">
+                    <rect key="frame" x="20" y="48" width="242" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="9Yp-Tg-BFH">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="createDBAction:" target="-2" id="Jq3-Sh-7uj"/>
+                    </connections>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="LGc-26-Dgz">
+                    <rect key="frame" x="18" y="78" width="246" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Rename collection" id="zYE-U5-LlY">
                         <font key="font" size="13" name="OpenSans-Light"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>

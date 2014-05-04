@@ -24,7 +24,8 @@
 @interface MangoWindowController : NSWindowController<NSOutlineViewDelegate,
                                                         MangoDataManager,
                                                         MangoPluginDelegate,
-                                                        MMTabBarViewDelegate>
+                                                        MMTabBarViewDelegate,
+                                                        NSWindowDelegate>
 
 @property (weak) IBOutlet NSPopUpButton *dbsPopUpButton;
 @property (weak) IBOutlet ConnectionBannerView *sideBar;
@@ -35,6 +36,8 @@
 @property (weak) IBOutlet NSSearchField *collectionSearchField;
 @property (strong) IBOutlet NSPopover *createDBPopover;
 @property (strong) IBOutlet NSPopover *createCollectionPopover;
+@property (strong) IBOutlet NSPopover *renameCollectionPopover;
+
 @property (weak) IBOutlet NSOutlineView *collectionListView;
 
 @property MangoDataManager *dataManager;
@@ -47,6 +50,7 @@
 - (IBAction)removeCollectionWasPressed:(id)sender;
 - (IBAction)addCollectionWasPressed:(id)sender;
 - (IBAction)createCollectionAction:(id)sender;
+- (IBAction)renameDBWasPressed:(id)sender;
 
 - (IBAction)createDBAction:(id)sender;
 
