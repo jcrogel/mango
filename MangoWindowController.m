@@ -101,14 +101,12 @@
     if (newDBName  && [newDBName length]>0)
     {
         newDBName = [newDBName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-        /*if([[[self dataManager] ConnectionManager] createCollectionNamed:newDBName onDB:[self getSelectedDatabase]])
+        if([[[self dataManager] ConnectionManager] createCollectionNamed:newDBName onDB:[self getSelectedDatabase]])
         {
-         
-        }*/
-        [self refrechCollectionOutline];
-        [[pvc inputTextField] setStringValue:@""];
-        [[self createCollectionPopover] close];
-        
+            [self refrechCollectionOutline];
+            [[pvc inputTextField] setStringValue:@""];
+            [[self createCollectionPopover] close];
+        }
     }
 }
 
@@ -119,13 +117,13 @@
     if (newCollName  && [newCollName length]>0)
     {
         newCollName = [newCollName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-        if([[[self dataManager] ConnectionManager] createCollectionNamed:newCollName onDB:[self getSelectedDatabase]])
-        {
+        //if([[[self dataManager] ConnectionManager] createCollectionNamed:newCollName onDB:[self getSelectedDatabase]])
+        //{
             //[self setupDBsPopUpButton];
             [self refrechCollectionOutline];
             [[pvc inputTextField] setStringValue:@""];
             [[self createCollectionPopover] close];
-        }
+        //}
         
     }
 }

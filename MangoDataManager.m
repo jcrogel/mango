@@ -103,8 +103,11 @@
 {
     NSMutableArray *result = [NSMutableArray new];
     NSArray *descendants = [dict allKeys];
-    for (id key in descendants)
+    for (NSString *key in descendants)
     {
+        if ([key isEqualToString:@"system"])
+            continue;
+        
         id obj = [dict objectForKey:key];
         NSMutableDictionary *item = [NSMutableDictionary new];
         item[@"name"] = key;
