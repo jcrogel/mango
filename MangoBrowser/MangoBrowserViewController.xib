@@ -30,7 +30,7 @@
                     <rect key="frame" x="0.0" y="378" width="547" height="64"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <subviews>
-                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Koz-9n-V6k">
+                        <button toolTip="Run Query" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Koz-9n-V6k">
                             <rect key="frame" x="9" y="5" width="52" height="54"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="smallSquare" title="Button" bezelStyle="smallSquare" image="playbutton" imagePosition="only" alignment="center" borderStyle="border" inset="2" id="xQl-vo-cnm">
@@ -88,7 +88,7 @@
                                 <binding destination="-2" name="value" keyPath="self.queryLimit" id="Re2-mj-9HP"/>
                             </connections>
                         </stepper>
-                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fvZ-xv-5zG">
+                        <button toolTip="Show Indices" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fvZ-xv-5zG">
                             <rect key="frame" x="205" y="5" width="56" height="53"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <constraints>
@@ -102,7 +102,7 @@
                                 <action selector="indicesButtonWasPressed:" target="-2" id="Vuh-nq-fT8"/>
                             </connections>
                         </button>
-                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ga6-dy-UCZ">
+                        <button toolTip="Add" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ga6-dy-UCZ">
                             <rect key="frame" x="69" y="6" width="65" height="52"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <constraints>
@@ -113,7 +113,7 @@
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
                         </button>
-                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bDk-8p-LdF">
+                        <button toolTip="Filter Documents" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bDk-8p-LdF">
                             <rect key="frame" x="140" y="6" width="60" height="52"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <constraints>
@@ -127,7 +127,7 @@
                                 <action selector="filterButtonWasPressed:" target="-2" id="uiz-te-3zJ"/>
                             </connections>
                         </button>
-                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XaE-yp-gj3">
+                        <button toolTip="Run a Map/Reduce query" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XaE-yp-gj3">
                             <rect key="frame" x="269" y="5" width="83" height="53"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="smallSquare" title="Map Reduce" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4nS-9m-C4B">

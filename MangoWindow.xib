@@ -103,7 +103,7 @@
                                                     <outlet property="delegate" destination="-2" id="F34-a4-ot0"/>
                                                 </connections>
                                             </searchField>
-                                            <button verticalHuggingPriority="750" id="5xL-7w-92c">
+                                            <button toolTip="Create Collection" verticalHuggingPriority="750" id="5xL-7w-92c">
                                                 <rect key="frame" x="15" y="40" width="41" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <buttonCell key="cell" type="smallSquare" alternateTitle="Add Collection" bezelStyle="smallSquare" image="AddCollection" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="E0K-AK-d5r">
@@ -114,7 +114,7 @@
                                                     <action selector="addCollectionWasPressed:" target="-2" id="9Fq-sx-o6o"/>
                                                 </connections>
                                             </button>
-                                            <button verticalHuggingPriority="750" id="hvH-J8-haQ">
+                                            <button toolTip="Rename Collection" verticalHuggingPriority="750" id="hvH-J8-haQ">
                                                 <rect key="frame" x="117" y="40" width="41" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <buttonCell key="cell" type="smallSquare" title="Add" bezelStyle="smallSquare" image="EditCollections" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2K9-Az-csU">
@@ -125,7 +125,7 @@
                                                     <action selector="editCollectionWasPressed:" target="-2" id="qxm-Hs-x5M"/>
                                                 </connections>
                                             </button>
-                                            <button verticalHuggingPriority="750" id="poO-NT-KBh">
+                                            <button toolTip="Delete Collection" verticalHuggingPriority="750" id="poO-NT-KBh">
                                                 <rect key="frame" x="169" y="40" width="41" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <buttonCell key="cell" type="smallSquare" title="Add" bezelStyle="smallSquare" image="RemoveCollections" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gUT-2N-LGX">
@@ -143,7 +143,7 @@
                                                 <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <font key="titleFont" metaFont="system"/>
                                             </box>
-                                            <button verticalHuggingPriority="750" id="Gmc-ct-0eN">
+                                            <button toolTip="Collection Info" verticalHuggingPriority="750" id="Gmc-ct-0eN">
                                                 <rect key="frame" x="65" y="40" width="41" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <buttonCell key="cell" type="smallSquare" title="Collection info" bezelStyle="smallSquare" image="CollectionsInfo" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="qMk-AL-84N">
@@ -215,7 +215,7 @@
                         <rect key="frame" x="0.0" y="-6" width="66" height="706"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                         <subviews>
-                            <button id="bcl-ze-bhf">
+                            <button toolTip="Show Server Stats" id="bcl-ze-bhf">
                                 <rect key="frame" x="15" y="646" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="CloudInfo" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="jzC-zi-sI4">
@@ -245,7 +245,7 @@
             <rect key="frame" x="0.0" y="0.0" width="714" height="69"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <button id="DUI-7M-kFb">
+                <button toolTip="Create DB" id="DUI-7M-kFb">
                     <rect key="frame" x="213" y="18" width="53" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="smallSquare" title="Create" bezelStyle="smallSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="CpT-ca-mjY">
@@ -256,7 +256,7 @@
                         <action selector="showCreateDBPopoverWasPressed:" target="-2" id="CRO-jL-uB0"/>
                     </connections>
                 </button>
-                <button id="ctd-kx-UsG">
+                <button toolTip="Drop DB" id="ctd-kx-UsG">
                     <rect key="frame" x="274" y="18" width="42" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="smallSquare" title="Drop" bezelStyle="smallSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="oIv-sP-HZz">
@@ -276,7 +276,7 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <popUpButton id="Fw2-vN-fY3">
+                <popUpButton toolTip="Select a DB" id="Fw2-vN-fY3">
                     <rect key="frame" x="38" y="11" width="167" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <popUpButtonCell key="cell" type="bevel" bezelStyle="rounded" alignment="left" imageScaling="proportionallyDown" inset="2" id="VZS-qC-YoD">
@@ -294,7 +294,7 @@
                         <action selector="dbsPopUpButtonAction:" target="-2" id="zWv-jq-Qcf"/>
                     </connections>
                 </popUpButton>
-                <button id="MfE-aO-S6h">
+                <button toolTip="Show Users" id="MfE-aO-S6h">
                     <rect key="frame" x="333" y="18" width="40" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="smallSquare" title="Users" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="Yjd-6t-kpg">
@@ -305,7 +305,7 @@
                         <action selector="showUsersWasPressed:" target="-2" id="qXc-oN-h2m"/>
                     </connections>
                 </button>
-                <button id="PlS-4l-wUH">
+                <button toolTip="Show DB Info" id="PlS-4l-wUH">
                     <rect key="frame" x="384" y="18" width="52" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="smallSquare" title="DB Info" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="q4i-Z5-aKb">
