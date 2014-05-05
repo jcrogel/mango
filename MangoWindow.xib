@@ -351,6 +351,17 @@
                         <action selector="createCollectionAction:" target="-2" id="pGa-o2-X18"/>
                     </connections>
                 </button>
+                <button verticalHuggingPriority="750" id="pZ0-Rd-DO7">
+                    <rect key="frame" x="20" y="6" width="71" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" title="Cancel" bezelStyle="smallSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YVo-Xh-BXH">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name="OpenSans"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="cancelCreateNewCollectionWasPressed:" target="-2" id="d2Z-6b-7CJ"/>
+                    </connections>
+                </button>
                 <textField verticalHuggingPriority="750" id="RlY-yR-cWk">
                     <rect key="frame" x="20" y="48" width="242" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -421,6 +432,17 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button verticalHuggingPriority="750" id="ehr-w2-UaN">
+                    <rect key="frame" x="20" y="6" width="71" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" title="Cancel" bezelStyle="smallSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OGA-gc-yJN">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name="OpenSans"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="cancelCreateNewDBWasPressed:" target="-2" id="qo7-Q5-Ctm"/>
+                    </connections>
+                </button>
             </subviews>
         </customView>
         <viewController id="dDh-Sp-wv2" userLabel="RenameCollectionPopover View Controller">
@@ -469,6 +491,17 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button verticalHuggingPriority="750" id="gme-lc-IaB">
+                    <rect key="frame" x="20" y="6" width="71" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" title="Cancel" bezelStyle="smallSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="o1d-gv-mMy">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name="OpenSans"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="cancelRenameCollectionWasPressed:" target="-2" id="V7V-Jc-zhI"/>
+                    </connections>
+                </button>
             </subviews>
         </customView>
     </objects>

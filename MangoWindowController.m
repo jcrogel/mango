@@ -128,6 +128,18 @@
     }
 }
 
+- (IBAction)cancelCreateNewCollectionWasPressed:(id)sender {
+    [[self createCollectionPopover] close];
+}
+
+- (IBAction)cancelCreateNewDBWasPressed:(id)sender {
+    [[self createDBPopover] close];
+}
+
+- (IBAction)cancelRenameCollectionWasPressed:(id)sender {
+    [[self renameCollectionPopover] close];
+}
+
 - (IBAction)createDBAction:(id)sender {
     // TODO: Fix that when the control loses focus, it adds DB
     CreateItemPopover *pvc = (CreateItemPopover *) [[self createDBPopover] contentViewController];
@@ -140,10 +152,8 @@
         {
             if ([[self createDBPopover] isShown])
             {
-                NSLog(@"Closing");
                 [[self createDBPopover] close];
             }
-            NSLog(@"Refresh");
             [self setupDBsPopUpButton];
 
             [[pvc inputTextField] setStringValue:@""];
@@ -298,6 +308,7 @@
     rect.origin.x += 70;
     [[self popUpContainerView] setFrame:rect];
     [window.titleBarView addSubview:[self popUpContainerView]];
+    [window setTitle:[[[self dataManager] ConnectionManager]  connectionDecriptionString]];
 }
 
 - (void)setupCloseButton:(INAppStoreWindow *) window
@@ -356,8 +367,26 @@
     if ([[[self collectionListTC] selectedNodes] count])
     {
         NSTreeNode *selectedNode = [[[self collectionListTC] selectedNodes] objectAtIndex:0];
+        NSString *prefix =@"";
+        NSTreeNode *parent = [selectedNode parentNode];
+        
+        while(parent)
+        {
+            NSString *name = [[parent representedObject] valueForKey:@"name"];
+            if (name)
+            {
+                prefix = [NSString stringWithFormat:@"%@.%@", name ,prefix];
+            }
+            
+            parent = [parent parentNode];
+        }
+        
         NSDictionary *selectedNodeObj = [selectedNode representedObject];
         NSString *selectedCollection = selectedNodeObj[@"name"];
+        if (![prefix isEqualToString:@""])
+        {
+            selectedCollection = [NSString stringWithFormat:@"%@%@", prefix, selectedCollection];
+        }
         return selectedCollection;
     }
     return @"";

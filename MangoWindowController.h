@@ -51,6 +51,9 @@
 - (IBAction)addCollectionWasPressed:(id)sender;
 - (IBAction)createCollectionAction:(id)sender;
 - (IBAction)renameDBWasPressed:(id)sender;
+- (IBAction)cancelCreateNewCollectionWasPressed:(id)sender;
+- (IBAction)cancelCreateNewDBWasPressed:(id)sender;
+- (IBAction)cancelRenameCollectionWasPressed:(id)sender;
 
 - (IBAction)createDBAction:(id)sender;
 
