@@ -87,25 +87,7 @@
         
     };
     
-    NSMutableArray *rootArray = [NSMutableArray new];
-    
-    /// THIS NEEDS TO SUPPORT CHILDREN
-    for (id rootKey in aux)
-    {
-        id value = [aux valueForKey:rootKey];
-        
-        if ([value isKindOfClass:[NSString class]])
-        {
-            NSMutableDictionary *item = [NSMutableDictionary new];
-            item[@"name"] = rootKey;
-            item[@"children"] = @[];
-            [rootArray addObject:item];
-        }
-        else
-        {
-            // Forward Pointer
-        }
-    }
+    NSMutableArray *rootArray = [[self crawlCollectionDict: aux] mutableCopy];
     
     [rootArray sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
         NSString *o1 = obj1[@"name"];
@@ -115,6 +97,44 @@
     }];
     
     [[self delegate] setCollectionData:rootArray];
+}
+
+-(NSArray *) crawlCollectionDict: (NSDictionary *) dict
+{
+    NSMutableArray *result = [NSMutableArray new];
+    NSArray *descendants = [dict allKeys];
+    for (id key in descendants)
+    {
+        id obj = [dict objectForKey:key];
+        NSMutableDictionary *item = [NSMutableDictionary new];
+        item[@"name"] = key;
+        
+        if ([obj isKindOfClass:[NSString class]])
+        {
+            item[@"children"] = @[];
+        }
+        else
+        {
+            // IS GridFS?
+            
+            id  chunkKey = [obj objectForKey:@"chunks"];
+            id filesKey = [obj objectForKey:@"files"];
+            if (filesKey && chunkKey && [obj count]==2)
+            {
+                item[@"GridFS"] = [NSNumber numberWithBool:YES];
+            }
+            else
+            {
+                item[@"children"] = [self crawlCollectionDict:obj];
+            }
+            
+        }
+        
+        [result addObject: item];
+    }
+    
+    return result;
+    
 }
 
 

@@ -19,7 +19,7 @@
 #import "MangoPluginManager.h"
 #import "NSAlert+Popover.h"
 #import "CreateItemPopover.h"
-
+#import "CollectionListCell.h"
 
 @interface MangoWindowController : NSWindowController<NSOutlineViewDelegate,
                                                         MangoDataManager,

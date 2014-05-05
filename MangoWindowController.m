@@ -112,6 +112,7 @@
     }
 }
 
+
 - (IBAction)renameDBWasPressed:(id)sender {
     CreateItemPopover *pvc = (CreateItemPopover *) [[self renameCollectionPopover] contentViewController];
     NSString *newCollName = [[pvc inputTextField] stringValue];
@@ -410,6 +411,27 @@
 {
     [[self pluginManager] removePluginNamed:[tabViewItem label]];
     [[self tabBarView] setNeedsUpdate:YES];
+}
+
+#pragma mark - Outline delegate
+
+- (NSCell*) outlineView:(NSOutlineView*) outlineView dataCellForTableColumn:(NSTableColumn*) tableColumn item:(id) item
+{
+    CollectionListCell *cell = [[CollectionListCell alloc] init];
+    NSTreeNode *t_item = (NSTreeNode *) item;
+    NSNumber * isGFS = [[t_item representedObject] valueForKey:@"GridFS"];
+
+    if (isGFS  && [isGFS boolValue])
+    {
+        [cell setIsGridFS:YES];
+    }
+    return cell;
+}
+
+
+- (CGFloat)outlineView:(NSOutlineView *)outlineView heightOfRowByItem:(id)item
+{
+    return 25;
 }
 
 @end

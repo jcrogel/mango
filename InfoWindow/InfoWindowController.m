@@ -48,10 +48,24 @@
 
 -(void) getServerInfo
 {
-    id json = [[[self dataManager] ConnectionManager] getServerStatus];
+    BOOL shouldRefresh = [[self pulses] boolValue];
+    float refreshRate = [[self refreshRate] floatValue];
+    if (shouldRefresh && refreshRate)
+    {
+        NSLog(@"Dispatching");
+        dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
+        dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, refreshRate * NSEC_PER_SEC, 2 * NSEC_PER_SEC);
+        dispatch_source_set_event_handler(timer, ^{
+            id json = [[[self dataManager] ConnectionManager] getServerStatus];
+            NSLog(@"%@", json);
+        });
+        dispatch_resume(timer);
+        
+    }
+    
     
    // NSLog(@"Do I have a dataMGR %@", [self dataManager] );
-    NSLog(@"%@", json);
+    //NSLog(@"%@", json);
 }
 
 

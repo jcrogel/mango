@@ -31,6 +31,7 @@
 		E98FEC8A18F3192A004AA776 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E98FEC8918F3192A004AA776 /* libPods.a */; };
 		E99F502B18EF28D7002C149E /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F502A18EF28D7002C149E /* libboost_system.a */; };
 		E99F502D18EF28F6002C149E /* libboost_thread-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F502C18EF28F6002C149E /* libboost_thread-mt.a */; };
+		E9A4E3FF1917505300350653 /* CollectionListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A4E3FE1917505300350653 /* CollectionListCell.m */; };
 		E9AEB78A18FF2639008F3C9D /* MangoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEB78918FF2639008F3C9D /* MangoBrowserCell.m */; };
 		E9AEB79218FF2AC5008F3C9D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AEB79118FF2AC5008F3C9D /* QuartzCore.framework */; };
 		E9AEB79518FF46DC008F3C9D /* MangoBrowserValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEB79418FF46DC008F3C9D /* MangoBrowserValueCell.m */; };
@@ -187,6 +188,8 @@
 		E98FEC8918F3192A004AA776 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = Pods/build/Debug/libPods.a; sourceTree = "<group>"; };
 		E99F502A18EF28D7002C149E /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = External/libboost_system.a; sourceTree = "<group>"; };
 		E99F502C18EF28F6002C149E /* libboost_thread-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_thread-mt.a"; path = "External/libboost_thread-mt.a"; sourceTree = "<group>"; };
+		E9A4E3FD1917505300350653 /* CollectionListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionListCell.h; sourceTree = "<group>"; };
+		E9A4E3FE1917505300350653 /* CollectionListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionListCell.m; sourceTree = "<group>"; };
 		E9AEB78818FF2639008F3C9D /* MangoBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MangoBrowserCell.h; path = MangoBrowser/MangoBrowserCell.h; sourceTree = "<group>"; };
 		E9AEB78918FF2639008F3C9D /* MangoBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MangoBrowserCell.m; path = MangoBrowser/MangoBrowserCell.m; sourceTree = "<group>"; };
 		E9AEB79118FF2AC5008F3C9D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -416,6 +419,8 @@
 				E9AEB79718FF937E008F3C9D /* ConnectionBannerView.m */,
 				E91547861900B90800188F70 /* MangoDataManager.h */,
 				E91547871900B90800188F70 /* MangoDataManager.m */,
+				E9A4E3FD1917505300350653 /* CollectionListCell.h */,
+				E9A4E3FE1917505300350653 /* CollectionListCell.m */,
 			);
 			name = MangoWindow;
 			sourceTree = "<group>";
@@ -697,6 +702,7 @@
 				E9535FD519121D2F00BD2480 /* NSAlert+Popover.m in Sources */,
 				E9BC45511902EE9A0094A8D8 /* MangoPluginManager.m in Sources */,
 				E9AEB78A18FF2639008F3C9D /* MangoBrowserCell.m in Sources */,
+				E9A4E3FF1917505300350653 /* CollectionListCell.m in Sources */,
 				E915478D1900F36900188F70 /* MangoBrowserOutlineView.m in Sources */,
 				E92593D018EE7F9E00564355 /* MangoConnectionManager.mm in Sources */,
 				E9429A1D18FB91E100C367A4 /* MangoBrowserViewController.m in Sources */,
