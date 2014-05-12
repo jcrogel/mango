@@ -93,28 +93,6 @@
         [image drawInRect:objTypeRect];
     }
     CGContextRestoreGState(ctx);
-    
-    if ([self modifiedBadge] && [[self modifiedBadge] isEqualToNumber:[NSNumber numberWithBool:YES]])
-    {
-        CGContextSaveGState(ctx);
-        
-        CGRect badgeModRect = CGRectMake(37, objTypeRect.origin.y+1.50, 7.00, 7.00);
-        CGMutablePathRef pElip_0 = CGPathCreateMutable();
-        CGPathAddEllipseInRect(pElip_0, NULL, badgeModRect);
-        CGContextSetRGBStrokeColor(ctx,1.0000,1.0000,1.0000,1.0000);
-        
-        CGContextSetFillColorWithColor(ctx, [NSColor colorWithCalibratedRed:1 green:.29 blue:.29 alpha:1].CGColor);
-
-        CGContextFillEllipseInRect(ctx, badgeModRect);
-        CGContextSetLineWidth(ctx, 1);
-        
-        CGContextAddPath(ctx, pElip_0);
-        CGContextDrawPath(ctx, kCGPathStroke);
-        CGPathRelease(pElip_0);
-        CGContextRestoreGState(ctx);
-        
-    }
-    
 }
 
 
@@ -124,6 +102,29 @@
     NSRect objTypeRect = CGRectMake(cellFrame.origin.x+5, cellFrame.origin.y+2,
                                     cellFrame.size.height-4, cellFrame.size.height-4);
     [self drawBadgeInFrame: objTypeRect];
+    
+    
+    if ([self modifiedBadge] && [[self modifiedBadge] isEqualToNumber:[NSNumber numberWithBool:YES]])
+    {
+        CGContextRef ctx  = [[NSGraphicsContext currentContext] graphicsPort];
+        CGContextSaveGState(ctx);
+        
+        CGRect badgeModRect = CGRectMake(17.5, objTypeRect.origin.y+1.50, 4.50, 4.50);
+        CGMutablePathRef pElip_0 = CGPathCreateMutable();
+        CGPathAddEllipseInRect(pElip_0, NULL, badgeModRect);
+        CGContextSetRGBStrokeColor(ctx,.0000,.0000,.0000,1.0000);
+        
+        CGContextSetFillColorWithColor(ctx, [NSColor colorWithCalibratedRed:1 green:.29 blue:.29 alpha:1].CGColor);
+        
+        CGContextFillEllipseInRect(ctx, badgeModRect);
+        CGContextSetLineWidth(ctx, .5);
+        
+        CGContextAddPath(ctx, pElip_0);
+        CGContextDrawPath(ctx, kCGPathStroke);
+        CGPathRelease(pElip_0);
+        CGContextRestoreGState(ctx);
+        
+    }
     
     NSRect textFrame = cellFrame;
     textFrame.origin.x += 28;
