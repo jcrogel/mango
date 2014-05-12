@@ -31,8 +31,7 @@
         }
         if ([[self dataType] isEqualToString:@"Bool"])
         {
-            //color = BOOL_COLOR.CGColor;
-            if ([[self title] isEqualToString:@"0"])
+            if ([[self title] isEqualToString:@"0"] || [[self title] isEqualToString:@"False"])
             {
                 [self setTitle:@"False"];
             }
