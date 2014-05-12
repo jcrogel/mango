@@ -56,7 +56,7 @@
         color = NUMBER_COLOR.CGColor;
     }
     
-    
+    CGContextSaveGState(ctx);
     if([[self dataType] isNotEqualTo:@"ObjectID"])
     {
         CGContextSetFillColorWithColor(ctx, color);
@@ -92,12 +92,13 @@
         NSImage *image = [NSImage imageNamed:@"mongo_obj_badge"];
         [image drawInRect:objTypeRect];
     }
+    CGContextRestoreGState(ctx);
     
     if ([self modifiedBadge] && [[self modifiedBadge] isEqualToNumber:[NSNumber numberWithBool:YES]])
     {
         CGContextSaveGState(ctx);
         
-        CGRect badgeModRect = CGRectMake(37,1.50,7.00,7.00);
+        CGRect badgeModRect = CGRectMake(37, objTypeRect.origin.y+1.50, 7.00, 7.00);
         CGMutablePathRef pElip_0 = CGPathCreateMutable();
         CGPathAddEllipseInRect(pElip_0, NULL, badgeModRect);
         CGContextSetRGBStrokeColor(ctx,1.0000,1.0000,1.0000,1.0000);
@@ -111,6 +112,7 @@
         CGContextDrawPath(ctx, kCGPathStroke);
         CGPathRelease(pElip_0);
         CGContextRestoreGState(ctx);
+        
     }
     
 }

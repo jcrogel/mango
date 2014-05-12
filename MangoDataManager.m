@@ -148,7 +148,7 @@
 
 #pragma mark - JSON to Mango
 
--(NSArray *) convertMultipleJSONDocumentsToMango: (NSArray *) data
+-(NSMutableArray *) convertMultipleJSONDocumentsToMango: (NSArray *) data
 {
     NSMutableArray *retval = [@[] mutableCopy];
     for (id item in data)
@@ -161,7 +161,7 @@
     return retval;
 }
 
--(NSDictionary *) documentToMango: (NSDictionary *) item
+-(NSMutableDictionary *) documentToMango: (NSDictionary *) item
 {
     NSMutableDictionary *reformattedItem = [@{} mutableCopy];
     reformattedItem[@"Type"] = @"Dictionary";
@@ -185,7 +185,7 @@
     return reformattedItem;
 }
 
--(NSDictionary *) convertJSONToMangoFromValue: (id) value withName: (NSString *) name
+-(NSMutableDictionary *) convertJSONToMangoFromValue: (id) value withName: (NSString *) name
 {
     NSMutableDictionary *reformattedItem = [@{} mutableCopy];
     reformattedItem[@"Name"] = name;
@@ -280,7 +280,7 @@
     return reformattedItem;
 }
 
--(NSArray *) convertJSONDictionaryToMango: (NSDictionary *) data
+-(NSMutableArray *) convertJSONDictionaryToMango: (NSDictionary *) data
 {
     NSMutableArray *retval = [@[] mutableCopy];
     for (id key in [data keyEnumerator])

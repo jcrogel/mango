@@ -29,10 +29,10 @@
 - (void) processCollectionsWithFilter: (NSString *) filterBy;
 - (void) getObjectID: (NSString *) oid onDB: (NSString *) dbname;
 
--(NSDictionary *) documentToMango: (NSDictionary *) item;
--(NSArray *) convertMultipleJSONDocumentsToMango: (NSArray *) data;
--(NSArray *) convertJSONDictionaryToMango: (NSDictionary *) data;
--(NSDictionary *) convertJSONToMangoFromValue: (id) value withName: (NSString *) name;
+-(NSMutableDictionary *) documentToMango: (NSDictionary *) item;
+-(NSMutableArray *) convertMultipleJSONDocumentsToMango: (NSArray *) data;
+-(NSMutableArray *) convertJSONDictionaryToMango: (NSDictionary *) data;
+-(NSMutableDictionary *) convertJSONToMangoFromValue: (id) value withName: (NSString *) name;
 # pragma mark - Mango to JSON
 -(id)mangoToJSON: (id) data;
 

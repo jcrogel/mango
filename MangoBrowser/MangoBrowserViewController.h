@@ -40,7 +40,7 @@
 - (IBAction)runQueryButtonWasPressed:(id)sender;
 - (IBAction)indicesButtonWasPressed:(id)sender;
 
-@property NSArray *dbData;
+@property NSMutableArray *dbData;
 
 -(void) setSimpleMode;
 

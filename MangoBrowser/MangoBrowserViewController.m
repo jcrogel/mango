@@ -59,12 +59,12 @@
             SEL dmSelector = NSSelectorFromString(@"dataManager");
             if ([wc respondsToSelector:dmSelector])
             {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+                #pragma clang diagnostic push
+                #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
                 MangoDataManager *dm = [wc performSelector:dmSelector];
-#pragma clang diagnostic pop
-                res = [dm convertMultipleJSONDocumentsToMango: res];
-                [self setDbData:res];
+                #pragma clang diagnostic pop
+                NSMutableArray *_converted = [dm convertMultipleJSONDocumentsToMango: res];
+                [self setDbData:_converted];
                 [[self outlineView] reloadData];
             }
             NSTimeInterval timeInterval = [start timeIntervalSinceNow];
@@ -100,11 +100,11 @@
             MangoBrowserKeyCell *_cell = [[MangoBrowserKeyCell alloc] init];
             
             NSString *type = [rObj objectForKey:@"Type"];
+
             if ( type && [[rObj objectForKey:@"Type"] isEqualToString:@"ObjectID"])
             {
                 if([rObj objectForKey:@"Modified"])
                 {
-                    //NSLog(@"Modified %@", type);
                     [_cell setModifiedBadge:[NSNumber numberWithBool:YES]];
                 }
             }
@@ -154,32 +154,14 @@
         }
     }
     
-    NSMutableDictionary *rObj = [[node representedObject] mutableCopy];
+    NSMutableDictionary *rObj = [node representedObject];
     NSString *type = [rObj valueForKey:@"Type"];
-    NSString *value = [rObj valueForKey:@"Value"];
-    [rObj setValue:[NSNumber numberWithBool:YES] forKey:@"Modified"];
-    NSMutableArray *dbData = [[self dbData] mutableCopy];
     
     if ([type isEqualToString:@"ObjectID"])
     {
-        NSInteger index = -1;
-        for (NSDictionary *item in [self dbData])
-        {
-            index +=1;
-            NSString *objId = [item valueForKey:@"Value"];
-            if ([objId isEqualToString:value])
-            {
-                break;
-            }
-        }
-        
-        if(index > -1)
-        {
-            [dbData replaceObjectAtIndex:index withObject:rObj];
-            [self setDbData: dbData];
-            [[self outlineView] setNeedsDisplay: YES];
-        }
+        [rObj setValue:[NSNumber numberWithBool:YES] forKey:@"Modified"];
     }
+    
 }
 
 
