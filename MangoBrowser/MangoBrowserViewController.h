@@ -24,6 +24,7 @@
 @property (strong) IBOutlet NSTreeController *browserTC;
 @property (weak) IBOutlet NSProgressIndicator *progressBar;
 @property (weak) IBOutlet NSTextField *messageInfo;
+@property (weak) IBOutlet NSPredicateEditor *filterPredicateEditor;
 
 @property (strong) IBOutlet NSPopover *fieldPopover;
 @property (strong) IBOutlet NSPopover *filterPopover;

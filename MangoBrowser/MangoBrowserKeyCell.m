@@ -93,6 +93,26 @@
         [image drawInRect:objTypeRect];
     }
     
+    if ([self modifiedBadge] && [[self modifiedBadge] isEqualToNumber:[NSNumber numberWithBool:YES]])
+    {
+        CGContextSaveGState(ctx);
+        
+        CGRect badgeModRect = CGRectMake(37,1.50,7.00,7.00);
+        CGMutablePathRef pElip_0 = CGPathCreateMutable();
+        CGPathAddEllipseInRect(pElip_0, NULL, badgeModRect);
+        CGContextSetRGBStrokeColor(ctx,1.0000,1.0000,1.0000,1.0000);
+        
+        CGContextSetFillColorWithColor(ctx, [NSColor colorWithCalibratedRed:1 green:.29 blue:.29 alpha:1].CGColor);
+
+        CGContextFillEllipseInRect(ctx, badgeModRect);
+        CGContextSetLineWidth(ctx, 1);
+        
+        CGContextAddPath(ctx, pElip_0);
+        CGContextDrawPath(ctx, kCGPathStroke);
+        CGPathRelease(pElip_0);
+        CGContextRestoreGState(ctx);
+    }
+    
 }
 
 

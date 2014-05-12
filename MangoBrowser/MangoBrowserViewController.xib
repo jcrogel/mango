@@ -9,6 +9,7 @@
                 <outlet property="browserTC" destination="ndM-aZ-5qJ" id="RLa-hb-BcX"/>
                 <outlet property="fieldPopover" destination="CdU-Na-FyY" id="9Ye-ZP-q2R"/>
                 <outlet property="filterPopover" destination="vRZ-vS-5lf" id="rKx-Mk-4qZ"/>
+                <outlet property="filterPredicateEditor" destination="bTc-nC-GKt" id="dAK-5b-Bvf"/>
                 <outlet property="indicesPopover" destination="tVp-ib-8vi" id="GPB-Hr-2Eg"/>
                 <outlet property="mapReducePopover" destination="ijX-cm-avb" id="lC7-Yg-06q"/>
                 <outlet property="messageInfo" destination="GR1-9G-dMP" id="I9s-19-gOm"/>
@@ -415,25 +416,114 @@
             </connections>
         </popover>
         <customView id="UQR-bP-VyZ">
-            <rect key="frame" x="0.0" y="0.0" width="163" height="96"/>
+            <rect key="frame" x="0.0" y="0.0" width="484" height="210"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C66-wh-UQD">
-                    <rect key="frame" x="0.0" y="0.0" width="163" height="96"/>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="C66-wh-UQD">
+                    <rect key="frame" x="0.0" y="0.0" width="484" height="210"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <subviews>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n87-EA-aI2">
-                            <rect key="frame" x="57" y="45" width="36" height="17"/>
+                        <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DD-W8-tJr">
+                            <rect key="frame" x="2" y="3" width="479" height="181"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <clipView key="contentView" ambiguous="YES" misplaced="YES" id="iE4-ab-f4o">
+                                <rect key="frame" x="0.0" y="0.0" width="479" height="181"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <predicateEditor verticalHuggingPriority="750" ambiguous="YES" nestingMode="compound" canRemoveAllRows="YES" rowHeight="25" id="bTc-nC-GKt">
+                                        <rect key="frame" x="0.0" y="0.0" width="479" height="181"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <rowTemplates>
+                                            <predicateEditorRowTemplate rowType="compound" id="3Wg-5g-5Dp">
+                                                <popUpMenus>
+                                                    <menu id="GOh-rO-TXx">
+                                                        <items>
+                                                            <menuItem title="Any" state="on" id="I9h-8u-xbF">
+                                                                <integer key="representedObject" value="2"/>
+                                                            </menuItem>
+                                                            <menuItem title="All" id="ekg-wu-95E">
+                                                                <integer key="representedObject" value="1"/>
+                                                            </menuItem>
+                                                            <menuItem title="None" id="vJD-Qh-yUA">
+                                                                <integer key="representedObject" value="0"/>
+                                                            </menuItem>
+                                                        </items>
+                                                    </menu>
+                                                    <menu id="dfz-5U-6hU">
+                                                        <items>
+                                                            <menuItem title="of the following are true" state="on" id="Z3V-oT-urS"/>
+                                                        </items>
+                                                    </menu>
+                                                </popUpMenus>
+                                            </predicateEditorRowTemplate>
+                                            <predicateEditorRowTemplate rowType="simple" id="NZZ-Vo-J25">
+                                                <integer key="leftExpressionObject" value="700"/>
+                                                <integer key="rightExpressionObject" value="700"/>
+                                                <popUpMenus>
+                                                    <menu id="wk5-XN-BIq">
+                                                        <items>
+                                                            <menuItem title="contains" state="on" id="LGf-dg-yvq">
+                                                                <integer key="representedObject" value="99"/>
+                                                            </menuItem>
+                                                            <menuItem title="begins with" id="znR-tJ-0RH">
+                                                                <integer key="representedObject" value="8"/>
+                                                            </menuItem>
+                                                            <menuItem title="ends with" id="PqF-uL-2AF">
+                                                                <integer key="representedObject" value="9"/>
+                                                            </menuItem>
+                                                            <menuItem title="is" id="A0r-v5-rm1">
+                                                                <integer key="representedObject" value="4"/>
+                                                            </menuItem>
+                                                            <menuItem title="is not" id="7Y0-U3-4sc">
+                                                                <integer key="representedObject" value="5"/>
+                                                            </menuItem>
+                                                            <menuItem title="is less than" id="eHM-C3-7GL">
+                                                                <integer key="representedObject" value="0"/>
+                                                            </menuItem>
+                                                            <menuItem title="is greater than" id="NA0-4b-Jl2">
+                                                                <integer key="representedObject" value="2"/>
+                                                            </menuItem>
+                                                            <menuItem title="is less than or equal to" id="IWb-sF-bid">
+                                                                <integer key="representedObject" value="1"/>
+                                                            </menuItem>
+                                                            <menuItem title="is greater than or equal to" id="FAM-qF-yrb">
+                                                                <integer key="representedObject" value="3"/>
+                                                            </menuItem>
+                                                        </items>
+                                                    </menu>
+                                                </popUpMenus>
+                                            </predicateEditorRowTemplate>
+                                        </rowTemplates>
+                                    </predicateEditor>
+                                </subviews>
+                                <color key="backgroundColor" white="0.91000002619999998" alpha="1" colorSpace="calibratedWhite"/>
+                            </clipView>
+                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="RRo-cI-xdJ">
+                                <rect key="frame" x="-100" y="-100" width="360" height="15"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="cPm-3x-L7h">
+                                <rect key="frame" x="468" y="0.0" width="16" height="105"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                        </scrollView>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UUY-WA-XFl">
+                            <rect key="frame" x="364" y="190" width="119" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Filter" id="HxY-oY-g79">
-                                <font key="font" metaFont="system"/>
-                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                            </textFieldCell>
-                        </textField>
+                            <buttonCell key="cell" type="check" title="Advanced Query" bezelStyle="regularSquare" imagePosition="left" inset="2" id="7h0-TK-Ubw">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" size="13" name="OpenSans-Light"/>
+                            </buttonCell>
+                        </button>
                     </subviews>
                 </customView>
             </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="C66-wh-UQD" secondAttribute="trailing" id="Adq-0q-keF"/>
+                <constraint firstAttribute="bottom" secondItem="C66-wh-UQD" secondAttribute="bottom" id="QF0-SI-aV9"/>
+                <constraint firstItem="C66-wh-UQD" firstAttribute="leading" secondItem="UQR-bP-VyZ" secondAttribute="leading" id="dvh-yq-5iz"/>
+                <constraint firstItem="C66-wh-UQD" firstAttribute="top" secondItem="UQR-bP-VyZ" secondAttribute="top" id="ss0-NO-EhC"/>
+            </constraints>
         </customView>
         <numberFormatter formatterBehavior="default10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="ikS-4k-e9k" userLabel="limitResultsNumberFormatter"/>
     </objects>

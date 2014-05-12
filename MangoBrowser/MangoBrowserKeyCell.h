@@ -12,4 +12,6 @@
 
 @interface MangoBrowserKeyCell : MangoBrowserCell
 
+@property NSNumber *modifiedBadge;
+
 @end

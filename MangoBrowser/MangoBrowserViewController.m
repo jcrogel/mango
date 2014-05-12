@@ -18,6 +18,7 @@
         [self setAutoRefresh:YES];
         [self setQueryLimit:@(10)];
         self.dbData = @[];
+        [[self filterPredicateEditor] addRow:self];
     }
 
     return self;
@@ -92,23 +93,93 @@
     
     if (rObj && [rObj objectForKey:@"Type"])
     {
+        NSCell *cell;
         if ([[outlineView tableColumns] objectAtIndex:0] == tableColumn)
         {
             // Key
-            MangoBrowserKeyCell *cell = [[MangoBrowserKeyCell alloc] init];
-            [cell setDataType:[rObj objectForKey:@"Type"]];
-            return cell;
+            MangoBrowserKeyCell *_cell = [[MangoBrowserKeyCell alloc] init];
+            
+            NSString *type = [rObj objectForKey:@"Type"];
+            if ( type && [[rObj objectForKey:@"Type"] isEqualToString:@"ObjectID"])
+            {
+                if([rObj objectForKey:@"Modified"])
+                {
+                    //NSLog(@"Modified %@", type);
+                    [_cell setModifiedBadge:[NSNumber numberWithBool:YES]];
+                }
+            }
+            [_cell setDataType: type];
+            
+            cell = _cell;
         }
         else if ([[outlineView tableColumns] objectAtIndex:1] == tableColumn)
         {
-            MangoBrowserValueCell *cell = [[MangoBrowserValueCell alloc]init];
-            [cell setDataType:[rObj objectForKey:@"Type"]];
-            return cell;
+            MangoBrowserValueCell *_cell = [[MangoBrowserValueCell alloc]init];
+            [_cell setDataType:[rObj objectForKey:@"Type"]];
+            cell = _cell;
         }
+        
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+
+        [nc removeObserver:self name:NSControlTextDidEndEditingNotification object:[self outlineView]];
+        [nc addObserver:self selector:@selector(endEditNotification:)   name:NSControlTextDidEndEditingNotification object:[self outlineView]];
+        
+        return cell;
         
     }
     
     return [tableColumn dataCell];
+}
+
+-(void) endEditNotification:(NSNotification *) notification
+{
+
+    NSInteger row = [[self outlineView] selectedRow];
+    NSTreeNode *node = [[self outlineView] itemAtRow:row];
+    NSTreeNode *parent = [node parentNode];
+    
+    while (parent)
+    {
+        NSTreeNode *newParent = [parent parentNode];
+        
+        if (newParent)
+        {
+            node = parent;
+            parent = newParent;
+            
+        }
+        else
+        {
+            break;
+        }
+    }
+    
+    NSMutableDictionary *rObj = [[node representedObject] mutableCopy];
+    NSString *type = [rObj valueForKey:@"Type"];
+    NSString *value = [rObj valueForKey:@"Value"];
+    [rObj setValue:[NSNumber numberWithBool:YES] forKey:@"Modified"];
+    NSMutableArray *dbData = [[self dbData] mutableCopy];
+    
+    if ([type isEqualToString:@"ObjectID"])
+    {
+        NSInteger index = -1;
+        for (NSDictionary *item in [self dbData])
+        {
+            index +=1;
+            NSString *objId = [item valueForKey:@"Value"];
+            if ([objId isEqualToString:value])
+            {
+                break;
+            }
+        }
+        
+        if(index > -1)
+        {
+            [dbData replaceObjectAtIndex:index withObject:rObj];
+            [self setDbData: dbData];
+            [[self outlineView] setNeedsDisplay: YES];
+        }
+    }
 }
 
 
@@ -160,5 +231,6 @@
     }
     [self setAutoRefresh:NO];
 }
+
 
 @end
