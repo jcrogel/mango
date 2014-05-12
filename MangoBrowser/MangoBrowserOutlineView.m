@@ -142,6 +142,8 @@
     }
 }
 
+#pragma mark - Right mouse options
+
 -(void) copyToJSONClipboard: (id) sender
 {
     MangoWindowController *mwc = (MangoWindowController *) [[self window] windowController];
@@ -168,6 +170,26 @@
     [pasteBoard setString: [sender representedObject] forType:NSStringPboardType];
 }
 
+-(void) saveDocument: (id) sender
+{
+    NSAlert *alert = [NSAlert alertWithMessageText:@"Not Implemented" defaultButton:@"Ok" alternateButton:nil otherButton:nil informativeTextWithFormat:@"Yo get on this shit and fix it!"];
+    [alert runModal];
+}
+
+-(void) exportDocument: (id) sender
+{
+    NSAlert *alert = [NSAlert alertWithMessageText:@"Not Implemented" defaultButton:@"Ok" alternateButton:nil otherButton:nil informativeTextWithFormat:@"Yo get on this shit and fix it!"];
+    [alert runModal];
+}
+
+
+-(void) duplicateItem: (id) sender
+{
+    NSAlert *alert = [NSAlert alertWithMessageText:@"Not Implemented" defaultButton:@"Ok" alternateButton:nil otherButton:nil informativeTextWithFormat:@"Yo get on this shit and fix it!"];
+    [alert runModal];
+}
+
+
 -(void)rightClickOnCell: (MangoBrowserCell *) cell treeNode: (NSTreeNode *) item andEvent: (NSEvent *)theEvent
 {
     NSDictionary *representedObject = [item representedObject];
@@ -188,18 +210,43 @@
     {
         //[theMenu insertItemWithTitle:@"Beep" action:@selector(beep:) keyEquivalent:@"" atIndex:0];
     }
+    
+    if ([dataType isEqualToString:@"ObjectID"])
+    {
+        NSMenuItem *saveMI = [[NSMenuItem alloc] initWithTitle:@"Save Document" action:nil keyEquivalent:@""];
+
+        if ([representedObject valueForKey:@"Modified"])
+        {
+            [saveMI setAction:@selector(saveDocument:)];
+            [saveMI setRepresentedObject:representedObject];
+        }
+        [theMenu addItem:saveMI];
+        
+        NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:@"Export Document as" action:@selector(exportDocument:) keyEquivalent:@""];
+        [menuItem setRepresentedObject:representedObject];
+        [theMenu addItem:menuItem];
+    }
+
+    NSMenuItem *separator = [NSMenuItem separatorItem];
+    [theMenu addItem:separator];
 
     NSString *value = [representedObject valueForKey:@"Value"];
     if (value && [value length])
     {
         NSMenuItem *copyMI = [[NSMenuItem alloc] initWithTitle:@"Copy" action:@selector(copyToClipboard:) keyEquivalent:@""];
         [copyMI setRepresentedObject:value];
-        [theMenu insertItem:copyMI atIndex:0];
+        [theMenu addItem:copyMI];
     }
     
     NSMenuItem *copyJSONMI = [[NSMenuItem alloc] initWithTitle:@"Copy as JSON" action:@selector(copyToJSONClipboard:) keyEquivalent:@""];
     [copyJSONMI setRepresentedObject:representedObject];
-    [theMenu insertItem:copyJSONMI atIndex:[theMenu numberOfItems]];
+    [theMenu addItem:copyJSONMI];
+
+    NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:@"Duplicate" action:@selector(duplicateItem:) keyEquivalent:@""];
+    [menuItem setRepresentedObject:representedObject];
+    [theMenu addItem:menuItem ];
+    
+    
     [NSMenu popUpContextMenu:theMenu withEvent:theEvent forView:self];
     
 }
