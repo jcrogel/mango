@@ -61,7 +61,7 @@
             BOOL result = [[[self dataManager] ConnectionManager] dropCollectionNamed:[self getSelectedCollectionName] onDB: (NSString *)[self getSelectedDatabase]];
             if(result)
             {
-                [self refrechCollectionOutline];
+                [self refreshCollectionOutline];
             }
             else
             {
@@ -103,7 +103,7 @@
         newDBName = [newDBName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
         if([[[self dataManager] ConnectionManager] createCollectionNamed:newDBName onDB:[self getSelectedDatabase]])
         {
-            [self refrechCollectionOutline];
+            [self refreshCollectionOutline];
             [[pvc inputTextField] setStringValue:@""];
             [[self createCollectionPopover] close];
         }
@@ -120,9 +120,9 @@
         //if([[[self dataManager] ConnectionManager] createCollectionNamed:newCollName onDB:[self getSelectedDatabase]])
         //{
             //[self setupDBsPopUpButton];
-            [self refrechCollectionOutline];
+            [self refreshCollectionOutline];
             [[pvc inputTextField] setStringValue:@""];
-            [[self createCollectionPopover] close];
+            [[self renameCollectionPopover] close];
         //}
         
     }
@@ -183,7 +183,7 @@
             if(result)
             {
                 [self setupDBsPopUpButton];
-                [self refrechCollectionOutline];
+                [self refreshCollectionOutline];
             }
             else
             {
@@ -208,10 +208,10 @@
 - (IBAction)dbsPopUpButtonAction:(id)sender
 {
     [[self collectionSearchField] setStringValue:@""];
-    [self refrechCollectionOutline];
+    [self refreshCollectionOutline];
 }
 
--(void) refrechCollectionOutline
+-(void) refreshCollectionOutline
 {
     [self  setCollectionData:@[]];
     [[self dataManager] fetchCollectionNamesForDB: [self getSelectedDatabase]];
@@ -349,6 +349,7 @@
     [super windowDidLoad];
     [self setupWindow];
     [self setupDBsPopUpButton];
+    [self refreshCollectionOutline];
     [self setupSideBar];
     [self setupTabs];
 }

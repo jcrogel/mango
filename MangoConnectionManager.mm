@@ -78,6 +78,10 @@
         iter != dbs.end(); iter++)
     {
         std::string str =  *iter;
+        
+        // Hide System Databases
+        if (str == "admin" || str == "local")
+            continue;
         [result addObject:[NSString stringWithCString: str.c_str() encoding:NSUTF8StringEncoding]];
     }
         
@@ -104,7 +108,6 @@
 -(NSArray *) getCollectionNames: (NSString *) dbname;
 {
     NSMutableArray *result = [[NSMutableArray alloc] init];
-    //NSString *ns = [NSString stringWithFormat:@"%@.system.namespaces", dbname];
     
     mongo::DBClientConnection * conn = [self connPtr];
     
@@ -118,24 +121,6 @@
     }
     
     return [result sortedArrayUsingSelector: @selector(localizedCaseInsensitiveCompare:)];
-    
-    /*
-    std::auto_ptr<mongo::DBClientCursor> cursor = conn->query(
-                                        [ns cStringUsingEncoding:NSUTF8StringEncoding], mongo::Query());
-    
-    while (cursor->more())
-    {
-        mongo::BSONObj p = cursor->next();
-        NSString *name = [NSString stringWithUTF8String:p.getStringField("name")];
-        if ([name rangeOfString:@"$"].location != NSNotFound)
-        {
-            continue;
-        }
-        [result addObject: name];
-    }
-     */
-    
-    //return result;
 }
 
 

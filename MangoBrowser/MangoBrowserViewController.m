@@ -17,67 +17,108 @@
         [[self view] setAutoresizingMask:NSViewWidthSizable|NSViewHeightSizable];
         [self setAutoRefresh:YES];
         [self setQueryLimit:@(10)];
-        self.dbData = @[];
+        self.dbData = [@[] mutableCopy];
         [[self filterPredicateEditor] addRow:self];
+        
+        [self addObserver:self forKeyPath:@"queryLimit" options:0 context:nil];
+        
     }
 
     return self;
 }
 
 
+#pragma mark KVO
+
+-(void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if ([object isEqualTo:self])
+    {
+        if ([keyPath isEqualToString:@"queryLimit"])
+        {
+            // Trigger search again
+            if ([self shouldAutoRefresh])
+            {
+                NSWindowController *wc = [[[self view] window] windowController];
+                SEL dmSelector = NSSelectorFromString(@"dataManager");
+                if ([wc respondsToSelector:dmSelector])
+                {
+                    #pragma clang diagnostic push
+                    #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+                    MangoDataManager *dm = [wc performSelector:dmSelector];
+                    #pragma clang diagnostic pop
+                    [self execQueryWithDataManager:dm];
+                }
+            }
+        }
+    }
+    else
+    {
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    }
+}
+
 -(BOOL) shouldAutoRefresh
 {
     return [self autoRefresh];
+}
+
+-(void) execQueryWithDataManager: (MangoDataManager *) mgr
+{
+    [[self progressBar] startAnimation:self];
+    [[self progressBar] setHidden: NO];
+    [[[self progressBar] animator] setAlphaValue:1];
+    [[self messageInfo] setStringValue: [NSString stringWithFormat:@"Loading %@", [self queryNamespace]]];
+    NSDate *startDate = [NSDate date];
+    NSMutableDictionary *options = [@{} mutableCopy];
+    
+    if (![[self queryLimit] isEqualToNumber:@(0)])
+    {
+        NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+        [f setNumberStyle:NSNumberFormatterDecimalStyle];
+        NSNumber * limit = [f numberFromString:[[self queryLimit] stringValue]];
+        options[@"limit"] = limit;
+    }
+    
+    NSArray *res = [[mgr ConnectionManager] queryNameSpace: [NSString stringWithFormat:@"%@", [self queryNamespace] ] withOptions: options];
+    //res = [self reformatQueryResults:res];
+    NSWindowController *wc = [[[self view] window] windowController];
+    SEL dmSelector = NSSelectorFromString(@"dataManager");
+    if ([wc respondsToSelector:dmSelector])
+    {
+        #pragma clang diagnostic push
+        #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+        MangoDataManager *dm = [wc performSelector:dmSelector];
+        #pragma clang diagnostic pop
+        NSMutableArray *_converted = [dm convertMultipleJSONDocumentsToMango: res];
+        [self setDbData:_converted];
+        [[self outlineView] reloadData];
+    }
+
+    NSTimeInterval timeInterval = [[NSDate date] timeIntervalSinceDate:startDate];
+    [[self progressBar] stopAnimation:self];
+    [[[self progressBar] animator] setAlphaValue:0.0];
+    [[self messageInfo] setStringValue: [NSString stringWithFormat:@"Loaded %@ - %ld records in %f s", [self queryNamespace], [[self dbData] count], timeInterval]];
 }
 
 #pragma mark - MangoPlugin
 
 -(void) refreshDataFromDB: (NSString *) db withCollection: (NSString *) col andDataManager: (MangoDataManager *) mgr
 {
-    if ([self shouldAutoRefresh])
+    if ([[col stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] != 0)
     {
-        if ([[col stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] != 0)
+        [self setQueryNamespace:[NSString stringWithFormat:@"%@.%@", db, col]];
+        if ([self shouldAutoRefresh])
         {
-            [[self progressBar] startAnimation:self];
-            [[self progressBar] setHidden: NO];
-            [[[self progressBar] animator] setAlphaValue:1];
-            [[self messageInfo] setStringValue: [NSString stringWithFormat:@"Loading %@.%@", db, col]];
-            NSDate *start = [NSDate date];
-            NSMutableDictionary *options = [@{} mutableCopy];
-            
-            if (![[self queryLimit] isEqualToNumber:@(0)])
-            {
-                NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
-                [f setNumberStyle:NSNumberFormatterDecimalStyle];
-                NSNumber * limit = [f numberFromString:[[self queryLimit] stringValue]];
-                options[@"limit"] = limit;
-            }
-            
-            NSArray *res = [[mgr ConnectionManager] queryNameSpace: [NSString stringWithFormat:@"%@.%@", db, col ] withOptions: options];
-            //res = [self reformatQueryResults:res];
-            NSWindowController *wc = [[[self view] window] windowController];
-            SEL dmSelector = NSSelectorFromString(@"dataManager");
-            if ([wc respondsToSelector:dmSelector])
-            {
-                #pragma clang diagnostic push
-                #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-                MangoDataManager *dm = [wc performSelector:dmSelector];
-                #pragma clang diagnostic pop
-                NSMutableArray *_converted = [dm convertMultipleJSONDocumentsToMango: res];
-                [self setDbData:_converted];
-                [[self outlineView] reloadData];
-            }
-            NSTimeInterval timeInterval = [start timeIntervalSinceNow];
-            [[self progressBar] stopAnimation:self];
-            [[[self progressBar] animator] setAlphaValue:0.0];
-            [[self messageInfo] setStringValue: [NSString stringWithFormat:@"Loaded %@.%@ in %f", db, col, timeInterval]];
+            [self execQueryWithDataManager: mgr];
         }
-        else
-        {
-            [[self messageInfo] setStringValue: @""];
-            [self setDbData:@[]];
-            [[self outlineView] reloadData];
-        }
+    }
+    else
+    {
+        [self setQueryNamespace:@""];
+        [[self messageInfo] setStringValue: @""];
+        [self setDbData:[@[] mutableCopy]];
+        [[self outlineView] reloadData];
     }
 }
 
@@ -182,7 +223,16 @@
 
 - (IBAction)runQueryButtonWasPressed:(id)sender
 {
-    
+    NSWindowController *wc = [[[self view] window] windowController];
+    SEL dmSelector = NSSelectorFromString(@"dataManager");
+    if ([wc respondsToSelector:dmSelector])
+    {
+        #pragma clang diagnostic push
+        #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+        MangoDataManager *dm = [wc performSelector:dmSelector];
+        #pragma clang diagnostic pop
+        [self execQueryWithDataManager:dm];
+    }
 }
 
 - (IBAction)indicesButtonWasPressed:(id)sender

@@ -34,6 +34,7 @@
 
 @property (assign) BOOL autoRefresh;
 @property NSNumber *queryLimit;
+@property NSString *queryNamespace;
 
 - (IBAction)mapReduceButtonWasPressed:(id)sender;
 - (IBAction)filterButtonWasPressed:(id)sender;

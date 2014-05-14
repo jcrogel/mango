@@ -14,7 +14,7 @@
                 <outlet property="mapReducePopover" destination="ijX-cm-avb" id="lC7-Yg-06q"/>
                 <outlet property="messageInfo" destination="GR1-9G-dMP" id="I9s-19-gOm"/>
                 <outlet property="outlineView" destination="fke-Kb-cHQ" id="wsD-bq-wk2"/>
-                <outlet property="progressBar" destination="goA-ac-1B8" id="Jre-jE-144"/>
+                <outlet property="progressBar" destination="TW6-ox-O3c" id="wcr-pm-YdB"/>
                 <outlet property="queryLimitTextField" destination="2Qv-72-Oo5" id="SYF-hb-69V"/>
                 <outlet property="toolBar" destination="oye-Y6-pZe" id="fVl-Ub-9Wt"/>
                 <outlet property="triggerButton" destination="Koz-9n-V6k" id="D0M-4d-8iC"/>
@@ -271,31 +271,27 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <subviews>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GR1-9G-dMP">
-                            <rect key="frame" x="168" y="4" width="369" height="19"/>
+                            <rect key="frame" x="8" y="4" width="499" height="19"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="365" id="NNe-CB-CSJ"/>
+                                <constraint firstAttribute="width" constant="495" id="6Xe-dc-tK6"/>
                             </constraints>
-                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Label" id="xQo-18-vRb">
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" id="xQo-18-vRb">
                                 <font key="font" size="11" name="OpenSans"/>
                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <progressIndicator maxValue="100" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="goA-ac-1B8">
-                            <rect key="frame" x="20" y="4" width="142" height="20"/>
+                        <progressIndicator hidden="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="TW6-ox-O3c">
+                            <rect key="frame" x="519" y="4" width="16" height="16"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="142" id="ALo-t2-rPm"/>
-                            </constraints>
                         </progressIndicator>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="GR1-9G-dMP" firstAttribute="top" secondItem="vWQ-CO-RYZ" secondAttribute="top" constant="5" id="g1C-hT-Pxe"/>
-                        <constraint firstItem="goA-ac-1B8" firstAttribute="leading" secondItem="vWQ-CO-RYZ" secondAttribute="leading" constant="20" symbolic="YES" id="h0m-1k-zAx"/>
-                        <constraint firstAttribute="trailing" secondItem="GR1-9G-dMP" secondAttribute="trailing" constant="20" symbolic="YES" id="sNV-3k-3xh"/>
-                        <constraint firstItem="goA-ac-1B8" firstAttribute="top" secondItem="GR1-9G-dMP" secondAttribute="top" id="y2O-lJ-1wz"/>
-                        <constraint firstItem="GR1-9G-dMP" firstAttribute="centerY" secondItem="vWQ-CO-RYZ" secondAttribute="centerY" id="yld-F3-Ell"/>
+                        <constraint firstItem="GR1-9G-dMP" firstAttribute="top" secondItem="vWQ-CO-RYZ" secondAttribute="top" constant="5" id="AXA-Sb-48m"/>
+                        <constraint firstAttribute="trailing" secondItem="TW6-ox-O3c" secondAttribute="trailing" constant="20" symbolic="YES" id="SG2-kK-Gdx"/>
+                        <constraint firstItem="GR1-9G-dMP" firstAttribute="leading" secondItem="vWQ-CO-RYZ" secondAttribute="leading" constant="10" id="kFV-kw-vWF"/>
+                        <constraint firstItem="TW6-ox-O3c" firstAttribute="bottom" secondItem="GR1-9G-dMP" secondAttribute="bottom" id="se7-W0-SO4"/>
                     </constraints>
                 </customView>
             </subviews>
