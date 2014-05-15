@@ -9,29 +9,33 @@
 #import "MangoPlugin.h"
 #import "MangoDataManager.h"
 #import <Cocoa/Cocoa.h>
-#import "MangoBrowserKeyCell.h"
-#import "MangoBrowserValueCell.h"
 #import "NSDate+SAMAdditions.h"
 #import "MangoBrowserOutlineView.h"
 #import "MangoPluginTabItem.h"
+#import "MangoFileBrowserOutlineView.h"
+#import "MangoBrowserContainer.h"
+#import "MangoBrowserOutlineViewContainer.h"
 
 
 @interface MangoBrowserViewController : NSViewController<MangoPlugin,
                                                     NSOutlineViewDataSource,
                                                     NSOutlineViewDelegate>
-@property (weak) IBOutlet MangoBrowserOutlineView *outlineView;
+
 @property (weak) IBOutlet NSButton *triggerButton;
 @property (strong) IBOutlet NSTreeController *browserTC;
 @property (weak) IBOutlet NSProgressIndicator *progressBar;
 @property (weak) IBOutlet NSTextField *messageInfo;
 @property (weak) IBOutlet NSPredicateEditor *filterPredicateEditor;
-
 @property (strong) IBOutlet NSPopover *fieldPopover;
 @property (strong) IBOutlet NSPopover *filterPopover;
 @property (strong) IBOutlet NSPopover *mapReducePopover;
 @property (strong) IBOutlet NSPopover *indicesPopover;
 @property (weak) IBOutlet NSView *toolBar;
+@property (weak) IBOutlet NSView *browserContainer;
 
+@property id<MangoBrowserContainer> dataView;
+
+@property NSUInteger viewMode;
 @property (assign) BOOL autoRefresh;
 @property NSNumber *queryLimit;
 @property NSString *queryNamespace;

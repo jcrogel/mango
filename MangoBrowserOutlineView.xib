@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MangoBrowserOutlineViewContainer">
+            <connections>
+                <outlet property="browserTC" destination="PmH-sr-P5M" id="od9-8h-U4n"/>
+                <outlet property="outlineView" destination="k9S-pD-0ZT" id="MbR-Wb-9WR"/>
+                <outlet property="view" destination="JQC-QK-a9N" id="7v9-ug-XiA"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="JQC-QK-a9N">
+            <rect key="frame" x="0.0" y="0.0" width="547" height="350"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <clipView key="contentView" id="6rL-dz-LiK">
+                <rect key="frame" x="0.0" y="17" width="547" height="333"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="firstColumnOnly" multipleSelection="NO" autosaveColumns="NO" headerView="PAp-T3-0B9" indentationPerLevel="16" outlineTableColumn="pzo-xr-3ja" id="k9S-pD-0ZT" customClass="MangoBrowserOutlineView">
+                        <rect key="frame" x="0.0" y="0.0" width="547" height="333"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <size key="intercellSpacing" width="3" height="2"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                        <tableColumns>
+                            <tableColumn width="305" minWidth="16" maxWidth="1000" id="pzo-xr-3ja">
+                                <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Name">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                </tableHeaderCell>
+                                <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="cZK-BH-XSk">
+                                    <font key="font" size="13" name="LucidaGrande"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                <connections>
+                                    <binding destination="PmH-sr-P5M" name="editable" keyPath="arrangedObjects.Editable" id="E0o-GO-wmR"/>
+                                    <binding destination="PmH-sr-P5M" name="value" keyPath="arrangedObjects.Name" id="vWs-A5-Xow"/>
+                                </connections>
+                            </tableColumn>
+                            <tableColumn width="236" minWidth="10" maxWidth="3.4028234663852886e+38" id="yzj-s2-bxf">
+                                <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Value">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                </tableHeaderCell>
+                                <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="oNr-TO-w4m">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                <connections>
+                                    <binding destination="PmH-sr-P5M" name="editable" keyPath="arrangedObjects.Editable" id="NUz-RE-lEa"/>
+                                    <binding destination="PmH-sr-P5M" name="value" keyPath="arrangedObjects.Value" id="Ooz-m2-yse"/>
+                                </connections>
+                            </tableColumn>
+                        </tableColumns>
+                        <connections>
+                            <outlet property="dataSource" destination="-2" id="xaX-I8-8Ns"/>
+                            <outlet property="delegate" destination="-2" id="ujd-hZ-LaY"/>
+                        </connections>
+                    </outlineView>
+                </subviews>
+                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+            </clipView>
+            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="xW6-e0-Dfc">
+                <rect key="frame" x="0.0" y="1" width="0.0" height="16"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </scroller>
+            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="JR1-fZ-Njh">
+                <rect key="frame" x="-16" y="17" width="16" height="0.0"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </scroller>
+            <tableHeaderView key="headerView" id="PAp-T3-0B9">
+                <rect key="frame" x="0.0" y="0.0" width="547" height="17"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </tableHeaderView>
+        </scrollView>
+        <treeController childrenKeyPath="Children" id="PmH-sr-P5M" userLabel="Data Tree Controller">
+            <connections>
+                <binding destination="-2" name="contentArray" keyPath="dbData" id="YyV-Mc-qDz"/>
+            </connections>
+        </treeController>
+        <userDefaultsController representsSharedInstance="YES" id="ZbE-yA-Wtb"/>
+    </objects>
+</document>

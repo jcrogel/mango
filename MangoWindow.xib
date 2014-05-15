@@ -104,7 +104,7 @@
                                                 </connections>
                                             </searchField>
                                             <button toolTip="Create Collection" verticalHuggingPriority="750" id="5xL-7w-92c">
-                                                <rect key="frame" x="15" y="40" width="41" height="32"/>
+                                                <rect key="frame" x="15" y="36" width="41" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <buttonCell key="cell" type="smallSquare" alternateTitle="Add Collection" bezelStyle="smallSquare" image="AddCollection" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="E0K-AK-d5r">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -115,7 +115,7 @@
                                                 </connections>
                                             </button>
                                             <button toolTip="Rename Collection" verticalHuggingPriority="750" id="hvH-J8-haQ">
-                                                <rect key="frame" x="117" y="40" width="41" height="32"/>
+                                                <rect key="frame" x="117" y="36" width="41" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <buttonCell key="cell" type="smallSquare" title="Add" bezelStyle="smallSquare" image="EditCollections" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2K9-Az-csU">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -126,7 +126,7 @@
                                                 </connections>
                                             </button>
                                             <button toolTip="Delete Collection" verticalHuggingPriority="750" id="poO-NT-KBh">
-                                                <rect key="frame" x="169" y="40" width="41" height="32"/>
+                                                <rect key="frame" x="169" y="36" width="41" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <buttonCell key="cell" type="smallSquare" title="Add" bezelStyle="smallSquare" image="RemoveCollections" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gUT-2N-LGX">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -144,7 +144,7 @@
                                                 <font key="titleFont" metaFont="system"/>
                                             </box>
                                             <button toolTip="Collection Info" verticalHuggingPriority="750" id="Gmc-ct-0eN">
-                                                <rect key="frame" x="65" y="40" width="41" height="32"/>
+                                                <rect key="frame" x="65" y="36" width="41" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <buttonCell key="cell" type="smallSquare" title="Collection info" bezelStyle="smallSquare" image="CollectionsInfo" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="qMk-AL-84N">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -155,7 +155,7 @@
                                                 </connections>
                                             </button>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="0yK-3W-5Iq">
-                                                <rect key="frame" x="13" y="74" width="199" height="17"/>
+                                                <rect key="frame" x="13" y="62" width="199" height="24"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Collections" id="Ya9-5d-P9z">
                                                     <font key="font" size="11" name="OpenSans-Light"/>
@@ -184,13 +184,13 @@
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                     </customView>
                                                     <tabView type="noTabsNoBorder" id="yqp-d8-dph">
-                                                        <rect key="frame" x="0.0" y="0.0" width="725" height="675"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="725" height="680"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                         <tabViewItems>
                                                             <tabViewItem label="Browser" identifier="1" id="hhl-Uc-xxp">
                                                                 <view key="view" id="f70-rv-esc">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="725" height="675"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="725" height="680"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 </view>
                                                             </tabViewItem>

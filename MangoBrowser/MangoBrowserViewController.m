@@ -8,6 +8,7 @@
 
 #import "MangoBrowserViewController.h"
 
+
 @implementation MangoBrowserViewController
 
 -(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -17,16 +18,20 @@
         [[self view] setAutoresizingMask:NSViewWidthSizable|NSViewHeightSizable];
         [self setAutoRefresh:YES];
         [self setQueryLimit:@(10)];
-        self.dbData = [@[] mutableCopy];
+        [[self dataView] setDbData: [@[] mutableCopy]];
         [[self filterPredicateEditor] addRow:self];
         
         [self addObserver:self forKeyPath:@"queryLimit" options:0 context:nil];
+        [self setBrowserMode: MangoBrowserDataViewMode];
+        
         
     }
 
     return self;
 }
 
+
+//-(void) setD
 
 #pragma mark KVO
 
@@ -56,6 +61,33 @@
     {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }
+}
+
+-(void) setBrowserMode: (NSUInteger) browserMode
+{
+    if (browserMode == MangoBrowserFileViewMode)
+    {
+        //
+    }
+    else
+    {
+        MangoBrowserOutlineViewContainer *outlineVC = [[MangoBrowserOutlineViewContainer alloc] initWithNibName:@"MangoBrowserOutlineView" bundle:[NSBundle bundleForClass:[self class]]];
+        
+        CGRect newRect = [[self browserContainer] frame];
+        if (![[self toolBar] isHidden])
+        {
+            newRect.origin.y -= 30;
+        }
+        else
+        {
+            
+        }
+
+        [[outlineVC view] setFrame:newRect];
+        [[self browserContainer] addSubview:[outlineVC view]];
+        [self setDataView: outlineVC];
+    }
+    
 }
 
 -(BOOL) shouldAutoRefresh
@@ -91,14 +123,14 @@
         MangoDataManager *dm = [wc performSelector:dmSelector];
         #pragma clang diagnostic pop
         NSMutableArray *_converted = [dm convertMultipleJSONDocumentsToMango: res];
-        [self setDbData:_converted];
-        [[self outlineView] reloadData];
+        [[self dataView] setDbData:_converted];
+        [[self dataView] reloadData];
     }
 
     NSTimeInterval timeInterval = [[NSDate date] timeIntervalSinceDate:startDate];
     [[self progressBar] stopAnimation:self];
     [[[self progressBar] animator] setAlphaValue:0.0];
-    [[self messageInfo] setStringValue: [NSString stringWithFormat:@"Loaded %@ - %ld records in %f s", [self queryNamespace], [[self dbData] count], timeInterval]];
+    [[self messageInfo] setStringValue: [NSString stringWithFormat:@"Loaded %@ - %ld records in %f s", [self queryNamespace], [[[self dataView] dbData] count], timeInterval]];
 }
 
 #pragma mark - MangoPlugin
@@ -117,99 +149,12 @@
     {
         [self setQueryNamespace:@""];
         [[self messageInfo] setStringValue: @""];
-        [self setDbData:[@[] mutableCopy]];
-        [[self outlineView] reloadData];
-    }
-}
-
-
-- (void)outlineView:(NSOutlineView *)olv willDisplayCell:(NSCell*)cell forTableColumn:(NSTableColumn *)tableColumn item:(id)item
-{
-    //NSLog(@"%@ %@", NSStringFromSelector(_cmd), item);
-}
-
-- (NSCell*) outlineView:(NSOutlineView*) outlineView dataCellForTableColumn:(NSTableColumn*) tableColumn item:(id) item
-{
-    NSDictionary *rObj = [item representedObject];
-    
-    if (rObj && [rObj objectForKey:@"Type"])
-    {
-        NSCell *cell;
-        if ([[outlineView tableColumns] objectAtIndex:0] == tableColumn)
-        {
-            // Key
-            MangoBrowserKeyCell *_cell = [[MangoBrowserKeyCell alloc] init];
-            
-            NSString *type = [rObj objectForKey:@"Type"];
-
-            if ( type && [[rObj objectForKey:@"Type"] isEqualToString:@"ObjectID"])
-            {
-                if([rObj objectForKey:@"Modified"])
-                {
-                    [_cell setModifiedBadge:[NSNumber numberWithBool:YES]];
-                }
-            }
-            [_cell setDataType: type];
-            
-            cell = _cell;
-        }
-        else if ([[outlineView tableColumns] objectAtIndex:1] == tableColumn)
-        {
-            MangoBrowserValueCell *_cell = [[MangoBrowserValueCell alloc]init];
-            [_cell setDataType:[rObj objectForKey:@"Type"]];
-            cell = _cell;
-        }
-        
-        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
-
-        [nc removeObserver:self name:NSControlTextDidEndEditingNotification object:[self outlineView]];
-        [nc addObserver:self selector:@selector(endEditNotification:)   name:NSControlTextDidEndEditingNotification object:[self outlineView]];
-        
-        return cell;
+        [[self dataView] setDbData:[@[] mutableCopy]];
+        [[self dataView] reloadData];
         
     }
-    
-    return [tableColumn dataCell];
 }
 
--(void) endEditNotification:(NSNotification *) notification
-{
-
-    NSInteger row = [[self outlineView] selectedRow];
-    NSTreeNode *node = [[self outlineView] itemAtRow:row];
-    NSTreeNode *parent = [node parentNode];
-    
-    while (parent)
-    {
-        NSTreeNode *newParent = [parent parentNode];
-        
-        if (newParent)
-        {
-            node = parent;
-            parent = newParent;
-            
-        }
-        else
-        {
-            break;
-        }
-    }
-    
-    NSMutableDictionary *rObj = [node representedObject];
-    NSString *type = [rObj valueForKey:@"Type"];
-    
-    if ([type isEqualToString:@"ObjectID"])
-    {
-        [rObj setValue:[NSNumber numberWithBool:YES] forKey:@"Modified"];
-    }
-    
-}
-
-
-- (CGFloat)outlineView:(NSOutlineView *)outlineView heightOfRowByItem:(id)item
-{
-    return 25;
-}
 
 - (IBAction)mapReduceButtonWasPressed:(id)sender
 {

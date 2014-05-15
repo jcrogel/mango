@@ -10,6 +10,9 @@
 		E91547881900B90800188F70 /* MangoDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E91547871900B90800188F70 /* MangoDataManager.m */; };
 		E915478D1900F36900188F70 /* MangoBrowserOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E915478C1900F36900188F70 /* MangoBrowserOutlineView.m */; };
 		E91547971901748400188F70 /* MangoBrowserKeyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E91547961901748400188F70 /* MangoBrowserKeyCell.m */; };
+		E9258AEA1924868B00326D0E /* MangoBrowserOutlineViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E9258AE91924868B00326D0E /* MangoBrowserOutlineViewContainer.m */; };
+		E9258AF219248A2800326D0E /* MangoBrowserOutlineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9258AF119248A2800326D0E /* MangoBrowserOutlineView.xib */; };
+		E9258AF519248CD100326D0E /* MangoFileBrowserOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9258AF419248CD100326D0E /* MangoFileBrowserOutlineView.m */; };
 		E9258D5518EE424600564355 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9258D5418EE424600564355 /* Cocoa.framework */; };
 		E9258D6118EE424600564355 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9258D6018EE424600564355 /* main.m */; };
 		E9258D6518EE424600564355 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E9258D6318EE424600564355 /* Credits.rtf */; };
@@ -150,6 +153,12 @@
 		E91547921900FE1A00188F70 /* NSCell+TrackingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSCell+TrackingCell.h"; path = "MangoBrowser/NSCell+TrackingCell.h"; sourceTree = "<group>"; };
 		E91547951901748400188F70 /* MangoBrowserKeyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MangoBrowserKeyCell.h; path = MangoBrowser/MangoBrowserKeyCell.h; sourceTree = "<group>"; };
 		E91547961901748400188F70 /* MangoBrowserKeyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MangoBrowserKeyCell.m; path = MangoBrowser/MangoBrowserKeyCell.m; sourceTree = "<group>"; };
+		E9258AE81924868B00326D0E /* MangoBrowserOutlineViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MangoBrowserOutlineViewContainer.h; path = MangoBrowser/MangoBrowserOutlineViewContainer.h; sourceTree = "<group>"; };
+		E9258AE91924868B00326D0E /* MangoBrowserOutlineViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MangoBrowserOutlineViewContainer.m; path = MangoBrowser/MangoBrowserOutlineViewContainer.m; sourceTree = "<group>"; };
+		E9258AF119248A2800326D0E /* MangoBrowserOutlineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MangoBrowserOutlineView.xib; sourceTree = "<group>"; };
+		E9258AF319248CD100326D0E /* MangoFileBrowserOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangoFileBrowserOutlineView.h; sourceTree = "<group>"; };
+		E9258AF419248CD100326D0E /* MangoFileBrowserOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangoFileBrowserOutlineView.m; sourceTree = "<group>"; };
+		E9258AF7192507B800326D0E /* MangoBrowserContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MangoBrowserContainer.h; path = MangoBrowser/MangoBrowserContainer.h; sourceTree = "<group>"; };
 		E9258D5118EE424600564355 /* Mango.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mango.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9258D5418EE424600564355 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E9258D5718EE424600564355 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -266,6 +275,19 @@
 				E9AEB79418FF46DC008F3C9D /* MangoBrowserValueCell.m */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		E9258AF619248E4000326D0E /* Data Browser Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				E9258AF119248A2800326D0E /* MangoBrowserOutlineView.xib */,
+				E9258AF7192507B800326D0E /* MangoBrowserContainer.h */,
+				E915478B1900F36900188F70 /* MangoBrowserOutlineView.h */,
+				E915478C1900F36900188F70 /* MangoBrowserOutlineView.m */,
+				E9258AF319248CD100326D0E /* MangoFileBrowserOutlineView.h */,
+				E9258AF419248CD100326D0E /* MangoFileBrowserOutlineView.m */,
+			);
+			name = "Data Browser Widgets";
 			sourceTree = "<group>";
 		};
 		E9258D4818EE424500564355 = {
@@ -395,9 +417,10 @@
 		E9429A1818F9D71800C367A4 /* MangoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				E915478B1900F36900188F70 /* MangoBrowserOutlineView.h */,
-				E915478C1900F36900188F70 /* MangoBrowserOutlineView.m */,
+				E9258AF619248E4000326D0E /* Data Browser Widgets */,
 				E9429A1918F9D74C00C367A4 /* MangoBrowserViewController.xib */,
+				E9258AE81924868B00326D0E /* MangoBrowserOutlineViewContainer.h */,
+				E9258AE91924868B00326D0E /* MangoBrowserOutlineViewContainer.m */,
 				E9429A1B18FB91E100C367A4 /* MangoBrowserViewController.h */,
 				E9429A1C18FB91E100C367A4 /* MangoBrowserViewController.m */,
 				E91547981901761900188F70 /* Cells */,
@@ -638,6 +661,7 @@
 				E94364A218EF82500076B9A5 /* MangoWindow.xib in Resources */,
 				E94364A418EFAED10076B9A5 /* AboutWindow.xib in Resources */,
 				E9258D6D18EE424600564355 /* Images.xcassets in Resources */,
+				E9258AF219248A2800326D0E /* MangoBrowserOutlineView.xib in Resources */,
 				E9AEB79B19003099008F3C9D /* InfoWindow.xib in Resources */,
 				E9258D6518EE424600564355 /* Credits.rtf in Resources */,
 			);
@@ -704,8 +728,10 @@
 				E9AEB78A18FF2639008F3C9D /* MangoBrowserCell.m in Sources */,
 				E9A4E3FF1917505300350653 /* CollectionListCell.m in Sources */,
 				E915478D1900F36900188F70 /* MangoBrowserOutlineView.m in Sources */,
+				E9258AF519248CD100326D0E /* MangoFileBrowserOutlineView.m in Sources */,
 				E92593D018EE7F9E00564355 /* MangoConnectionManager.mm in Sources */,
 				E9429A1D18FB91E100C367A4 /* MangoBrowserViewController.m in Sources */,
+				E9258AEA1924868B00326D0E /* MangoBrowserOutlineViewContainer.m in Sources */,
 				E91547881900B90800188F70 /* MangoDataManager.m in Sources */,
 				E98B09471909A26A00579980 /* CKCalendarView.m in Sources */,
 				E91547971901748400188F70 /* MangoBrowserKeyCell.m in Sources */,
