@@ -246,6 +246,21 @@
     
     id<MangoPlugin> plugin = [[self pluginManager] activePluginNamed: tabName];
     
+    NSArray *nodes = [[self collectionListTC] selectedNodes];
+    if (nodes && [nodes count])
+    {
+        NSDictionary *rObj = [[nodes firstObject] representedObject];
+        NSNumber *gridfs = [rObj valueForKey:@"GridFS"];
+        if (gridfs && [gridfs boolValue])
+        {
+            [plugin setIsGridFS:YES];
+        }
+        else
+        {
+            [plugin setIsGridFS:NO];
+        }
+    }
+    
     [plugin refreshDataFromDB:selectedDB withCollection:selectedCollection andDataManager:[self dataManager]];
 }
 
@@ -448,11 +463,16 @@
     CollectionListCell *cell = [[CollectionListCell alloc] init];
     NSTreeNode *t_item = (NSTreeNode *) item;
     NSNumber * isGFS = [[t_item representedObject] valueForKey:@"GridFS"];
-
+    
     if (isGFS  && [isGFS boolValue])
     {
         [cell setIsGridFS:YES];
     }
+    else
+    {
+        [cell setIsGridFS:NO];
+    }
+    
     return cell;
 }
 

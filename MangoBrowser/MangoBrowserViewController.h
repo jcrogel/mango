@@ -12,9 +12,10 @@
 #import "NSDate+SAMAdditions.h"
 #import "MangoBrowserOutlineView.h"
 #import "MangoPluginTabItem.h"
-#import "MangoFileBrowserOutlineView.h"
+#import "MangoFileBrowserCollectionView.h"
 #import "MangoBrowserContainer.h"
 #import "MangoBrowserOutlineViewContainer.h"
+#import "MangoFileBrowserCollectionViewController.h"
 
 
 @interface MangoBrowserViewController : NSViewController<MangoPlugin,
@@ -35,6 +36,7 @@
 
 @property id<MangoBrowserContainer> dataView;
 
+@property BOOL isGridFS;
 @property NSUInteger viewMode;
 @property (assign) BOOL autoRefresh;
 @property NSNumber *queryLimit;

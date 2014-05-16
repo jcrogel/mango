@@ -23,7 +23,7 @@
         
         [self addObserver:self forKeyPath:@"queryLimit" options:0 context:nil];
         [self setBrowserMode: MangoBrowserDataViewMode];
-        
+        [self setIsGridFS: NO]; // Default value
         
     }
 
@@ -67,7 +67,18 @@
 {
     if (browserMode == MangoBrowserFileViewMode)
     {
-        //
+        MangoFileBrowserCollectionViewController *collectionVC = [[MangoFileBrowserCollectionViewController alloc] initWithNibName:@"MangoFileBrowserCollectionView" bundle:[NSBundle bundleForClass:[self class]]];
+        
+        CGRect newRect = [[self browserContainer] frame];
+        if (![[self toolBar] isHidden])
+        {
+            newRect.origin.y -= 30;
+        }
+        
+        [[collectionVC view] setFrame:newRect];
+        [[self browserContainer] setSubviews:@[]];
+        [[self browserContainer] addSubview:[collectionVC view]];
+        [self setDataView: collectionVC];
     }
     else
     {
@@ -78,12 +89,9 @@
         {
             newRect.origin.y -= 30;
         }
-        else
-        {
-            
-        }
 
         [[outlineVC view] setFrame:newRect];
+        [[self browserContainer] setSubviews:@[]];        
         [[self browserContainer] addSubview:[outlineVC view]];
         [self setDataView: outlineVC];
     }
@@ -114,6 +122,7 @@
     
     NSArray *res = [[mgr ConnectionManager] queryNameSpace: [NSString stringWithFormat:@"%@", [self queryNamespace] ] withOptions: options];
     //res = [self reformatQueryResults:res];
+    //NSLog(@"Query %@ %@",[self queryNamespace ], res);
     NSWindowController *wc = [[[self view] window] windowController];
     SEL dmSelector = NSSelectorFromString(@"dataManager");
     if ([wc respondsToSelector:dmSelector])
@@ -139,7 +148,25 @@
 {
     if ([[col stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] != 0)
     {
-        [self setQueryNamespace:[NSString stringWithFormat:@"%@.%@", db, col]];
+        if (![self isGridFS])
+        {
+            if (![[self dataView] isKindOfClass:[MangoBrowserOutlineViewContainer class]])
+            {
+                [self setBrowserMode: MangoBrowserDataViewMode];
+            }
+            
+            [self setQueryNamespace:[NSString stringWithFormat:@"%@.%@", db, col]];
+        }
+        else
+        {
+            if (![[self dataView] isKindOfClass: [MangoFileBrowserCollectionViewController class]])
+            {
+                [self setBrowserMode: MangoBrowserFileViewMode];
+            }
+            
+            [self setQueryNamespace:[NSString stringWithFormat:@"%@.%@.files", db, col]];
+        }
+        
         if ([self shouldAutoRefresh])
         {
             [self execQueryWithDataManager: mgr];

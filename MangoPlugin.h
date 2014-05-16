@@ -12,6 +12,7 @@
 
 @protocol MangoPlugin <NSObject>
 
+@property BOOL isGridFS;
 -(void) refreshDataFromDB: (NSString *) db withCollection: (NSString *) col andDataManager: (MangoDataManager *) mgr;
 
 @end

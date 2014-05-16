@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Juan Carlos Moreno. All rights reserved.
 //
 
-#import "MangoFileBrowserOutlineView.h"
+#import "MangoFileBrowserCollectionView.h"
 
-@implementation MangoFileBrowserOutlineView
+@implementation MangoFileBrowserCollectionView
 
 - (id)initWithFrame:(NSRect)frame
 {
