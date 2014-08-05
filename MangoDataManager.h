@@ -30,6 +30,7 @@
 - (void) getObjectID: (NSString *) oid onDB: (NSString *) dbname;
 
 -(NSMutableDictionary *) documentToMango: (NSDictionary *) item;
+-(NSMutableArray *) convertMultipleJSONDocumentsToMangoFS: (NSArray *) data;
 -(NSMutableArray *) convertMultipleJSONDocumentsToMango: (NSArray *) data;
 -(NSMutableArray *) convertJSONDictionaryToMango: (NSDictionary *) data;
 -(NSMutableDictionary *) convertJSONToMangoFromValue: (id) value withName: (NSString *) name;

@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "MangoBrowserContainer.h"
+#import "MangoFileBrowserCollectionView.h"
 
 @interface MangoFileBrowserCollectionViewController : NSViewController<MangoBrowserContainer>
 
+@property (strong) IBOutlet NSArrayController *iconArrayController;
 @property NSMutableArray *dbData;
+@property (weak) IBOutlet MangoFileBrowserCollectionView *collectionView;
 
 @end

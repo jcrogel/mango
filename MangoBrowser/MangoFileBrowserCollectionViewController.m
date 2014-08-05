@@ -25,7 +25,13 @@
 
 -(void) reloadData
 {
+    NSLog(@"%@", [self dbData]);
+    //[[self collectionView]  reloadData];
+}
 
+- (BOOL)isSelectable
+{
+    return YES;
 }
 
 

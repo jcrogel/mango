@@ -121,8 +121,7 @@
     }
     
     NSArray *res = [[mgr ConnectionManager] queryNameSpace: [NSString stringWithFormat:@"%@", [self queryNamespace] ] withOptions: options];
-    //res = [self reformatQueryResults:res];
-    //NSLog(@"Query %@ %@",[self queryNamespace ], res);
+
     NSWindowController *wc = [[[self view] window] windowController];
     SEL dmSelector = NSSelectorFromString(@"dataManager");
     if ([wc respondsToSelector:dmSelector])
@@ -131,7 +130,16 @@
         #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
         MangoDataManager *dm = [wc performSelector:dmSelector];
         #pragma clang diagnostic pop
-        NSMutableArray *_converted = [dm convertMultipleJSONDocumentsToMango: res];
+        NSMutableArray *_converted;
+        if (!self.isGridFS)
+        {
+            _converted = [dm convertMultipleJSONDocumentsToMango: res];
+        }
+        else
+        {
+            _converted = [dm convertMultipleJSONDocumentsToMangoFS: res];
+            //_converted = res;
+        }
         [[self dataView] setDbData:_converted];
         [[self dataView] reloadData];
     }

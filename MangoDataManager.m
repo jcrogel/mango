@@ -339,4 +339,29 @@
 }
 
 
+-(NSMutableArray *) convertMultipleJSONDocumentsToMangoFS: (NSArray *) data
+{
+    NSMutableArray *retval = [@[] mutableCopy];
+    for (id item in data)
+    {
+        if ([item isKindOfClass:[NSDictionary class]])
+        {
+            NSMutableDictionary *itemMut = [item mutableCopy];
+            if (!itemMut)
+            {
+                continue;
+            }
+            
+            NSString *contentType = [itemMut valueForKey:@"filename"];
+            if (contentType)
+                [itemMut  setValue: [[NSWorkspace sharedWorkspace] iconForFile:contentType] forKey:@"icon"];
+            [retval addObject:itemMut];
+            //NSLog(@"%@", itemMut);
+        }
+    }
+    return retval;
+}
+
+
+
 @end

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MangoFileBrowserCollectionViewController">
             <connections>
+                <outlet property="collectionView" destination="WXf-Ky-Ln4" id="hyn-qK-HG1"/>
+                <outlet property="iconArrayController" destination="Q6g-6Z-oxO" id="t2s-lN-tTs"/>
                 <outlet property="view" destination="c22-O7-iKe" id="p7X-Tf-nKf"/>
             </connections>
         </customObject>
@@ -15,18 +17,19 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8D-Kd-ThW">
+                <scrollView autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8D-Kd-ThW">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <clipView key="contentView" ambiguous="YES" misplaced="YES" id="fmg-0X-m86">
+                    <clipView key="contentView" id="fmg-0X-m86">
                         <rect key="frame" x="1" y="1" width="478" height="270"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView ambiguous="YES" id="WXf-Ky-Ln4" customClass="MangoFileBrowserCollectionView">
+                            <collectionView id="WXf-Ky-Ln4" customClass="MangoFileBrowserCollectionView">
                                 <rect key="frame" x="0.0" y="0.0" width="478" height="270"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
+                                    <binding destination="Q6g-6Z-oxO" name="content" keyPath="arrangedObjects" id="qIa-Bu-aqn"/>
                                     <outlet property="itemPrototype" destination="nYU-lH-ApS" id="T8o-J2-tEy"/>
                                 </connections>
                             </collectionView>
@@ -42,7 +45,54 @@
                     </scroller>
                 </scrollView>
             </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="z8D-Kd-ThW" secondAttribute="bottom" id="Fcs-I4-GiZ"/>
+                <constraint firstItem="z8D-Kd-ThW" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="Tqm-qC-Jxm"/>
+                <constraint firstAttribute="trailing" secondItem="z8D-Kd-ThW" secondAttribute="trailing" id="fk5-nG-TSg"/>
+                <constraint firstItem="z8D-Kd-ThW" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="mMa-0s-zwE"/>
+            </constraints>
         </customView>
-        <collectionViewItem id="nYU-lH-ApS"/>
+        <collectionViewItem id="nYU-lH-ApS">
+            <connections>
+                <outlet property="view" destination="Mo9-Ge-Rbk" id="HAt-KU-aGA"/>
+            </connections>
+        </collectionViewItem>
+        <box autoresizesSubviews="NO" boxType="custom" borderType="none" id="Mo9-Ge-Rbk">
+            <rect key="frame" x="0.0" y="0.0" width="96" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView">
+                <rect key="frame" x="0.0" y="0.0" width="96" height="110"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lr4-a2-JoV">
+                        <rect key="frame" x="14" y="10" width="68" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="Jpc-ra-rQG">
+                            <font key="font" size="10" name="OpenSans-Light"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="nYU-lH-ApS" name="value" keyPath="representedObject.filename" id="1n9-U9-kUM"/>
+                        </connections>
+                    </textField>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ktg-J3-fjK">
+                        <rect key="frame" x="16" y="35" width="64" height="65"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="60u-7G-dIg"/>
+                        <connections>
+                            <binding destination="nYU-lH-ApS" name="value" keyPath="representedObject.icon" id="1FJ-qo-QDO"/>
+                        </connections>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+        </box>
+        <arrayController id="Q6g-6Z-oxO" userLabel="Icon Array Controller">
+            <connections>
+                <binding destination="-2" name="contentArray" keyPath="dbData" id="pfn-Rf-WuP"/>
+            </connections>
+        </arrayController>
     </objects>
 </document>
