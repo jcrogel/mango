@@ -8,6 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface MangoFileBrowserCollectionView : NSCollectionView
+
+@interface MangoFileBrowserCollectionView : NSCollectionView<NSCollectionViewDelegate>
+
+
+-(void) cellWasDoubleClicked;
 
 @end

@@ -353,10 +353,10 @@
             }
             
             NSString *contentType = [itemMut valueForKey:@"filename"];
-            if (contentType)
-                [itemMut  setValue: [[NSWorkspace sharedWorkspace] iconForFile:contentType] forKey:@"icon"];
+            if (contentType){
+                [itemMut  setValue: [[NSWorkspace sharedWorkspace] iconForFileType:[contentType pathExtension]] forKey:@"icon"];
+            }
             [retval addObject:itemMut];
-            //NSLog(@"%@", itemMut);
         }
     }
     return retval;

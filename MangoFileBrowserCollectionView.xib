@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
@@ -52,21 +52,24 @@
                 <constraint firstItem="z8D-Kd-ThW" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="mMa-0s-zwE"/>
             </constraints>
         </customView>
-        <collectionViewItem id="nYU-lH-ApS">
+        <collectionViewItem id="nYU-lH-ApS" customClass="MangoFileBrowserItem">
             <connections>
                 <outlet property="view" destination="Mo9-Ge-Rbk" id="HAt-KU-aGA"/>
             </connections>
         </collectionViewItem>
-        <box autoresizesSubviews="NO" boxType="custom" borderType="none" id="Mo9-Ge-Rbk">
+        <box autoresizesSubviews="NO" boxType="custom" borderType="none" id="Mo9-Ge-Rbk" customClass="MangoFileBrowserItemView">
             <rect key="frame" x="0.0" y="0.0" width="96" height="110"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <view key="contentView">
                 <rect key="frame" x="0.0" y="0.0" width="96" height="110"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lr4-a2-JoV">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lr4-a2-JoV">
                         <rect key="frame" x="14" y="10" width="68" height="23"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="7g7-ll-Bce"/>
+                        </constraints>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="Jpc-ra-rQG">
                             <font key="font" size="10" name="OpenSans-Light"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -76,9 +79,12 @@
                             <binding destination="nYU-lH-ApS" name="value" keyPath="representedObject.filename" id="1n9-U9-kUM"/>
                         </connections>
                     </textField>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ktg-J3-fjK">
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ktg-J3-fjK">
                         <rect key="frame" x="16" y="35" width="64" height="65"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="65" id="5OB-G3-LsP"/>
+                        </constraints>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="60u-7G-dIg"/>
                         <connections>
                             <binding destination="nYU-lH-ApS" name="value" keyPath="representedObject.icon" id="1FJ-qo-QDO"/>
@@ -86,6 +92,14 @@
                     </imageView>
                 </subviews>
             </view>
+            <constraints>
+                <constraint firstItem="lr4-a2-JoV" firstAttribute="trailing" secondItem="Ktg-J3-fjK" secondAttribute="trailing" id="02Z-e2-tTW"/>
+                <constraint firstAttribute="trailing" secondItem="Ktg-J3-fjK" secondAttribute="trailing" constant="16" id="18M-Hd-KXd"/>
+                <constraint firstItem="lr4-a2-JoV" firstAttribute="leading" secondItem="Ktg-J3-fjK" secondAttribute="leading" id="4a0-1X-6B1"/>
+                <constraint firstItem="Ktg-J3-fjK" firstAttribute="leading" secondItem="Mo9-Ge-Rbk" secondAttribute="leading" constant="16" id="AJG-tD-Xnz"/>
+                <constraint firstItem="lr4-a2-JoV" firstAttribute="top" secondItem="Ktg-J3-fjK" secondAttribute="bottom" constant="2" id="G6y-Re-OLz"/>
+                <constraint firstItem="Ktg-J3-fjK" firstAttribute="top" secondItem="Mo9-Ge-Rbk" secondAttribute="top" constant="10" id="Z5r-WX-5OU"/>
+            </constraints>
             <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
             <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
         </box>

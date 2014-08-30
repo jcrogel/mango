@@ -25,7 +25,7 @@
 
 -(void) reloadData
 {
-    NSLog(@"%@", [self dbData]);
+    //NSLog(@"%@", [self dbData]);
     //[[self collectionView]  reloadData];
 }
 

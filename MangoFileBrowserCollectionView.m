@@ -10,11 +10,14 @@
 
 @implementation MangoFileBrowserCollectionView
 
-- (id)initWithFrame:(NSRect)frame
+
+-(id) initWithCoder:(NSCoder *)aDecoder
 {
-    self = [super initWithFrame:frame];
+    self = [super initWithCoder:aDecoder];
     if (self) {
         // Initialization code here.
+        [self setSelectable:YES];
+
     }
     return self;
 }
@@ -24,6 +27,14 @@
     [super drawRect:dirtyRect];
     
     // Drawing code here.
+}
+
+-(void) cellWasDoubleClicked
+{
+    
+     NSCollectionViewItem *item = [self itemAtIndex:[[self selectionIndexes] firstIndex]];
+
+    NSLog(@"Cell was double clicked %@", [item representedObject]);
 }
 
 @end
